@@ -6,6 +6,7 @@ import { JoinGamev2System } from "./ethers-contracts/JoinGamev2System";
 import { MarkSystem } from "./ethers-contracts/MarkSystem";
 import { MoveSystem } from "./ethers-contracts/MoveSystem";
 import { Movev2System } from "./ethers-contracts/Movev2System";
+import { PickUpTreasureSystem } from "./ethers-contracts/PickUpTreasureSystem";
  
 export type SystemTypes = {
   "system.EncounterFlee": EncounterFleeSystem;
@@ -15,4 +16,5 @@ export type SystemTypes = {
   "system.Mark": MarkSystem;
   "system.Move": MoveSystem;
   "system.Movev2": Movev2System;
+  "system.PickUpTreasure": PickUpTreasureSystem;
 };

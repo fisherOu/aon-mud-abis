@@ -28,7 +28,7 @@ import type {
 } from "./common";
 
 export type JoinInfoStruct = {
-  coord_hash: PromiseOrValue<BigNumberish>;
+  coordHash: PromiseOrValue<BigNumberish>;
   perlin: PromiseOrValue<BigNumberish>;
   radius: PromiseOrValue<BigNumberish>;
   seed: PromiseOrValue<BigNumberish>;
@@ -49,7 +49,7 @@ export type JoinInfoStructOutput = [
   [[BigNumber, BigNumber], [BigNumber, BigNumber]],
   [BigNumber, BigNumber]
 ] & {
-  coord_hash: BigNumber;
+  coordHash: BigNumber;
   perlin: BigNumber;
   radius: BigNumber;
   seed: BigNumber;

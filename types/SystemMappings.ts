@@ -7,6 +7,7 @@ export const systemToId = {
   MarkSystem: "system.Mark",
   MoveSystem: "system.Move",
   Movev2System: "system.Movev2",
+  PickUpTreasureSystem: "system.PickUpTreasure",
 };
 
 export const idToSystem = {
@@ -17,5 +18,6 @@ export const idToSystem = {
   "system.Mark": "MarkSystem",
   "system.Move": "MoveSystem",
   "system.Movev2": "Movev2System",
+  "system.PickUpTreasure": "PickUpTreasureSystem",
 };
   
