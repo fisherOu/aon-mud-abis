@@ -29,7 +29,6 @@ import type {
 
 export type JoinInfoStruct = {
   coordHash: PromiseOrValue<BigNumberish>;
-  perlin: PromiseOrValue<BigNumberish>;
   radius: PromiseOrValue<BigNumberish>;
   seed: PromiseOrValue<BigNumberish>;
   a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
@@ -44,13 +43,11 @@ export type JoinInfoStructOutput = [
   BigNumber,
   BigNumber,
   BigNumber,
-  BigNumber,
   [BigNumber, BigNumber],
   [[BigNumber, BigNumber], [BigNumber, BigNumber]],
   [BigNumber, BigNumber]
 ] & {
   coordHash: BigNumber;
-  perlin: BigNumber;
   radius: BigNumber;
   seed: BigNumber;
   a: [BigNumber, BigNumber];
@@ -61,7 +58,7 @@ export type JoinInfoStructOutput = [
 export interface JoinGamev2SystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]))": FunctionFragment;
+    "executeTyped((uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

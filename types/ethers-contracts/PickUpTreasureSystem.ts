@@ -29,7 +29,6 @@ import type {
 
 export type PickUpInfoStruct = {
   coordHash: PromiseOrValue<BigNumberish>;
-  perlin: PromiseOrValue<BigNumberish>;
   radius: PromiseOrValue<BigNumberish>;
   seed: PromiseOrValue<BigNumberish>;
   a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
@@ -47,7 +46,6 @@ export type PickUpInfoStructOutput = [
   BigNumber,
   BigNumber,
   BigNumber,
-  BigNumber,
   [BigNumber, BigNumber],
   [[BigNumber, BigNumber], [BigNumber, BigNumber]],
   [BigNumber, BigNumber],
@@ -56,7 +54,6 @@ export type PickUpInfoStructOutput = [
   BigNumber
 ] & {
   coordHash: BigNumber;
-  perlin: BigNumber;
   radius: BigNumber;
   seed: BigNumber;
   a: [BigNumber, BigNumber];
@@ -70,7 +67,7 @@ export type PickUpInfoStructOutput = [
 export interface PickUpTreasureSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],string,uint64,uint256))": FunctionFragment;
+    "executeTyped((uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],string,uint64,uint256))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

@@ -29,7 +29,6 @@ import type {
 
 export type MarkInfoStruct = {
   coordHash: PromiseOrValue<BigNumberish>;
-  perlin: PromiseOrValue<BigNumberish>;
   radius: PromiseOrValue<BigNumberish>;
   seed: PromiseOrValue<BigNumberish>;
   realHash: PromiseOrValue<BigNumberish>;
@@ -48,13 +47,11 @@ export type MarkInfoStructOutput = [
   BigNumber,
   BigNumber,
   BigNumber,
-  BigNumber,
   [BigNumber, BigNumber],
   [[BigNumber, BigNumber], [BigNumber, BigNumber]],
   [BigNumber, BigNumber]
 ] & {
   coordHash: BigNumber;
-  perlin: BigNumber;
   radius: BigNumber;
   seed: BigNumber;
   realHash: BigNumber;
@@ -67,7 +64,7 @@ export type MarkInfoStructOutput = [
 export interface MarkSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]))": FunctionFragment;
+    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

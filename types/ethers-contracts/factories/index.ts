@@ -51,4 +51,5 @@ export { Uint32Component__factory } from "./Uint32Component__factory";
 export { VisionConfigComponent__factory } from "./VisionConfigComponent__factory";
 export { WarshipComponent__factory } from "./WarshipComponent__factory";
 export { World__factory } from "./World__factory";
+export { ZKConfigComponent__factory } from "./ZKConfigComponent__factory";
 export { ZkCheckComponent__factory } from "./ZkCheckComponent__factory";

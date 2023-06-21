@@ -51,6 +51,7 @@ export type { Uint32Component } from "./Uint32Component";
 export type { VisionConfigComponent } from "./VisionConfigComponent";
 export type { WarshipComponent } from "./WarshipComponent";
 export type { World } from "./World";
+export type { ZKConfigComponent } from "./ZKConfigComponent";
 export type { ZkCheckComponent } from "./ZkCheckComponent";
 export * as factories from "./factories";
 export { AttackChargeComponent__factory } from "./factories/AttackChargeComponent__factory";
@@ -104,3 +105,4 @@ export { VisionConfigComponent__factory } from "./factories/VisionConfigComponen
 export { WarshipComponent__factory } from "./factories/WarshipComponent__factory";
 export { World__factory } from "./factories/World__factory";
 export { ZkCheckComponent__factory } from "./factories/ZkCheckComponent__factory";
+export { ZKConfigComponent__factory } from "./factories/ZKConfigComponent__factory";
