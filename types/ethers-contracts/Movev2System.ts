@@ -29,8 +29,8 @@ import type {
 
 export type MoveInfoStruct = {
   coordHash: PromiseOrValue<BigNumberish>;
-  perlin: PromiseOrValue<BigNumberish>;
-  radius: PromiseOrValue<BigNumberish>;
+  width: PromiseOrValue<BigNumberish>;
+  height: PromiseOrValue<BigNumberish>;
   seed: PromiseOrValue<BigNumberish>;
   oldHash: PromiseOrValue<BigNumberish>;
   distance: PromiseOrValue<BigNumberish>;
@@ -54,8 +54,8 @@ export type MoveInfoStructOutput = [
   [BigNumber, BigNumber]
 ] & {
   coordHash: BigNumber;
-  perlin: BigNumber;
-  radius: BigNumber;
+  width: BigNumber;
+  height: BigNumber;
   seed: BigNumber;
   oldHash: BigNumber;
   distance: BigNumber;

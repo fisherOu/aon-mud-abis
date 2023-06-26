@@ -29,8 +29,8 @@ import type {
 
 export type MarkInfoStruct = {
   coordHash: PromiseOrValue<BigNumberish>;
-  radius: PromiseOrValue<BigNumberish>;
-  seed: PromiseOrValue<BigNumberish>;
+  width: PromiseOrValue<BigNumberish>;
+  height: PromiseOrValue<BigNumberish>;
   realHash: PromiseOrValue<BigNumberish>;
   distance: PromiseOrValue<BigNumberish>;
   a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
@@ -39,6 +39,7 @@ export type MarkInfoStruct = {
     [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>]
   ];
   c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
+  seed: PromiseOrValue<BigNumberish>;
 };
 
 export type MarkInfoStructOutput = [
@@ -49,22 +50,24 @@ export type MarkInfoStructOutput = [
   BigNumber,
   [BigNumber, BigNumber],
   [[BigNumber, BigNumber], [BigNumber, BigNumber]],
-  [BigNumber, BigNumber]
+  [BigNumber, BigNumber],
+  BigNumber
 ] & {
   coordHash: BigNumber;
-  radius: BigNumber;
-  seed: BigNumber;
+  width: BigNumber;
+  height: BigNumber;
   realHash: BigNumber;
   distance: BigNumber;
   a: [BigNumber, BigNumber];
   b: [[BigNumber, BigNumber], [BigNumber, BigNumber]];
   c: [BigNumber, BigNumber];
+  seed: BigNumber;
 };
 
 export interface MarkSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]))": FunctionFragment;
+    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],uint256))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
