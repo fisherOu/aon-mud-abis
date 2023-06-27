@@ -2,10 +2,12 @@
 /* tslint:disable */
 /* eslint-disable */
 export { AttackChargeComponent__factory } from "./AttackChargeComponent__factory";
+export { AttackChargeSystem__factory } from "./AttackChargeSystem__factory";
 export { BareComponent__factory } from "./BareComponent__factory";
 export { BoolComponent__factory } from "./BoolComponent__factory";
 export { CoordComponent__factory } from "./CoordComponent__factory";
 export { CounterComponent__factory } from "./CounterComponent__factory";
+export { DigResourceSystem__factory } from "./DigResourceSystem__factory";
 export { EncounterComponent__factory } from "./EncounterComponent__factory";
 export { EncounterFleeSystem__factory } from "./EncounterFleeSystem__factory";
 export { EncounterThrowSystem__factory } from "./EncounterThrowSystem__factory";
@@ -37,12 +39,14 @@ export { PlayerComponent__factory } from "./PlayerComponent__factory";
 export { PositionComponent__factory } from "./PositionComponent__factory";
 export { RegisterSystem__factory } from "./RegisterSystem__factory";
 export { ResourceComponent__factory } from "./ResourceComponent__factory";
+export { ResourceConfigComponent__factory } from "./ResourceConfigComponent__factory";
 export { ResourceDistributionComponent__factory } from "./ResourceDistributionComponent__factory";
 export { ResourceMiningComponent__factory } from "./ResourceMiningComponent__factory";
 export { ResourcePositionComponent__factory } from "./ResourcePositionComponent__factory";
 export { SpaceTimeMarkerComponent__factory } from "./SpaceTimeMarkerComponent__factory";
 export { System__factory } from "./System__factory";
 export { SystemStorage__factory } from "./SystemStorage__factory";
+export { TakeResourceSystem__factory } from "./TakeResourceSystem__factory";
 export { TerrainComponent__factory } from "./TerrainComponent__factory";
 export { TreasureComponent__factory } from "./TreasureComponent__factory";
 export { TreasureConfigComponent__factory } from "./TreasureConfigComponent__factory";
