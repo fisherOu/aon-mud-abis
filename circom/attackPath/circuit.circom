@@ -54,11 +54,12 @@ template Main() {
         secondDistSquare[i] <== diffY[i] * diffY[i];
         distMax[i] <== firstDistSquare[i] + secondDistSquare[i];
 
-        mimc[i] = MiMCSponge(2, 220, 1);
+        mimc[i] = MiMCSponge(3, 220, 1);
 
         mimc[i].ins[0] <== xs[i];
         mimc[i].ins[1] <== ys[i];
-        mimc[i].k <== seeds[i];
+        mimc[i].ins[2] <== seeds[i];
+        mimc[i].k <== 0;
 
         pubs[i] <== mimc[i].outs[0];
     }
