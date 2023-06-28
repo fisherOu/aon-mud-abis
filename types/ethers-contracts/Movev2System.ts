@@ -33,6 +33,7 @@ export type MoveInfoStruct = {
   height: PromiseOrValue<BigNumberish>;
   seed: PromiseOrValue<BigNumberish>;
   oldHash: PromiseOrValue<BigNumberish>;
+  oldSeed: PromiseOrValue<BigNumberish>;
   distance: PromiseOrValue<BigNumberish>;
   a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
   b: [
@@ -49,6 +50,7 @@ export type MoveInfoStructOutput = [
   BigNumber,
   BigNumber,
   BigNumber,
+  BigNumber,
   [BigNumber, BigNumber],
   [[BigNumber, BigNumber], [BigNumber, BigNumber]],
   [BigNumber, BigNumber]
@@ -58,6 +60,7 @@ export type MoveInfoStructOutput = [
   height: BigNumber;
   seed: BigNumber;
   oldHash: BigNumber;
+  oldSeed: BigNumber;
   distance: BigNumber;
   a: [BigNumber, BigNumber];
   b: [[BigNumber, BigNumber], [BigNumber, BigNumber]];
@@ -67,7 +70,7 @@ export type MoveInfoStructOutput = [
 export interface Movev2SystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]))": FunctionFragment;
+    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

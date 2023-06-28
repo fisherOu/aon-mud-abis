@@ -39,8 +39,6 @@ export type AttackChargeInfoStruct = {
   ];
   c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
   direction: PromiseOrValue<BigNumberish>;
-  realHash: PromiseOrValue<BigNumberish>;
-  perlin: PromiseOrValue<BigNumberish>;
 };
 
 export type AttackChargeInfoStructOutput = [
@@ -51,8 +49,6 @@ export type AttackChargeInfoStructOutput = [
   [BigNumber, BigNumber],
   [[BigNumber, BigNumber], [BigNumber, BigNumber]],
   [BigNumber, BigNumber],
-  BigNumber,
-  BigNumber,
   BigNumber
 ] & {
   coordHash: BigNumber;
@@ -63,14 +59,12 @@ export type AttackChargeInfoStructOutput = [
   b: [[BigNumber, BigNumber], [BigNumber, BigNumber]];
   c: [BigNumber, BigNumber];
   direction: BigNumber;
-  realHash: BigNumber;
-  perlin: BigNumber;
 };
 
 export interface AttackChargeSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],uint256,uint256,uint256))": FunctionFragment;
+    "executeTyped((uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],uint256))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

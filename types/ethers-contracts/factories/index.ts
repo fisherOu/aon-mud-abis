@@ -3,6 +3,7 @@
 /* eslint-disable */
 export { AttackChargeComponent__factory } from "./AttackChargeComponent__factory";
 export { AttackChargeSystem__factory } from "./AttackChargeSystem__factory";
+export { AttackTimerComponent__factory } from "./AttackTimerComponent__factory";
 export { BareComponent__factory } from "./BareComponent__factory";
 export { BoolComponent__factory } from "./BoolComponent__factory";
 export { CoordComponent__factory } from "./CoordComponent__factory";
