@@ -9,8 +9,8 @@ pragma circom 2.0.0;
     - MiMCSponge(x2,y2) = pub2
 */
 
-include "../../client/node_modules/circomlib/circuits/mimcsponge.circom";
-include "../../client/node_modules/circomlib/circuits/comparators.circom";
+include "../../../node_modules/circomlib/circuits/mimcsponge.circom";
+include "../../../node_modules/circomlib/circuits/comparators.circom";
 include "../range_proof/circuit.circom";
 // include "../perlin/compiled.circom";
 
@@ -54,12 +54,11 @@ template Main() {
         secondDistSquare[i] <== diffY[i] * diffY[i];
         distMax[i] <== firstDistSquare[i] + secondDistSquare[i];
 
-        mimc[i] = MiMCSponge(3, 220, 1);
+        mimc[i] = MiMCSponge(2, 220, 1);
 
         mimc[i].ins[0] <== xs[i];
         mimc[i].ins[1] <== ys[i];
-        mimc[i].ins[2] <== seeds[i];
-        mimc[i].k <== 0;
+        mimc[i].k <== seeds[i];
 
         pubs[i] <== mimc[i].outs[0];
     }

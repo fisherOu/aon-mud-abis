@@ -9,8 +9,8 @@ pragma circom 2.0.0;
     - MiMCSponge(x2,y2) = pub2
 */
 
-include "../../client/node_modules/circomlib/circuits/mimcsponge.circom";
-include "../../client/node_modules/circomlib/circuits/comparators.circom";
+include "../../../node_modules/circomlib/circuits/mimcsponge.circom";
+include "../../../node_modules/circomlib/circuits/comparators.circom";
 include "../range_proof/circuit.circom";
 // include "../perlin/compiled.circom";
 
@@ -64,17 +64,15 @@ template Main() {
         220 = 2 * ceil(log_5 p), as specified by mimc paper, where
         p = 21888242871839275222246405745257275088548364400416034343698204186575808495617
     */
-    component mimc1 = MiMCSponge(3, 220, 1);
-    component mimc2 = MiMCSponge(3, 220, 1);
+    component mimc1 = MiMCSponge(2, 220, 1);
+    component mimc2 = MiMCSponge(2, 220, 1);
 
     mimc1.ins[0] <== x1;
     mimc1.ins[1] <== y1;
-    mimc1.ins[2] <== seed1;
-    mimc1.k <== 0;
+    mimc1.k <== seed1;
     mimc2.ins[0] <== x2;
     mimc2.ins[1] <== y2;
-    mimc2.ins[2] <== seed2;
-    mimc2.k <== 0;
+    mimc2.k <== seed2;
 
     pub1 <== mimc1.outs[0];
     pub2 <== mimc2.outs[0];
