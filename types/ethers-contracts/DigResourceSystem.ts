@@ -42,7 +42,7 @@ export type DigInfoStruct = {
   c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
   remain: PromiseOrValue<BigNumberish>;
   cache: PromiseOrValue<BigNumberish>;
-  powResult: PromiseOrValue<BigNumberish>;
+  powNonce: PromiseOrValue<BigNumberish>;
 };
 
 export type DigInfoStructOutput = [
@@ -70,7 +70,7 @@ export type DigInfoStructOutput = [
   c: [BigNumber, BigNumber];
   remain: BigNumber;
   cache: BigNumber;
-  powResult: BigNumber;
+  powNonce: BigNumber;
 };
 
 export interface DigResourceSystemInterface extends utils.Interface {
