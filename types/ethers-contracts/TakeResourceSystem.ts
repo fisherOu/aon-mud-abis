@@ -33,7 +33,8 @@ export type TakeInfoStruct = {
   height: PromiseOrValue<BigNumberish>;
   seed: PromiseOrValue<BigNumberish>;
   resourceSeed: PromiseOrValue<BigNumberish>;
-  perlin: PromiseOrValue<BigNumberish>;
+  terrainPerlin: PromiseOrValue<BigNumberish>;
+  resourcePerlin: PromiseOrValue<BigNumberish>;
   a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
   b: [
     [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>],
@@ -51,6 +52,7 @@ export type TakeInfoStructOutput = [
   BigNumber,
   BigNumber,
   BigNumber,
+  BigNumber,
   [BigNumber, BigNumber],
   [[BigNumber, BigNumber], [BigNumber, BigNumber]],
   [BigNumber, BigNumber],
@@ -62,7 +64,8 @@ export type TakeInfoStructOutput = [
   height: BigNumber;
   seed: BigNumber;
   resourceSeed: BigNumber;
-  perlin: BigNumber;
+  terrainPerlin: BigNumber;
+  resourcePerlin: BigNumber;
   a: [BigNumber, BigNumber];
   b: [[BigNumber, BigNumber], [BigNumber, BigNumber]];
   c: [BigNumber, BigNumber];
@@ -73,7 +76,7 @@ export type TakeInfoStructOutput = [
 export interface TakeResourceSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],uint256,uint256))": FunctionFragment;
+    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],uint256,uint256))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

@@ -28,43 +28,17 @@ import type {
 } from "./common";
 
 export type AttackChargeInfoStruct = {
-  coordHash: PromiseOrValue<BigNumberish>;
-  width: PromiseOrValue<BigNumberish>;
-  height: PromiseOrValue<BigNumberish>;
-  seed: PromiseOrValue<BigNumberish>;
-  a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
-  b: [
-    [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>],
-    [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>]
-  ];
-  c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
   direction: PromiseOrValue<BigNumberish>;
 };
 
-export type AttackChargeInfoStructOutput = [
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  [BigNumber, BigNumber],
-  [[BigNumber, BigNumber], [BigNumber, BigNumber]],
-  [BigNumber, BigNumber],
-  BigNumber
-] & {
-  coordHash: BigNumber;
-  width: BigNumber;
-  height: BigNumber;
-  seed: BigNumber;
-  a: [BigNumber, BigNumber];
-  b: [[BigNumber, BigNumber], [BigNumber, BigNumber]];
-  c: [BigNumber, BigNumber];
+export type AttackChargeInfoStructOutput = [BigNumber] & {
   direction: BigNumber;
 };
 
 export interface AttackChargeSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],uint256))": FunctionFragment;
+    "executeTyped((uint256))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
