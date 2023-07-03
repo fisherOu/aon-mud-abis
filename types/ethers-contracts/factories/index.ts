@@ -53,6 +53,7 @@ export { System__factory } from "./System__factory";
 export { SystemStorage__factory } from "./SystemStorage__factory";
 export { TakeResourceSystem__factory } from "./TakeResourceSystem__factory";
 export { TerrainComponent__factory } from "./TerrainComponent__factory";
+export { TileAnimationComponent__factory } from "./TileAnimationComponent__factory";
 export { TreasureComponent__factory } from "./TreasureComponent__factory";
 export { TreasureConfigComponent__factory } from "./TreasureConfigComponent__factory";
 export { TreasureDistributionComponent__factory } from "./TreasureDistributionComponent__factory";
