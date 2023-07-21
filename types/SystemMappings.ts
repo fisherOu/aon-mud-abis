@@ -2,6 +2,7 @@
 export const systemToId = {
   AttackChargeSystem: "system.AttackCharge",
   AttackFinishSystem: "system.AttackFinish",
+  ChangeFogSeedSystem: "system.ChangeFogSeed",
   ChangeResourceSeedSystem: "system.ChangeResourceSeed",
   ChangeSeedSystem: "system.ChangeSeed",
   ChangeTreasureSeedSystem: "system.ChangeTreasureSeed",
@@ -20,6 +21,7 @@ export const systemToId = {
 export const idToSystem = {
   "system.AttackCharge": "AttackChargeSystem",
   "system.AttackFinish": "AttackFinishSystem",
+  "system.ChangeFogSeed": "ChangeFogSeedSystem",
   "system.ChangeResourceSeed": "ChangeResourceSeedSystem",
   "system.ChangeSeed": "ChangeSeedSystem",
   "system.ChangeTreasureSeed": "ChangeTreasureSeedSystem",
