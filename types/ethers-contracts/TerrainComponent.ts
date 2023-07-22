@@ -31,18 +31,20 @@ export interface TerrainComponentInterface extends utils.Interface {
   functions: {
     "authorizeWriter(address)": FunctionFragment;
     "getEntities()": FunctionFragment;
+    "getEntitiesWithValue(uint16)": FunctionFragment;
     "getEntitiesWithValue(bytes)": FunctionFragment;
-    "getEntitiesWithValue(uint256)": FunctionFragment;
     "getRawValue(uint256)": FunctionFragment;
     "getSchema()": FunctionFragment;
     "getValue(uint256)": FunctionFragment;
+    "getValue()": FunctionFragment;
     "has(uint256)": FunctionFragment;
     "id()": FunctionFragment;
     "owner()": FunctionFragment;
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set(uint256,uint256)": FunctionFragment;
+    "set(uint16)": FunctionFragment;
+    "set(uint256,uint16)": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
@@ -54,18 +56,20 @@ export interface TerrainComponentInterface extends utils.Interface {
     nameOrSignatureOrTopic:
       | "authorizeWriter"
       | "getEntities"
+      | "getEntitiesWithValue(uint16)"
       | "getEntitiesWithValue(bytes)"
-      | "getEntitiesWithValue(uint256)"
       | "getRawValue"
       | "getSchema"
-      | "getValue"
+      | "getValue(uint256)"
+      | "getValue()"
       | "has"
       | "id"
       | "owner"
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set(uint256,uint256)"
+      | "set(uint16)"
+      | "set(uint256,uint16)"
       | "set(uint256,bytes)"
       | "transferOwnership"
       | "unauthorizeWriter"
@@ -82,12 +86,12 @@ export interface TerrainComponentInterface extends utils.Interface {
     values?: undefined
   ): string;
   encodeFunctionData(
-    functionFragment: "getEntitiesWithValue(bytes)",
-    values: [PromiseOrValue<BytesLike>]
+    functionFragment: "getEntitiesWithValue(uint16)",
+    values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "getEntitiesWithValue(uint256)",
-    values: [PromiseOrValue<BigNumberish>]
+    functionFragment: "getEntitiesWithValue(bytes)",
+    values: [PromiseOrValue<BytesLike>]
   ): string;
   encodeFunctionData(
     functionFragment: "getRawValue",
@@ -95,8 +99,12 @@ export interface TerrainComponentInterface extends utils.Interface {
   ): string;
   encodeFunctionData(functionFragment: "getSchema", values?: undefined): string;
   encodeFunctionData(
-    functionFragment: "getValue",
+    functionFragment: "getValue(uint256)",
     values: [PromiseOrValue<BigNumberish>]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "getValue()",
+    values?: undefined
   ): string;
   encodeFunctionData(
     functionFragment: "has",
@@ -117,7 +125,11 @@ export interface TerrainComponentInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set(uint256,uint256)",
+    functionFragment: "set(uint16)",
+    values: [PromiseOrValue<BigNumberish>]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "set(uint256,uint16)",
     values: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
@@ -147,11 +159,11 @@ export interface TerrainComponentInterface extends utils.Interface {
     data: BytesLike
   ): Result;
   decodeFunctionResult(
-    functionFragment: "getEntitiesWithValue(bytes)",
+    functionFragment: "getEntitiesWithValue(uint16)",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
-    functionFragment: "getEntitiesWithValue(uint256)",
+    functionFragment: "getEntitiesWithValue(bytes)",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -159,7 +171,11 @@ export interface TerrainComponentInterface extends utils.Interface {
     data: BytesLike
   ): Result;
   decodeFunctionResult(functionFragment: "getSchema", data: BytesLike): Result;
-  decodeFunctionResult(functionFragment: "getValue", data: BytesLike): Result;
+  decodeFunctionResult(
+    functionFragment: "getValue(uint256)",
+    data: BytesLike
+  ): Result;
+  decodeFunctionResult(functionFragment: "getValue()", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "has", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "id", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "owner", data: BytesLike): Result;
@@ -173,7 +189,11 @@ export interface TerrainComponentInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,uint256)",
+    functionFragment: "set(uint16)",
+    data: BytesLike
+  ): Result;
+  decodeFunctionResult(
+    functionFragment: "set(uint256,uint16)",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -247,13 +267,13 @@ export interface TerrainComponent extends BaseContract {
 
     getEntities(overrides?: CallOverrides): Promise<[BigNumber[]]>;
 
-    "getEntitiesWithValue(bytes)"(
-      value: PromiseOrValue<BytesLike>,
+    "getEntitiesWithValue(uint16)"(
+      value: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<[BigNumber[]]>;
 
-    "getEntitiesWithValue(uint256)"(
-      value: PromiseOrValue<BigNumberish>,
+    "getEntitiesWithValue(bytes)"(
+      value: PromiseOrValue<BytesLike>,
       overrides?: CallOverrides
     ): Promise<[BigNumber[]]>;
 
@@ -266,10 +286,12 @@ export interface TerrainComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<[string[], number[]] & { keys: string[]; values: number[] }>;
 
-    getValue(
+    "getValue(uint256)"(
       entity: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
-    ): Promise<[BigNumber]>;
+    ): Promise<[number]>;
+
+    "getValue()"(overrides?: CallOverrides): Promise<[number]>;
 
     has(
       entity: PromiseOrValue<BigNumberish>,
@@ -295,7 +317,12 @@ export interface TerrainComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set(uint256,uint256)"(
+    "set(uint16)"(
+      value: PromiseOrValue<BigNumberish>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<ContractTransaction>;
+
+    "set(uint256,uint16)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -332,13 +359,13 @@ export interface TerrainComponent extends BaseContract {
 
   getEntities(overrides?: CallOverrides): Promise<BigNumber[]>;
 
-  "getEntitiesWithValue(bytes)"(
-    value: PromiseOrValue<BytesLike>,
+  "getEntitiesWithValue(uint16)"(
+    value: PromiseOrValue<BigNumberish>,
     overrides?: CallOverrides
   ): Promise<BigNumber[]>;
 
-  "getEntitiesWithValue(uint256)"(
-    value: PromiseOrValue<BigNumberish>,
+  "getEntitiesWithValue(bytes)"(
+    value: PromiseOrValue<BytesLike>,
     overrides?: CallOverrides
   ): Promise<BigNumber[]>;
 
@@ -351,10 +378,12 @@ export interface TerrainComponent extends BaseContract {
     overrides?: CallOverrides
   ): Promise<[string[], number[]] & { keys: string[]; values: number[] }>;
 
-  getValue(
+  "getValue(uint256)"(
     entity: PromiseOrValue<BigNumberish>,
     overrides?: CallOverrides
-  ): Promise<BigNumber>;
+  ): Promise<number>;
+
+  "getValue()"(overrides?: CallOverrides): Promise<number>;
 
   has(
     entity: PromiseOrValue<BigNumberish>,
@@ -380,7 +409,12 @@ export interface TerrainComponent extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set(uint256,uint256)"(
+  "set(uint16)"(
+    value: PromiseOrValue<BigNumberish>,
+    overrides?: Overrides & { from?: PromiseOrValue<string> }
+  ): Promise<ContractTransaction>;
+
+  "set(uint256,uint16)"(
     entity: PromiseOrValue<BigNumberish>,
     value: PromiseOrValue<BigNumberish>,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -417,13 +451,13 @@ export interface TerrainComponent extends BaseContract {
 
     getEntities(overrides?: CallOverrides): Promise<BigNumber[]>;
 
-    "getEntitiesWithValue(bytes)"(
-      value: PromiseOrValue<BytesLike>,
+    "getEntitiesWithValue(uint16)"(
+      value: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<BigNumber[]>;
 
-    "getEntitiesWithValue(uint256)"(
-      value: PromiseOrValue<BigNumberish>,
+    "getEntitiesWithValue(bytes)"(
+      value: PromiseOrValue<BytesLike>,
       overrides?: CallOverrides
     ): Promise<BigNumber[]>;
 
@@ -436,10 +470,12 @@ export interface TerrainComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<[string[], number[]] & { keys: string[]; values: number[] }>;
 
-    getValue(
+    "getValue(uint256)"(
       entity: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
-    ): Promise<BigNumber>;
+    ): Promise<number>;
+
+    "getValue()"(overrides?: CallOverrides): Promise<number>;
 
     has(
       entity: PromiseOrValue<BigNumberish>,
@@ -465,7 +501,12 @@ export interface TerrainComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set(uint256,uint256)"(
+    "set(uint16)"(
+      value: PromiseOrValue<BigNumberish>,
+      overrides?: CallOverrides
+    ): Promise<void>;
+
+    "set(uint256,uint16)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
@@ -514,13 +555,13 @@ export interface TerrainComponent extends BaseContract {
 
     getEntities(overrides?: CallOverrides): Promise<BigNumber>;
 
-    "getEntitiesWithValue(bytes)"(
-      value: PromiseOrValue<BytesLike>,
+    "getEntitiesWithValue(uint16)"(
+      value: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<BigNumber>;
 
-    "getEntitiesWithValue(uint256)"(
-      value: PromiseOrValue<BigNumberish>,
+    "getEntitiesWithValue(bytes)"(
+      value: PromiseOrValue<BytesLike>,
       overrides?: CallOverrides
     ): Promise<BigNumber>;
 
@@ -531,10 +572,12 @@ export interface TerrainComponent extends BaseContract {
 
     getSchema(overrides?: CallOverrides): Promise<BigNumber>;
 
-    getValue(
+    "getValue(uint256)"(
       entity: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<BigNumber>;
+
+    "getValue()"(overrides?: CallOverrides): Promise<BigNumber>;
 
     has(
       entity: PromiseOrValue<BigNumberish>,
@@ -560,7 +603,12 @@ export interface TerrainComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set(uint256,uint256)"(
+    "set(uint16)"(
+      value: PromiseOrValue<BigNumberish>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<BigNumber>;
+
+    "set(uint256,uint16)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -598,13 +646,13 @@ export interface TerrainComponent extends BaseContract {
 
     getEntities(overrides?: CallOverrides): Promise<PopulatedTransaction>;
 
-    "getEntitiesWithValue(bytes)"(
-      value: PromiseOrValue<BytesLike>,
+    "getEntitiesWithValue(uint16)"(
+      value: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<PopulatedTransaction>;
 
-    "getEntitiesWithValue(uint256)"(
-      value: PromiseOrValue<BigNumberish>,
+    "getEntitiesWithValue(bytes)"(
+      value: PromiseOrValue<BytesLike>,
       overrides?: CallOverrides
     ): Promise<PopulatedTransaction>;
 
@@ -615,10 +663,12 @@ export interface TerrainComponent extends BaseContract {
 
     getSchema(overrides?: CallOverrides): Promise<PopulatedTransaction>;
 
-    getValue(
+    "getValue(uint256)"(
       entity: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<PopulatedTransaction>;
+
+    "getValue()"(overrides?: CallOverrides): Promise<PopulatedTransaction>;
 
     has(
       entity: PromiseOrValue<BigNumberish>,
@@ -644,7 +694,12 @@ export interface TerrainComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set(uint256,uint256)"(
+    "set(uint16)"(
+      value: PromiseOrValue<BigNumberish>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<PopulatedTransaction>;
+
+    "set(uint256,uint16)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
