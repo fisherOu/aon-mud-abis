@@ -32,6 +32,7 @@ export { LibQuery__factory } from "./LibQuery__factory";
 export { MapConfigComponent__factory } from "./MapConfigComponent__factory";
 export { MapConfigv2Component__factory } from "./MapConfigv2Component__factory";
 export { MarkSystem__factory } from "./MarkSystem__factory";
+export { Markv2System__factory } from "./Markv2System__factory";
 export { MonsterTypeComponent__factory } from "./MonsterTypeComponent__factory";
 export { MovableComponent__factory } from "./MovableComponent__factory";
 export { MoveConfigComponent__factory } from "./MoveConfigComponent__factory";

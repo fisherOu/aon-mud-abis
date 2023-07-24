@@ -11,6 +11,7 @@ import EncounterThrowSystem from "../abi/EncounterThrowSystem.json";
 import JoinGameSystem from "../abi/JoinGameSystem.json";
 import JoinGamev2System from "../abi/JoinGamev2System.json";
 import MarkSystem from "../abi/MarkSystem.json";
+import Markv2System from "../abi/Markv2System.json";
 import MoveSystem from "../abi/MoveSystem.json";
 import Movev2System from "../abi/Movev2System.json";
 import PickUpTreasureSystem from "../abi/PickUpTreasureSystem.json";
@@ -29,6 +30,7 @@ export const SystemAbis = {
   "system.JoinGame": JoinGameSystem.abi,
   "system.JoinGamev2": JoinGamev2System.abi,
   "system.Mark": MarkSystem.abi,
+  "system.Mark": Markv2System.abi,
   "system.Move": MoveSystem.abi,
   "system.Movev2": Movev2System.abi,
   "system.PickUpTreasure": PickUpTreasureSystem.abi,
