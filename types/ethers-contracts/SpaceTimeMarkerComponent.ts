@@ -33,8 +33,8 @@ export type SpaceTimeMarkerStruct = {
   isUnlimited: PromiseOrValue<boolean>;
 };
 
-export type SpaceTimeMarkerStructOutput = [BigNumber, BigNumber, boolean] & {
-  seed: BigNumber;
+export type SpaceTimeMarkerStructOutput = [number, BigNumber, boolean] & {
+  seed: number;
   timeout: BigNumber;
   isUnlimited: boolean;
 };
@@ -53,8 +53,8 @@ export interface SpaceTimeMarkerComponentInterface extends utils.Interface {
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set(uint256,(uint256,uint64,bool))": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
+    "set(uint256,(uint32,uint64,bool))": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
     "world()": FunctionFragment;
@@ -75,8 +75,8 @@ export interface SpaceTimeMarkerComponentInterface extends utils.Interface {
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set(uint256,(uint256,uint64,bool))"
       | "set(uint256,bytes)"
+      | "set(uint256,(uint32,uint64,bool))"
       | "transferOwnership"
       | "unauthorizeWriter"
       | "world"
@@ -123,12 +123,12 @@ export interface SpaceTimeMarkerComponentInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set(uint256,(uint256,uint64,bool))",
-    values: [PromiseOrValue<BigNumberish>, SpaceTimeMarkerStruct]
-  ): string;
-  encodeFunctionData(
     functionFragment: "set(uint256,bytes)",
     values: [PromiseOrValue<BigNumberish>, PromiseOrValue<BytesLike>]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "set(uint256,(uint32,uint64,bool))",
+    values: [PromiseOrValue<BigNumberish>, SpaceTimeMarkerStruct]
   ): string;
   encodeFunctionData(
     functionFragment: "transferOwnership",
@@ -175,11 +175,11 @@ export interface SpaceTimeMarkerComponentInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,(uint256,uint64,bool))",
+    functionFragment: "set(uint256,bytes)",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,bytes)",
+    functionFragment: "set(uint256,(uint32,uint64,bool))",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -292,15 +292,15 @@ export interface SpaceTimeMarkerComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set(uint256,(uint256,uint64,bool))"(
-      entity: PromiseOrValue<BigNumberish>,
-      spaceTimeMarker: SpaceTimeMarkerStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<ContractTransaction>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<ContractTransaction>;
+
+    "set(uint256,(uint32,uint64,bool))"(
+      entity: PromiseOrValue<BigNumberish>,
+      spaceTimeMarker: SpaceTimeMarkerStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -372,15 +372,15 @@ export interface SpaceTimeMarkerComponent extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set(uint256,(uint256,uint64,bool))"(
-    entity: PromiseOrValue<BigNumberish>,
-    spaceTimeMarker: SpaceTimeMarkerStruct,
-    overrides?: Overrides & { from?: PromiseOrValue<string> }
-  ): Promise<ContractTransaction>;
-
   "set(uint256,bytes)"(
     entity: PromiseOrValue<BigNumberish>,
     value: PromiseOrValue<BytesLike>,
+    overrides?: Overrides & { from?: PromiseOrValue<string> }
+  ): Promise<ContractTransaction>;
+
+  "set(uint256,(uint32,uint64,bool))"(
+    entity: PromiseOrValue<BigNumberish>,
+    spaceTimeMarker: SpaceTimeMarkerStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -452,15 +452,15 @@ export interface SpaceTimeMarkerComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set(uint256,(uint256,uint64,bool))"(
-      entity: PromiseOrValue<BigNumberish>,
-      spaceTimeMarker: SpaceTimeMarkerStruct,
-      overrides?: CallOverrides
-    ): Promise<void>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: CallOverrides
+    ): Promise<void>;
+
+    "set(uint256,(uint32,uint64,bool))"(
+      entity: PromiseOrValue<BigNumberish>,
+      spaceTimeMarker: SpaceTimeMarkerStruct,
       overrides?: CallOverrides
     ): Promise<void>;
 
@@ -542,15 +542,15 @@ export interface SpaceTimeMarkerComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set(uint256,(uint256,uint64,bool))"(
-      entity: PromiseOrValue<BigNumberish>,
-      spaceTimeMarker: SpaceTimeMarkerStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<BigNumber>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<BigNumber>;
+
+    "set(uint256,(uint32,uint64,bool))"(
+      entity: PromiseOrValue<BigNumberish>,
+      spaceTimeMarker: SpaceTimeMarkerStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -621,15 +621,15 @@ export interface SpaceTimeMarkerComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set(uint256,(uint256,uint64,bool))"(
-      entity: PromiseOrValue<BigNumberish>,
-      spaceTimeMarker: SpaceTimeMarkerStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<PopulatedTransaction>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<PopulatedTransaction>;
+
+    "set(uint256,(uint32,uint64,bool))"(
+      entity: PromiseOrValue<BigNumberish>,
+      spaceTimeMarker: SpaceTimeMarkerStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 

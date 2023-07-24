@@ -32,7 +32,7 @@ export interface ResourceDistributionComponentInterface
   functions: {
     "authorizeWriter(address)": FunctionFragment;
     "getEntities()": FunctionFragment;
-    "getEntitiesWithValue(uint16)": FunctionFragment;
+    "getEntitiesWithValue(uint32)": FunctionFragment;
     "getEntitiesWithValue(bytes)": FunctionFragment;
     "getRawValue(uint256)": FunctionFragment;
     "getSchema()": FunctionFragment;
@@ -44,9 +44,9 @@ export interface ResourceDistributionComponentInterface
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set(uint16)": FunctionFragment;
-    "set(uint256,uint16)": FunctionFragment;
+    "set(uint32)": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
+    "set(uint256,uint32)": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
     "world()": FunctionFragment;
@@ -57,7 +57,7 @@ export interface ResourceDistributionComponentInterface
     nameOrSignatureOrTopic:
       | "authorizeWriter"
       | "getEntities"
-      | "getEntitiesWithValue(uint16)"
+      | "getEntitiesWithValue(uint32)"
       | "getEntitiesWithValue(bytes)"
       | "getRawValue"
       | "getSchema"
@@ -69,9 +69,9 @@ export interface ResourceDistributionComponentInterface
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set(uint16)"
-      | "set(uint256,uint16)"
+      | "set(uint32)"
       | "set(uint256,bytes)"
+      | "set(uint256,uint32)"
       | "transferOwnership"
       | "unauthorizeWriter"
       | "world"
@@ -87,7 +87,7 @@ export interface ResourceDistributionComponentInterface
     values?: undefined
   ): string;
   encodeFunctionData(
-    functionFragment: "getEntitiesWithValue(uint16)",
+    functionFragment: "getEntitiesWithValue(uint32)",
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
@@ -126,16 +126,16 @@ export interface ResourceDistributionComponentInterface
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set(uint16)",
+    functionFragment: "set(uint32)",
     values: [PromiseOrValue<BigNumberish>]
-  ): string;
-  encodeFunctionData(
-    functionFragment: "set(uint256,uint16)",
-    values: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
     functionFragment: "set(uint256,bytes)",
     values: [PromiseOrValue<BigNumberish>, PromiseOrValue<BytesLike>]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "set(uint256,uint32)",
+    values: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
     functionFragment: "transferOwnership",
@@ -160,7 +160,7 @@ export interface ResourceDistributionComponentInterface
     data: BytesLike
   ): Result;
   decodeFunctionResult(
-    functionFragment: "getEntitiesWithValue(uint16)",
+    functionFragment: "getEntitiesWithValue(uint32)",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -190,15 +190,15 @@ export interface ResourceDistributionComponentInterface
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint16)",
-    data: BytesLike
-  ): Result;
-  decodeFunctionResult(
-    functionFragment: "set(uint256,uint16)",
+    functionFragment: "set(uint32)",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
     functionFragment: "set(uint256,bytes)",
+    data: BytesLike
+  ): Result;
+  decodeFunctionResult(
+    functionFragment: "set(uint256,uint32)",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -268,7 +268,7 @@ export interface ResourceDistributionComponent extends BaseContract {
 
     getEntities(overrides?: CallOverrides): Promise<[BigNumber[]]>;
 
-    "getEntitiesWithValue(uint16)"(
+    "getEntitiesWithValue(uint32)"(
       value: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<[BigNumber[]]>;
@@ -318,13 +318,7 @@ export interface ResourceDistributionComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set(uint16)"(
-      value: PromiseOrValue<BigNumberish>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<ContractTransaction>;
-
-    "set(uint256,uint16)"(
-      entity: PromiseOrValue<BigNumberish>,
+    "set(uint32)"(
       value: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
@@ -332,6 +326,12 @@ export interface ResourceDistributionComponent extends BaseContract {
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<ContractTransaction>;
+
+    "set(uint256,uint32)"(
+      entity: PromiseOrValue<BigNumberish>,
+      value: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -360,7 +360,7 @@ export interface ResourceDistributionComponent extends BaseContract {
 
   getEntities(overrides?: CallOverrides): Promise<BigNumber[]>;
 
-  "getEntitiesWithValue(uint16)"(
+  "getEntitiesWithValue(uint32)"(
     value: PromiseOrValue<BigNumberish>,
     overrides?: CallOverrides
   ): Promise<BigNumber[]>;
@@ -410,13 +410,7 @@ export interface ResourceDistributionComponent extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set(uint16)"(
-    value: PromiseOrValue<BigNumberish>,
-    overrides?: Overrides & { from?: PromiseOrValue<string> }
-  ): Promise<ContractTransaction>;
-
-  "set(uint256,uint16)"(
-    entity: PromiseOrValue<BigNumberish>,
+  "set(uint32)"(
     value: PromiseOrValue<BigNumberish>,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
@@ -424,6 +418,12 @@ export interface ResourceDistributionComponent extends BaseContract {
   "set(uint256,bytes)"(
     entity: PromiseOrValue<BigNumberish>,
     value: PromiseOrValue<BytesLike>,
+    overrides?: Overrides & { from?: PromiseOrValue<string> }
+  ): Promise<ContractTransaction>;
+
+  "set(uint256,uint32)"(
+    entity: PromiseOrValue<BigNumberish>,
+    value: PromiseOrValue<BigNumberish>,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -452,7 +452,7 @@ export interface ResourceDistributionComponent extends BaseContract {
 
     getEntities(overrides?: CallOverrides): Promise<BigNumber[]>;
 
-    "getEntitiesWithValue(uint16)"(
+    "getEntitiesWithValue(uint32)"(
       value: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<BigNumber[]>;
@@ -502,13 +502,7 @@ export interface ResourceDistributionComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set(uint16)"(
-      value: PromiseOrValue<BigNumberish>,
-      overrides?: CallOverrides
-    ): Promise<void>;
-
-    "set(uint256,uint16)"(
-      entity: PromiseOrValue<BigNumberish>,
+    "set(uint32)"(
       value: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<void>;
@@ -516,6 +510,12 @@ export interface ResourceDistributionComponent extends BaseContract {
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: CallOverrides
+    ): Promise<void>;
+
+    "set(uint256,uint32)"(
+      entity: PromiseOrValue<BigNumberish>,
+      value: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<void>;
 
@@ -556,7 +556,7 @@ export interface ResourceDistributionComponent extends BaseContract {
 
     getEntities(overrides?: CallOverrides): Promise<BigNumber>;
 
-    "getEntitiesWithValue(uint16)"(
+    "getEntitiesWithValue(uint32)"(
       value: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<BigNumber>;
@@ -604,13 +604,7 @@ export interface ResourceDistributionComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set(uint16)"(
-      value: PromiseOrValue<BigNumberish>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<BigNumber>;
-
-    "set(uint256,uint16)"(
-      entity: PromiseOrValue<BigNumberish>,
+    "set(uint32)"(
       value: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
@@ -618,6 +612,12 @@ export interface ResourceDistributionComponent extends BaseContract {
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<BigNumber>;
+
+    "set(uint256,uint32)"(
+      entity: PromiseOrValue<BigNumberish>,
+      value: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -647,7 +647,7 @@ export interface ResourceDistributionComponent extends BaseContract {
 
     getEntities(overrides?: CallOverrides): Promise<PopulatedTransaction>;
 
-    "getEntitiesWithValue(uint16)"(
+    "getEntitiesWithValue(uint32)"(
       value: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<PopulatedTransaction>;
@@ -695,13 +695,7 @@ export interface ResourceDistributionComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set(uint16)"(
-      value: PromiseOrValue<BigNumberish>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<PopulatedTransaction>;
-
-    "set(uint256,uint16)"(
-      entity: PromiseOrValue<BigNumberish>,
+    "set(uint32)"(
       value: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
@@ -709,6 +703,12 @@ export interface ResourceDistributionComponent extends BaseContract {
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<PopulatedTransaction>;
+
+    "set(uint256,uint32)"(
+      entity: PromiseOrValue<BigNumberish>,
+      value: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
