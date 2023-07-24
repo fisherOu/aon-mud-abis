@@ -30,7 +30,7 @@ export const SystemAbis = {
   "system.JoinGame": JoinGameSystem.abi,
   "system.JoinGamev2": JoinGamev2System.abi,
   "system.Mark": MarkSystem.abi,
-  "system.Mark": Markv2System.abi,
+  "system.Markv2": Markv2System.abi,
   "system.Move": MoveSystem.abi,
   "system.Movev2": Movev2System.abi,
   "system.PickUpTreasure": PickUpTreasureSystem.abi,

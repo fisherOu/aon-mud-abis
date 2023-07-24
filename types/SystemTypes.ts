@@ -30,7 +30,7 @@ export type SystemTypes = {
   "system.JoinGame": JoinGameSystem;
   "system.JoinGamev2": JoinGamev2System;
   "system.Mark": MarkSystem;
-  "system.Mark": Markv2System;
+  "system.Markv2": Markv2System;
   "system.Move": MoveSystem;
   "system.Movev2": Movev2System;
   "system.PickUpTreasure": PickUpTreasureSystem;
