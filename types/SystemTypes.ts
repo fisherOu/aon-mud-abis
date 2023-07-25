@@ -11,7 +11,6 @@ import { EncounterThrowSystem } from "./ethers-contracts/EncounterThrowSystem";
 import { JoinGameSystem } from "./ethers-contracts/JoinGameSystem";
 import { JoinGamev2System } from "./ethers-contracts/JoinGamev2System";
 import { MarkSystem } from "./ethers-contracts/MarkSystem";
-import { Markv2System } from "./ethers-contracts/Markv2System";
 import { MoveSystem } from "./ethers-contracts/MoveSystem";
 import { Movev2System } from "./ethers-contracts/Movev2System";
 import { PickUpTreasureSystem } from "./ethers-contracts/PickUpTreasureSystem";
@@ -30,7 +29,6 @@ export type SystemTypes = {
   "system.JoinGame": JoinGameSystem;
   "system.JoinGamev2": JoinGamev2System;
   "system.Mark": MarkSystem;
-  "system.Markv2": Markv2System;
   "system.Move": MoveSystem;
   "system.Movev2": Movev2System;
   "system.PickUpTreasure": PickUpTreasureSystem;
