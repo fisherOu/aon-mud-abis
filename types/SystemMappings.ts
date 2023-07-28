@@ -7,6 +7,7 @@ export const systemToId = {
   ChangeSeedSystem: "system.ChangeSeed",
   ChangeTreasureSeedSystem: "system.ChangeTreasureSeed",
   DigResourceSystem: "system.DigResource",
+  DigResourcev2System: "system.DigResourcev2",
   EncounterFleeSystem: "system.EncounterFlee",
   EncounterThrowSystem: "system.EncounterThrow",
   JoinGameSystem: "system.JoinGame",
@@ -16,6 +17,7 @@ export const systemToId = {
   Movev2System: "system.Movev2",
   PickUpTreasureSystem: "system.PickUpTreasure",
   TakeResourceSystem: "system.TakeResource",
+  TakeResourcev2System: "system.TakeResourcev2",
 };
 
 export const idToSystem = {
@@ -26,6 +28,7 @@ export const idToSystem = {
   "system.ChangeSeed": "ChangeSeedSystem",
   "system.ChangeTreasureSeed": "ChangeTreasureSeedSystem",
   "system.DigResource": "DigResourceSystem",
+  "system.DigResourcev2": "DigResourcev2System",
   "system.EncounterFlee": "EncounterFleeSystem",
   "system.EncounterThrow": "EncounterThrowSystem",
   "system.JoinGame": "JoinGameSystem",
@@ -35,5 +38,6 @@ export const idToSystem = {
   "system.Movev2": "Movev2System",
   "system.PickUpTreasure": "PickUpTreasureSystem",
   "system.TakeResource": "TakeResourceSystem",
+  "system.TakeResourcev2": "TakeResourcev2System",
 };
   

@@ -6,6 +6,7 @@ import { ChangeResourceSeedSystem } from "./ethers-contracts/ChangeResourceSeedS
 import { ChangeSeedSystem } from "./ethers-contracts/ChangeSeedSystem";
 import { ChangeTreasureSeedSystem } from "./ethers-contracts/ChangeTreasureSeedSystem";
 import { DigResourceSystem } from "./ethers-contracts/DigResourceSystem";
+import { DigResourcev2System } from "./ethers-contracts/DigResourcev2System";
 import { EncounterFleeSystem } from "./ethers-contracts/EncounterFleeSystem";
 import { EncounterThrowSystem } from "./ethers-contracts/EncounterThrowSystem";
 import { JoinGameSystem } from "./ethers-contracts/JoinGameSystem";
@@ -15,6 +16,7 @@ import { MoveSystem } from "./ethers-contracts/MoveSystem";
 import { Movev2System } from "./ethers-contracts/Movev2System";
 import { PickUpTreasureSystem } from "./ethers-contracts/PickUpTreasureSystem";
 import { TakeResourceSystem } from "./ethers-contracts/TakeResourceSystem";
+import { TakeResourcev2System } from "./ethers-contracts/TakeResourcev2System";
  
 export type SystemTypes = {
   "system.AttackCharge": AttackChargeSystem;
@@ -24,6 +26,7 @@ export type SystemTypes = {
   "system.ChangeSeed": ChangeSeedSystem;
   "system.ChangeTreasureSeed": ChangeTreasureSeedSystem;
   "system.DigResource": DigResourceSystem;
+  "system.DigResourcev2": DigResourcev2System;
   "system.EncounterFlee": EncounterFleeSystem;
   "system.EncounterThrow": EncounterThrowSystem;
   "system.JoinGame": JoinGameSystem;
@@ -33,4 +36,5 @@ export type SystemTypes = {
   "system.Movev2": Movev2System;
   "system.PickUpTreasure": PickUpTreasureSystem;
   "system.TakeResource": TakeResourceSystem;
+  "system.TakeResourcev2": TakeResourcev2System;
 };
