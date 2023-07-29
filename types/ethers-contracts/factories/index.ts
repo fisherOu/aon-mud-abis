@@ -52,6 +52,7 @@ export { ResourceConfigv2Component__factory } from "./ResourceConfigv2Component_
 export { ResourceDistributionComponent__factory } from "./ResourceDistributionComponent__factory";
 export { ResourceMiningComponent__factory } from "./ResourceMiningComponent__factory";
 export { ResourceMiningv2Component__factory } from "./ResourceMiningv2Component__factory";
+export { ResourceNonceMarkComponent__factory } from "./ResourceNonceMarkComponent__factory";
 export { ResourcePositionComponent__factory } from "./ResourcePositionComponent__factory";
 export { Resourcev2Component__factory } from "./Resourcev2Component__factory";
 export { SpaceTimeMarkerComponent__factory } from "./SpaceTimeMarkerComponent__factory";

@@ -52,6 +52,7 @@ export type { ResourceConfigv2Component } from "./ResourceConfigv2Component";
 export type { ResourceDistributionComponent } from "./ResourceDistributionComponent";
 export type { ResourceMiningComponent } from "./ResourceMiningComponent";
 export type { ResourceMiningv2Component } from "./ResourceMiningv2Component";
+export type { ResourceNonceMarkComponent } from "./ResourceNonceMarkComponent";
 export type { ResourcePositionComponent } from "./ResourcePositionComponent";
 export type { Resourcev2Component } from "./Resourcev2Component";
 export type { SpaceTimeMarkerComponent } from "./SpaceTimeMarkerComponent";
@@ -123,6 +124,7 @@ export { ResourceConfigv2Component__factory } from "./factories/ResourceConfigv2
 export { ResourceDistributionComponent__factory } from "./factories/ResourceDistributionComponent__factory";
 export { ResourceMiningComponent__factory } from "./factories/ResourceMiningComponent__factory";
 export { ResourceMiningv2Component__factory } from "./factories/ResourceMiningv2Component__factory";
+export { ResourceNonceMarkComponent__factory } from "./factories/ResourceNonceMarkComponent__factory";
 export { ResourcePositionComponent__factory } from "./factories/ResourcePositionComponent__factory";
 export { Resourcev2Component__factory } from "./factories/Resourcev2Component__factory";
 export { SpaceTimeMarkerComponent__factory } from "./factories/SpaceTimeMarkerComponent__factory";

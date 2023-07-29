@@ -43,8 +43,6 @@ export type TakeInfoStruct = {
     [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>]
   ];
   c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
-  remain: PromiseOrValue<BigNumberish>;
-  cache: PromiseOrValue<BigNumberish>;
 };
 
 export type TakeInfoStructOutput = [
@@ -59,9 +57,7 @@ export type TakeInfoStructOutput = [
   BigNumber,
   [BigNumber, BigNumber],
   [[BigNumber, BigNumber], [BigNumber, BigNumber]],
-  [BigNumber, BigNumber],
-  BigNumber,
-  BigNumber
+  [BigNumber, BigNumber]
 ] & {
   realHash: BigNumber;
   fogHash: BigNumber;
@@ -75,14 +71,12 @@ export type TakeInfoStructOutput = [
   a: [BigNumber, BigNumber];
   b: [[BigNumber, BigNumber], [BigNumber, BigNumber]];
   c: [BigNumber, BigNumber];
-  remain: BigNumber;
-  cache: BigNumber;
 };
 
 export interface TakeResourcev2SystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],uint256,uint256))": FunctionFragment;
+    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

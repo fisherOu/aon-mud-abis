@@ -43,9 +43,7 @@ export type DigInfoStruct = {
     [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>]
   ];
   c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
-  remain: PromiseOrValue<BigNumberish>;
-  cache: PromiseOrValue<BigNumberish>;
-  powNonce: PromiseOrValue<BigNumberish>;
+  powNonces: PromiseOrValue<BigNumberish>[];
 };
 
 export type DigInfoStructOutput = [
@@ -61,9 +59,7 @@ export type DigInfoStructOutput = [
   [BigNumber, BigNumber],
   [[BigNumber, BigNumber], [BigNumber, BigNumber]],
   [BigNumber, BigNumber],
-  BigNumber,
-  BigNumber,
-  BigNumber
+  BigNumber[]
 ] & {
   realHash: BigNumber;
   fogHash: BigNumber;
@@ -77,15 +73,13 @@ export type DigInfoStructOutput = [
   a: [BigNumber, BigNumber];
   b: [[BigNumber, BigNumber], [BigNumber, BigNumber]];
   c: [BigNumber, BigNumber];
-  remain: BigNumber;
-  cache: BigNumber;
-  powNonce: BigNumber;
+  powNonces: BigNumber[];
 };
 
 export interface DigResourcev2SystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],uint256,uint256,uint256))": FunctionFragment;
+    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],uint256[]))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
