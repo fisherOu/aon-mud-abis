@@ -15,6 +15,7 @@ import MarkSystem from "../abi/MarkSystem.json";
 import MoveSystem from "../abi/MoveSystem.json";
 import Movev2System from "../abi/Movev2System.json";
 import PickUpTreasureSystem from "../abi/PickUpTreasureSystem.json";
+import PickUpTreasurev2System from "../abi/PickUpTreasurev2System.json";
 import TakeResourceSystem from "../abi/TakeResourceSystem.json";
 import TakeResourcev2System from "../abi/TakeResourcev2System.json";
 
@@ -35,6 +36,7 @@ export const SystemAbis = {
   "system.Move": MoveSystem.abi,
   "system.Movev2": Movev2System.abi,
   "system.PickUpTreasure": PickUpTreasureSystem.abi,
+  "system.PickUpTreasurev2": PickUpTreasurev2System.abi,
   "system.TakeResource": TakeResourceSystem.abi,
   "system.TakeResourcev2": TakeResourcev2System.abi,
 };

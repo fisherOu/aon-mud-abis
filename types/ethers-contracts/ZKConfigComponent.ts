@@ -33,6 +33,7 @@ export type ZKConfigStruct = {
   moveVerifyAddress: PromiseOrValue<string>;
   markVerifyAddress: PromiseOrValue<string>;
   treasureVerifyAddress: PromiseOrValue<string>;
+  treasureVerifyv2Address: PromiseOrValue<string>;
   resourceVerifyAddress: PromiseOrValue<string>;
   resourceVerifyv2Address: PromiseOrValue<string>;
   attackPathVerifyAddress: PromiseOrValue<string>;
@@ -48,6 +49,7 @@ export type ZKConfigStructOutput = [
   string,
   string,
   string,
+  string,
   string
 ] & {
   open: boolean;
@@ -55,6 +57,7 @@ export type ZKConfigStructOutput = [
   moveVerifyAddress: string;
   markVerifyAddress: string;
   treasureVerifyAddress: string;
+  treasureVerifyv2Address: string;
   resourceVerifyAddress: string;
   resourceVerifyv2Address: string;
   attackPathVerifyAddress: string;
@@ -75,7 +78,7 @@ export interface ZKConfigComponentInterface extends utils.Interface {
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set((bool,address,address,address,address,address,address,address,address))": FunctionFragment;
+    "set((bool,address,address,address,address,address,address,address,address,address))": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
@@ -97,7 +100,7 @@ export interface ZKConfigComponentInterface extends utils.Interface {
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set((bool,address,address,address,address,address,address,address,address))"
+      | "set((bool,address,address,address,address,address,address,address,address,address))"
       | "set(uint256,bytes)"
       | "transferOwnership"
       | "unauthorizeWriter"
@@ -142,7 +145,7 @@ export interface ZKConfigComponentInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set((bool,address,address,address,address,address,address,address,address))",
+    functionFragment: "set((bool,address,address,address,address,address,address,address,address,address))",
     values: [ZKConfigStruct]
   ): string;
   encodeFunctionData(
@@ -194,7 +197,7 @@ export interface ZKConfigComponentInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set((bool,address,address,address,address,address,address,address,address))",
+    functionFragment: "set((bool,address,address,address,address,address,address,address,address,address))",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -308,7 +311,7 @@ export interface ZKConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set((bool,address,address,address,address,address,address,address,address))"(
+    "set((bool,address,address,address,address,address,address,address,address,address))"(
       moveConfig: ZKConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
@@ -384,7 +387,7 @@ export interface ZKConfigComponent extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set((bool,address,address,address,address,address,address,address,address))"(
+  "set((bool,address,address,address,address,address,address,address,address,address))"(
     moveConfig: ZKConfigStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
@@ -460,7 +463,7 @@ export interface ZKConfigComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set((bool,address,address,address,address,address,address,address,address))"(
+    "set((bool,address,address,address,address,address,address,address,address,address))"(
       moveConfig: ZKConfigStruct,
       overrides?: CallOverrides
     ): Promise<void>;
@@ -546,7 +549,7 @@ export interface ZKConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set((bool,address,address,address,address,address,address,address,address))"(
+    "set((bool,address,address,address,address,address,address,address,address,address))"(
       moveConfig: ZKConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
@@ -621,7 +624,7 @@ export interface ZKConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set((bool,address,address,address,address,address,address,address,address))"(
+    "set((bool,address,address,address,address,address,address,address,address,address))"(
       moveConfig: ZKConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
