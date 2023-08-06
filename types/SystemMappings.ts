@@ -2,6 +2,7 @@
 export const systemToId = {
   AttackChargeSystem: "system.AttackCharge",
   AttackFinishSystem: "system.AttackFinish",
+  BuildTreasureSystem: "system.BuildTreasure",
   ChangeFogSeedSystem: "system.ChangeFogSeed",
   ChangeResourceSeedSystem: "system.ChangeResourceSeed",
   ChangeSeedSystem: "system.ChangeSeed",
@@ -19,11 +20,14 @@ export const systemToId = {
   PickUpTreasurev2System: "system.PickUpTreasurev2",
   TakeResourceSystem: "system.TakeResource",
   TakeResourcev2System: "system.TakeResourcev2",
+  TreasureEffectNegativeAddHPSystem: "system.TreasureEffectNegativeAddHP",
+  UsePassiveTreasureSystem: "system.UsePassiveTreasure",
 };
 
 export const idToSystem = {
   "system.AttackCharge": "AttackChargeSystem",
   "system.AttackFinish": "AttackFinishSystem",
+  "system.BuildTreasure": "BuildTreasureSystem",
   "system.ChangeFogSeed": "ChangeFogSeedSystem",
   "system.ChangeResourceSeed": "ChangeResourceSeedSystem",
   "system.ChangeSeed": "ChangeSeedSystem",
@@ -41,5 +45,7 @@ export const idToSystem = {
   "system.PickUpTreasurev2": "PickUpTreasurev2System",
   "system.TakeResource": "TakeResourceSystem",
   "system.TakeResourcev2": "TakeResourcev2System",
+  "system.TreasureEffectNegativeAddHP": "TreasureEffectNegativeAddHPSystem",
+  "system.UsePassiveTreasure": "UsePassiveTreasureSystem",
 };
   
