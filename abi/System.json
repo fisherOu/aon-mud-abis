@@ -432,32 +432,32 @@
   },
   "ast": {
     "absolutePath": "/home/ubuntu/aon-mud/node_modules/@latticexyz/solecs/src/System.sol",
-    "id": 16292,
+    "id": 16362,
     "exportedSymbols": {
       "ISystem": [
-        16702
+        16772
       ],
       "IUint256Component": [
-        16731
+        16801
       ],
       "IWorld": [
-        16844
+        16914
       ],
       "Ownable": [
-        15949
+        16019
       ],
       "System": [
-        16291
+        16361
       ],
       "SystemStorage": [
-        16413
+        16483
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:778:55",
     "nodes": [
       {
-        "id": 16233,
+        "id": 16303,
         "nodeType": "PragmaDirective",
         "src": "32:24:55",
         "nodes": [],
@@ -469,23 +469,23 @@
         ]
       },
       {
-        "id": 16235,
+        "id": 16305,
         "nodeType": "ImportDirective",
         "src": "58:51:55",
         "nodes": [],
         "absolutePath": "/home/ubuntu/aon-mud/node_modules/@latticexyz/solecs/src/interfaces/ISystem.sol",
         "file": "./interfaces/ISystem.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 16292,
-        "sourceUnit": 16703,
+        "scope": 16362,
+        "sourceUnit": 16773,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 16234,
+              "id": 16304,
               "name": "ISystem",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 16702,
+              "referencedDeclaration": 16772,
               "src": "67:7:55",
               "typeDescriptions": {}
             },
@@ -495,23 +495,23 @@
         "unitAlias": ""
       },
       {
-        "id": 16237,
+        "id": 16307,
         "nodeType": "ImportDirective",
         "src": "110:71:55",
         "nodes": [],
         "absolutePath": "/home/ubuntu/aon-mud/node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol",
         "file": "./interfaces/IUint256Component.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 16292,
-        "sourceUnit": 16732,
+        "scope": 16362,
+        "sourceUnit": 16802,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 16236,
+              "id": 16306,
               "name": "IUint256Component",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 16731,
+              "referencedDeclaration": 16801,
               "src": "119:17:55",
               "typeDescriptions": {}
             },
@@ -521,23 +521,23 @@
         "unitAlias": ""
       },
       {
-        "id": 16239,
+        "id": 16309,
         "nodeType": "ImportDirective",
         "src": "182:49:55",
         "nodes": [],
         "absolutePath": "/home/ubuntu/aon-mud/node_modules/@latticexyz/solecs/src/interfaces/IWorld.sol",
         "file": "./interfaces/IWorld.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 16292,
-        "sourceUnit": 16845,
+        "scope": 16362,
+        "sourceUnit": 16915,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 16238,
+              "id": 16308,
               "name": "IWorld",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 16844,
+              "referencedDeclaration": 16914,
               "src": "191:6:55",
               "typeDescriptions": {}
             },
@@ -547,23 +547,23 @@
         "unitAlias": ""
       },
       {
-        "id": 16241,
+        "id": 16311,
         "nodeType": "ImportDirective",
         "src": "232:52:55",
         "nodes": [],
         "absolutePath": "/home/ubuntu/aon-mud/node_modules/@latticexyz/solecs/src/SystemStorage.sol",
         "file": "./SystemStorage.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 16292,
-        "sourceUnit": 16414,
+        "scope": 16362,
+        "sourceUnit": 16484,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 16240,
+              "id": 16310,
               "name": "SystemStorage",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 16413,
+              "referencedDeclaration": 16483,
               "src": "241:13:55",
               "typeDescriptions": {}
             },
@@ -573,23 +573,23 @@
         "unitAlias": ""
       },
       {
-        "id": 16243,
+        "id": 16313,
         "nodeType": "ImportDirective",
         "src": "286:40:55",
         "nodes": [],
         "absolutePath": "/home/ubuntu/aon-mud/node_modules/@latticexyz/solecs/src/Ownable.sol",
         "file": "./Ownable.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 16292,
-        "sourceUnit": 15950,
+        "scope": 16362,
+        "sourceUnit": 16020,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 16242,
+              "id": 16312,
               "name": "Ownable",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 15949,
+              "referencedDeclaration": 16019,
               "src": "295:7:55",
               "typeDescriptions": {}
             },
@@ -599,12 +599,12 @@
         "unitAlias": ""
       },
       {
-        "id": 16291,
+        "id": 16361,
         "nodeType": "ContractDefinition",
         "src": "360:449:55",
         "nodes": [
           {
-            "id": 16251,
+            "id": 16321,
             "nodeType": "VariableDeclaration",
             "src": "409:28:55",
             "nodes": [],
@@ -612,34 +612,34 @@
             "mutability": "mutable",
             "name": "components",
             "nameLocation": "427:10:55",
-            "scope": 16291,
+            "scope": 16361,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IUint256Component_$16731",
+              "typeIdentifier": "t_contract$_IUint256Component_$16801",
               "typeString": "contract IUint256Component"
             },
             "typeName": {
-              "id": 16250,
+              "id": 16320,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 16249,
+                "id": 16319,
                 "name": "IUint256Component",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 16731,
+                "referencedDeclaration": 16801,
                 "src": "409:17:55"
               },
-              "referencedDeclaration": 16731,
+              "referencedDeclaration": 16801,
               "src": "409:17:55",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IUint256Component_$16731",
+                "typeIdentifier": "t_contract$_IUint256Component_$16801",
                 "typeString": "contract IUint256Component"
               }
             },
             "visibility": "internal"
           },
           {
-            "id": 16254,
+            "id": 16324,
             "nodeType": "VariableDeclaration",
             "src": "441:12:55",
             "nodes": [],
@@ -647,59 +647,59 @@
             "mutability": "mutable",
             "name": "world",
             "nameLocation": "448:5:55",
-            "scope": 16291,
+            "scope": 16361,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IWorld_$16844",
+              "typeIdentifier": "t_contract$_IWorld_$16914",
               "typeString": "contract IWorld"
             },
             "typeName": {
-              "id": 16253,
+              "id": 16323,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 16252,
+                "id": 16322,
                 "name": "IWorld",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 16844,
+                "referencedDeclaration": 16914,
                 "src": "441:6:55"
               },
-              "referencedDeclaration": 16844,
+              "referencedDeclaration": 16914,
               "src": "441:6:55",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IWorld_$16844",
+                "typeIdentifier": "t_contract$_IWorld_$16914",
                 "typeString": "contract IWorld"
               }
             },
             "visibility": "internal"
           },
           {
-            "id": 16290,
+            "id": 16360,
             "nodeType": "FunctionDefinition",
             "src": "458:349:55",
             "nodes": [],
             "body": {
-              "id": 16289,
+              "id": 16359,
               "nodeType": "Block",
               "src": "506:301:55",
               "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 16276,
+                    "id": 16346,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 16262,
+                      "id": 16332,
                       "name": "components",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 16251,
+                      "referencedDeclaration": 16321,
                       "src": "584:10:55",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IUint256Component_$16731",
+                        "typeIdentifier": "t_contract$_IUint256Component_$16801",
                         "typeString": "contract IUint256Component"
                       }
                     },
@@ -711,17 +711,17 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 16268,
+                        "id": 16338,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 16263,
+                          "id": 16333,
                           "name": "_components",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 16259,
+                          "referencedDeclaration": 16329,
                           "src": "597:11:55",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -734,7 +734,7 @@
                           "arguments": [
                             {
                               "hexValue": "30",
-                              "id": 16266,
+                              "id": 16336,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -756,7 +756,7 @@
                                 "typeString": "int_const 0"
                               }
                             ],
-                            "id": 16265,
+                            "id": 16335,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -768,14 +768,14 @@
                               "typeString": "type(address)"
                             },
                             "typeName": {
-                              "id": 16264,
+                              "id": 16334,
                               "name": "address",
                               "nodeType": "ElementaryTypeName",
                               "src": "612:7:55",
                               "typeDescriptions": {}
                             }
                           },
-                          "id": 16267,
+                          "id": 16337,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -799,11 +799,11 @@
                       "falseExpression": {
                         "arguments": [
                           {
-                            "id": 16273,
+                            "id": 16343,
                             "name": "_components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 16259,
+                            "referencedDeclaration": 16329,
                             "src": "665:11:55",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -818,18 +818,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 16272,
+                          "id": 16342,
                           "name": "IUint256Component",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 16731,
+                          "referencedDeclaration": 16801,
                           "src": "647:17:55",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IUint256Component_$16731_$",
+                            "typeIdentifier": "t_type$_t_contract$_IUint256Component_$16801_$",
                             "typeString": "type(contract IUint256Component)"
                           }
                         },
-                        "id": 16274,
+                        "id": 16344,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -840,11 +840,11 @@
                         "src": "647:30:55",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUint256Component_$16731",
+                          "typeIdentifier": "t_contract$_IUint256Component_$16801",
                           "typeString": "contract IUint256Component"
                         }
                       },
-                      "id": 16275,
+                      "id": 16345,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -856,32 +856,32 @@
                         "expression": {
                           "argumentTypes": [],
                           "expression": {
-                            "id": 16269,
+                            "id": 16339,
                             "name": "_world",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 16257,
+                            "referencedDeclaration": 16327,
                             "src": "625:6:55",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IWorld_$16844",
+                              "typeIdentifier": "t_contract$_IWorld_$16914",
                               "typeString": "contract IWorld"
                             }
                           },
-                          "id": 16270,
+                          "id": 16340,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "components",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 16751,
+                          "referencedDeclaration": 16821,
                           "src": "625:17:55",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IUint256Component_$16731_$",
+                            "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IUint256Component_$16801_$",
                             "typeString": "function () view external returns (contract IUint256Component)"
                           }
                         },
-                        "id": 16271,
+                        "id": 16341,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -892,65 +892,65 @@
                         "src": "625:19:55",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUint256Component_$16731",
+                          "typeIdentifier": "t_contract$_IUint256Component_$16801",
                           "typeString": "contract IUint256Component"
                         }
                       },
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IUint256Component_$16731",
+                        "typeIdentifier": "t_contract$_IUint256Component_$16801",
                         "typeString": "contract IUint256Component"
                       }
                     },
                     "src": "584:93:55",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUint256Component_$16731",
+                      "typeIdentifier": "t_contract$_IUint256Component_$16801",
                       "typeString": "contract IUint256Component"
                     }
                   },
-                  "id": 16277,
+                  "id": 16347,
                   "nodeType": "ExpressionStatement",
                   "src": "584:93:55"
                 },
                 {
                   "expression": {
-                    "id": 16280,
+                    "id": 16350,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 16278,
+                      "id": 16348,
                       "name": "world",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 16254,
+                      "referencedDeclaration": 16324,
                       "src": "745:5:55",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IWorld_$16844",
+                        "typeIdentifier": "t_contract$_IWorld_$16914",
                         "typeString": "contract IWorld"
                       }
                     },
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 16279,
+                      "id": 16349,
                       "name": "_world",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 16257,
+                      "referencedDeclaration": 16327,
                       "src": "753:6:55",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IWorld_$16844",
+                        "typeIdentifier": "t_contract$_IWorld_$16914",
                         "typeString": "contract IWorld"
                       }
                     },
                     "src": "745:14:55",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IWorld_$16844",
+                      "typeIdentifier": "t_contract$_IWorld_$16914",
                       "typeString": "contract IWorld"
                     }
                   },
-                  "id": 16281,
+                  "id": 16351,
                   "nodeType": "ExpressionStatement",
                   "src": "745:14:55"
                 },
@@ -958,26 +958,26 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 16285,
+                        "id": 16355,
                         "name": "world",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 16254,
+                        "referencedDeclaration": 16324,
                         "src": "784:5:55",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IWorld_$16844",
+                          "typeIdentifier": "t_contract$_IWorld_$16914",
                           "typeString": "contract IWorld"
                         }
                       },
                       {
-                        "id": 16286,
+                        "id": 16356,
                         "name": "components",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 16251,
+                        "referencedDeclaration": 16321,
                         "src": "791:10:55",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUint256Component_$16731",
+                          "typeIdentifier": "t_contract$_IUint256Component_$16801",
                           "typeString": "contract IUint256Component"
                         }
                       }
@@ -985,41 +985,41 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IWorld_$16844",
+                          "typeIdentifier": "t_contract$_IWorld_$16914",
                           "typeString": "contract IWorld"
                         },
                         {
-                          "typeIdentifier": "t_contract$_IUint256Component_$16731",
+                          "typeIdentifier": "t_contract$_IUint256Component_$16801",
                           "typeString": "contract IUint256Component"
                         }
                       ],
                       "expression": {
-                        "id": 16282,
+                        "id": 16352,
                         "name": "SystemStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 16413,
+                        "referencedDeclaration": 16483,
                         "src": "765:13:55",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_SystemStorage_$16413_$",
+                          "typeIdentifier": "t_type$_t_contract$_SystemStorage_$16483_$",
                           "typeString": "type(library SystemStorage)"
                         }
                       },
-                      "id": 16284,
+                      "id": 16354,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "init",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16356,
+                      "referencedDeclaration": 16426,
                       "src": "765:18:55",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_contract$_IWorld_$16844_$_t_contract$_IUint256Component_$16731_$returns$__$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_contract$_IWorld_$16914_$_t_contract$_IUint256Component_$16801_$returns$__$",
                         "typeString": "function (contract IWorld,contract IUint256Component)"
                       }
                     },
-                    "id": 16287,
+                    "id": 16357,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1034,7 +1034,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 16288,
+                  "id": 16358,
                   "nodeType": "ExpressionStatement",
                   "src": "765:37:55"
                 }
@@ -1046,38 +1046,38 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 16260,
+              "id": 16330,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 16257,
+                  "id": 16327,
                   "mutability": "mutable",
                   "name": "_world",
                   "nameLocation": "477:6:55",
                   "nodeType": "VariableDeclaration",
-                  "scope": 16290,
+                  "scope": 16360,
                   "src": "470:13:55",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IWorld_$16844",
+                    "typeIdentifier": "t_contract$_IWorld_$16914",
                     "typeString": "contract IWorld"
                   },
                   "typeName": {
-                    "id": 16256,
+                    "id": 16326,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 16255,
+                      "id": 16325,
                       "name": "IWorld",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 16844,
+                      "referencedDeclaration": 16914,
                       "src": "470:6:55"
                     },
-                    "referencedDeclaration": 16844,
+                    "referencedDeclaration": 16914,
                     "src": "470:6:55",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IWorld_$16844",
+                      "typeIdentifier": "t_contract$_IWorld_$16914",
                       "typeString": "contract IWorld"
                     }
                   },
@@ -1085,12 +1085,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 16259,
+                  "id": 16329,
                   "mutability": "mutable",
                   "name": "_components",
                   "nameLocation": "493:11:55",
                   "nodeType": "VariableDeclaration",
-                  "scope": 16290,
+                  "scope": 16360,
                   "src": "485:19:55",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1099,7 +1099,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 16258,
+                    "id": 16328,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "485:7:55",
@@ -1115,12 +1115,12 @@
               "src": "469:36:55"
             },
             "returnParameters": {
-              "id": 16261,
+              "id": 16331,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "506:0:55"
             },
-            "scope": 16291,
+            "scope": 16361,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
@@ -1130,25 +1130,25 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 16245,
+              "id": 16315,
               "name": "ISystem",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 16702,
+              "referencedDeclaration": 16772,
               "src": "388:7:55"
             },
-            "id": 16246,
+            "id": 16316,
             "nodeType": "InheritanceSpecifier",
             "src": "388:7:55"
           },
           {
             "baseName": {
-              "id": 16247,
+              "id": 16317,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 15949,
+              "referencedDeclaration": 16019,
               "src": "397:7:55"
             },
-            "id": 16248,
+            "id": 16318,
             "nodeType": "InheritanceSpecifier",
             "src": "397:7:55"
           }
@@ -1157,29 +1157,29 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 16244,
+          "id": 16314,
           "nodeType": "StructuredDocumentation",
           "src": "328:31:55",
           "text": " System base contract"
         },
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          16291,
-          15949,
-          2367,
-          41522,
-          41958,
-          41398,
-          16702,
-          2410,
-          41532
+          16361,
+          16019,
+          2437,
+          44661,
+          45080,
+          44537,
+          16772,
+          2480,
+          44671
         ],
         "name": "System",
         "nameLocation": "378:6:55",
-        "scope": 16292,
+        "scope": 16362,
         "usedErrors": [
-          41955,
-          41957
+          45077,
+          45079
         ]
       }
     ],
