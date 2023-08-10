@@ -31,13 +31,20 @@ export type TreasureLinearChargingStruct = {
   coordHash: PromiseOrValue<BigNumberish>;
   direction: PromiseOrValue<BigNumberish>;
   distance: PromiseOrValue<BigNumberish>;
+  area: PromiseOrValue<BigNumberish>;
 };
 
 export type TreasureLinearChargingStructOutput = [
   BigNumber,
   number,
-  BigNumber
-] & { coordHash: BigNumber; direction: number; distance: BigNumber };
+  BigNumber,
+  number
+] & {
+  coordHash: BigNumber;
+  direction: number;
+  distance: BigNumber;
+  area: number;
+};
 
 export interface TreasureLinearChargingComponentInterface
   extends utils.Interface {
@@ -54,7 +61,7 @@ export interface TreasureLinearChargingComponentInterface
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set(uint256,(uint256,uint32,uint64))": FunctionFragment;
+    "set(uint256,(uint256,uint32,uint64,uint32))": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
@@ -76,7 +83,7 @@ export interface TreasureLinearChargingComponentInterface
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set(uint256,(uint256,uint32,uint64))"
+      | "set(uint256,(uint256,uint32,uint64,uint32))"
       | "set(uint256,bytes)"
       | "transferOwnership"
       | "unauthorizeWriter"
@@ -124,7 +131,7 @@ export interface TreasureLinearChargingComponentInterface
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set(uint256,(uint256,uint32,uint64))",
+    functionFragment: "set(uint256,(uint256,uint32,uint64,uint32))",
     values: [PromiseOrValue<BigNumberish>, TreasureLinearChargingStruct]
   ): string;
   encodeFunctionData(
@@ -176,7 +183,7 @@ export interface TreasureLinearChargingComponentInterface
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,(uint256,uint32,uint64))",
+    functionFragment: "set(uint256,(uint256,uint32,uint64,uint32))",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -293,7 +300,7 @@ export interface TreasureLinearChargingComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set(uint256,(uint256,uint32,uint64))"(
+    "set(uint256,(uint256,uint32,uint64,uint32))"(
       entity: PromiseOrValue<BigNumberish>,
       treasureLinearCharging: TreasureLinearChargingStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -373,7 +380,7 @@ export interface TreasureLinearChargingComponent extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set(uint256,(uint256,uint32,uint64))"(
+  "set(uint256,(uint256,uint32,uint64,uint32))"(
     entity: PromiseOrValue<BigNumberish>,
     treasureLinearCharging: TreasureLinearChargingStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -453,7 +460,7 @@ export interface TreasureLinearChargingComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set(uint256,(uint256,uint32,uint64))"(
+    "set(uint256,(uint256,uint32,uint64,uint32))"(
       entity: PromiseOrValue<BigNumberish>,
       treasureLinearCharging: TreasureLinearChargingStruct,
       overrides?: CallOverrides
@@ -543,7 +550,7 @@ export interface TreasureLinearChargingComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set(uint256,(uint256,uint32,uint64))"(
+    "set(uint256,(uint256,uint32,uint64,uint32))"(
       entity: PromiseOrValue<BigNumberish>,
       treasureLinearCharging: TreasureLinearChargingStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -622,7 +629,7 @@ export interface TreasureLinearChargingComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set(uint256,(uint256,uint32,uint64))"(
+    "set(uint256,(uint256,uint32,uint64,uint32))"(
       entity: PromiseOrValue<BigNumberish>,
       treasureLinearCharging: TreasureLinearChargingStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
