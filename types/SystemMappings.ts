@@ -2,7 +2,7 @@
 export const systemToId = {
   AttackChargeSystem: "system.AttackCharge",
   AttackFinishSystem: "system.AttackFinish",
-  BoundActiveTreasureSystem: "system.BoundActiveTreasure",
+  BoundTreasureSystem: "system.BoundTreasure",
   BuffEffectAddHPCalculateSystem: "system.BuffEffectAddHPCalculate",
   BuffEffectKeepResourceOnDeathExecuteSystem: "system.BuffEffectKeepResourceOnDeathExecute",
   BuildTreasureSystem: "system.BuildTreasure",
@@ -34,14 +34,13 @@ export const systemToId = {
   TreasureEffectDeathKeepResourceSystem: "system.TreasureEffectDeathKeepResource",
   TreasureEffectLinearDamageSystem: "system.TreasureEffectLinearDamage",
   TreasureEffectNegativeAddHPSystem: "system.TreasureEffectNegativeAddHP",
-  UnboundActiveTreasureSystem: "system.UnboundActiveTreasure",
-  UsePassiveTreasureSystem: "system.UsePassiveTreasure",
+  UnboundTreasureSystem: "system.UnboundTreasure",
 };
 
 export const idToSystem = {
   "system.AttackCharge": "AttackChargeSystem",
   "system.AttackFinish": "AttackFinishSystem",
-  "system.BoundActiveTreasure": "BoundActiveTreasureSystem",
+  "system.BoundTreasure": "BoundTreasureSystem",
   "system.BuffEffectAddHPCalculate": "BuffEffectAddHPCalculateSystem",
   "system.BuffEffectKeepResourceOnDeathExecute": "BuffEffectKeepResourceOnDeathExecuteSystem",
   "system.BuildTreasure": "BuildTreasureSystem",
@@ -73,7 +72,6 @@ export const idToSystem = {
   "system.TreasureEffectDeathKeepResource": "TreasureEffectDeathKeepResourceSystem",
   "system.TreasureEffectLinearDamage": "TreasureEffectLinearDamageSystem",
   "system.TreasureEffectNegativeAddHP": "TreasureEffectNegativeAddHPSystem",
-  "system.UnboundActiveTreasure": "UnboundActiveTreasureSystem",
-  "system.UsePassiveTreasure": "UsePassiveTreasureSystem",
+  "system.UnboundTreasure": "UnboundTreasureSystem",
 };
   

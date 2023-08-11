@@ -7,7 +7,7 @@ export type { AttackFinishSystem } from "./AttackFinishSystem";
 export type { AttackTimerComponent } from "./AttackTimerComponent";
 export type { BareComponent } from "./BareComponent";
 export type { BoolComponent } from "./BoolComponent";
-export type { BoundActiveTreasureSystem } from "./BoundActiveTreasureSystem";
+export type { BoundTreasureSystem } from "./BoundTreasureSystem";
 export type { BuffBelongingComponent } from "./BuffBelongingComponent";
 export type { BuffComponent } from "./BuffComponent";
 export type { BuffConfigComponent } from "./BuffConfigComponent";
@@ -108,8 +108,7 @@ export type { TriggerSetComponentsComponent } from "./TriggerSetComponentsCompon
 export type { TriggerSystem } from "./TriggerSystem";
 export type { TriggerSystemsComponent } from "./TriggerSystemsComponent";
 export type { Uint32Component } from "./Uint32Component";
-export type { UnboundActiveTreasureSystem } from "./UnboundActiveTreasureSystem";
-export type { UsePassiveTreasureSystem } from "./UsePassiveTreasureSystem";
+export type { UnboundTreasureSystem } from "./UnboundTreasureSystem";
 export type { VisionConfigComponent } from "./VisionConfigComponent";
 export type { WarshipComponent } from "./WarshipComponent";
 export type { World } from "./World";
@@ -121,7 +120,7 @@ export { AttackFinishSystem__factory } from "./factories/AttackFinishSystem__fac
 export { AttackTimerComponent__factory } from "./factories/AttackTimerComponent__factory";
 export { BareComponent__factory } from "./factories/BareComponent__factory";
 export { BoolComponent__factory } from "./factories/BoolComponent__factory";
-export { BoundActiveTreasureSystem__factory } from "./factories/BoundActiveTreasureSystem__factory";
+export { BoundTreasureSystem__factory } from "./factories/BoundTreasureSystem__factory";
 export { BuffBelongingComponent__factory } from "./factories/BuffBelongingComponent__factory";
 export { BuffComponent__factory } from "./factories/BuffComponent__factory";
 export { BuffConfigComponent__factory } from "./factories/BuffConfigComponent__factory";
@@ -222,8 +221,7 @@ export { TriggerSetComponentsComponent__factory } from "./factories/TriggerSetCo
 export { TriggerSystem__factory } from "./factories/TriggerSystem__factory";
 export { TriggerSystemsComponent__factory } from "./factories/TriggerSystemsComponent__factory";
 export { Uint32Component__factory } from "./factories/Uint32Component__factory";
-export { UnboundActiveTreasureSystem__factory } from "./factories/UnboundActiveTreasureSystem__factory";
-export { UsePassiveTreasureSystem__factory } from "./factories/UsePassiveTreasureSystem__factory";
+export { UnboundTreasureSystem__factory } from "./factories/UnboundTreasureSystem__factory";
 export { VisionConfigComponent__factory } from "./factories/VisionConfigComponent__factory";
 export { WarshipComponent__factory } from "./factories/WarshipComponent__factory";
 export { World__factory } from "./factories/World__factory";

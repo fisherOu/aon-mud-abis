@@ -27,7 +27,7 @@ import type {
   PromiseOrValue,
 } from "./common";
 
-export interface BoundActiveTreasureSystemInterface extends utils.Interface {
+export interface BoundTreasureSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
     "executeTyped(uint256)": FunctionFragment;
@@ -87,12 +87,12 @@ export type OwnershipTransferredEvent = TypedEvent<
 export type OwnershipTransferredEventFilter =
   TypedEventFilter<OwnershipTransferredEvent>;
 
-export interface BoundActiveTreasureSystem extends BaseContract {
+export interface BoundTreasureSystem extends BaseContract {
   connect(signerOrProvider: Signer | Provider | string): this;
   attach(addressOrName: string): this;
   deployed(): Promise<this>;
 
-  interface: BoundActiveTreasureSystemInterface;
+  interface: BoundTreasureSystemInterface;
 
   queryFilter<TEvent extends TypedEvent>(
     event: TypedEventFilter<TEvent>,
