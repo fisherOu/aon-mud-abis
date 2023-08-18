@@ -69,11 +69,21 @@ export interface BoundTreasureSystemInterface extends utils.Interface {
   ): Result;
 
   events: {
+    "Debug(string,uint256)": EventFragment;
     "OwnershipTransferred(address,address)": EventFragment;
   };
 
+  getEvent(nameOrSignatureOrTopic: "Debug"): EventFragment;
   getEvent(nameOrSignatureOrTopic: "OwnershipTransferred"): EventFragment;
 }
+
+export interface DebugEventObject {
+  arg0: string;
+  arg1: BigNumber;
+}
+export type DebugEvent = TypedEvent<[string, BigNumber], DebugEventObject>;
+
+export type DebugEventFilter = TypedEventFilter<DebugEvent>;
 
 export interface OwnershipTransferredEventObject {
   previousOwner: string;
@@ -169,6 +179,9 @@ export interface BoundTreasureSystem extends BaseContract {
   };
 
   filters: {
+    "Debug(string,uint256)"(arg0?: null, arg1?: null): DebugEventFilter;
+    Debug(arg0?: null, arg1?: null): DebugEventFilter;
+
     "OwnershipTransferred(address,address)"(
       previousOwner?: PromiseOrValue<string> | null,
       newOwner?: PromiseOrValue<string> | null

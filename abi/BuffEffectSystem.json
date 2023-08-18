@@ -1,22 +1,6 @@
 {
   "abi": [
     {
-      "inputs": [
-        {
-          "internalType": "contract IWorld",
-          "name": "_world",
-          "type": "address"
-        },
-        {
-          "internalType": "address",
-          "name": "_components",
-          "type": "address"
-        }
-      ],
-      "stateMutability": "nonpayable",
-      "type": "constructor"
-    },
-    {
       "inputs": [],
       "name": "Ownable__NotOwner",
       "type": "error"
@@ -128,13 +112,13 @@
     }
   ],
   "bytecode": {
-    "object": "0x608060405234801561001057600080fd5b5060405161083f38038061083f83398101604081905261002f91610218565b818161003a336100ff565b6001600160a01b0381161561004f57806100b1565b816001600160a01b031663ba62fbe46040518163ffffffff1660e01b8152600401602060405180830381865afa15801561008d573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100b19190610252565b600080546001600160a01b03199081166001600160a01b039384169081179092556001805490911692851692831790556100f69190610170602090811b6101b517901c565b50505050610276565b60006101136101dc60201b6102461760201c565b80546040519192506001600160a01b03808516929116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e090600090a380546001600160a01b0319166001600160a01b0392909216919091179055565b7ff67304f10c7772c78e439bc5cb07781db345424de8878c18100fdaa64d197a8780546001600160a01b039384166001600160a01b0319918216179091557ff67304f10c7772c78e439bc5cb07781db345424de8878c18100fdaa64d197a868054929093169116179055565b7f8a22373512790c48b83a1fe2efdd2888d4a917bcdc24d0adf63e60f67168046090565b6001600160a01b038116811461021557600080fd5b50565b6000806040838503121561022b57600080fd5b825161023681610200565b602084015190925061024781610200565b809150509250929050565b60006020828403121561026457600080fd5b815161026f81610200565b9392505050565b6105ba806102856000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806309c5eabe146100515780634c20836f1461007a5780638da5cb5b1461008e578063f2fde38b146100bb575b600080fd5b61006461005f366004610376565b6100d0565b6040516100719190610445565b60405180910390f35b6100646100883660046104c6565b50606090565b6100966100f4565b60405173ffffffffffffffffffffffffffffffffffffffff9091168152602001610071565b6100ce6100c936600461050a565b610139565b005b60606000828060200190518101906100e89190610540565b905060605b9392505050565b60006101347f8a22373512790c48b83a1fe2efdd2888d4a917bcdc24d0adf63e60f6716804605473ffffffffffffffffffffffffffffffffffffffff1690565b905090565b7f8a22373512790c48b83a1fe2efdd2888d4a917bcdc24d0adf63e60f6716804605473ffffffffffffffffffffffffffffffffffffffff1633146101a9576040517f2f7a8ee100000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b6101b28161026a565b50565b7ff67304f10c7772c78e439bc5cb07781db345424de8878c18100fdaa64d197a87805473ffffffffffffffffffffffffffffffffffffffff9384167fffffffffffffffffffffffff0000000000000000000000000000000000000000918216179091557ff67304f10c7772c78e439bc5cb07781db345424de8878c18100fdaa64d197a868054929093169116179055565b7f8a22373512790c48b83a1fe2efdd2888d4a917bcdc24d0adf63e60f67168046090565b7f8a22373512790c48b83a1fe2efdd2888d4a917bcdc24d0adf63e60f67168046080546040516101b2928492909173ffffffffffffffffffffffffffffffffffffffff8085169216907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e090600090a380547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff92909216919091179055565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6040516060810167ffffffffffffffff811182821017156103705761037061031e565b60405290565b60006020828403121561038857600080fd5b813567ffffffffffffffff808211156103a057600080fd5b818401915084601f8301126103b457600080fd5b8135818111156103c6576103c661031e565b604051601f82017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0908116603f0116810190838211818310171561040c5761040c61031e565b8160405282815287602084870101111561042557600080fd5b826020860160208301376000928101602001929092525095945050505050565b600060208083528351808285015260005b8181101561047257858101830151858201604001528201610456565b81811115610484576000604083870101525b50601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe016929092016040019392505050565b80151581146101b257600080fd5b6000606082840312156104d857600080fd5b6104e061034d565b8235815260208301356104f2816104b8565b60208201526040928301359281019290925250919050565b60006020828403121561051c57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff811681146100ed57600080fd5b60006060828403121561055257600080fd5b61055a61034d565b82518152602083015161056c816104b8565b6020820152604092830151928101929092525091905056fea264697066735822122004f899b49b3dc064473110d12dcdc5d198431436c3fa63b582f6f0f23707a61964736f6c634300080d0033",
-    "sourceMap": "203:599:143:-:0;;;245:100;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;322:6;330:11;399:21:5;409:10;399:9;:21::i;:::-;-1:-1:-1;;;;;597:25:10;;;:80;;665:11;597:80;;;625:6;-1:-1:-1;;;;;625:17:10;;:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;584:10;:93;;-1:-1:-1;;;;;;584:93:10;;;-1:-1:-1;;;;;584:93:10;;;;;;;;;-1:-1:-1;745:14:10;;;;;;;;;;;;;765:37;;745:14;765:18;;;;;;;:37;;:::i;:::-;458:349;;245:100:143;;203:599;;1203:207:35;1266:31;1300:23;:21;;;;;:23;;:::i;:::-;1359:7;;1338:38;;1266:57;;-1:-1:-1;;;;;;1338:38:35;;;;1359:7;;;1338:38;;1359:7;;1338:38;1386:17;;-1:-1:-1;;;;;;1386:17:35;-1:-1:-1;;;;;1386:17:35;;;;;;;;;;1203:207::o;1658:161:11:-;1766:7;:16;;-1:-1:-1;;;;;1766:16:11;;;-1:-1:-1;;;;;;1766:16:11;;;;;;;1028:44;1788:26;;;;;;;;;;;1658:161::o;242:159:36:-;186:49;;242:159::o;14:139:204:-;-1:-1:-1;;;;;97:31:204;;87:42;;77:70;;143:1;140;133:12;77:70;14:139;:::o;158:416::-;252:6;260;313:2;301:9;292:7;288:23;284:32;281:52;;;329:1;326;319:12;281:52;361:9;355:16;380:39;413:5;380:39;:::i;:::-;488:2;473:18;;467:25;438:5;;-1:-1:-1;501:41:204;467:25;501:41;:::i;:::-;561:7;551:17;;;158:416;;;;;:::o;579:285::-;675:6;728:2;716:9;707:7;703:23;699:32;696:52;;;744:1;741;734:12;696:52;776:9;770:16;795:39;828:5;795:39;:::i;:::-;853:5;579:285;-1:-1:-1;;;579:285:204:o;:::-;203:599:143;;;;;;",
+    "object": "0x",
+    "sourceMap": "",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806309c5eabe146100515780634c20836f1461007a5780638da5cb5b1461008e578063f2fde38b146100bb575b600080fd5b61006461005f366004610376565b6100d0565b6040516100719190610445565b60405180910390f35b6100646100883660046104c6565b50606090565b6100966100f4565b60405173ffffffffffffffffffffffffffffffffffffffff9091168152602001610071565b6100ce6100c936600461050a565b610139565b005b60606000828060200190518101906100e89190610540565b905060605b9392505050565b60006101347f8a22373512790c48b83a1fe2efdd2888d4a917bcdc24d0adf63e60f6716804605473ffffffffffffffffffffffffffffffffffffffff1690565b905090565b7f8a22373512790c48b83a1fe2efdd2888d4a917bcdc24d0adf63e60f6716804605473ffffffffffffffffffffffffffffffffffffffff1633146101a9576040517f2f7a8ee100000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b6101b28161026a565b50565b7ff67304f10c7772c78e439bc5cb07781db345424de8878c18100fdaa64d197a87805473ffffffffffffffffffffffffffffffffffffffff9384167fffffffffffffffffffffffff0000000000000000000000000000000000000000918216179091557ff67304f10c7772c78e439bc5cb07781db345424de8878c18100fdaa64d197a868054929093169116179055565b7f8a22373512790c48b83a1fe2efdd2888d4a917bcdc24d0adf63e60f67168046090565b7f8a22373512790c48b83a1fe2efdd2888d4a917bcdc24d0adf63e60f67168046080546040516101b2928492909173ffffffffffffffffffffffffffffffffffffffff8085169216907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e090600090a380547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff92909216919091179055565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6040516060810167ffffffffffffffff811182821017156103705761037061031e565b60405290565b60006020828403121561038857600080fd5b813567ffffffffffffffff808211156103a057600080fd5b818401915084601f8301126103b457600080fd5b8135818111156103c6576103c661031e565b604051601f82017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0908116603f0116810190838211818310171561040c5761040c61031e565b8160405282815287602084870101111561042557600080fd5b826020860160208301376000928101602001929092525095945050505050565b600060208083528351808285015260005b8181101561047257858101830151858201604001528201610456565b81811115610484576000604083870101525b50601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe016929092016040019392505050565b80151581146101b257600080fd5b6000606082840312156104d857600080fd5b6104e061034d565b8235815260208301356104f2816104b8565b60208201526040928301359281019290925250919050565b60006020828403121561051c57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff811681146100ed57600080fd5b60006060828403121561055257600080fd5b61055a61034d565b82518152602083015161056c816104b8565b6020820152604092830151928101929092525091905056fea264697066735822122004f899b49b3dc064473110d12dcdc5d198431436c3fa63b582f6f0f23707a61964736f6c634300080d0033",
-    "sourceMap": "203:599:143:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;351:193;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;550:147;;;;;;:::i;:::-;-1:-1:-1;636:12:143;;550:147;378:87:34;;;:::i;:::-;;;2883:42:204;2871:55;;;2853:74;;2841:2;2826:18;378:87:34;2707:226:204;514:113:34;;;;;;:::i;:::-;;:::i;:::-;;351:193:143;403:12;427:32;473:4;462:34;;;;;;;;;;;;:::i;:::-;427:69;-1:-1:-1;636:12:143;513:24;506:31;351:193;-1:-1:-1;;;351:193:143:o;378:87:34:-;424:7;450:8;186:49:36;722:29:35;;;;647:111;450:8:34;443:15;;378:87;:::o;514:113::-;186:49:36;722:29:35;;;422:10;:22;418:54;;453:19;;;;;;;;;;;;;;418:54;593:27:34::1;612:7;593:18;:27::i;:::-;514:113:::0;:::o;1658:161:11:-;1766:7;:16;;;;;;;;;;;;;;1028:44;1788:26;;;;;;;;;;;1658:161::o;242:159:36:-;186:49;;242:159::o;1100:97:35:-;186:49:36;1359:7:35;;1338:38;;1172:18;;1182:7;;186:49:36;;1338:38:35;;;;;1359:7;;1338:38;;1266:31;;1338:38;1386:17;;;;;;;;;;;;;;;1203:207::o;14:184:204:-;66:77;63:1;56:88;163:4;160:1;153:15;187:4;184:1;177:15;203:246;270:2;264:9;312:2;300:15;;345:18;330:34;;366:22;;;327:62;324:88;;;392:18;;:::i;:::-;428:2;421:22;203:246;:::o;454:980::-;522:6;575:2;563:9;554:7;550:23;546:32;543:52;;;591:1;588;581:12;543:52;631:9;618:23;660:18;701:2;693:6;690:14;687:34;;;717:1;714;707:12;687:34;755:6;744:9;740:22;730:32;;800:7;793:4;789:2;785:13;781:27;771:55;;822:1;819;812:12;771:55;858:2;845:16;880:2;876;873:10;870:36;;;886:18;;:::i;:::-;1020:2;1014:9;1082:4;1074:13;;925:66;1070:22;;;1094:2;1066:31;1062:40;1050:53;;;1118:18;;;1138:22;;;1115:46;1112:72;;;1164:18;;:::i;:::-;1204:10;1200:2;1193:22;1239:2;1231:6;1224:18;1279:7;1274:2;1269;1265;1261:11;1257:20;1254:33;1251:53;;;1300:1;1297;1290:12;1251:53;1356:2;1351;1347;1343:11;1338:2;1330:6;1326:15;1313:46;1401:1;1379:15;;;1396:2;1375:24;1368:35;;;;-1:-1:-1;1383:6:204;454:980;-1:-1:-1;;;;;454:980:204:o;1439:654::-;1549:4;1578:2;1607;1596:9;1589:21;1639:6;1633:13;1682:6;1677:2;1666:9;1662:18;1655:34;1707:1;1717:140;1731:6;1728:1;1725:13;1717:140;;;1826:14;;;1822:23;;1816:30;1792:17;;;1811:2;1788:26;1781:66;1746:10;;1717:140;;;1875:6;1872:1;1869:13;1866:91;;;1945:1;1940:2;1931:6;1920:9;1916:22;1912:31;1905:42;1866:91;-1:-1:-1;2009:2:204;1997:15;2014:66;1993:88;1978:104;;;;2084:2;1974:113;;1439:654;-1:-1:-1;;;1439:654:204:o;2098:118::-;2184:5;2177:13;2170:21;2163:5;2160:32;2150:60;;2206:1;2203;2196:12;2221:481;2313:6;2366:2;2354:9;2345:7;2341:23;2337:32;2334:52;;;2382:1;2379;2372:12;2334:52;2408:17;;:::i;:::-;2461:9;2448:23;2441:5;2434:38;2524:2;2513:9;2509:18;2496:32;2537:30;2559:7;2537:30;:::i;:::-;2594:2;2583:14;;2576:31;2667:2;2652:18;;;2639:32;2623:14;;;2616:56;;;;-1:-1:-1;2587:5:204;2221:481;-1:-1:-1;2221:481:204:o;2938:309::-;2997:6;3050:2;3038:9;3029:7;3025:23;3021:32;3018:52;;;3066:1;3063;3056:12;3018:52;3105:9;3092:23;3155:42;3148:5;3144:54;3137:5;3134:65;3124:93;;3213:1;3210;3203:12;3252:471;3355:6;3408:2;3396:9;3387:7;3383:23;3379:32;3376:52;;;3424:1;3421;3414:12;3376:52;3450:17;;:::i;:::-;3496:9;3490:16;3483:5;3476:31;3552:2;3541:9;3537:18;3531:25;3565:30;3587:7;3565:30;:::i;:::-;3622:2;3611:14;;3604:31;3688:2;3673:18;;;3667:25;3651:14;;;3644:49;;;;-1:-1:-1;3615:5:204;3252:471;-1:-1:-1;3252:471:204:o",
+    "object": "0x",
+    "sourceMap": "",
     "linkReferences": {}
   },
   "methodIdentifiers": {
@@ -143,7 +127,7 @@
     "owner()": "8da5cb5b",
     "transferOwnership(address)": "f2fde38b"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IWorld\",\"name\":\"_world\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_components\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"Ownable__NotOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Ownable__NotTransitiveOwner\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"args\",\"type\":\"bytes\"}],\"name\":\"execute\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"sourceID\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"isComponent\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"buffEntity\",\"type\":\"uint256\"}],\"internalType\":\"struct BuffEffectInfo\",\"name\":\"effectInfo\",\"type\":\"tuple\"}],\"name\":\"executeTyped\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"returns\":{\"_0\":\"conrtact owner\"}},\"transferOwnership(address)\":{\"params\":{\"account\":\"address of new owner\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"owner()\":{\"notice\":\"get the ERC173 contract owner\"},\"transferOwnership(address)\":{\"notice\":\"transfer contract ownership to new account\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/expension/BuffEffectSystem.sol\":\"BuffEffectSystem\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000000},\"remappings\":[\":@latticexyz/=../../node_modules/@latticexyz/\",\":@rari-capital/=../../node_modules/@rari-capital/\",\":@solidstate/=../../node_modules/@solidstate/\",\":components/=src/components/\",\":ds-test/=../../node_modules/ds-test/src/\",\":examples/=../../../mud/examples/\",\":expension/=src/expension/\",\":forge-std/=../../node_modules/forge-std/src/\",\":integration-sandbox/=../../../mud/integration-sandbox/\",\":libraries/=src/libraries/\",\":memmove/=../../node_modules/memmove/src/\",\":packages/=../../../mud/packages/\",\":solecs/=../../node_modules/@latticexyz/solecs/src/\",\":solmate/=../../node_modules/@rari-capital/solmate/src/\",\":std-contracts/=../../node_modules/@latticexyz/std-contracts/src/\",\":systems/=src/systems/\",\":templates/=../../../mud/templates/\",\":verifiers/=src/verifiers/\"]},\"sources\":{\"../../node_modules/@latticexyz/solecs/src/LibTypes.sol\":{\"keccak256\":\"0xa3898035fd9fa865bcfc9861e3b5ecce36be3196fb27705e50a02fed9831f102\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://273284a35a950f6d0bc4223d345cf46c59972a00510ddbc4ba695ede38714798\",\"dweb:/ipfs/QmdqzKMaAfKWfBzUsrzsDMWnyxSKJRuEvrc6VTR5VarQaH\"]},\"../../node_modules/@latticexyz/solecs/src/Ownable.sol\":{\"keccak256\":\"0x7572ffd98860b2539eacdbb2112ce3d25ad8521c5d95f91e21ea5588a6904209\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3516b95146224d3fc04c5cc2818161fa9504a048894f6dd905b1e42307494fc4\",\"dweb:/ipfs/QmTqvvAs1fSLzXVWjAgSt3TtE3MM3M1DFXRzkkSsixtVza\"]},\"../../node_modules/@latticexyz/solecs/src/System.sol\":{\"keccak256\":\"0xa26b5061fdcbb516111cebd798db1ac8d7733cbf562700aa9892276f3e40e1e7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://471b323faa1baf8b14f3c0a4acf539643ac2fba105b13314066452ebaa228281\",\"dweb:/ipfs/QmRmTjgggZcziB9FH2oPyQGQAAnxEsubiY1gDC1vQz6uWW\"]},\"../../node_modules/@latticexyz/solecs/src/SystemStorage.sol\":{\"keccak256\":\"0x3adf624854f860099d0911cdc51b29e6690e413f2c260e3536552d223fe77b2b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9fa473135604adb13a95583e6cc8092bc82be534bdcdd915e1f344eb78fc645d\",\"dweb:/ipfs/QmYvRKgZ2iRVmSykLAtrrdsr27Eyg6QorhHGL5ZLE8wTTW\"]},\"../../node_modules/@latticexyz/solecs/src/constants.sol\":{\"keccak256\":\"0x024a3ff3077a272339b7baa96b826fd75f040d7cd2c6e13b9c8cf7ad16f789b8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1ddcb26a7703e9b03b34d5465010a4ae5ced137021c94987053544ad1156a644\",\"dweb:/ipfs/QmYue4gnb8noyoxxTchs5chZji7DKynKMp2x33RgRW6xqZ\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IComponent.sol\":{\"keccak256\":\"0xc25ab58cac1449fcd501ddcc56dade0653a7946adcd9eee2931bc095eda2a6b4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c9505da36322f3b3de4dc0aaf0aec911e76be6cbd091f4d142070a7316df4629\",\"dweb:/ipfs/QmY5aGhwzBV5fXeLRDuzWMUfbPZGGdggbLdARhrkjmPBYW\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IERC173.sol\":{\"keccak256\":\"0x2bd9a729a3bfcfc445bc557a914aee17fcaf1c0f74b909b6a91a5d3755a699e9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://203741d681a686fb75f0715332e554083733f349100dfe11252c17fbe9cd094e\",\"dweb:/ipfs/QmaBXDHiU4ZdJ8K5jQZ3FfswMpWEqSPsBWGFkJMU2qmmWi\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IOwnableWritable.sol\":{\"keccak256\":\"0x804db2685d65f5d4029431c47276b6ac43d3c329ea4ce75358928dbd4d11ee77\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a1d85dfe46f678ce4cf3a788092519251a24c2c015f9e858a81111b506b0ee78\",\"dweb:/ipfs/QmVmE4f8axCeh8V2kcs8nxYd27rSiwvXJbDbNCg3VZHSXY\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/ISystem.sol\":{\"keccak256\":\"0xbc1c0b0c72ab5e20ff7eae3cf53627aac367a2f9a65d2e87451a0313869d3bed\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b2a7c4c30beb9b96c4e8112b9864f7bac5c761e61765e0dc359d926572feaa5a\",\"dweb:/ipfs/QmVNJbky7itfqBBdDCh8anSWMaHhXs2mKhzuW7hbCVWgj3\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol\":{\"keccak256\":\"0x12e2eaa4c5663048343e43a1994c446baacb16a4aacbe314ed5202d878751be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d78184a1b1868773f2d5a7cf54bb42bccc666dc75cea14eeed15b8573fd000f\",\"dweb:/ipfs/QmemXPHPB7V8StWR8kZcKt3eDxB78sZFZW4Dp7TcEFTxx9\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IWorld.sol\":{\"keccak256\":\"0x3ac1853f4cade8f432f5b3144e0c914b93f110ea3eabd85438cde39160716114\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1f0ba421b481b66d43c9da4de63171a79ffadc708956893bddf10eec666a0f4a\",\"dweb:/ipfs/QmdSyzQUDrP3MXt8JjgXt1QUgraUKBUPHE2CVzJiEwfMAK\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/Query.sol\":{\"keccak256\":\"0x987e47a4d3f076910382b4e8619f607ea15abdedd786d6095bd27126ff6f941c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8c3d57f9da85917b77e1043a179d3b516bc8c00a8880fdcb1bffca7e53169059\",\"dweb:/ipfs/QmaHxqsT1ZpS8toN88qxgbeaDSMvnhYv9J9FMjVnKrMgoP\"]},\"../../node_modules/@latticexyz/solecs/src/utils.sol\":{\"keccak256\":\"0x17f7831c03bdd77f0c7d98c94931d830fbbfa1878c365f54b12841c85611e24e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6ae566ee03c5050b239277ef4184b9e5dcb332c8cc65b032f8e0d9e46408ea6d\",\"dweb:/ipfs/QmetdhxahRf7FJk1kn8KgDmizU2zYk3jjt9qo6Gwz2M5YP\"]},\"../../node_modules/@solidstate/contracts/access/ownable/IOwnable.sol\":{\"keccak256\":\"0xd2d21c507ed587cd5de6cc016d4b9c7e956e468108b784455a400301707031c1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://091a98176309554295f1d471f888b1567d07e0250b11e23fa540739b6dfdce38\",\"dweb:/ipfs/Qme69DrKhhtwkSBMU456C3NxzXNMC7AJ4sVNMg5rKcrtPn\"]},\"../../node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol\":{\"keccak256\":\"0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3\",\"dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y\"]},\"../../node_modules/@solidstate/contracts/access/ownable/Ownable.sol\":{\"keccak256\":\"0xe16b09090c1251f8cc97fb2cc10c86675e0d0d9f0fc0032b417c37c8dba2db5f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8482effd630de3e3eb3c66ce6bc5ddd12838381e6e585df42116b4fd7764e4bc\",\"dweb:/ipfs/Qma9ga6QS2SooCYKyB7J5EHE8uUGiAv49kosEyjHt9Zg79\"]},\"../../node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol\":{\"keccak256\":\"0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52\",\"dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF\"]},\"../../node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol\":{\"keccak256\":\"0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995\",\"dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM\"]},\"../../node_modules/@solidstate/contracts/interfaces/IERC173.sol\":{\"keccak256\":\"0x9b18a5ad66323c65a81ecd62c3536db99115fe69a30b56a04409de941da7deb6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a93684363c5bfd4e31fa2cc2d3402e9451ba61c7dbb404e8e50658610fb2a555\",\"dweb:/ipfs/QmanFgF5v5GjBBrAEYCpaZyXRFRvzLGgB8SQcSEf9Dkj5Q\"]},\"../../node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol\":{\"keccak256\":\"0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75\",\"dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx\"]},\"../../node_modules/@solidstate/contracts/utils/AddressUtils.sol\":{\"keccak256\":\"0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929\",\"dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm\"]},\"../../node_modules/@solidstate/contracts/utils/UintUtils.sol\":{\"keccak256\":\"0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2\",\"dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza\"]},\"../../node_modules/memmove/src/Array.sol\":{\"keccak256\":\"0x0d7681d3392c34f811cebc9598c5e8f4eef6aba431dca9e1fa87267ba51a4515\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ffb5179dd40ccacadc2cb26ac99e9ea5148796f6d21413d7e0f37913831bea1\",\"dweb:/ipfs/QmfJogaoqook5JgnUZKib6w6khzViUag3EQb1EZ8aUEasQ\"]},\"../../node_modules/memmove/src/LinkedList.sol\":{\"keccak256\":\"0x2374863d39689178dda92b841e77b835ba8fa550561be23b7861d2e52c0fe8c1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8538ec6ca6be4e1b25b74dfd2139586fa2b9dab8d49d91428ed64dc683884598\",\"dweb:/ipfs/Qma7Z6urenqG5Dzqwe8ouGiFH37mbsJEX83tqjSq1PTnRc\"]},\"src/expension/BuffEffectSystem.sol\":{\"keccak256\":\"0x901f7ac9c8682320310c829becc68d5954e6ec5fd4bf029de6a9693cadcd2859\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1fc090e96ce997f5512add821e7ae7d20c72f1982c5d83c9dff16429c3b644a6\",\"dweb:/ipfs/QmT5b59SCZfNPEiCoU5p6WcooPFfJyskaXDsF9Pj7tQVPX\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Ownable__NotOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Ownable__NotTransitiveOwner\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"args\",\"type\":\"bytes\"}],\"name\":\"execute\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"sourceID\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"isComponent\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"buffEntity\",\"type\":\"uint256\"}],\"internalType\":\"struct BuffEffectInfo\",\"name\":\"effectInfo\",\"type\":\"tuple\"}],\"name\":\"executeTyped\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"returns\":{\"_0\":\"conrtact owner\"}},\"transferOwnership(address)\":{\"params\":{\"account\":\"address of new owner\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"owner()\":{\"notice\":\"get the ERC173 contract owner\"},\"transferOwnership(address)\":{\"notice\":\"transfer contract ownership to new account\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/expension/BuffEffectSystem.sol\":\"BuffEffectSystem\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000000},\"remappings\":[\":@latticexyz/=../../node_modules/@latticexyz/\",\":@rari-capital/=../../node_modules/@rari-capital/\",\":@solidstate/=../../node_modules/@solidstate/\",\":components/=src/components/\",\":ds-test/=../../node_modules/ds-test/src/\",\":examples/=../../../mud/examples/\",\":expension/=src/expension/\",\":forge-std/=../../node_modules/forge-std/src/\",\":integration-sandbox/=../../../mud/integration-sandbox/\",\":libraries/=src/libraries/\",\":memmove/=../../node_modules/memmove/src/\",\":packages/=../../../mud/packages/\",\":solecs/=../../node_modules/@latticexyz/solecs/src/\",\":solmate/=../../node_modules/@rari-capital/solmate/src/\",\":std-contracts/=../../node_modules/@latticexyz/std-contracts/src/\",\":systems/=src/systems/\",\":templates/=../../../mud/templates/\",\":verifiers/=src/verifiers/\"]},\"sources\":{\"../../node_modules/@latticexyz/solecs/src/LibTypes.sol\":{\"keccak256\":\"0xa3898035fd9fa865bcfc9861e3b5ecce36be3196fb27705e50a02fed9831f102\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://273284a35a950f6d0bc4223d345cf46c59972a00510ddbc4ba695ede38714798\",\"dweb:/ipfs/QmdqzKMaAfKWfBzUsrzsDMWnyxSKJRuEvrc6VTR5VarQaH\"]},\"../../node_modules/@latticexyz/solecs/src/Ownable.sol\":{\"keccak256\":\"0x7572ffd98860b2539eacdbb2112ce3d25ad8521c5d95f91e21ea5588a6904209\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3516b95146224d3fc04c5cc2818161fa9504a048894f6dd905b1e42307494fc4\",\"dweb:/ipfs/QmTqvvAs1fSLzXVWjAgSt3TtE3MM3M1DFXRzkkSsixtVza\"]},\"../../node_modules/@latticexyz/solecs/src/System.sol\":{\"keccak256\":\"0xa26b5061fdcbb516111cebd798db1ac8d7733cbf562700aa9892276f3e40e1e7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://471b323faa1baf8b14f3c0a4acf539643ac2fba105b13314066452ebaa228281\",\"dweb:/ipfs/QmRmTjgggZcziB9FH2oPyQGQAAnxEsubiY1gDC1vQz6uWW\"]},\"../../node_modules/@latticexyz/solecs/src/SystemStorage.sol\":{\"keccak256\":\"0x3adf624854f860099d0911cdc51b29e6690e413f2c260e3536552d223fe77b2b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9fa473135604adb13a95583e6cc8092bc82be534bdcdd915e1f344eb78fc645d\",\"dweb:/ipfs/QmYvRKgZ2iRVmSykLAtrrdsr27Eyg6QorhHGL5ZLE8wTTW\"]},\"../../node_modules/@latticexyz/solecs/src/constants.sol\":{\"keccak256\":\"0x024a3ff3077a272339b7baa96b826fd75f040d7cd2c6e13b9c8cf7ad16f789b8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1ddcb26a7703e9b03b34d5465010a4ae5ced137021c94987053544ad1156a644\",\"dweb:/ipfs/QmYue4gnb8noyoxxTchs5chZji7DKynKMp2x33RgRW6xqZ\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IComponent.sol\":{\"keccak256\":\"0xc25ab58cac1449fcd501ddcc56dade0653a7946adcd9eee2931bc095eda2a6b4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c9505da36322f3b3de4dc0aaf0aec911e76be6cbd091f4d142070a7316df4629\",\"dweb:/ipfs/QmY5aGhwzBV5fXeLRDuzWMUfbPZGGdggbLdARhrkjmPBYW\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IERC173.sol\":{\"keccak256\":\"0x2bd9a729a3bfcfc445bc557a914aee17fcaf1c0f74b909b6a91a5d3755a699e9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://203741d681a686fb75f0715332e554083733f349100dfe11252c17fbe9cd094e\",\"dweb:/ipfs/QmaBXDHiU4ZdJ8K5jQZ3FfswMpWEqSPsBWGFkJMU2qmmWi\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IOwnableWritable.sol\":{\"keccak256\":\"0x804db2685d65f5d4029431c47276b6ac43d3c329ea4ce75358928dbd4d11ee77\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a1d85dfe46f678ce4cf3a788092519251a24c2c015f9e858a81111b506b0ee78\",\"dweb:/ipfs/QmVmE4f8axCeh8V2kcs8nxYd27rSiwvXJbDbNCg3VZHSXY\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/ISystem.sol\":{\"keccak256\":\"0xbc1c0b0c72ab5e20ff7eae3cf53627aac367a2f9a65d2e87451a0313869d3bed\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b2a7c4c30beb9b96c4e8112b9864f7bac5c761e61765e0dc359d926572feaa5a\",\"dweb:/ipfs/QmVNJbky7itfqBBdDCh8anSWMaHhXs2mKhzuW7hbCVWgj3\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol\":{\"keccak256\":\"0x12e2eaa4c5663048343e43a1994c446baacb16a4aacbe314ed5202d878751be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d78184a1b1868773f2d5a7cf54bb42bccc666dc75cea14eeed15b8573fd000f\",\"dweb:/ipfs/QmemXPHPB7V8StWR8kZcKt3eDxB78sZFZW4Dp7TcEFTxx9\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IWorld.sol\":{\"keccak256\":\"0x3ac1853f4cade8f432f5b3144e0c914b93f110ea3eabd85438cde39160716114\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1f0ba421b481b66d43c9da4de63171a79ffadc708956893bddf10eec666a0f4a\",\"dweb:/ipfs/QmdSyzQUDrP3MXt8JjgXt1QUgraUKBUPHE2CVzJiEwfMAK\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/Query.sol\":{\"keccak256\":\"0x987e47a4d3f076910382b4e8619f607ea15abdedd786d6095bd27126ff6f941c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8c3d57f9da85917b77e1043a179d3b516bc8c00a8880fdcb1bffca7e53169059\",\"dweb:/ipfs/QmaHxqsT1ZpS8toN88qxgbeaDSMvnhYv9J9FMjVnKrMgoP\"]},\"../../node_modules/@latticexyz/solecs/src/utils.sol\":{\"keccak256\":\"0x17f7831c03bdd77f0c7d98c94931d830fbbfa1878c365f54b12841c85611e24e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6ae566ee03c5050b239277ef4184b9e5dcb332c8cc65b032f8e0d9e46408ea6d\",\"dweb:/ipfs/QmetdhxahRf7FJk1kn8KgDmizU2zYk3jjt9qo6Gwz2M5YP\"]},\"../../node_modules/@solidstate/contracts/access/ownable/IOwnable.sol\":{\"keccak256\":\"0xd2d21c507ed587cd5de6cc016d4b9c7e956e468108b784455a400301707031c1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://091a98176309554295f1d471f888b1567d07e0250b11e23fa540739b6dfdce38\",\"dweb:/ipfs/Qme69DrKhhtwkSBMU456C3NxzXNMC7AJ4sVNMg5rKcrtPn\"]},\"../../node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol\":{\"keccak256\":\"0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3\",\"dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y\"]},\"../../node_modules/@solidstate/contracts/access/ownable/Ownable.sol\":{\"keccak256\":\"0xe16b09090c1251f8cc97fb2cc10c86675e0d0d9f0fc0032b417c37c8dba2db5f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8482effd630de3e3eb3c66ce6bc5ddd12838381e6e585df42116b4fd7764e4bc\",\"dweb:/ipfs/Qma9ga6QS2SooCYKyB7J5EHE8uUGiAv49kosEyjHt9Zg79\"]},\"../../node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol\":{\"keccak256\":\"0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52\",\"dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF\"]},\"../../node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol\":{\"keccak256\":\"0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995\",\"dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM\"]},\"../../node_modules/@solidstate/contracts/interfaces/IERC173.sol\":{\"keccak256\":\"0x9b18a5ad66323c65a81ecd62c3536db99115fe69a30b56a04409de941da7deb6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a93684363c5bfd4e31fa2cc2d3402e9451ba61c7dbb404e8e50658610fb2a555\",\"dweb:/ipfs/QmanFgF5v5GjBBrAEYCpaZyXRFRvzLGgB8SQcSEf9Dkj5Q\"]},\"../../node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol\":{\"keccak256\":\"0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75\",\"dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx\"]},\"../../node_modules/@solidstate/contracts/utils/AddressUtils.sol\":{\"keccak256\":\"0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929\",\"dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm\"]},\"../../node_modules/@solidstate/contracts/utils/UintUtils.sol\":{\"keccak256\":\"0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2\",\"dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza\"]},\"../../node_modules/memmove/src/Array.sol\":{\"keccak256\":\"0x0d7681d3392c34f811cebc9598c5e8f4eef6aba431dca9e1fa87267ba51a4515\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ffb5179dd40ccacadc2cb26ac99e9ea5148796f6d21413d7e0f37913831bea1\",\"dweb:/ipfs/QmfJogaoqook5JgnUZKib6w6khzViUag3EQb1EZ8aUEasQ\"]},\"../../node_modules/memmove/src/LinkedList.sol\":{\"keccak256\":\"0x2374863d39689178dda92b841e77b835ba8fa550561be23b7861d2e52c0fe8c1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8538ec6ca6be4e1b25b74dfd2139586fa2b9dab8d49d91428ed64dc683884598\",\"dweb:/ipfs/Qma7Z6urenqG5Dzqwe8ouGiFH37mbsJEX83tqjSq1PTnRc\"]},\"src/expension/BuffEffectSystem.sol\":{\"keccak256\":\"0x74e41d28fa2030d809281026ab48e74fd3e9c79cb89a5b2cc4a2a1dc4d93c967\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://99bfe28986dab6412e7477ef02be3391a54f8bfb41442e764949ce519e077d24\",\"dweb:/ipfs/QmNvf7oqU7zq39mqRqNK8TNrE1PvHiuAx7nKgoCraBQXpQ\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.13+commit.abaa5c0e"
@@ -151,22 +135,6 @@
     "language": "Solidity",
     "output": {
       "abi": [
-        {
-          "inputs": [
-            {
-              "internalType": "contract IWorld",
-              "name": "_world",
-              "type": "address"
-            },
-            {
-              "internalType": "address",
-              "name": "_components",
-              "type": "address"
-            }
-          ],
-          "stateMutability": "nonpayable",
-          "type": "constructor"
-        },
         {
           "inputs": [],
           "type": "error",
@@ -533,10 +501,10 @@
         "license": "MIT"
       },
       "src/expension/BuffEffectSystem.sol": {
-        "keccak256": "0x901f7ac9c8682320310c829becc68d5954e6ec5fd4bf029de6a9693cadcd2859",
+        "keccak256": "0x74e41d28fa2030d809281026ab48e74fd3e9c79cb89a5b2cc4a2a1dc4d93c967",
         "urls": [
-          "bzz-raw://1fc090e96ce997f5512add821e7ae7d20c72f1982c5d83c9dff16429c3b644a6",
-          "dweb:/ipfs/QmT5b59SCZfNPEiCoU5p6WcooPFfJyskaXDsF9Pj7tQVPX"
+          "bzz-raw://99bfe28986dab6412e7477ef02be3391a54f8bfb41442e764949ce519e077d24",
+          "dweb:/ipfs/QmNvf7oqU7zq39mqRqNK8TNrE1PvHiuAx7nKgoCraBQXpQ"
         ],
         "license": "MIT"
       }
@@ -561,7 +529,7 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:771:143",
+    "src": "32:780:143",
     "nodes": [
       {
         "id": 26023,
@@ -710,17 +678,17 @@
       {
         "id": 26093,
         "nodeType": "ContractDefinition",
-        "src": "203:599:143",
+        "src": "203:608:143",
         "nodes": [
           {
             "id": 26048,
             "nodeType": "FunctionDefinition",
-            "src": "245:100:143",
+            "src": "254:100:143",
             "nodes": [],
             "body": {
               "id": 26047,
               "nodeType": "Block",
-              "src": "343:2:143",
+              "src": "352:2:143",
               "nodes": [],
               "statements": []
             },
@@ -735,7 +703,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 26038,
-                    "src": "322:6:143",
+                    "src": "331:6:143",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IWorld_$1582",
                       "typeString": "contract IWorld"
@@ -747,7 +715,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 26040,
-                    "src": "330:11:143",
+                    "src": "339:11:143",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -761,10 +729,10 @@
                   "name": "System",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 587,
-                  "src": "315:6:143"
+                  "src": "324:6:143"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "315:27:143"
+                "src": "324:27:143"
               }
             ],
             "name": "",
@@ -778,10 +746,10 @@
                   "id": 26038,
                   "mutability": "mutable",
                   "name": "_world",
-                  "nameLocation": "273:6:143",
+                  "nameLocation": "282:6:143",
                   "nodeType": "VariableDeclaration",
                   "scope": 26048,
-                  "src": "266:13:143",
+                  "src": "275:13:143",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -796,10 +764,10 @@
                       "name": "IWorld",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 1582,
-                      "src": "266:6:143"
+                      "src": "275:6:143"
                     },
                     "referencedDeclaration": 1582,
-                    "src": "266:6:143",
+                    "src": "275:6:143",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IWorld_$1582",
                       "typeString": "contract IWorld"
@@ -812,10 +780,10 @@
                   "id": 26040,
                   "mutability": "mutable",
                   "name": "_components",
-                  "nameLocation": "297:11:143",
+                  "nameLocation": "306:11:143",
                   "nodeType": "VariableDeclaration",
                   "scope": 26048,
-                  "src": "289:19:143",
+                  "src": "298:19:143",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -826,7 +794,7 @@
                     "id": 26039,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "289:7:143",
+                    "src": "298:7:143",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -836,28 +804,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "256:58:143"
+              "src": "265:58:143"
             },
             "returnParameters": {
               "id": 26046,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "343:0:143"
+              "src": "352:0:143"
             },
             "scope": 26093,
             "stateMutability": "nonpayable",
             "virtual": false,
-            "visibility": "public"
+            "visibility": "internal"
           },
           {
             "id": 26070,
             "nodeType": "FunctionDefinition",
-            "src": "351:193:143",
+            "src": "360:193:143",
             "nodes": [],
             "body": {
               "id": 26069,
               "nodeType": "Block",
-              "src": "417:127:143",
+              "src": "426:127:143",
               "nodes": [],
               "statements": [
                 {
@@ -870,10 +838,10 @@
                       "id": 26057,
                       "mutability": "mutable",
                       "name": "effectInfo",
-                      "nameLocation": "449:10:143",
+                      "nameLocation": "458:10:143",
                       "nodeType": "VariableDeclaration",
                       "scope": 26069,
-                      "src": "427:32:143",
+                      "src": "436:32:143",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
@@ -888,10 +856,10 @@
                           "name": "BuffEffectInfo",
                           "nodeType": "IdentifierPath",
                           "referencedDeclaration": 26033,
-                          "src": "427:14:143"
+                          "src": "436:14:143"
                         },
                         "referencedDeclaration": 26033,
-                        "src": "427:14:143",
+                        "src": "436:14:143",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_BuffEffectInfo_$26033_storage_ptr",
                           "typeString": "struct BuffEffectInfo"
@@ -909,7 +877,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 26050,
-                        "src": "473:4:143",
+                        "src": "482:4:143",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
                           "typeString": "bytes memory"
@@ -923,7 +891,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 26033,
-                            "src": "480:14:143",
+                            "src": "489:14:143",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_struct$_BuffEffectInfo_$26033_storage_ptr_$",
                               "typeString": "type(struct BuffEffectInfo storage pointer)"
@@ -937,7 +905,7 @@
                         "isPure": true,
                         "lValueRequested": false,
                         "nodeType": "TupleExpression",
-                        "src": "479:16:143",
+                        "src": "488:16:143",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_BuffEffectInfo_$26033_storage_ptr_$",
                           "typeString": "type(struct BuffEffectInfo storage pointer)"
@@ -961,7 +929,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": -1,
-                        "src": "462:3:143",
+                        "src": "471:3:143",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
                           "typeString": "abi"
@@ -974,7 +942,7 @@
                       "lValueRequested": false,
                       "memberName": "decode",
                       "nodeType": "MemberAccess",
-                      "src": "462:10:143",
+                      "src": "471:10:143",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
                         "typeString": "function () pure"
@@ -988,7 +956,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "462:34:143",
+                    "src": "471:34:143",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_BuffEffectInfo_$26033_memory_ptr",
@@ -996,7 +964,7 @@
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "427:69:143"
+                  "src": "436:69:143"
                 },
                 {
                   "expression": {
@@ -1007,7 +975,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 26057,
-                        "src": "526:10:143",
+                        "src": "535:10:143",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_BuffEffectInfo_$26033_memory_ptr",
                           "typeString": "struct BuffEffectInfo memory"
@@ -1026,7 +994,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 26083,
-                      "src": "513:12:143",
+                      "src": "522:12:143",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_BuffEffectInfo_$26033_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (struct BuffEffectInfo memory) returns (bytes memory)"
@@ -1040,7 +1008,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "513:24:143",
+                    "src": "522:24:143",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
@@ -1050,19 +1018,19 @@
                   "functionReturnParameters": 26054,
                   "id": 26068,
                   "nodeType": "Return",
-                  "src": "506:31:143"
+                  "src": "515:31:143"
                 }
               ]
             },
             "baseFunctions": [
-              42767
+              42816
             ],
             "functionSelector": "09c5eabe",
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "execute",
-            "nameLocation": "360:7:143",
+            "nameLocation": "369:7:143",
             "parameters": {
               "id": 26051,
               "nodeType": "ParameterList",
@@ -1072,10 +1040,10 @@
                   "id": 26050,
                   "mutability": "mutable",
                   "name": "args",
-                  "nameLocation": "381:4:143",
+                  "nameLocation": "390:4:143",
                   "nodeType": "VariableDeclaration",
                   "scope": 26070,
-                  "src": "368:17:143",
+                  "src": "377:17:143",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1086,7 +1054,7 @@
                     "id": 26049,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "368:5:143",
+                    "src": "377:5:143",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1095,7 +1063,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "367:19:143"
+              "src": "376:19:143"
             },
             "returnParameters": {
               "id": 26054,
@@ -1109,7 +1077,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 26070,
-                  "src": "403:12:143",
+                  "src": "412:12:143",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1120,7 +1088,7 @@
                     "id": 26052,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "403:5:143",
+                    "src": "412:5:143",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1129,7 +1097,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "402:14:143"
+              "src": "411:14:143"
             },
             "scope": 26093,
             "stateMutability": "nonpayable",
@@ -1139,12 +1107,12 @@
           {
             "id": 26083,
             "nodeType": "FunctionDefinition",
-            "src": "550:147:143",
+            "src": "559:147:143",
             "nodes": [],
             "body": {
               "id": 26082,
               "nodeType": "Block",
-              "src": "650:47:143",
+              "src": "659:47:143",
               "nodes": [],
               "statements": [
                 {
@@ -1156,7 +1124,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 26073,
-                        "src": "679:10:143",
+                        "src": "688:10:143",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_BuffEffectInfo_$26033_memory_ptr",
                           "typeString": "struct BuffEffectInfo memory"
@@ -1175,7 +1143,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 26092,
-                      "src": "667:11:143",
+                      "src": "676:11:143",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_BuffEffectInfo_$26033_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (struct BuffEffectInfo memory) returns (bytes memory)"
@@ -1189,7 +1157,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "667:23:143",
+                    "src": "676:23:143",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
@@ -1199,7 +1167,7 @@
                   "functionReturnParameters": 26077,
                   "id": 26081,
                   "nodeType": "Return",
-                  "src": "660:30:143"
+                  "src": "669:30:143"
                 }
               ]
             },
@@ -1208,7 +1176,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "executeTyped",
-            "nameLocation": "559:12:143",
+            "nameLocation": "568:12:143",
             "parameters": {
               "id": 26074,
               "nodeType": "ParameterList",
@@ -1218,10 +1186,10 @@
                   "id": 26073,
                   "mutability": "mutable",
                   "name": "effectInfo",
-                  "nameLocation": "603:10:143",
+                  "nameLocation": "612:10:143",
                   "nodeType": "VariableDeclaration",
                   "scope": 26083,
-                  "src": "581:32:143",
+                  "src": "590:32:143",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1236,10 +1204,10 @@
                       "name": "BuffEffectInfo",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 26033,
-                      "src": "581:14:143"
+                      "src": "590:14:143"
                     },
                     "referencedDeclaration": 26033,
-                    "src": "581:14:143",
+                    "src": "590:14:143",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_BuffEffectInfo_$26033_storage_ptr",
                       "typeString": "struct BuffEffectInfo"
@@ -1248,7 +1216,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "571:48:143"
+              "src": "580:48:143"
             },
             "returnParameters": {
               "id": 26077,
@@ -1262,7 +1230,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 26083,
-                  "src": "636:12:143",
+                  "src": "645:12:143",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1273,7 +1241,7 @@
                     "id": 26075,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "636:5:143",
+                    "src": "645:5:143",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1282,7 +1250,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "635:14:143"
+              "src": "644:14:143"
             },
             "scope": 26093,
             "stateMutability": "nonpayable",
@@ -1292,12 +1260,12 @@
           {
             "id": 26092,
             "nodeType": "FunctionDefinition",
-            "src": "703:97:143",
+            "src": "712:97:143",
             "nodes": [],
             "body": {
               "id": 26091,
               "nodeType": "Block",
-              "src": "798:2:143",
+              "src": "807:2:143",
               "nodes": [],
               "statements": []
             },
@@ -1305,7 +1273,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "effectLogic",
-            "nameLocation": "712:11:143",
+            "nameLocation": "721:11:143",
             "parameters": {
               "id": 26087,
               "nodeType": "ParameterList",
@@ -1315,10 +1283,10 @@
                   "id": 26086,
                   "mutability": "mutable",
                   "name": "effectInfo",
-                  "nameLocation": "746:10:143",
+                  "nameLocation": "755:10:143",
                   "nodeType": "VariableDeclaration",
                   "scope": 26092,
-                  "src": "724:32:143",
+                  "src": "733:32:143",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1333,10 +1301,10 @@
                       "name": "BuffEffectInfo",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 26033,
-                      "src": "724:14:143"
+                      "src": "733:14:143"
                     },
                     "referencedDeclaration": 26033,
-                    "src": "724:14:143",
+                    "src": "733:14:143",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_BuffEffectInfo_$26033_storage_ptr",
                       "typeString": "struct BuffEffectInfo"
@@ -1345,7 +1313,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "723:34:143"
+              "src": "732:34:143"
             },
             "returnParameters": {
               "id": 26090,
@@ -1359,7 +1327,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 26092,
-                  "src": "784:12:143",
+                  "src": "793:12:143",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1370,7 +1338,7 @@
                     "id": 26088,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "784:5:143",
+                    "src": "793:5:143",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1379,7 +1347,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "783:14:143"
+              "src": "792:14:143"
             },
             "scope": 26093,
             "stateMutability": "nonpayable",
@@ -1387,7 +1355,7 @@
             "visibility": "internal"
           }
         ],
-        "abstract": false,
+        "abstract": true,
         "baseContracts": [
           {
             "baseName": {
@@ -1395,11 +1363,11 @@
               "name": "System",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 587,
-              "src": "232:6:143"
+              "src": "241:6:143"
             },
             "id": 26035,
             "nodeType": "InheritanceSpecifier",
-            "src": "232:6:143"
+            "src": "241:6:143"
           }
         ],
         "canonicalName": "BuffEffectSystem",
@@ -1409,21 +1377,21 @@
         "linearizedBaseContracts": [
           26093,
           587,
-          42754,
+          42803,
           2437,
-          44585,
-          45004,
-          44461,
-          42768,
+          44634,
+          45053,
+          44510,
+          42817,
           2480,
-          44595
+          44644
         ],
         "name": "BuffEffectSystem",
-        "nameLocation": "212:16:143",
+        "nameLocation": "221:16:143",
         "scope": 26094,
         "usedErrors": [
-          45001,
-          45003
+          45050,
+          45052
         ]
       }
     ],

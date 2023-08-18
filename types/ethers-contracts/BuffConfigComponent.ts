@@ -28,7 +28,7 @@ import type {
 } from "./common";
 
 export type BuffConfigStruct = {
-  buffEffectID: PromiseOrValue<string>;
+  buffEffectID: PromiseOrValue<BytesLike>;
   asset: PromiseOrValue<string>;
   name: PromiseOrValue<string>;
   buffType: PromiseOrValue<BigNumberish>;
@@ -63,7 +63,7 @@ export interface BuffConfigComponentInterface extends utils.Interface {
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set(uint256,(string,string,string,uint64,uint64))": FunctionFragment;
+    "set(uint256,(bytes,string,string,uint64,uint64))": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
@@ -85,7 +85,7 @@ export interface BuffConfigComponentInterface extends utils.Interface {
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set(uint256,(string,string,string,uint64,uint64))"
+      | "set(uint256,(bytes,string,string,uint64,uint64))"
       | "set(uint256,bytes)"
       | "transferOwnership"
       | "unauthorizeWriter"
@@ -133,7 +133,7 @@ export interface BuffConfigComponentInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set(uint256,(string,string,string,uint64,uint64))",
+    functionFragment: "set(uint256,(bytes,string,string,uint64,uint64))",
     values: [PromiseOrValue<BigNumberish>, BuffConfigStruct]
   ): string;
   encodeFunctionData(
@@ -185,7 +185,7 @@ export interface BuffConfigComponentInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,(string,string,string,uint64,uint64))",
+    functionFragment: "set(uint256,(bytes,string,string,uint64,uint64))",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -302,7 +302,7 @@ export interface BuffConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set(uint256,(string,string,string,uint64,uint64))"(
+    "set(uint256,(bytes,string,string,uint64,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       buffConfig: BuffConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -382,7 +382,7 @@ export interface BuffConfigComponent extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set(uint256,(string,string,string,uint64,uint64))"(
+  "set(uint256,(bytes,string,string,uint64,uint64))"(
     entity: PromiseOrValue<BigNumberish>,
     buffConfig: BuffConfigStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -462,7 +462,7 @@ export interface BuffConfigComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set(uint256,(string,string,string,uint64,uint64))"(
+    "set(uint256,(bytes,string,string,uint64,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       buffConfig: BuffConfigStruct,
       overrides?: CallOverrides
@@ -552,7 +552,7 @@ export interface BuffConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set(uint256,(string,string,string,uint64,uint64))"(
+    "set(uint256,(bytes,string,string,uint64,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       buffConfig: BuffConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -631,7 +631,7 @@ export interface BuffConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set(uint256,(string,string,string,uint64,uint64))"(
+    "set(uint256,(bytes,string,string,uint64,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       buffConfig: BuffConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
