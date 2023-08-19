@@ -28,7 +28,7 @@ import type {
 } from "./common";
 
 export type BuffConfigStruct = {
-  buffEffectID: PromiseOrValue<BytesLike>;
+  buffEffectID: PromiseOrValue<BigNumberish>;
   asset: PromiseOrValue<string>;
   name: PromiseOrValue<string>;
   buffType: PromiseOrValue<BigNumberish>;
@@ -36,13 +36,13 @@ export type BuffConfigStruct = {
 };
 
 export type BuffConfigStructOutput = [
-  string,
+  BigNumber,
   string,
   string,
   BigNumber,
   BigNumber
 ] & {
-  buffEffectID: string;
+  buffEffectID: BigNumber;
   asset: string;
   name: string;
   buffType: BigNumber;
@@ -63,8 +63,8 @@ export interface BuffConfigComponentInterface extends utils.Interface {
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set(uint256,(bytes,string,string,uint64,uint64))": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
+    "set(uint256,(uint256,string,string,uint64,uint64))": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
     "world()": FunctionFragment;
@@ -85,8 +85,8 @@ export interface BuffConfigComponentInterface extends utils.Interface {
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set(uint256,(bytes,string,string,uint64,uint64))"
       | "set(uint256,bytes)"
+      | "set(uint256,(uint256,string,string,uint64,uint64))"
       | "transferOwnership"
       | "unauthorizeWriter"
       | "world"
@@ -133,12 +133,12 @@ export interface BuffConfigComponentInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set(uint256,(bytes,string,string,uint64,uint64))",
-    values: [PromiseOrValue<BigNumberish>, BuffConfigStruct]
-  ): string;
-  encodeFunctionData(
     functionFragment: "set(uint256,bytes)",
     values: [PromiseOrValue<BigNumberish>, PromiseOrValue<BytesLike>]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "set(uint256,(uint256,string,string,uint64,uint64))",
+    values: [PromiseOrValue<BigNumberish>, BuffConfigStruct]
   ): string;
   encodeFunctionData(
     functionFragment: "transferOwnership",
@@ -185,11 +185,11 @@ export interface BuffConfigComponentInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,(bytes,string,string,uint64,uint64))",
+    functionFragment: "set(uint256,bytes)",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,bytes)",
+    functionFragment: "set(uint256,(uint256,string,string,uint64,uint64))",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -302,15 +302,15 @@ export interface BuffConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set(uint256,(bytes,string,string,uint64,uint64))"(
-      entity: PromiseOrValue<BigNumberish>,
-      buffConfig: BuffConfigStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<ContractTransaction>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<ContractTransaction>;
+
+    "set(uint256,(uint256,string,string,uint64,uint64))"(
+      entity: PromiseOrValue<BigNumberish>,
+      buffConfig: BuffConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -382,15 +382,15 @@ export interface BuffConfigComponent extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set(uint256,(bytes,string,string,uint64,uint64))"(
-    entity: PromiseOrValue<BigNumberish>,
-    buffConfig: BuffConfigStruct,
-    overrides?: Overrides & { from?: PromiseOrValue<string> }
-  ): Promise<ContractTransaction>;
-
   "set(uint256,bytes)"(
     entity: PromiseOrValue<BigNumberish>,
     value: PromiseOrValue<BytesLike>,
+    overrides?: Overrides & { from?: PromiseOrValue<string> }
+  ): Promise<ContractTransaction>;
+
+  "set(uint256,(uint256,string,string,uint64,uint64))"(
+    entity: PromiseOrValue<BigNumberish>,
+    buffConfig: BuffConfigStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -462,15 +462,15 @@ export interface BuffConfigComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set(uint256,(bytes,string,string,uint64,uint64))"(
-      entity: PromiseOrValue<BigNumberish>,
-      buffConfig: BuffConfigStruct,
-      overrides?: CallOverrides
-    ): Promise<void>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: CallOverrides
+    ): Promise<void>;
+
+    "set(uint256,(uint256,string,string,uint64,uint64))"(
+      entity: PromiseOrValue<BigNumberish>,
+      buffConfig: BuffConfigStruct,
       overrides?: CallOverrides
     ): Promise<void>;
 
@@ -552,15 +552,15 @@ export interface BuffConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set(uint256,(bytes,string,string,uint64,uint64))"(
-      entity: PromiseOrValue<BigNumberish>,
-      buffConfig: BuffConfigStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<BigNumber>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<BigNumber>;
+
+    "set(uint256,(uint256,string,string,uint64,uint64))"(
+      entity: PromiseOrValue<BigNumberish>,
+      buffConfig: BuffConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -631,15 +631,15 @@ export interface BuffConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set(uint256,(bytes,string,string,uint64,uint64))"(
-      entity: PromiseOrValue<BigNumberish>,
-      buffConfig: BuffConfigStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<PopulatedTransaction>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<PopulatedTransaction>;
+
+    "set(uint256,(uint256,string,string,uint64,uint64))"(
+      entity: PromiseOrValue<BigNumberish>,
+      buffConfig: BuffConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
