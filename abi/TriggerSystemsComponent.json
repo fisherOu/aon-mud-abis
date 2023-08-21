@@ -1125,13 +1125,13 @@
   },
   "ast": {
     "absolutePath": "src/components/TriggerSystemsComponent.sol",
-    "id": 25425,
+    "id": 25494,
     "exportedSymbols": {
       "ID": [
-        25411
+        25480
       ],
       "TriggerSystemsComponent": [
-        25424
+        25493
       ],
       "Uint256Component": [
         1370
@@ -1141,7 +1141,7 @@
     "src": "32:296:139",
     "nodes": [
       {
-        "id": 25401,
+        "id": 25470,
         "nodeType": "PragmaDirective",
         "src": "32:24:139",
         "nodes": [],
@@ -1153,19 +1153,19 @@
         ]
       },
       {
-        "id": 25403,
+        "id": 25472,
         "nodeType": "ImportDirective",
         "src": "57:79:139",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/std-contracts/src/components/Uint256Component.sol",
         "file": "std-contracts/components/Uint256Component.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 25425,
+        "scope": 25494,
         "sourceUnit": 2132,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 25402,
+              "id": 25471,
               "name": "Uint256Component",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1179,7 +1179,7 @@
         "unitAlias": ""
       },
       {
-        "id": 25411,
+        "id": 25480,
         "nodeType": "VariableDeclaration",
         "src": "138:68:139",
         "nodes": [],
@@ -1187,7 +1187,7 @@
         "mutability": "constant",
         "name": "ID",
         "nameLocation": "155:2:139",
-        "scope": 25425,
+        "scope": 25494,
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
@@ -1195,7 +1195,7 @@
           "typeString": "uint256"
         },
         "typeName": {
-          "id": 25404,
+          "id": 25473,
           "name": "uint256",
           "nodeType": "ElementaryTypeName",
           "src": "138:7:139",
@@ -1210,7 +1210,7 @@
               "arguments": [
                 {
                   "hexValue": "636f6d706f6e656e742e5472696767657253797374656d73",
-                  "id": 25408,
+                  "id": 25477,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1232,7 +1232,7 @@
                     "typeString": "literal_string \"component.TriggerSystems\""
                   }
                 ],
-                "id": 25407,
+                "id": 25476,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -1243,7 +1243,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 25409,
+              "id": 25478,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1266,7 +1266,7 @@
                 "typeString": "bytes32"
               }
             ],
-            "id": 25406,
+            "id": 25475,
             "isConstant": false,
             "isLValue": false,
             "isPure": true,
@@ -1278,14 +1278,14 @@
               "typeString": "type(uint256)"
             },
             "typeName": {
-              "id": 25405,
+              "id": 25474,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "160:7:139",
               "typeDescriptions": {}
             }
           },
-          "id": 25410,
+          "id": 25479,
           "isConstant": false,
           "isLValue": false,
           "isPure": true,
@@ -1303,17 +1303,17 @@
         "visibility": "internal"
       },
       {
-        "id": 25424,
+        "id": 25493,
         "nodeType": "ContractDefinition",
         "src": "209:118:139",
         "nodes": [
           {
-            "id": 25423,
+            "id": 25492,
             "nodeType": "FunctionDefinition",
             "src": "268:57:139",
             "nodes": [],
             "body": {
-              "id": 25422,
+              "id": 25491,
               "nodeType": "Block",
               "src": "323:2:139",
               "nodes": [],
@@ -1325,11 +1325,11 @@
               {
                 "arguments": [
                   {
-                    "id": 25418,
+                    "id": 25487,
                     "name": "world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 25415,
+                    "referencedDeclaration": 25484,
                     "src": "312:5:139",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1337,11 +1337,11 @@
                     }
                   },
                   {
-                    "id": 25419,
+                    "id": 25488,
                     "name": "ID",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 25411,
+                    "referencedDeclaration": 25480,
                     "src": "319:2:139",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -1349,10 +1349,10 @@
                     }
                   }
                 ],
-                "id": 25420,
+                "id": 25489,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 25417,
+                  "id": 25486,
                   "name": "Uint256Component",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 1370,
@@ -1365,17 +1365,17 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 25416,
+              "id": 25485,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 25415,
+                  "id": 25484,
                   "mutability": "mutable",
                   "name": "world",
                   "nameLocation": "288:5:139",
                   "nodeType": "VariableDeclaration",
-                  "scope": 25423,
+                  "scope": 25492,
                   "src": "280:13:139",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1384,7 +1384,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 25414,
+                    "id": 25483,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "280:7:139",
@@ -1400,12 +1400,12 @@
               "src": "279:15:139"
             },
             "returnParameters": {
-              "id": 25421,
+              "id": 25490,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "323:0:139"
             },
-            "scope": 25424,
+            "scope": 25493,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -1415,49 +1415,49 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 25412,
+              "id": 25481,
               "name": "Uint256Component",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 1370,
               "src": "245:16:139"
             },
-            "id": 25413,
+            "id": 25482,
             "nodeType": "InheritanceSpecifier",
             "src": "245:16:139"
           }
         ],
         "canonicalName": "TriggerSystemsComponent",
         "contractDependencies": [
-          42520,
-          42776
+          42620,
+          42876
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          25424,
+          25493,
           1370,
           1469,
           483,
           220,
-          42610,
-          42814,
+          42710,
+          42914,
           2437,
-          44645,
-          45064,
-          44521,
+          44745,
+          45164,
+          44621,
           1440,
-          44388,
+          44488,
           2480,
-          44655
+          44755
         ],
         "name": "TriggerSystemsComponent",
         "nameLocation": "218:23:139",
-        "scope": 25425,
+        "scope": 25494,
         "usedErrors": [
           20,
-          42535,
-          45061,
-          45063
+          42635,
+          45161,
+          45163
         ]
       }
     ],

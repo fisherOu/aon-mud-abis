@@ -28,6 +28,8 @@ import type {
 } from "./common";
 
 export type TreasureStruct = {
+  name: PromiseOrValue<string>;
+  asset: PromiseOrValue<string>;
   useMode: PromiseOrValue<BigNumberish>;
   hitMode: PromiseOrValue<BigNumberish>;
   cooldownTime: PromiseOrValue<BigNumberish>;
@@ -37,6 +39,8 @@ export type TreasureStruct = {
 };
 
 export type TreasureStructOutput = [
+  string,
+  string,
   number,
   number,
   BigNumber,
@@ -44,6 +48,8 @@ export type TreasureStructOutput = [
   number,
   BigNumber
 ] & {
+  name: string;
+  asset: string;
   useMode: number;
   hitMode: number;
   cooldownTime: BigNumber;
@@ -67,7 +73,7 @@ export interface Treasurev2ComponentInterface extends utils.Interface {
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
-    "set(uint256,(uint8,uint8,uint64,uint64,uint32,uint64))": FunctionFragment;
+    "set(uint256,(string,string,uint8,uint8,uint64,uint64,uint32,uint64))": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
     "world()": FunctionFragment;
@@ -89,7 +95,7 @@ export interface Treasurev2ComponentInterface extends utils.Interface {
       | "registerWorld"
       | "remove"
       | "set(uint256,bytes)"
-      | "set(uint256,(uint8,uint8,uint64,uint64,uint32,uint64))"
+      | "set(uint256,(string,string,uint8,uint8,uint64,uint64,uint32,uint64))"
       | "transferOwnership"
       | "unauthorizeWriter"
       | "world"
@@ -140,7 +146,7 @@ export interface Treasurev2ComponentInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>, PromiseOrValue<BytesLike>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set(uint256,(uint8,uint8,uint64,uint64,uint32,uint64))",
+    functionFragment: "set(uint256,(string,string,uint8,uint8,uint64,uint64,uint32,uint64))",
     values: [PromiseOrValue<BigNumberish>, TreasureStruct]
   ): string;
   encodeFunctionData(
@@ -192,7 +198,7 @@ export interface Treasurev2ComponentInterface extends utils.Interface {
     data: BytesLike
   ): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,(uint8,uint8,uint64,uint64,uint32,uint64))",
+    functionFragment: "set(uint256,(string,string,uint8,uint8,uint64,uint64,uint32,uint64))",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -311,7 +317,7 @@ export interface Treasurev2Component extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set(uint256,(uint8,uint8,uint64,uint64,uint32,uint64))"(
+    "set(uint256,(string,string,uint8,uint8,uint64,uint64,uint32,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       treasure: TreasureStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -391,7 +397,7 @@ export interface Treasurev2Component extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set(uint256,(uint8,uint8,uint64,uint64,uint32,uint64))"(
+  "set(uint256,(string,string,uint8,uint8,uint64,uint64,uint32,uint64))"(
     entity: PromiseOrValue<BigNumberish>,
     treasure: TreasureStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -471,7 +477,7 @@ export interface Treasurev2Component extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set(uint256,(uint8,uint8,uint64,uint64,uint32,uint64))"(
+    "set(uint256,(string,string,uint8,uint8,uint64,uint64,uint32,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       treasure: TreasureStruct,
       overrides?: CallOverrides
@@ -561,7 +567,7 @@ export interface Treasurev2Component extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set(uint256,(uint8,uint8,uint64,uint64,uint32,uint64))"(
+    "set(uint256,(string,string,uint8,uint8,uint64,uint64,uint32,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       treasure: TreasureStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -640,7 +646,7 @@ export interface Treasurev2Component extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set(uint256,(uint8,uint8,uint64,uint64,uint32,uint64))"(
+    "set(uint256,(string,string,uint8,uint8,uint64,uint64,uint32,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       treasure: TreasureStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
