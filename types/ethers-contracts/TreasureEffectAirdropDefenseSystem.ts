@@ -132,11 +132,21 @@ export interface TreasureEffectAirdropDefenseSystemInterface
   ): Result;
 
   events: {
+    "Debug(string,uint256)": EventFragment;
     "OwnershipTransferred(address,address)": EventFragment;
   };
 
+  getEvent(nameOrSignatureOrTopic: "Debug"): EventFragment;
   getEvent(nameOrSignatureOrTopic: "OwnershipTransferred"): EventFragment;
 }
+
+export interface DebugEventObject {
+  prex: string;
+  value: BigNumber;
+}
+export type DebugEvent = TypedEvent<[string, BigNumber], DebugEventObject>;
+
+export type DebugEventFilter = TypedEventFilter<DebugEvent>;
 
 export interface OwnershipTransferredEventObject {
   previousOwner: string;
@@ -232,6 +242,9 @@ export interface TreasureEffectAirdropDefenseSystem extends BaseContract {
   };
 
   filters: {
+    "Debug(string,uint256)"(prex?: null, value?: null): DebugEventFilter;
+    Debug(prex?: null, value?: null): DebugEventFilter;
+
     "OwnershipTransferred(address,address)"(
       previousOwner?: PromiseOrValue<string> | null,
       newOwner?: PromiseOrValue<string> | null

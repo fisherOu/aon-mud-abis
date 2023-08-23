@@ -28,13 +28,13 @@ import type {
 } from "./common";
 
 export type BuffEffectInfoStruct = {
-  sourceID: PromiseOrValue<BigNumberish>;
+  entity: PromiseOrValue<BigNumberish>;
   isComponent: PromiseOrValue<boolean>;
   buffEntity: PromiseOrValue<BigNumberish>;
 };
 
 export type BuffEffectInfoStructOutput = [BigNumber, boolean, BigNumber] & {
-  sourceID: BigNumber;
+  entity: BigNumber;
   isComponent: boolean;
   buffEntity: BigNumber;
 };
