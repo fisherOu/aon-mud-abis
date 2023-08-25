@@ -1,2 +1,2 @@
 export { SystemAbis } from './types/SystemAbis.mjs';
-export { SystemTypes } from './types/SystemTypes';
+export type { SystemTypes } from './types/SystemTypes';
