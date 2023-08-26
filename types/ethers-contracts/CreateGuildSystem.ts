@@ -28,13 +28,42 @@ import type {
 } from "./common";
 
 export type CreateInfoStruct = {
+  coordHash: PromiseOrValue<BigNumberish>;
+  width: PromiseOrValue<BigNumberish>;
+  height: PromiseOrValue<BigNumberish>;
+  seed: PromiseOrValue<BigNumberish>;
+  a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
+  b: [
+    [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>],
+    [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>]
+  ];
+  c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
   flag: PromiseOrValue<string>;
   name: PromiseOrValue<string>;
   description: PromiseOrValue<string>;
   regime: PromiseOrValue<BigNumberish>;
 };
 
-export type CreateInfoStructOutput = [string, string, string, number] & {
+export type CreateInfoStructOutput = [
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  [BigNumber, BigNumber],
+  [[BigNumber, BigNumber], [BigNumber, BigNumber]],
+  [BigNumber, BigNumber],
+  string,
+  string,
+  string,
+  number
+] & {
+  coordHash: BigNumber;
+  width: BigNumber;
+  height: BigNumber;
+  seed: BigNumber;
+  a: [BigNumber, BigNumber];
+  b: [[BigNumber, BigNumber], [BigNumber, BigNumber]];
+  c: [BigNumber, BigNumber];
   flag: string;
   name: string;
   description: string;
@@ -44,7 +73,7 @@ export type CreateInfoStructOutput = [string, string, string, number] & {
 export interface CreateGuildSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((string,string,string,uint32))": FunctionFragment;
+    "executeTyped((uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2],string,string,string,uint32))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
