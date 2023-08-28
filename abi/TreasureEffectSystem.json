@@ -785,55 +785,55 @@
   },
   "ast": {
     "absolutePath": "src/expension/TreasureEffectSystem.sol",
-    "id": 29536,
+    "id": 17993,
     "exportedSymbols": {
       "CoordVerifyParam": [
-        29380
+        17837
       ],
       "ICoordVerifier": [
-        52247
+        41109
       ],
       "ITreasureEffectSystem": [
-        29475
+        17932
       ],
       "IUint256Component": [
-        1469
+        1347
       ],
       "IWorld": [
-        1582
+        1460
       ],
       "System": [
         587
       ],
       "TreasureEffectInfo": [
-        29399
+        17856
       ],
       "TreasureEffectSystem": [
-        29535
+        17992
       ],
       "ZKConfig": [
-        28215
+        16672
       ],
       "ZKConfigComponent": [
-        28499
+        16956
       ],
       "ZKConfigComponentID": [
-        28194
+        16651
       ],
       "checkCoordZK": [
-        29459
+        17916
       ],
       "getAddressById": [
-        1684
+        1562
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:2122:169",
+    "src": "32:2122:163",
     "nodes": [
       {
-        "id": 29342,
+        "id": 17799,
         "nodeType": "PragmaDirective",
-        "src": "32:24:169",
+        "src": "32:24:163",
         "nodes": [],
         "literals": [
           "solidity",
@@ -843,36 +843,36 @@
         ]
       },
       {
-        "id": 29345,
+        "id": 17802,
         "nodeType": "ImportDirective",
-        "src": "57:49:169",
+        "src": "57:49:163",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/System.sol",
         "file": "solecs/System.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29536,
+        "scope": 17993,
         "sourceUnit": 588,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29343,
+              "id": 17800,
               "name": "System",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 587,
-              "src": "65:6:169",
+              "src": "65:6:163",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
           },
           {
             "foreign": {
-              "id": 29344,
+              "id": 17801,
               "name": "IWorld",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 1582,
-              "src": "73:6:169",
+              "referencedDeclaration": 1460,
+              "src": "73:6:163",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -881,24 +881,24 @@
         "unitAlias": ""
       },
       {
-        "id": 29347,
+        "id": 17804,
         "nodeType": "ImportDirective",
-        "src": "107:74:169",
+        "src": "107:74:163",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol",
         "file": "solecs/interfaces/IUint256Component.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29536,
-        "sourceUnit": 1470,
+        "scope": 17993,
+        "sourceUnit": 1348,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29346,
+              "id": 17803,
               "name": "IUint256Component",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 1469,
-              "src": "115:17:169",
+              "referencedDeclaration": 1347,
+              "src": "115:17:163",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -907,36 +907,36 @@
         "unitAlias": ""
       },
       {
-        "id": 29351,
+        "id": 17808,
         "nodeType": "ImportDirective",
-        "src": "182:104:169",
+        "src": "182:104:163",
         "nodes": [],
         "absolutePath": "src/components/ZKConfigComponent.sol",
         "file": "components/ZKConfigComponent.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29536,
-        "sourceUnit": 28500,
+        "scope": 17993,
+        "sourceUnit": 16957,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29348,
+              "id": 17805,
               "name": "ZKConfigComponent",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 28499,
-              "src": "190:17:169",
+              "referencedDeclaration": 16956,
+              "src": "190:17:163",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
           },
           {
             "foreign": {
-              "id": 29349,
+              "id": 17806,
               "name": "ID",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 28194,
-              "src": "209:2:169",
+              "referencedDeclaration": 16651,
+              "src": "209:2:163",
               "typeDescriptions": {}
             },
             "local": "ZKConfigComponentID",
@@ -944,12 +944,12 @@
           },
           {
             "foreign": {
-              "id": 29350,
+              "id": 17807,
               "name": "ZKConfig",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 28215,
-              "src": "236:8:169",
+              "referencedDeclaration": 16672,
+              "src": "236:8:163",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -958,24 +958,24 @@
         "unitAlias": ""
       },
       {
-        "id": 29353,
+        "id": 17810,
         "nodeType": "ImportDirective",
-        "src": "287:59:169",
+        "src": "287:59:163",
         "nodes": [],
         "absolutePath": "src/verifiers/CoordVerifier.sol",
         "file": "verifiers/CoordVerifier.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29536,
-        "sourceUnit": 52367,
+        "scope": 17993,
+        "sourceUnit": 41229,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29352,
+              "id": 17809,
               "name": "ICoordVerifier",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 52247,
-              "src": "295:14:169",
+              "referencedDeclaration": 41109,
+              "src": "295:14:163",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -984,24 +984,24 @@
         "unitAlias": ""
       },
       {
-        "id": 29355,
+        "id": 17812,
         "nodeType": "ImportDirective",
-        "src": "347:48:169",
+        "src": "347:48:163",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/utils.sol",
         "file": "solecs/utils.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29536,
-        "sourceUnit": 1872,
+        "scope": 17993,
+        "sourceUnit": 1750,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29354,
+              "id": 17811,
               "name": "getAddressById",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 1684,
-              "src": "355:14:169",
+              "referencedDeclaration": 1562,
+              "src": "355:14:163",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -1010,21 +1010,21 @@
         "unitAlias": ""
       },
       {
-        "id": 29380,
+        "id": 17837,
         "nodeType": "StructDefinition",
-        "src": "397:187:169",
+        "src": "397:187:163",
         "nodes": [],
         "canonicalName": "CoordVerifyParam",
         "members": [
           {
             "constant": false,
-            "id": 29357,
+            "id": 17814,
             "mutability": "mutable",
             "name": "realHash",
-            "nameLocation": "435:8:169",
+            "nameLocation": "435:8:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29380,
-            "src": "427:16:169",
+            "scope": 17837,
+            "src": "427:16:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1032,10 +1032,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 29356,
+              "id": 17813,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "427:7:169",
+              "src": "427:7:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1045,13 +1045,13 @@
           },
           {
             "constant": false,
-            "id": 29359,
+            "id": 17816,
             "mutability": "mutable",
             "name": "fogHash",
-            "nameLocation": "457:7:169",
+            "nameLocation": "457:7:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29380,
-            "src": "449:15:169",
+            "scope": 17837,
+            "src": "449:15:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1059,10 +1059,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 29358,
+              "id": 17815,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "449:7:169",
+              "src": "449:7:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1072,13 +1072,13 @@
           },
           {
             "constant": false,
-            "id": 29361,
+            "id": 17818,
             "mutability": "mutable",
             "name": "fogSeed",
-            "nameLocation": "478:7:169",
+            "nameLocation": "478:7:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29380,
-            "src": "470:15:169",
+            "scope": 17837,
+            "src": "470:15:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1086,10 +1086,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 29360,
+              "id": 17817,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "470:7:169",
+              "src": "470:7:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1099,13 +1099,13 @@
           },
           {
             "constant": false,
-            "id": 29363,
+            "id": 17820,
             "mutability": "mutable",
             "name": "width",
-            "nameLocation": "499:5:169",
+            "nameLocation": "499:5:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29380,
-            "src": "491:13:169",
+            "scope": 17837,
+            "src": "491:13:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1113,10 +1113,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 29362,
+              "id": 17819,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "491:7:169",
+              "src": "491:7:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1126,13 +1126,13 @@
           },
           {
             "constant": false,
-            "id": 29365,
+            "id": 17822,
             "mutability": "mutable",
             "name": "height",
-            "nameLocation": "518:6:169",
+            "nameLocation": "518:6:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29380,
-            "src": "510:14:169",
+            "scope": 17837,
+            "src": "510:14:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1140,10 +1140,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 29364,
+              "id": 17821,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "510:7:169",
+              "src": "510:7:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1153,13 +1153,13 @@
           },
           {
             "constant": false,
-            "id": 29369,
+            "id": 17826,
             "mutability": "mutable",
             "name": "a",
-            "nameLocation": "541:1:169",
+            "nameLocation": "541:1:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29380,
-            "src": "530:12:169",
+            "scope": 17837,
+            "src": "530:12:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1168,26 +1168,26 @@
             },
             "typeName": {
               "baseType": {
-                "id": 29366,
+                "id": 17823,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
-                "src": "530:7:169",
+                "src": "530:7:163",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
-              "id": 29368,
+              "id": 17825,
               "length": {
                 "hexValue": "32",
-                "id": 29367,
+                "id": 17824,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "538:1:169",
+                "src": "538:1:163",
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_2_by_1",
                   "typeString": "int_const 2"
@@ -1195,7 +1195,7 @@
                 "value": "2"
               },
               "nodeType": "ArrayTypeName",
-              "src": "530:10:169",
+              "src": "530:10:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
                 "typeString": "uint256[2]"
@@ -1205,13 +1205,13 @@
           },
           {
             "constant": false,
-            "id": 29375,
+            "id": 17832,
             "mutability": "mutable",
             "name": "b",
-            "nameLocation": "562:1:169",
+            "nameLocation": "562:1:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29380,
-            "src": "548:15:169",
+            "scope": 17837,
+            "src": "548:15:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1221,26 +1221,26 @@
             "typeName": {
               "baseType": {
                 "baseType": {
-                  "id": 29370,
+                  "id": 17827,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "548:7:169",
+                  "src": "548:7:163",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
                   }
                 },
-                "id": 29372,
+                "id": 17829,
                 "length": {
                   "hexValue": "32",
-                  "id": 29371,
+                  "id": 17828,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
                   "kind": "number",
                   "lValueRequested": false,
                   "nodeType": "Literal",
-                  "src": "556:1:169",
+                  "src": "556:1:163",
                   "typeDescriptions": {
                     "typeIdentifier": "t_rational_2_by_1",
                     "typeString": "int_const 2"
@@ -1248,23 +1248,23 @@
                   "value": "2"
                 },
                 "nodeType": "ArrayTypeName",
-                "src": "548:10:169",
+                "src": "548:10:163",
                 "typeDescriptions": {
                   "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
                   "typeString": "uint256[2]"
                 }
               },
-              "id": 29374,
+              "id": 17831,
               "length": {
                 "hexValue": "32",
-                "id": 29373,
+                "id": 17830,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "559:1:169",
+                "src": "559:1:163",
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_2_by_1",
                   "typeString": "int_const 2"
@@ -1272,7 +1272,7 @@
                 "value": "2"
               },
               "nodeType": "ArrayTypeName",
-              "src": "548:13:169",
+              "src": "548:13:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_array$_t_uint256_$2_storage_$2_storage_ptr",
                 "typeString": "uint256[2][2]"
@@ -1282,13 +1282,13 @@
           },
           {
             "constant": false,
-            "id": 29379,
+            "id": 17836,
             "mutability": "mutable",
             "name": "c",
-            "nameLocation": "580:1:169",
+            "nameLocation": "580:1:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29380,
-            "src": "569:12:169",
+            "scope": 17837,
+            "src": "569:12:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1297,26 +1297,26 @@
             },
             "typeName": {
               "baseType": {
-                "id": 29376,
+                "id": 17833,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
-                "src": "569:7:169",
+                "src": "569:7:163",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
-              "id": 29378,
+              "id": 17835,
               "length": {
                 "hexValue": "32",
-                "id": 29377,
+                "id": 17834,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "577:1:169",
+                "src": "577:1:163",
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_2_by_1",
                   "typeString": "int_const 2"
@@ -1324,7 +1324,7 @@
                 "value": "2"
               },
               "nodeType": "ArrayTypeName",
-              "src": "569:10:169",
+              "src": "569:10:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
                 "typeString": "uint256[2]"
@@ -1334,26 +1334,26 @@
           }
         ],
         "name": "CoordVerifyParam",
-        "nameLocation": "404:16:169",
-        "scope": 29536,
+        "nameLocation": "404:16:163",
+        "scope": 17993,
         "visibility": "public"
       },
       {
-        "id": 29399,
+        "id": 17856,
         "nodeType": "StructDefinition",
-        "src": "586:193:169",
+        "src": "586:193:163",
         "nodes": [],
         "canonicalName": "TreasureEffectInfo",
         "members": [
           {
             "constant": false,
-            "id": 29382,
+            "id": 17839,
             "mutability": "mutable",
             "name": "sourceID",
-            "nameLocation": "626:8:169",
+            "nameLocation": "626:8:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29399,
-            "src": "618:16:169",
+            "scope": 17856,
+            "src": "618:16:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1361,10 +1361,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 29381,
+              "id": 17838,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "618:7:169",
+              "src": "618:7:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1374,13 +1374,13 @@
           },
           {
             "constant": false,
-            "id": 29384,
+            "id": 17841,
             "mutability": "mutable",
             "name": "isComponent",
-            "nameLocation": "645:11:169",
+            "nameLocation": "645:11:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29399,
-            "src": "640:16:169",
+            "scope": 17856,
+            "src": "640:16:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1388,10 +1388,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 29383,
+              "id": 17840,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "640:4:169",
+              "src": "640:4:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -1401,13 +1401,13 @@
           },
           {
             "constant": false,
-            "id": 29386,
+            "id": 17843,
             "mutability": "mutable",
             "name": "entity",
-            "nameLocation": "670:6:169",
+            "nameLocation": "670:6:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29399,
-            "src": "662:14:169",
+            "scope": 17856,
+            "src": "662:14:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1415,10 +1415,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 29385,
+              "id": 17842,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "662:7:169",
+              "src": "662:7:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1428,13 +1428,13 @@
           },
           {
             "constant": false,
-            "id": 29388,
+            "id": 17845,
             "mutability": "mutable",
             "name": "treasureID",
-            "nameLocation": "690:10:169",
+            "nameLocation": "690:10:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29399,
-            "src": "682:18:169",
+            "scope": 17856,
+            "src": "682:18:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1442,10 +1442,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 29387,
+              "id": 17844,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "682:7:169",
+              "src": "682:7:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1455,42 +1455,42 @@
           },
           {
             "constant": false,
-            "id": 29392,
+            "id": 17849,
             "mutability": "mutable",
             "name": "path",
-            "nameLocation": "725:4:169",
+            "nameLocation": "725:4:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29399,
-            "src": "706:23:169",
+            "scope": 17856,
+            "src": "706:23:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_CoordVerifyParam_$29380_storage_$dyn_storage_ptr",
+              "typeIdentifier": "t_array$_t_struct$_CoordVerifyParam_$17837_storage_$dyn_storage_ptr",
               "typeString": "struct CoordVerifyParam[]"
             },
             "typeName": {
               "baseType": {
-                "id": 29390,
+                "id": 17847,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 29389,
+                  "id": 17846,
                   "name": "CoordVerifyParam",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 29380,
-                  "src": "706:16:169"
+                  "referencedDeclaration": 17837,
+                  "src": "706:16:163"
                 },
-                "referencedDeclaration": 29380,
-                "src": "706:16:169",
+                "referencedDeclaration": 17837,
+                "src": "706:16:163",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_storage_ptr",
+                  "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_storage_ptr",
                   "typeString": "struct CoordVerifyParam"
                 }
               },
-              "id": 29391,
+              "id": 17848,
               "nodeType": "ArrayTypeName",
-              "src": "706:18:169",
+              "src": "706:18:163",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_CoordVerifyParam_$29380_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_CoordVerifyParam_$17837_storage_$dyn_storage_ptr",
                 "typeString": "struct CoordVerifyParam[]"
               }
             },
@@ -1498,42 +1498,42 @@
           },
           {
             "constant": false,
-            "id": 29396,
+            "id": 17853,
             "mutability": "mutable",
             "name": "area",
-            "nameLocation": "754:4:169",
+            "nameLocation": "754:4:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29399,
-            "src": "735:23:169",
+            "scope": 17856,
+            "src": "735:23:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_CoordVerifyParam_$29380_storage_$dyn_storage_ptr",
+              "typeIdentifier": "t_array$_t_struct$_CoordVerifyParam_$17837_storage_$dyn_storage_ptr",
               "typeString": "struct CoordVerifyParam[]"
             },
             "typeName": {
               "baseType": {
-                "id": 29394,
+                "id": 17851,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 29393,
+                  "id": 17850,
                   "name": "CoordVerifyParam",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 29380,
-                  "src": "735:16:169"
+                  "referencedDeclaration": 17837,
+                  "src": "735:16:163"
                 },
-                "referencedDeclaration": 29380,
-                "src": "735:16:169",
+                "referencedDeclaration": 17837,
+                "src": "735:16:163",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_storage_ptr",
+                  "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_storage_ptr",
                   "typeString": "struct CoordVerifyParam"
                 }
               },
-              "id": 29395,
+              "id": 17852,
               "nodeType": "ArrayTypeName",
-              "src": "735:18:169",
+              "src": "735:18:163",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_CoordVerifyParam_$29380_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_CoordVerifyParam_$17837_storage_$dyn_storage_ptr",
                 "typeString": "struct CoordVerifyParam[]"
               }
             },
@@ -1541,13 +1541,13 @@
           },
           {
             "constant": false,
-            "id": 29398,
+            "id": 17855,
             "mutability": "mutable",
             "name": "value",
-            "nameLocation": "771:5:169",
+            "nameLocation": "771:5:163",
             "nodeType": "VariableDeclaration",
-            "scope": 29399,
-            "src": "764:12:169",
+            "scope": 17856,
+            "src": "764:12:163",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1555,10 +1555,10 @@
               "typeString": "uint32"
             },
             "typeName": {
-              "id": 29397,
+              "id": 17854,
               "name": "uint32",
               "nodeType": "ElementaryTypeName",
-              "src": "764:6:169",
+              "src": "764:6:163",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint32",
                 "typeString": "uint32"
@@ -1568,62 +1568,62 @@
           }
         ],
         "name": "TreasureEffectInfo",
-        "nameLocation": "593:18:169",
-        "scope": 29536,
+        "nameLocation": "593:18:163",
+        "scope": 17993,
         "visibility": "public"
       },
       {
-        "id": 29459,
+        "id": 17916,
         "nodeType": "FunctionDefinition",
-        "src": "781:534:169",
+        "src": "781:534:163",
         "nodes": [],
         "body": {
-          "id": 29458,
+          "id": 17915,
           "nodeType": "Block",
-          "src": "884:431:169",
+          "src": "884:431:163",
           "nodes": [],
           "statements": [
             {
               "assignments": [
-                29412
+                17869
               ],
               "declarations": [
                 {
                   "constant": false,
-                  "id": 29412,
+                  "id": 17869,
                   "mutability": "mutable",
                   "name": "zkConfig",
-                  "nameLocation": "906:8:169",
+                  "nameLocation": "906:8:163",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29458,
-                  "src": "890:24:169",
+                  "scope": 17915,
+                  "src": "890:24:163",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_ZKConfig_$28215_memory_ptr",
+                    "typeIdentifier": "t_struct$_ZKConfig_$16672_memory_ptr",
                     "typeString": "struct ZKConfig"
                   },
                   "typeName": {
-                    "id": 29411,
+                    "id": 17868,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29410,
+                      "id": 17867,
                       "name": "ZKConfig",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 28215,
-                      "src": "890:8:169"
+                      "referencedDeclaration": 16672,
+                      "src": "890:8:163"
                     },
-                    "referencedDeclaration": 28215,
-                    "src": "890:8:169",
+                    "referencedDeclaration": 16672,
+                    "src": "890:8:163",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ZKConfig_$28215_storage_ptr",
+                      "typeIdentifier": "t_struct$_ZKConfig_$16672_storage_ptr",
                       "typeString": "struct ZKConfig"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "id": 29421,
+              "id": 17878,
               "initialValue": {
                 "arguments": [],
                 "expression": {
@@ -1633,24 +1633,24 @@
                       {
                         "arguments": [
                           {
-                            "id": 29415,
+                            "id": 17872,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 29405,
-                            "src": "959:10:169",
+                            "referencedDeclaration": 17862,
+                            "src": "959:10:163",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IUint256Component_$1469",
+                              "typeIdentifier": "t_contract$_IUint256Component_$1347",
                               "typeString": "contract IUint256Component"
                             }
                           },
                           {
-                            "id": 29416,
+                            "id": 17873,
                             "name": "ZKConfigComponentID",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 28194,
-                            "src": "971:19:169",
+                            "referencedDeclaration": 16651,
+                            "src": "971:19:163",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -1660,7 +1660,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IUint256Component_$1469",
+                              "typeIdentifier": "t_contract$_IUint256Component_$1347",
                               "typeString": "contract IUint256Component"
                             },
                             {
@@ -1668,18 +1668,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 29414,
+                          "id": 17871,
                           "name": "getAddressById",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1684,
-                          "src": "944:14:169",
+                          "referencedDeclaration": 1562,
+                          "src": "944:14:163",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_view$_t_contract$_IUint256Component_$1469_$_t_uint256_$returns$_t_address_$",
+                            "typeIdentifier": "t_function_internal_view$_t_contract$_IUint256Component_$1347_$_t_uint256_$returns$_t_address_$",
                             "typeString": "function (contract IUint256Component,uint256) view returns (address)"
                           }
                         },
-                        "id": 29417,
+                        "id": 17874,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1687,7 +1687,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "944:47:169",
+                        "src": "944:47:163",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1702,18 +1702,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 29413,
+                      "id": 17870,
                       "name": "ZKConfigComponent",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 28499,
-                      "src": "917:17:169",
+                      "referencedDeclaration": 16956,
+                      "src": "917:17:163",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_ZKConfigComponent_$28499_$",
+                        "typeIdentifier": "t_type$_t_contract$_ZKConfigComponent_$16956_$",
                         "typeString": "type(contract ZKConfigComponent)"
                       }
                     },
-                    "id": 29418,
+                    "id": 17875,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1721,28 +1721,28 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "917:80:169",
+                    "src": "917:80:163",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ZKConfigComponent_$28499",
+                      "typeIdentifier": "t_contract$_ZKConfigComponent_$16956",
                       "typeString": "contract ZKConfigComponent"
                     }
                   },
-                  "id": 29419,
+                  "id": 17876,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": false,
                   "lValueRequested": false,
                   "memberName": "getValue",
                   "nodeType": "MemberAccess",
-                  "referencedDeclaration": 28498,
-                  "src": "917:89:169",
+                  "referencedDeclaration": 16955,
+                  "src": "917:89:163",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_function_external_view$__$returns$_t_struct$_ZKConfig_$28215_memory_ptr_$",
+                    "typeIdentifier": "t_function_external_view$__$returns$_t_struct$_ZKConfig_$16672_memory_ptr_$",
                     "typeString": "function () view external returns (struct ZKConfig memory)"
                   }
                 },
-                "id": 29420,
+                "id": 17877,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": false,
@@ -1750,66 +1750,66 @@
                 "lValueRequested": false,
                 "names": [],
                 "nodeType": "FunctionCall",
-                "src": "917:91:169",
+                "src": "917:91:163",
                 "tryCall": false,
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_ZKConfig_$28215_memory_ptr",
+                  "typeIdentifier": "t_struct$_ZKConfig_$16672_memory_ptr",
                   "typeString": "struct ZKConfig memory"
                 }
               },
               "nodeType": "VariableDeclarationStatement",
-              "src": "890:118:169"
+              "src": "890:118:163"
             },
             {
               "condition": {
                 "expression": {
-                  "id": 29422,
+                  "id": 17879,
                   "name": "zkConfig",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 29412,
-                  "src": "1018:8:169",
+                  "referencedDeclaration": 17869,
+                  "src": "1018:8:163",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_ZKConfig_$28215_memory_ptr",
+                    "typeIdentifier": "t_struct$_ZKConfig_$16672_memory_ptr",
                     "typeString": "struct ZKConfig memory"
                   }
                 },
-                "id": 29423,
+                "id": 17880,
                 "isConstant": false,
                 "isLValue": true,
                 "isPure": false,
                 "lValueRequested": false,
                 "memberName": "open",
                 "nodeType": "MemberAccess",
-                "referencedDeclaration": 28196,
-                "src": "1018:13:169",
+                "referencedDeclaration": 16653,
+                "src": "1018:13:163",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
                 }
               },
-              "id": 29457,
+              "id": 17914,
               "nodeType": "IfStatement",
-              "src": "1014:299:169",
+              "src": "1014:299:163",
               "trueBody": {
-                "id": 29456,
+                "id": 17913,
                 "nodeType": "Block",
-                "src": "1033:280:169",
+                "src": "1033:280:163",
                 "statements": [
                   {
                     "assignments": [
-                      29429
+                      17886
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 29429,
+                        "id": 17886,
                         "mutability": "mutable",
                         "name": "input",
-                        "nameLocation": "1061:5:169",
+                        "nameLocation": "1061:5:163",
                         "nodeType": "VariableDeclaration",
-                        "scope": 29456,
-                        "src": "1043:23:169",
+                        "scope": 17913,
+                        "src": "1043:23:163",
                         "stateVariable": false,
                         "storageLocation": "memory",
                         "typeDescriptions": {
@@ -1818,26 +1818,26 @@
                         },
                         "typeName": {
                           "baseType": {
-                            "id": 29427,
+                            "id": 17884,
                             "name": "uint256",
                             "nodeType": "ElementaryTypeName",
-                            "src": "1043:7:169",
+                            "src": "1043:7:163",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "id": 29428,
+                          "id": 17885,
                           "length": {
                             "hexValue": "35",
-                            "id": 29426,
+                            "id": 17883,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1051:1:169",
+                            "src": "1051:1:163",
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_5_by_1",
                               "typeString": "int_const 5"
@@ -1845,7 +1845,7 @@
                             "value": "5"
                           },
                           "nodeType": "ArrayTypeName",
-                          "src": "1043:10:169",
+                          "src": "1043:10:163",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_uint256_$5_storage_ptr",
                             "typeString": "uint256[5]"
@@ -1854,31 +1854,31 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 29441,
+                    "id": 17898,
                     "initialValue": {
                       "components": [
                         {
                           "expression": {
-                            "id": 29430,
+                            "id": 17887,
                             "name": "coord",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 29402,
-                            "src": "1070:5:169",
+                            "referencedDeclaration": 17859,
+                            "src": "1070:5:163",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_memory_ptr",
+                              "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_memory_ptr",
                               "typeString": "struct CoordVerifyParam memory"
                             }
                           },
-                          "id": 29431,
+                          "id": 17888,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "realHash",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 29357,
-                          "src": "1070:14:169",
+                          "referencedDeclaration": 17814,
+                          "src": "1070:14:163",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -1886,26 +1886,26 @@
                         },
                         {
                           "expression": {
-                            "id": 29432,
+                            "id": 17889,
                             "name": "coord",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 29402,
-                            "src": "1086:5:169",
+                            "referencedDeclaration": 17859,
+                            "src": "1086:5:163",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_memory_ptr",
+                              "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_memory_ptr",
                               "typeString": "struct CoordVerifyParam memory"
                             }
                           },
-                          "id": 29433,
+                          "id": 17890,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "fogHash",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 29359,
-                          "src": "1086:13:169",
+                          "referencedDeclaration": 17816,
+                          "src": "1086:13:163",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -1913,26 +1913,26 @@
                         },
                         {
                           "expression": {
-                            "id": 29434,
+                            "id": 17891,
                             "name": "coord",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 29402,
-                            "src": "1101:5:169",
+                            "referencedDeclaration": 17859,
+                            "src": "1101:5:163",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_memory_ptr",
+                              "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_memory_ptr",
                               "typeString": "struct CoordVerifyParam memory"
                             }
                           },
-                          "id": 29435,
+                          "id": 17892,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "fogSeed",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 29361,
-                          "src": "1101:13:169",
+                          "referencedDeclaration": 17818,
+                          "src": "1101:13:163",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -1940,26 +1940,26 @@
                         },
                         {
                           "expression": {
-                            "id": 29436,
+                            "id": 17893,
                             "name": "coord",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 29402,
-                            "src": "1116:5:169",
+                            "referencedDeclaration": 17859,
+                            "src": "1116:5:163",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_memory_ptr",
+                              "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_memory_ptr",
                               "typeString": "struct CoordVerifyParam memory"
                             }
                           },
-                          "id": 29437,
+                          "id": 17894,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "width",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 29363,
-                          "src": "1116:11:169",
+                          "referencedDeclaration": 17820,
+                          "src": "1116:11:163",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -1967,73 +1967,73 @@
                         },
                         {
                           "expression": {
-                            "id": 29438,
+                            "id": 17895,
                             "name": "coord",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 29402,
-                            "src": "1129:5:169",
+                            "referencedDeclaration": 17859,
+                            "src": "1129:5:163",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_memory_ptr",
+                              "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_memory_ptr",
                               "typeString": "struct CoordVerifyParam memory"
                             }
                           },
-                          "id": 29439,
+                          "id": 17896,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "height",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 29365,
-                          "src": "1129:12:169",
+                          "referencedDeclaration": 17822,
+                          "src": "1129:12:163",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         }
                       ],
-                      "id": 29440,
+                      "id": 17897,
                       "isConstant": false,
                       "isInlineArray": true,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "TupleExpression",
-                      "src": "1069:73:169",
+                      "src": "1069:73:163",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_uint256_$5_memory_ptr",
                         "typeString": "uint256[5] memory"
                       }
                     },
                     "nodeType": "VariableDeclarationStatement",
-                    "src": "1043:99:169"
+                    "src": "1043:99:163"
                   },
                   {
                     "expression": {
                       "arguments": [
                         {
                           "expression": {
-                            "id": 29447,
+                            "id": 17904,
                             "name": "coord",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 29402,
-                            "src": "1228:5:169",
+                            "referencedDeclaration": 17859,
+                            "src": "1228:5:163",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_memory_ptr",
+                              "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_memory_ptr",
                               "typeString": "struct CoordVerifyParam memory"
                             }
                           },
-                          "id": 29448,
+                          "id": 17905,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "a",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 29369,
-                          "src": "1228:7:169",
+                          "referencedDeclaration": 17826,
+                          "src": "1228:7:163",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_uint256_$2_memory_ptr",
                             "typeString": "uint256[2] memory"
@@ -2041,26 +2041,26 @@
                         },
                         {
                           "expression": {
-                            "id": 29449,
+                            "id": 17906,
                             "name": "coord",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 29402,
-                            "src": "1249:5:169",
+                            "referencedDeclaration": 17859,
+                            "src": "1249:5:163",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_memory_ptr",
+                              "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_memory_ptr",
                               "typeString": "struct CoordVerifyParam memory"
                             }
                           },
-                          "id": 29450,
+                          "id": 17907,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "b",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 29375,
-                          "src": "1249:7:169",
+                          "referencedDeclaration": 17832,
+                          "src": "1249:7:163",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_array$_t_uint256_$2_memory_ptr_$2_memory_ptr",
                             "typeString": "uint256[2] memory[2] memory"
@@ -2068,38 +2068,38 @@
                         },
                         {
                           "expression": {
-                            "id": 29451,
+                            "id": 17908,
                             "name": "coord",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 29402,
-                            "src": "1270:5:169",
+                            "referencedDeclaration": 17859,
+                            "src": "1270:5:163",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_memory_ptr",
+                              "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_memory_ptr",
                               "typeString": "struct CoordVerifyParam memory"
                             }
                           },
-                          "id": 29452,
+                          "id": 17909,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "c",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 29379,
-                          "src": "1270:7:169",
+                          "referencedDeclaration": 17836,
+                          "src": "1270:7:163",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_uint256_$2_memory_ptr",
                             "typeString": "uint256[2] memory"
                           }
                         },
                         {
-                          "id": 29453,
+                          "id": 17910,
                           "name": "input",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 29429,
-                          "src": "1291:5:169",
+                          "referencedDeclaration": 17886,
+                          "src": "1291:5:163",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_uint256_$5_memory_ptr",
                             "typeString": "uint256[5] memory"
@@ -2129,26 +2129,26 @@
                           "arguments": [
                             {
                               "expression": {
-                                "id": 29443,
+                                "id": 17900,
                                 "name": "zkConfig",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 29412,
-                                "src": "1174:8:169",
+                                "referencedDeclaration": 17869,
+                                "src": "1174:8:163",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_ZKConfig_$28215_memory_ptr",
+                                  "typeIdentifier": "t_struct$_ZKConfig_$16672_memory_ptr",
                                   "typeString": "struct ZKConfig memory"
                                 }
                               },
-                              "id": 29444,
+                              "id": 17901,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "coordVerifyAddress",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 28214,
-                              "src": "1174:27:169",
+                              "referencedDeclaration": 16671,
+                              "src": "1174:27:163",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
                                 "typeString": "address"
@@ -2162,18 +2162,18 @@
                                 "typeString": "address"
                               }
                             ],
-                            "id": 29442,
+                            "id": 17899,
                             "name": "ICoordVerifier",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 52247,
-                            "src": "1159:14:169",
+                            "referencedDeclaration": 41109,
+                            "src": "1159:14:163",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ICoordVerifier_$52247_$",
+                              "typeIdentifier": "t_type$_t_contract$_ICoordVerifier_$41109_$",
                               "typeString": "type(contract ICoordVerifier)"
                             }
                           },
-                          "id": 29445,
+                          "id": 17902,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2181,28 +2181,28 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "1159:43:169",
+                          "src": "1159:43:163",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ICoordVerifier_$52247",
+                            "typeIdentifier": "t_contract$_ICoordVerifier_$41109",
                             "typeString": "contract ICoordVerifier"
                           }
                         },
-                        "id": 29446,
+                        "id": 17903,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "verifyProof",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 52246,
-                        "src": "1159:55:169",
+                        "referencedDeclaration": 41108,
+                        "src": "1159:55:163",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_array$_t_uint256_$2_memory_ptr_$_t_array$_t_array$_t_uint256_$2_memory_ptr_$2_memory_ptr_$_t_array$_t_uint256_$2_memory_ptr_$_t_array$_t_uint256_$5_memory_ptr_$returns$_t_bool_$",
                           "typeString": "function (uint256[2] memory,uint256[2] memory[2] memory,uint256[2] memory,uint256[5] memory) view external returns (bool)"
                         }
                       },
-                      "id": 29454,
+                      "id": 17911,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2210,17 +2210,17 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1159:147:169",
+                      "src": "1159:147:163",
                       "tryCall": false,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "functionReturnParameters": 29409,
-                    "id": 29455,
+                    "functionReturnParameters": 17866,
+                    "id": 17912,
                     "nodeType": "Return",
-                    "src": "1152:154:169"
+                    "src": "1152:154:163"
                   }
                 ]
               }
@@ -2231,40 +2231,40 @@
         "kind": "freeFunction",
         "modifiers": [],
         "name": "checkCoordZK",
-        "nameLocation": "790:12:169",
+        "nameLocation": "790:12:163",
         "parameters": {
-          "id": 29406,
+          "id": 17863,
           "nodeType": "ParameterList",
           "parameters": [
             {
               "constant": false,
-              "id": 29402,
+              "id": 17859,
               "mutability": "mutable",
               "name": "coord",
-              "nameLocation": "827:5:169",
+              "nameLocation": "827:5:163",
               "nodeType": "VariableDeclaration",
-              "scope": 29459,
-              "src": "803:29:169",
+              "scope": 17916,
+              "src": "803:29:163",
               "stateVariable": false,
               "storageLocation": "memory",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_memory_ptr",
+                "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_memory_ptr",
                 "typeString": "struct CoordVerifyParam"
               },
               "typeName": {
-                "id": 29401,
+                "id": 17858,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 29400,
+                  "id": 17857,
                   "name": "CoordVerifyParam",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 29380,
-                  "src": "803:16:169"
+                  "referencedDeclaration": 17837,
+                  "src": "803:16:163"
                 },
-                "referencedDeclaration": 29380,
-                "src": "803:16:169",
+                "referencedDeclaration": 17837,
+                "src": "803:16:163",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_CoordVerifyParam_$29380_storage_ptr",
+                  "typeIdentifier": "t_struct$_CoordVerifyParam_$17837_storage_ptr",
                   "typeString": "struct CoordVerifyParam"
                 }
               },
@@ -2272,54 +2272,54 @@
             },
             {
               "constant": false,
-              "id": 29405,
+              "id": 17862,
               "mutability": "mutable",
               "name": "components",
-              "nameLocation": "852:10:169",
+              "nameLocation": "852:10:163",
               "nodeType": "VariableDeclaration",
-              "scope": 29459,
-              "src": "834:28:169",
+              "scope": 17916,
+              "src": "834:28:163",
               "stateVariable": false,
               "storageLocation": "default",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IUint256Component_$1469",
+                "typeIdentifier": "t_contract$_IUint256Component_$1347",
                 "typeString": "contract IUint256Component"
               },
               "typeName": {
-                "id": 29404,
+                "id": 17861,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 29403,
+                  "id": 17860,
                   "name": "IUint256Component",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1469,
-                  "src": "834:17:169"
+                  "referencedDeclaration": 1347,
+                  "src": "834:17:163"
                 },
-                "referencedDeclaration": 1469,
-                "src": "834:17:169",
+                "referencedDeclaration": 1347,
+                "src": "834:17:163",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_contract$_IUint256Component_$1469",
+                  "typeIdentifier": "t_contract$_IUint256Component_$1347",
                   "typeString": "contract IUint256Component"
                 }
               },
               "visibility": "internal"
             }
           ],
-          "src": "802:61:169"
+          "src": "802:61:163"
         },
         "returnParameters": {
-          "id": 29409,
+          "id": 17866,
           "nodeType": "ParameterList",
           "parameters": [
             {
               "constant": false,
-              "id": 29408,
+              "id": 17865,
               "mutability": "mutable",
               "name": "",
               "nameLocation": "-1:-1:-1",
               "nodeType": "VariableDeclaration",
-              "scope": 29459,
-              "src": "878:4:169",
+              "scope": 17916,
+              "src": "878:4:163",
               "stateVariable": false,
               "storageLocation": "default",
               "typeDescriptions": {
@@ -2327,10 +2327,10 @@
                 "typeString": "bool"
               },
               "typeName": {
-                "id": 29407,
+                "id": 17864,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
-                "src": "878:4:169",
+                "src": "878:4:163",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
@@ -2339,42 +2339,42 @@
               "visibility": "internal"
             }
           ],
-          "src": "877:6:169"
+          "src": "877:6:163"
         },
-        "scope": 29536,
+        "scope": 17993,
         "stateMutability": "view",
         "virtual": false,
         "visibility": "internal"
       },
       {
-        "id": 29475,
+        "id": 17932,
         "nodeType": "ContractDefinition",
-        "src": "1317:206:169",
+        "src": "1317:206:163",
         "nodes": [
           {
-            "id": 29466,
+            "id": 17923,
             "nodeType": "FunctionDefinition",
-            "src": "1355:68:169",
+            "src": "1355:68:163",
             "nodes": [],
             "functionSelector": "09c5eabe",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "execute",
-            "nameLocation": "1364:7:169",
+            "nameLocation": "1364:7:163",
             "parameters": {
-              "id": 29462,
+              "id": 17919,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29461,
+                  "id": 17918,
                   "mutability": "mutable",
                   "name": "args",
-                  "nameLocation": "1385:4:169",
+                  "nameLocation": "1385:4:163",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29466,
-                  "src": "1372:17:169",
+                  "scope": 17923,
+                  "src": "1372:17:163",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2382,10 +2382,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 29460,
+                    "id": 17917,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1372:5:169",
+                    "src": "1372:5:163",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -2394,21 +2394,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1371:19:169"
+              "src": "1371:19:163"
             },
             "returnParameters": {
-              "id": 29465,
+              "id": 17922,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29464,
+                  "id": 17921,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29466,
-                  "src": "1409:12:169",
+                  "scope": 17923,
+                  "src": "1409:12:163",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2416,10 +2416,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 29463,
+                    "id": 17920,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1409:5:169",
+                    "src": "1409:5:163",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -2428,78 +2428,78 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1408:14:169"
+              "src": "1408:14:163"
             },
-            "scope": 29475,
+            "scope": 17932,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 29474,
+            "id": 17931,
             "nodeType": "FunctionDefinition",
-            "src": "1429:92:169",
+            "src": "1429:92:163",
             "nodes": [],
             "functionSelector": "7e62c17a",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "executeTyped",
-            "nameLocation": "1438:12:169",
+            "nameLocation": "1438:12:163",
             "parameters": {
-              "id": 29470,
+              "id": 17927,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29469,
+                  "id": 17926,
                   "mutability": "mutable",
                   "name": "effectInfo",
-                  "nameLocation": "1477:10:169",
+                  "nameLocation": "1477:10:163",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29474,
-                  "src": "1451:36:169",
+                  "scope": 17931,
+                  "src": "1451:36:163",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_memory_ptr",
+                    "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_memory_ptr",
                     "typeString": "struct TreasureEffectInfo"
                   },
                   "typeName": {
-                    "id": 29468,
+                    "id": 17925,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29467,
+                      "id": 17924,
                       "name": "TreasureEffectInfo",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 29399,
-                      "src": "1451:18:169"
+                      "referencedDeclaration": 17856,
+                      "src": "1451:18:163"
                     },
-                    "referencedDeclaration": 29399,
-                    "src": "1451:18:169",
+                    "referencedDeclaration": 17856,
+                    "src": "1451:18:163",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_storage_ptr",
+                      "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_storage_ptr",
                       "typeString": "struct TreasureEffectInfo"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1450:38:169"
+              "src": "1450:38:163"
             },
             "returnParameters": {
-              "id": 29473,
+              "id": 17930,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29472,
+                  "id": 17929,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29474,
-                  "src": "1507:12:169",
+                  "scope": 17931,
+                  "src": "1507:12:163",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2507,10 +2507,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 29471,
+                    "id": 17928,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1507:5:169",
+                    "src": "1507:5:163",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -2519,9 +2519,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1506:14:169"
+              "src": "1506:14:163"
             },
-            "scope": 29475,
+            "scope": 17932,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -2534,27 +2534,27 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          29475
+          17932
         ],
         "name": "ITreasureEffectSystem",
-        "nameLocation": "1327:21:169",
-        "scope": 29536,
+        "nameLocation": "1327:21:163",
+        "scope": 17993,
         "usedErrors": []
       },
       {
-        "id": 29535,
+        "id": 17992,
         "nodeType": "ContractDefinition",
-        "src": "1525:628:169",
+        "src": "1525:628:163",
         "nodes": [
           {
-            "id": 29490,
+            "id": 17947,
             "nodeType": "FunctionDefinition",
-            "src": "1580:100:169",
+            "src": "1580:100:163",
             "nodes": [],
             "body": {
-              "id": 29489,
+              "id": 17946,
               "nodeType": "Block",
-              "src": "1678:2:169",
+              "src": "1678:2:163",
               "nodes": [],
               "statements": []
             },
@@ -2564,78 +2564,78 @@
               {
                 "arguments": [
                   {
-                    "id": 29485,
+                    "id": 17942,
                     "name": "_world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 29480,
-                    "src": "1657:6:169",
+                    "referencedDeclaration": 17937,
+                    "src": "1657:6:163",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IWorld_$1582",
+                      "typeIdentifier": "t_contract$_IWorld_$1460",
                       "typeString": "contract IWorld"
                     }
                   },
                   {
-                    "id": 29486,
+                    "id": 17943,
                     "name": "_components",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 29482,
-                    "src": "1665:11:169",
+                    "referencedDeclaration": 17939,
+                    "src": "1665:11:163",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   }
                 ],
-                "id": 29487,
+                "id": 17944,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 29484,
+                  "id": 17941,
                   "name": "System",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 587,
-                  "src": "1650:6:169"
+                  "src": "1650:6:163"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1650:27:169"
+                "src": "1650:27:163"
               }
             ],
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 29483,
+              "id": 17940,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29480,
+                  "id": 17937,
                   "mutability": "mutable",
                   "name": "_world",
-                  "nameLocation": "1608:6:169",
+                  "nameLocation": "1608:6:163",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29490,
-                  "src": "1601:13:169",
+                  "scope": 17947,
+                  "src": "1601:13:163",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IWorld_$1582",
+                    "typeIdentifier": "t_contract$_IWorld_$1460",
                     "typeString": "contract IWorld"
                   },
                   "typeName": {
-                    "id": 29479,
+                    "id": 17936,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29478,
+                      "id": 17935,
                       "name": "IWorld",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 1582,
-                      "src": "1601:6:169"
+                      "referencedDeclaration": 1460,
+                      "src": "1601:6:163"
                     },
-                    "referencedDeclaration": 1582,
-                    "src": "1601:6:169",
+                    "referencedDeclaration": 1460,
+                    "src": "1601:6:163",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IWorld_$1582",
+                      "typeIdentifier": "t_contract$_IWorld_$1460",
                       "typeString": "contract IWorld"
                     }
                   },
@@ -2643,13 +2643,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 29482,
+                  "id": 17939,
                   "mutability": "mutable",
                   "name": "_components",
-                  "nameLocation": "1632:11:169",
+                  "nameLocation": "1632:11:163",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29490,
-                  "src": "1624:19:169",
+                  "scope": 17947,
+                  "src": "1624:19:163",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2657,10 +2657,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 29481,
+                    "id": 17938,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1624:7:169",
+                    "src": "1624:7:163",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2670,80 +2670,80 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1591:58:169"
+              "src": "1591:58:163"
             },
             "returnParameters": {
-              "id": 29488,
+              "id": 17945,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1678:0:169"
+              "src": "1678:0:163"
             },
-            "scope": 29535,
+            "scope": 17992,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 29512,
+            "id": 17969,
             "nodeType": "FunctionDefinition",
-            "src": "1686:201:169",
+            "src": "1686:201:163",
             "nodes": [],
             "body": {
-              "id": 29511,
+              "id": 17968,
               "nodeType": "Block",
-              "src": "1752:135:169",
+              "src": "1752:135:163",
               "nodes": [],
               "statements": [
                 {
                   "assignments": [
-                    29499
+                    17956
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 29499,
+                      "id": 17956,
                       "mutability": "mutable",
                       "name": "effectInfo",
-                      "nameLocation": "1788:10:169",
+                      "nameLocation": "1788:10:163",
                       "nodeType": "VariableDeclaration",
-                      "scope": 29511,
-                      "src": "1762:36:169",
+                      "scope": 17968,
+                      "src": "1762:36:163",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_memory_ptr",
+                        "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_memory_ptr",
                         "typeString": "struct TreasureEffectInfo"
                       },
                       "typeName": {
-                        "id": 29498,
+                        "id": 17955,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 29497,
+                          "id": 17954,
                           "name": "TreasureEffectInfo",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 29399,
-                          "src": "1762:18:169"
+                          "referencedDeclaration": 17856,
+                          "src": "1762:18:163"
                         },
-                        "referencedDeclaration": 29399,
-                        "src": "1762:18:169",
+                        "referencedDeclaration": 17856,
+                        "src": "1762:18:163",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_storage_ptr",
+                          "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_storage_ptr",
                           "typeString": "struct TreasureEffectInfo"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 29506,
+                  "id": 17963,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 29502,
+                        "id": 17959,
                         "name": "args",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29492,
-                        "src": "1812:4:169",
+                        "referencedDeclaration": 17949,
+                        "src": "1812:4:163",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
                           "typeString": "bytes memory"
@@ -2752,28 +2752,28 @@
                       {
                         "components": [
                           {
-                            "id": 29503,
+                            "id": 17960,
                             "name": "TreasureEffectInfo",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 29399,
-                            "src": "1819:18:169",
+                            "referencedDeclaration": 17856,
+                            "src": "1819:18:163",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_TreasureEffectInfo_$29399_storage_ptr_$",
+                              "typeIdentifier": "t_type$_t_struct$_TreasureEffectInfo_$17856_storage_ptr_$",
                               "typeString": "type(struct TreasureEffectInfo storage pointer)"
                             }
                           }
                         ],
-                        "id": 29504,
+                        "id": 17961,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
                         "nodeType": "TupleExpression",
-                        "src": "1818:20:169",
+                        "src": "1818:20:163",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_TreasureEffectInfo_$29399_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_TreasureEffectInfo_$17856_storage_ptr_$",
                           "typeString": "type(struct TreasureEffectInfo storage pointer)"
                         }
                       }
@@ -2785,36 +2785,36 @@
                           "typeString": "bytes memory"
                         },
                         {
-                          "typeIdentifier": "t_type$_t_struct$_TreasureEffectInfo_$29399_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_TreasureEffectInfo_$17856_storage_ptr_$",
                           "typeString": "type(struct TreasureEffectInfo storage pointer)"
                         }
                       ],
                       "expression": {
-                        "id": 29500,
+                        "id": 17957,
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": -1,
-                        "src": "1801:3:169",
+                        "src": "1801:3:163",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
                           "typeString": "abi"
                         }
                       },
-                      "id": 29501,
+                      "id": 17958,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "memberName": "decode",
                       "nodeType": "MemberAccess",
-                      "src": "1801:10:169",
+                      "src": "1801:10:163",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
                         "typeString": "function () pure"
                       }
                     },
-                    "id": 29505,
+                    "id": 17962,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2822,28 +2822,28 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1801:38:169",
+                    "src": "1801:38:163",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_memory_ptr",
+                      "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_memory_ptr",
                       "typeString": "struct TreasureEffectInfo memory"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1762:77:169"
+                  "src": "1762:77:163"
                 },
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 29508,
+                        "id": 17965,
                         "name": "effectInfo",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29499,
-                        "src": "1869:10:169",
+                        "referencedDeclaration": 17956,
+                        "src": "1869:10:163",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_memory_ptr",
+                          "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_memory_ptr",
                           "typeString": "struct TreasureEffectInfo memory"
                         }
                       }
@@ -2851,22 +2851,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_memory_ptr",
+                          "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_memory_ptr",
                           "typeString": "struct TreasureEffectInfo memory"
                         }
                       ],
-                      "id": 29507,
+                      "id": 17964,
                       "name": "executeTyped",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 29525,
-                      "src": "1856:12:169",
+                      "referencedDeclaration": 17982,
+                      "src": "1856:12:163",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_TreasureEffectInfo_$29399_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_TreasureEffectInfo_$17856_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (struct TreasureEffectInfo memory) returns (bytes memory)"
                       }
                     },
-                    "id": 29509,
+                    "id": 17966,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2874,42 +2874,42 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1856:24:169",
+                    "src": "1856:24:163",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
                       "typeString": "bytes memory"
                     }
                   },
-                  "functionReturnParameters": 29496,
-                  "id": 29510,
+                  "functionReturnParameters": 17953,
+                  "id": 17967,
                   "nodeType": "Return",
-                  "src": "1849:31:169"
+                  "src": "1849:31:163"
                 }
               ]
             },
             "baseFunctions": [
-              54080
+              42931
             ],
             "functionSelector": "09c5eabe",
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "execute",
-            "nameLocation": "1695:7:169",
+            "nameLocation": "1695:7:163",
             "parameters": {
-              "id": 29493,
+              "id": 17950,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29492,
+                  "id": 17949,
                   "mutability": "mutable",
                   "name": "args",
-                  "nameLocation": "1716:4:169",
+                  "nameLocation": "1716:4:163",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29512,
-                  "src": "1703:17:169",
+                  "scope": 17969,
+                  "src": "1703:17:163",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2917,10 +2917,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 29491,
+                    "id": 17948,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1703:5:169",
+                    "src": "1703:5:163",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -2929,21 +2929,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1702:19:169"
+              "src": "1702:19:163"
             },
             "returnParameters": {
-              "id": 29496,
+              "id": 17953,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29495,
+                  "id": 17952,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29512,
-                  "src": "1738:12:169",
+                  "scope": 17969,
+                  "src": "1738:12:163",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2951,10 +2951,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 29494,
+                    "id": 17951,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1738:5:169",
+                    "src": "1738:5:163",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -2963,36 +2963,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1737:14:169"
+              "src": "1737:14:163"
             },
-            "scope": 29535,
+            "scope": 17992,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 29525,
+            "id": 17982,
             "nodeType": "FunctionDefinition",
-            "src": "1893:151:169",
+            "src": "1893:151:163",
             "nodes": [],
             "body": {
-              "id": 29524,
+              "id": 17981,
               "nodeType": "Block",
-              "src": "1997:47:169",
+              "src": "1997:47:163",
               "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 29521,
+                        "id": 17978,
                         "name": "effectInfo",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29515,
-                        "src": "2026:10:169",
+                        "referencedDeclaration": 17972,
+                        "src": "2026:10:163",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_memory_ptr",
+                          "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_memory_ptr",
                           "typeString": "struct TreasureEffectInfo memory"
                         }
                       }
@@ -3000,22 +3000,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_memory_ptr",
+                          "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_memory_ptr",
                           "typeString": "struct TreasureEffectInfo memory"
                         }
                       ],
-                      "id": 29520,
+                      "id": 17977,
                       "name": "effectLogic",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 29534,
-                      "src": "2014:11:169",
+                      "referencedDeclaration": 17991,
+                      "src": "2014:11:163",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_TreasureEffectInfo_$29399_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_TreasureEffectInfo_$17856_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (struct TreasureEffectInfo memory) returns (bytes memory)"
                       }
                     },
-                    "id": 29522,
+                    "id": 17979,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3023,17 +3023,17 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "2014:23:169",
+                    "src": "2014:23:163",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
                       "typeString": "bytes memory"
                     }
                   },
-                  "functionReturnParameters": 29519,
-                  "id": 29523,
+                  "functionReturnParameters": 17976,
+                  "id": 17980,
                   "nodeType": "Return",
-                  "src": "2007:30:169"
+                  "src": "2007:30:163"
                 }
               ]
             },
@@ -3042,61 +3042,61 @@
             "kind": "function",
             "modifiers": [],
             "name": "executeTyped",
-            "nameLocation": "1902:12:169",
+            "nameLocation": "1902:12:163",
             "parameters": {
-              "id": 29516,
+              "id": 17973,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29515,
+                  "id": 17972,
                   "mutability": "mutable",
                   "name": "effectInfo",
-                  "nameLocation": "1950:10:169",
+                  "nameLocation": "1950:10:163",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29525,
-                  "src": "1924:36:169",
+                  "scope": 17982,
+                  "src": "1924:36:163",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_memory_ptr",
+                    "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_memory_ptr",
                     "typeString": "struct TreasureEffectInfo"
                   },
                   "typeName": {
-                    "id": 29514,
+                    "id": 17971,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29513,
+                      "id": 17970,
                       "name": "TreasureEffectInfo",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 29399,
-                      "src": "1924:18:169"
+                      "referencedDeclaration": 17856,
+                      "src": "1924:18:163"
                     },
-                    "referencedDeclaration": 29399,
-                    "src": "1924:18:169",
+                    "referencedDeclaration": 17856,
+                    "src": "1924:18:163",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_storage_ptr",
+                      "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_storage_ptr",
                       "typeString": "struct TreasureEffectInfo"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1914:52:169"
+              "src": "1914:52:163"
             },
             "returnParameters": {
-              "id": 29519,
+              "id": 17976,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29518,
+                  "id": 17975,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29525,
-                  "src": "1983:12:169",
+                  "scope": 17982,
+                  "src": "1983:12:163",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -3104,10 +3104,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 29517,
+                    "id": 17974,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1983:5:169",
+                    "src": "1983:5:163",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -3116,22 +3116,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1982:14:169"
+              "src": "1982:14:163"
             },
-            "scope": 29535,
+            "scope": 17992,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 29534,
+            "id": 17991,
             "nodeType": "FunctionDefinition",
-            "src": "2050:101:169",
+            "src": "2050:101:163",
             "nodes": [],
             "body": {
-              "id": 29533,
+              "id": 17990,
               "nodeType": "Block",
-              "src": "2149:2:169",
+              "src": "2149:2:163",
               "nodes": [],
               "statements": []
             },
@@ -3139,61 +3139,61 @@
             "kind": "function",
             "modifiers": [],
             "name": "effectLogic",
-            "nameLocation": "2059:11:169",
+            "nameLocation": "2059:11:163",
             "parameters": {
-              "id": 29529,
+              "id": 17986,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29528,
+                  "id": 17985,
                   "mutability": "mutable",
                   "name": "effectInfo",
-                  "nameLocation": "2097:10:169",
+                  "nameLocation": "2097:10:163",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29534,
-                  "src": "2071:36:169",
+                  "scope": 17991,
+                  "src": "2071:36:163",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_memory_ptr",
+                    "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_memory_ptr",
                     "typeString": "struct TreasureEffectInfo"
                   },
                   "typeName": {
-                    "id": 29527,
+                    "id": 17984,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29526,
+                      "id": 17983,
                       "name": "TreasureEffectInfo",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 29399,
-                      "src": "2071:18:169"
+                      "referencedDeclaration": 17856,
+                      "src": "2071:18:163"
                     },
-                    "referencedDeclaration": 29399,
-                    "src": "2071:18:169",
+                    "referencedDeclaration": 17856,
+                    "src": "2071:18:163",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TreasureEffectInfo_$29399_storage_ptr",
+                      "typeIdentifier": "t_struct$_TreasureEffectInfo_$17856_storage_ptr",
                       "typeString": "struct TreasureEffectInfo"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "2070:38:169"
+              "src": "2070:38:163"
             },
             "returnParameters": {
-              "id": 29532,
+              "id": 17989,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29531,
+                  "id": 17988,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29534,
-                  "src": "2135:12:169",
+                  "scope": 17991,
+                  "src": "2135:12:163",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -3201,10 +3201,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 29530,
+                    "id": 17987,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2135:5:169",
+                    "src": "2135:5:163",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -3213,9 +3213,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2134:14:169"
+              "src": "2134:14:163"
             },
-            "scope": 29535,
+            "scope": 17992,
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "internal"
@@ -3225,15 +3225,15 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 29476,
+              "id": 17933,
               "name": "System",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 587,
-              "src": "1567:6:169"
+              "src": "1567:6:163"
             },
-            "id": 29477,
+            "id": 17934,
             "nodeType": "InheritanceSpecifier",
-            "src": "1567:6:169"
+            "src": "1567:6:163"
           }
         ],
         "canonicalName": "TreasureEffectSystem",
@@ -3241,27 +3241,27 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          29535,
+          17992,
           587,
-          54067,
-          2437,
-          55898,
-          56317,
-          55774,
-          54081,
-          2480,
-          55908
+          42796,
+          2161,
+          44623,
+          45042,
+          44499,
+          42932,
+          2204,
+          44633
         ],
         "name": "TreasureEffectSystem",
-        "nameLocation": "1543:20:169",
-        "scope": 29536,
+        "nameLocation": "1543:20:163",
+        "scope": 17993,
         "usedErrors": [
-          56314,
-          56316
+          45039,
+          45041
         ]
       }
     ],
     "license": "MIT"
   },
-  "id": 169
+  "id": 163
 }

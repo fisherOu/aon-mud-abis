@@ -32,15 +32,15 @@ export type DonateTreasureInfoStruct = {
   treasureId: PromiseOrValue<BigNumberish>;
 };
 
-export type DonateTreasureInfoStructOutput = [BigNumber, number] & {
+export type DonateTreasureInfoStructOutput = [BigNumber, BigNumber] & {
   guildCrestId: BigNumber;
-  treasureId: number;
+  treasureId: BigNumber;
 };
 
 export interface DonateTreasureSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint32))": FunctionFragment;
+    "executeTyped((uint256,uint256))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
