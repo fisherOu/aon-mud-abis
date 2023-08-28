@@ -27,14 +27,10 @@ import type {
   PromiseOrValue,
 } from "./common";
 
-export type TechFinishInfoStruct = { updateId: PromiseOrValue<BigNumberish> };
-
-export type TechFinishInfoStructOutput = [BigNumber] & { updateId: BigNumber };
-
 export interface TechFinishSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256))": FunctionFragment;
+    "executeTyped(uint256)": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
@@ -53,7 +49,7 @@ export interface TechFinishSystemInterface extends utils.Interface {
   ): string;
   encodeFunctionData(
     functionFragment: "executeTyped",
-    values: [TechFinishInfoStruct]
+    values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(functionFragment: "owner", values?: undefined): string;
   encodeFunctionData(
@@ -124,7 +120,7 @@ export interface TechFinishSystem extends BaseContract {
     ): Promise<ContractTransaction>;
 
     executeTyped(
-      techFinishInfo: TechFinishInfoStruct,
+      updateId: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -142,7 +138,7 @@ export interface TechFinishSystem extends BaseContract {
   ): Promise<ContractTransaction>;
 
   executeTyped(
-    techFinishInfo: TechFinishInfoStruct,
+    updateId: PromiseOrValue<BigNumberish>,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -160,7 +156,7 @@ export interface TechFinishSystem extends BaseContract {
     ): Promise<string>;
 
     executeTyped(
-      techFinishInfo: TechFinishInfoStruct,
+      updateId: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<string>;
 
@@ -190,7 +186,7 @@ export interface TechFinishSystem extends BaseContract {
     ): Promise<BigNumber>;
 
     executeTyped(
-      techFinishInfo: TechFinishInfoStruct,
+      updateId: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -209,7 +205,7 @@ export interface TechFinishSystem extends BaseContract {
     ): Promise<PopulatedTransaction>;
 
     executeTyped(
-      techFinishInfo: TechFinishInfoStruct,
+      updateId: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 

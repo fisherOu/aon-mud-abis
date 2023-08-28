@@ -113,6 +113,7 @@ export type { TechCancelSystem } from "./TechCancelSystem";
 export type { TechComponent } from "./TechComponent";
 export type { TechConfigComponent } from "./TechConfigComponent";
 export type { TechConfigGlobalComponent } from "./TechConfigGlobalComponent";
+export type { TechConfigRegisterComponent } from "./TechConfigRegisterComponent";
 export type { TechFinishSystem } from "./TechFinishSystem";
 export type { TechUpdateSystem } from "./TechUpdateSystem";
 export type { TechUpdatingComponent } from "./TechUpdatingComponent";
@@ -266,6 +267,7 @@ export { TechCancelSystem__factory } from "./factories/TechCancelSystem__factory
 export { TechComponent__factory } from "./factories/TechComponent__factory";
 export { TechConfigComponent__factory } from "./factories/TechConfigComponent__factory";
 export { TechConfigGlobalComponent__factory } from "./factories/TechConfigGlobalComponent__factory";
+export { TechConfigRegisterComponent__factory } from "./factories/TechConfigRegisterComponent__factory";
 export { TechFinishSystem__factory } from "./factories/TechFinishSystem__factory";
 export { TechUpdateSystem__factory } from "./factories/TechUpdateSystem__factory";
 export { TechUpdatingComponent__factory } from "./factories/TechUpdatingComponent__factory";
