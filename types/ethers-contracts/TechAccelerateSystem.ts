@@ -27,18 +27,10 @@ import type {
   PromiseOrValue,
 } from "./common";
 
-export type TechAccelerateInfoStruct = {
-  updateId: PromiseOrValue<BigNumberish>;
-};
-
-export type TechAccelerateInfoStructOutput = [BigNumber] & {
-  updateId: BigNumber;
-};
-
 export interface TechAccelerateSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256))": FunctionFragment;
+    "executeTyped(uint256)": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
@@ -57,7 +49,7 @@ export interface TechAccelerateSystemInterface extends utils.Interface {
   ): string;
   encodeFunctionData(
     functionFragment: "executeTyped",
-    values: [TechAccelerateInfoStruct]
+    values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(functionFragment: "owner", values?: undefined): string;
   encodeFunctionData(
@@ -128,7 +120,7 @@ export interface TechAccelerateSystem extends BaseContract {
     ): Promise<ContractTransaction>;
 
     executeTyped(
-      techAccelerateInfo: TechAccelerateInfoStruct,
+      updateId: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -146,7 +138,7 @@ export interface TechAccelerateSystem extends BaseContract {
   ): Promise<ContractTransaction>;
 
   executeTyped(
-    techAccelerateInfo: TechAccelerateInfoStruct,
+    updateId: PromiseOrValue<BigNumberish>,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -164,7 +156,7 @@ export interface TechAccelerateSystem extends BaseContract {
     ): Promise<string>;
 
     executeTyped(
-      techAccelerateInfo: TechAccelerateInfoStruct,
+      updateId: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
     ): Promise<string>;
 
@@ -194,7 +186,7 @@ export interface TechAccelerateSystem extends BaseContract {
     ): Promise<BigNumber>;
 
     executeTyped(
-      techAccelerateInfo: TechAccelerateInfoStruct,
+      updateId: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -213,7 +205,7 @@ export interface TechAccelerateSystem extends BaseContract {
     ): Promise<PopulatedTransaction>;
 
     executeTyped(
-      techAccelerateInfo: TechAccelerateInfoStruct,
+      updateId: PromiseOrValue<BigNumberish>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
