@@ -129,7 +129,7 @@ export interface ComponentDevSystem extends BaseContract {
 
   functions: {
     execute(
-      params: PromiseOrValue<BytesLike>,
+      arguments: PromiseOrValue<BytesLike>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -154,7 +154,7 @@ export interface ComponentDevSystem extends BaseContract {
   };
 
   execute(
-    params: PromiseOrValue<BytesLike>,
+    arguments: PromiseOrValue<BytesLike>,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -179,7 +179,7 @@ export interface ComponentDevSystem extends BaseContract {
 
   callStatic: {
     execute(
-      params: PromiseOrValue<BytesLike>,
+      arguments: PromiseOrValue<BytesLike>,
       overrides?: CallOverrides
     ): Promise<string>;
 
@@ -216,7 +216,7 @@ export interface ComponentDevSystem extends BaseContract {
 
   estimateGas: {
     execute(
-      params: PromiseOrValue<BytesLike>,
+      arguments: PromiseOrValue<BytesLike>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -242,7 +242,7 @@ export interface ComponentDevSystem extends BaseContract {
 
   populateTransaction: {
     execute(
-      params: PromiseOrValue<BytesLike>,
+      arguments: PromiseOrValue<BytesLike>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 

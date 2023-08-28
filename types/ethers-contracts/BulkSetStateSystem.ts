@@ -141,7 +141,7 @@ export interface BulkSetStateSystem extends BaseContract {
 
   functions: {
     execute(
-      params: PromiseOrValue<BytesLike>,
+      arguments: PromiseOrValue<BytesLike>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -166,7 +166,7 @@ export interface BulkSetStateSystem extends BaseContract {
   };
 
   execute(
-    params: PromiseOrValue<BytesLike>,
+    arguments: PromiseOrValue<BytesLike>,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -191,7 +191,7 @@ export interface BulkSetStateSystem extends BaseContract {
 
   callStatic: {
     execute(
-      params: PromiseOrValue<BytesLike>,
+      arguments: PromiseOrValue<BytesLike>,
       overrides?: CallOverrides
     ): Promise<string>;
 
@@ -228,7 +228,7 @@ export interface BulkSetStateSystem extends BaseContract {
 
   estimateGas: {
     execute(
-      params: PromiseOrValue<BytesLike>,
+      arguments: PromiseOrValue<BytesLike>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -254,7 +254,7 @@ export interface BulkSetStateSystem extends BaseContract {
 
   populateTransaction: {
     execute(
-      params: PromiseOrValue<BytesLike>,
+      arguments: PromiseOrValue<BytesLike>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 

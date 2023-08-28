@@ -113,7 +113,6 @@ export { TechCancelSystem__factory } from "./TechCancelSystem__factory";
 export { TechComponent__factory } from "./TechComponent__factory";
 export { TechConfigComponent__factory } from "./TechConfigComponent__factory";
 export { TechConfigGlobalComponent__factory } from "./TechConfigGlobalComponent__factory";
-export { TechConfigRegisterComponent__factory } from "./TechConfigRegisterComponent__factory";
 export { TechFinishSystem__factory } from "./TechFinishSystem__factory";
 export { TechUpdateSystem__factory } from "./TechUpdateSystem__factory";
 export { TechUpdatingComponent__factory } from "./TechUpdatingComponent__factory";
