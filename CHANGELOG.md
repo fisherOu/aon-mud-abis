@@ -1,7 +1,7 @@
-# v0.0.10_7_treasureEffects_2e9cd66
+# v0.0.10_10_treasureEffects_9ddde8d
 
 ## 更新：
-1. 完成 科技树升级、取消升级、加速升级、完成升级回调 的单测
-2. 添加 TechConfigRegisterComponent(uint256)
-   world address: 0x6ac16Be2B055CCA11753090CcdEF5eE4316dCA38
-   abi tag: v0.0.10_8_treasureEffects_bf818c6
+1. 完成 新版攻击、两种主动型宝物 的单测
+   world address: 0xf89F13e190cFe9577b49aF7C89fe9d074fb6e88c
+   initialBlockNumber:  23892320
+   abi tag: v0.0.10_10_treasureEffects_9ddde8d

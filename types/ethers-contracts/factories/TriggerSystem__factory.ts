@@ -117,6 +117,52 @@ const _abi = [
   {
     inputs: [
       {
+        components: [
+          {
+            internalType: "uint256",
+            name: "component",
+            type: "uint256",
+          },
+          {
+            internalType: "uint256",
+            name: "entity",
+            type: "uint256",
+          },
+          {
+            internalType: "bytes",
+            name: "lastValue",
+            type: "bytes",
+          },
+          {
+            internalType: "bytes",
+            name: "newValue",
+            type: "bytes",
+          },
+          {
+            internalType: "bool",
+            name: "isSet",
+            type: "bool",
+          },
+        ],
+        internalType: "struct TriggerInfo",
+        name: "triggerInfo",
+        type: "tuple",
+      },
+    ],
+    name: "solveLogic",
+    outputs: [
+      {
+        internalType: "bytes",
+        name: "",
+        type: "bytes",
+      },
+    ],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
         internalType: "address",
         name: "account",
         type: "address",

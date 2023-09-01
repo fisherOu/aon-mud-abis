@@ -5,6 +5,7 @@ import AllocateTreasureSystem from "../abi/AllocateTreasureSystem.json";
 import ApproveGuildSystem from "../abi/ApproveGuildSystem.json";
 import AttackChargeSystem from "../abi/AttackChargeSystem.json";
 import AttackFinishSystem from "../abi/AttackFinishSystem.json";
+import AttackFinishv2System from "../abi/AttackFinishv2System.json";
 import BoundTreasureSystem from "../abi/BoundTreasureSystem.json";
 import BuffEffectAddHPCalculateSystem from "../abi/BuffEffectAddHPCalculateSystem.json";
 import BuffEffectKeepResourceOnDeathExecuteSystem from "../abi/BuffEffectKeepResourceOnDeathExecuteSystem.json";
@@ -18,6 +19,7 @@ import ChargeAirdropTreasureSystem from "../abi/ChargeAirdropTreasureSystem.json
 import ChargeLinearTreasureSystem from "../abi/ChargeLinearTreasureSystem.json";
 import ComponentDevSystem from "../abi/ComponentDevSystem.json";
 import CreateGuildSystem from "../abi/CreateGuildSystem.json";
+import DeathTriggerSystem from "../abi/DeathTriggerSystem.json";
 import DigResourceBuildingSystem from "../abi/DigResourceBuildingSystem.json";
 import DigResourceSystem from "../abi/DigResourceSystem.json";
 import DigResourcev2System from "../abi/DigResourcev2System.json";
@@ -57,6 +59,7 @@ export const SystemAbis = {
   "system.ApproveGuild": ApproveGuildSystem.abi,
   "system.AttackCharge": AttackChargeSystem.abi,
   "system.AttackFinish": AttackFinishSystem.abi,
+  "system.AttackFinishv2": AttackFinishv2System.abi,
   "system.BoundTreasure": BoundTreasureSystem.abi,
   "system.BuffEffectAddHPCalculate": BuffEffectAddHPCalculateSystem.abi,
   "system.BuffEffectKeepResourceOnDeathExecute": BuffEffectKeepResourceOnDeathExecuteSystem.abi,
@@ -70,6 +73,7 @@ export const SystemAbis = {
   "system.ChargeLinearTreasure": ChargeLinearTreasureSystem.abi,
   "system.ComponentDev": ComponentDevSystem.abi,
   "system.CreateGuild": CreateGuildSystem.abi,
+  "system.DeathTrigger": DeathTriggerSystem.abi,
   "system.DigResourceBuilding": DigResourceBuildingSystem.abi,
   "system.DigResource": DigResourceSystem.abi,
   "system.DigResourcev2": DigResourcev2System.abi,

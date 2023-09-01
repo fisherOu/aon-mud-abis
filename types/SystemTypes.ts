@@ -5,6 +5,7 @@ import { AllocateTreasureSystem } from "./ethers-contracts/AllocateTreasureSyste
 import { ApproveGuildSystem } from "./ethers-contracts/ApproveGuildSystem";
 import { AttackChargeSystem } from "./ethers-contracts/AttackChargeSystem";
 import { AttackFinishSystem } from "./ethers-contracts/AttackFinishSystem";
+import { AttackFinishv2System } from "./ethers-contracts/AttackFinishv2System";
 import { BoundTreasureSystem } from "./ethers-contracts/BoundTreasureSystem";
 import { BuffEffectAddHPCalculateSystem } from "./ethers-contracts/BuffEffectAddHPCalculateSystem";
 import { BuffEffectKeepResourceOnDeathExecuteSystem } from "./ethers-contracts/BuffEffectKeepResourceOnDeathExecuteSystem";
@@ -18,6 +19,7 @@ import { ChargeAirdropTreasureSystem } from "./ethers-contracts/ChargeAirdropTre
 import { ChargeLinearTreasureSystem } from "./ethers-contracts/ChargeLinearTreasureSystem";
 import { ComponentDevSystem } from "./ethers-contracts/ComponentDevSystem";
 import { CreateGuildSystem } from "./ethers-contracts/CreateGuildSystem";
+import { DeathTriggerSystem } from "./ethers-contracts/DeathTriggerSystem";
 import { DigResourceBuildingSystem } from "./ethers-contracts/DigResourceBuildingSystem";
 import { DigResourceSystem } from "./ethers-contracts/DigResourceSystem";
 import { DigResourcev2System } from "./ethers-contracts/DigResourcev2System";
@@ -57,6 +59,7 @@ export type SystemTypes = {
   "system.ApproveGuild": ApproveGuildSystem;
   "system.AttackCharge": AttackChargeSystem;
   "system.AttackFinish": AttackFinishSystem;
+  "system.AttackFinishv2": AttackFinishv2System;
   "system.BoundTreasure": BoundTreasureSystem;
   "system.BuffEffectAddHPCalculate": BuffEffectAddHPCalculateSystem;
   "system.BuffEffectKeepResourceOnDeathExecute": BuffEffectKeepResourceOnDeathExecuteSystem;
@@ -70,6 +73,7 @@ export type SystemTypes = {
   "system.ChargeLinearTreasure": ChargeLinearTreasureSystem;
   "system.ComponentDev": ComponentDevSystem;
   "system.CreateGuild": CreateGuildSystem;
+  "system.DeathTrigger": DeathTriggerSystem;
   "system.DigResourceBuilding": DigResourceBuildingSystem;
   "system.DigResource": DigResourceSystem;
   "system.DigResourcev2": DigResourcev2System;

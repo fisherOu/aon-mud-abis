@@ -110,6 +110,52 @@
     {
       "inputs": [
         {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "component",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "lastValue",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "newValue",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bool",
+              "name": "isSet",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct TriggerInfo",
+          "name": "triggerInfo",
+          "type": "tuple"
+        }
+      ],
+      "name": "solveLogic",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
           "internalType": "address",
           "name": "account",
           "type": "address"
@@ -135,9 +181,10 @@
     "execute(bytes)": "09c5eabe",
     "executeTyped((uint256,uint256,bytes,bytes,bool))": "82781c51",
     "owner()": "8da5cb5b",
+    "solveLogic((uint256,uint256,bytes,bytes,bool))": "ffc56da8",
     "transferOwnership(address)": "f2fde38b"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Ownable__NotOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Ownable__NotTransitiveOwner\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"args\",\"type\":\"bytes\"}],\"name\":\"execute\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"component\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"lastValue\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"newValue\",\"type\":\"bytes\"},{\"internalType\":\"bool\",\"name\":\"isSet\",\"type\":\"bool\"}],\"internalType\":\"struct TriggerInfo\",\"name\":\"triggerInfo\",\"type\":\"tuple\"}],\"name\":\"executeTyped\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"returns\":{\"_0\":\"conrtact owner\"}},\"transferOwnership(address)\":{\"params\":{\"account\":\"address of new owner\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"owner()\":{\"notice\":\"get the ERC173 contract owner\"},\"transferOwnership(address)\":{\"notice\":\"transfer contract ownership to new account\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/expension/TriggerSystem.sol\":\"TriggerSystem\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000000},\"remappings\":[\":@latticexyz/=../../node_modules/@latticexyz/\",\":@rari-capital/=../../node_modules/@rari-capital/\",\":@solidstate/=../../node_modules/@solidstate/\",\":components/=src/components/\",\":ds-test/=../../node_modules/ds-test/src/\",\":examples/=../../../mud/examples/\",\":expension/=src/expension/\",\":forge-std/=../../node_modules/forge-std/src/\",\":integration-sandbox/=../../../mud/integration-sandbox/\",\":libraries/=src/libraries/\",\":memmove/=../../node_modules/memmove/src/\",\":packages/=../../../mud/packages/\",\":solecs/=../../node_modules/@latticexyz/solecs/src/\",\":solmate/=../../node_modules/@rari-capital/solmate/src/\",\":std-contracts/=../../node_modules/@latticexyz/std-contracts/src/\",\":systems/=src/systems/\",\":templates/=../../../mud/templates/\",\":verifiers/=src/verifiers/\"]},\"sources\":{\"../../node_modules/@latticexyz/solecs/src/LibTypes.sol\":{\"keccak256\":\"0xa3898035fd9fa865bcfc9861e3b5ecce36be3196fb27705e50a02fed9831f102\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://273284a35a950f6d0bc4223d345cf46c59972a00510ddbc4ba695ede38714798\",\"dweb:/ipfs/QmdqzKMaAfKWfBzUsrzsDMWnyxSKJRuEvrc6VTR5VarQaH\"]},\"../../node_modules/@latticexyz/solecs/src/Ownable.sol\":{\"keccak256\":\"0x7572ffd98860b2539eacdbb2112ce3d25ad8521c5d95f91e21ea5588a6904209\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3516b95146224d3fc04c5cc2818161fa9504a048894f6dd905b1e42307494fc4\",\"dweb:/ipfs/QmTqvvAs1fSLzXVWjAgSt3TtE3MM3M1DFXRzkkSsixtVza\"]},\"../../node_modules/@latticexyz/solecs/src/System.sol\":{\"keccak256\":\"0xa26b5061fdcbb516111cebd798db1ac8d7733cbf562700aa9892276f3e40e1e7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://471b323faa1baf8b14f3c0a4acf539643ac2fba105b13314066452ebaa228281\",\"dweb:/ipfs/QmRmTjgggZcziB9FH2oPyQGQAAnxEsubiY1gDC1vQz6uWW\"]},\"../../node_modules/@latticexyz/solecs/src/SystemStorage.sol\":{\"keccak256\":\"0x3adf624854f860099d0911cdc51b29e6690e413f2c260e3536552d223fe77b2b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9fa473135604adb13a95583e6cc8092bc82be534bdcdd915e1f344eb78fc645d\",\"dweb:/ipfs/QmYvRKgZ2iRVmSykLAtrrdsr27Eyg6QorhHGL5ZLE8wTTW\"]},\"../../node_modules/@latticexyz/solecs/src/constants.sol\":{\"keccak256\":\"0x024a3ff3077a272339b7baa96b826fd75f040d7cd2c6e13b9c8cf7ad16f789b8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1ddcb26a7703e9b03b34d5465010a4ae5ced137021c94987053544ad1156a644\",\"dweb:/ipfs/QmYue4gnb8noyoxxTchs5chZji7DKynKMp2x33RgRW6xqZ\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IComponent.sol\":{\"keccak256\":\"0xc25ab58cac1449fcd501ddcc56dade0653a7946adcd9eee2931bc095eda2a6b4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c9505da36322f3b3de4dc0aaf0aec911e76be6cbd091f4d142070a7316df4629\",\"dweb:/ipfs/QmY5aGhwzBV5fXeLRDuzWMUfbPZGGdggbLdARhrkjmPBYW\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IERC173.sol\":{\"keccak256\":\"0x2bd9a729a3bfcfc445bc557a914aee17fcaf1c0f74b909b6a91a5d3755a699e9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://203741d681a686fb75f0715332e554083733f349100dfe11252c17fbe9cd094e\",\"dweb:/ipfs/QmaBXDHiU4ZdJ8K5jQZ3FfswMpWEqSPsBWGFkJMU2qmmWi\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IOwnableWritable.sol\":{\"keccak256\":\"0x804db2685d65f5d4029431c47276b6ac43d3c329ea4ce75358928dbd4d11ee77\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a1d85dfe46f678ce4cf3a788092519251a24c2c015f9e858a81111b506b0ee78\",\"dweb:/ipfs/QmVmE4f8axCeh8V2kcs8nxYd27rSiwvXJbDbNCg3VZHSXY\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/ISystem.sol\":{\"keccak256\":\"0xbc1c0b0c72ab5e20ff7eae3cf53627aac367a2f9a65d2e87451a0313869d3bed\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b2a7c4c30beb9b96c4e8112b9864f7bac5c761e61765e0dc359d926572feaa5a\",\"dweb:/ipfs/QmVNJbky7itfqBBdDCh8anSWMaHhXs2mKhzuW7hbCVWgj3\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol\":{\"keccak256\":\"0x12e2eaa4c5663048343e43a1994c446baacb16a4aacbe314ed5202d878751be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d78184a1b1868773f2d5a7cf54bb42bccc666dc75cea14eeed15b8573fd000f\",\"dweb:/ipfs/QmemXPHPB7V8StWR8kZcKt3eDxB78sZFZW4Dp7TcEFTxx9\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IWorld.sol\":{\"keccak256\":\"0x3ac1853f4cade8f432f5b3144e0c914b93f110ea3eabd85438cde39160716114\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1f0ba421b481b66d43c9da4de63171a79ffadc708956893bddf10eec666a0f4a\",\"dweb:/ipfs/QmdSyzQUDrP3MXt8JjgXt1QUgraUKBUPHE2CVzJiEwfMAK\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/Query.sol\":{\"keccak256\":\"0x987e47a4d3f076910382b4e8619f607ea15abdedd786d6095bd27126ff6f941c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8c3d57f9da85917b77e1043a179d3b516bc8c00a8880fdcb1bffca7e53169059\",\"dweb:/ipfs/QmaHxqsT1ZpS8toN88qxgbeaDSMvnhYv9J9FMjVnKrMgoP\"]},\"../../node_modules/@latticexyz/solecs/src/utils.sol\":{\"keccak256\":\"0x17f7831c03bdd77f0c7d98c94931d830fbbfa1878c365f54b12841c85611e24e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6ae566ee03c5050b239277ef4184b9e5dcb332c8cc65b032f8e0d9e46408ea6d\",\"dweb:/ipfs/QmetdhxahRf7FJk1kn8KgDmizU2zYk3jjt9qo6Gwz2M5YP\"]},\"../../node_modules/@solidstate/contracts/access/ownable/IOwnable.sol\":{\"keccak256\":\"0xd2d21c507ed587cd5de6cc016d4b9c7e956e468108b784455a400301707031c1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://091a98176309554295f1d471f888b1567d07e0250b11e23fa540739b6dfdce38\",\"dweb:/ipfs/Qme69DrKhhtwkSBMU456C3NxzXNMC7AJ4sVNMg5rKcrtPn\"]},\"../../node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol\":{\"keccak256\":\"0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3\",\"dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y\"]},\"../../node_modules/@solidstate/contracts/access/ownable/Ownable.sol\":{\"keccak256\":\"0xe16b09090c1251f8cc97fb2cc10c86675e0d0d9f0fc0032b417c37c8dba2db5f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8482effd630de3e3eb3c66ce6bc5ddd12838381e6e585df42116b4fd7764e4bc\",\"dweb:/ipfs/Qma9ga6QS2SooCYKyB7J5EHE8uUGiAv49kosEyjHt9Zg79\"]},\"../../node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol\":{\"keccak256\":\"0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52\",\"dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF\"]},\"../../node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol\":{\"keccak256\":\"0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995\",\"dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM\"]},\"../../node_modules/@solidstate/contracts/interfaces/IERC173.sol\":{\"keccak256\":\"0x9b18a5ad66323c65a81ecd62c3536db99115fe69a30b56a04409de941da7deb6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a93684363c5bfd4e31fa2cc2d3402e9451ba61c7dbb404e8e50658610fb2a555\",\"dweb:/ipfs/QmanFgF5v5GjBBrAEYCpaZyXRFRvzLGgB8SQcSEf9Dkj5Q\"]},\"../../node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol\":{\"keccak256\":\"0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75\",\"dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx\"]},\"../../node_modules/@solidstate/contracts/utils/AddressUtils.sol\":{\"keccak256\":\"0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929\",\"dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm\"]},\"../../node_modules/@solidstate/contracts/utils/UintUtils.sol\":{\"keccak256\":\"0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2\",\"dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza\"]},\"../../node_modules/memmove/src/Array.sol\":{\"keccak256\":\"0x0d7681d3392c34f811cebc9598c5e8f4eef6aba431dca9e1fa87267ba51a4515\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ffb5179dd40ccacadc2cb26ac99e9ea5148796f6d21413d7e0f37913831bea1\",\"dweb:/ipfs/QmfJogaoqook5JgnUZKib6w6khzViUag3EQb1EZ8aUEasQ\"]},\"../../node_modules/memmove/src/LinkedList.sol\":{\"keccak256\":\"0x2374863d39689178dda92b841e77b835ba8fa550561be23b7861d2e52c0fe8c1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8538ec6ca6be4e1b25b74dfd2139586fa2b9dab8d49d91428ed64dc683884598\",\"dweb:/ipfs/Qma7Z6urenqG5Dzqwe8ouGiFH37mbsJEX83tqjSq1PTnRc\"]},\"src/expension/TriggerSystem.sol\":{\"keccak256\":\"0x13a8b081e991f0b8e04392b4719800a0359b62095b0a8684f9b8dc058c051d40\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ec2d22014c9269ac58a84495da60d574661a916d0e21094a51afbf68563bf620\",\"dweb:/ipfs/QmPQddhAhjQQrgyf7XBDF11ugaGRdkUrSrrsTveFoL81TY\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Ownable__NotOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Ownable__NotTransitiveOwner\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"args\",\"type\":\"bytes\"}],\"name\":\"execute\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"component\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"lastValue\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"newValue\",\"type\":\"bytes\"},{\"internalType\":\"bool\",\"name\":\"isSet\",\"type\":\"bool\"}],\"internalType\":\"struct TriggerInfo\",\"name\":\"triggerInfo\",\"type\":\"tuple\"}],\"name\":\"executeTyped\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"component\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"lastValue\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"newValue\",\"type\":\"bytes\"},{\"internalType\":\"bool\",\"name\":\"isSet\",\"type\":\"bool\"}],\"internalType\":\"struct TriggerInfo\",\"name\":\"triggerInfo\",\"type\":\"tuple\"}],\"name\":\"solveLogic\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"returns\":{\"_0\":\"conrtact owner\"}},\"transferOwnership(address)\":{\"params\":{\"account\":\"address of new owner\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"owner()\":{\"notice\":\"get the ERC173 contract owner\"},\"transferOwnership(address)\":{\"notice\":\"transfer contract ownership to new account\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/expension/TriggerSystem.sol\":\"TriggerSystem\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000000},\"remappings\":[\":@latticexyz/=../../node_modules/@latticexyz/\",\":@rari-capital/=../../node_modules/@rari-capital/\",\":@solidstate/=../../node_modules/@solidstate/\",\":components/=src/components/\",\":ds-test/=../../node_modules/ds-test/src/\",\":examples/=../../../mud/examples/\",\":expension/=src/expension/\",\":forge-std/=../../node_modules/forge-std/src/\",\":integration-sandbox/=../../../mud/integration-sandbox/\",\":libraries/=src/libraries/\",\":memmove/=../../node_modules/memmove/src/\",\":packages/=../../../mud/packages/\",\":solecs/=../../node_modules/@latticexyz/solecs/src/\",\":solmate/=../../node_modules/@rari-capital/solmate/src/\",\":std-contracts/=../../node_modules/@latticexyz/std-contracts/src/\",\":systems/=src/systems/\",\":templates/=../../../mud/templates/\",\":verifiers/=src/verifiers/\"]},\"sources\":{\"../../node_modules/@latticexyz/solecs/src/LibTypes.sol\":{\"keccak256\":\"0xa3898035fd9fa865bcfc9861e3b5ecce36be3196fb27705e50a02fed9831f102\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://273284a35a950f6d0bc4223d345cf46c59972a00510ddbc4ba695ede38714798\",\"dweb:/ipfs/QmdqzKMaAfKWfBzUsrzsDMWnyxSKJRuEvrc6VTR5VarQaH\"]},\"../../node_modules/@latticexyz/solecs/src/Ownable.sol\":{\"keccak256\":\"0x7572ffd98860b2539eacdbb2112ce3d25ad8521c5d95f91e21ea5588a6904209\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3516b95146224d3fc04c5cc2818161fa9504a048894f6dd905b1e42307494fc4\",\"dweb:/ipfs/QmTqvvAs1fSLzXVWjAgSt3TtE3MM3M1DFXRzkkSsixtVza\"]},\"../../node_modules/@latticexyz/solecs/src/System.sol\":{\"keccak256\":\"0xa26b5061fdcbb516111cebd798db1ac8d7733cbf562700aa9892276f3e40e1e7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://471b323faa1baf8b14f3c0a4acf539643ac2fba105b13314066452ebaa228281\",\"dweb:/ipfs/QmRmTjgggZcziB9FH2oPyQGQAAnxEsubiY1gDC1vQz6uWW\"]},\"../../node_modules/@latticexyz/solecs/src/SystemStorage.sol\":{\"keccak256\":\"0x3adf624854f860099d0911cdc51b29e6690e413f2c260e3536552d223fe77b2b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9fa473135604adb13a95583e6cc8092bc82be534bdcdd915e1f344eb78fc645d\",\"dweb:/ipfs/QmYvRKgZ2iRVmSykLAtrrdsr27Eyg6QorhHGL5ZLE8wTTW\"]},\"../../node_modules/@latticexyz/solecs/src/constants.sol\":{\"keccak256\":\"0x024a3ff3077a272339b7baa96b826fd75f040d7cd2c6e13b9c8cf7ad16f789b8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1ddcb26a7703e9b03b34d5465010a4ae5ced137021c94987053544ad1156a644\",\"dweb:/ipfs/QmYue4gnb8noyoxxTchs5chZji7DKynKMp2x33RgRW6xqZ\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IComponent.sol\":{\"keccak256\":\"0xc25ab58cac1449fcd501ddcc56dade0653a7946adcd9eee2931bc095eda2a6b4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c9505da36322f3b3de4dc0aaf0aec911e76be6cbd091f4d142070a7316df4629\",\"dweb:/ipfs/QmY5aGhwzBV5fXeLRDuzWMUfbPZGGdggbLdARhrkjmPBYW\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IERC173.sol\":{\"keccak256\":\"0x2bd9a729a3bfcfc445bc557a914aee17fcaf1c0f74b909b6a91a5d3755a699e9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://203741d681a686fb75f0715332e554083733f349100dfe11252c17fbe9cd094e\",\"dweb:/ipfs/QmaBXDHiU4ZdJ8K5jQZ3FfswMpWEqSPsBWGFkJMU2qmmWi\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IOwnableWritable.sol\":{\"keccak256\":\"0x804db2685d65f5d4029431c47276b6ac43d3c329ea4ce75358928dbd4d11ee77\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a1d85dfe46f678ce4cf3a788092519251a24c2c015f9e858a81111b506b0ee78\",\"dweb:/ipfs/QmVmE4f8axCeh8V2kcs8nxYd27rSiwvXJbDbNCg3VZHSXY\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/ISystem.sol\":{\"keccak256\":\"0xbc1c0b0c72ab5e20ff7eae3cf53627aac367a2f9a65d2e87451a0313869d3bed\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b2a7c4c30beb9b96c4e8112b9864f7bac5c761e61765e0dc359d926572feaa5a\",\"dweb:/ipfs/QmVNJbky7itfqBBdDCh8anSWMaHhXs2mKhzuW7hbCVWgj3\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol\":{\"keccak256\":\"0x12e2eaa4c5663048343e43a1994c446baacb16a4aacbe314ed5202d878751be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d78184a1b1868773f2d5a7cf54bb42bccc666dc75cea14eeed15b8573fd000f\",\"dweb:/ipfs/QmemXPHPB7V8StWR8kZcKt3eDxB78sZFZW4Dp7TcEFTxx9\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/IWorld.sol\":{\"keccak256\":\"0x3ac1853f4cade8f432f5b3144e0c914b93f110ea3eabd85438cde39160716114\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1f0ba421b481b66d43c9da4de63171a79ffadc708956893bddf10eec666a0f4a\",\"dweb:/ipfs/QmdSyzQUDrP3MXt8JjgXt1QUgraUKBUPHE2CVzJiEwfMAK\"]},\"../../node_modules/@latticexyz/solecs/src/interfaces/Query.sol\":{\"keccak256\":\"0x987e47a4d3f076910382b4e8619f607ea15abdedd786d6095bd27126ff6f941c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8c3d57f9da85917b77e1043a179d3b516bc8c00a8880fdcb1bffca7e53169059\",\"dweb:/ipfs/QmaHxqsT1ZpS8toN88qxgbeaDSMvnhYv9J9FMjVnKrMgoP\"]},\"../../node_modules/@latticexyz/solecs/src/utils.sol\":{\"keccak256\":\"0x17f7831c03bdd77f0c7d98c94931d830fbbfa1878c365f54b12841c85611e24e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6ae566ee03c5050b239277ef4184b9e5dcb332c8cc65b032f8e0d9e46408ea6d\",\"dweb:/ipfs/QmetdhxahRf7FJk1kn8KgDmizU2zYk3jjt9qo6Gwz2M5YP\"]},\"../../node_modules/@solidstate/contracts/access/ownable/IOwnable.sol\":{\"keccak256\":\"0xd2d21c507ed587cd5de6cc016d4b9c7e956e468108b784455a400301707031c1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://091a98176309554295f1d471f888b1567d07e0250b11e23fa540739b6dfdce38\",\"dweb:/ipfs/Qme69DrKhhtwkSBMU456C3NxzXNMC7AJ4sVNMg5rKcrtPn\"]},\"../../node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol\":{\"keccak256\":\"0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3\",\"dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y\"]},\"../../node_modules/@solidstate/contracts/access/ownable/Ownable.sol\":{\"keccak256\":\"0xe16b09090c1251f8cc97fb2cc10c86675e0d0d9f0fc0032b417c37c8dba2db5f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8482effd630de3e3eb3c66ce6bc5ddd12838381e6e585df42116b4fd7764e4bc\",\"dweb:/ipfs/Qma9ga6QS2SooCYKyB7J5EHE8uUGiAv49kosEyjHt9Zg79\"]},\"../../node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol\":{\"keccak256\":\"0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52\",\"dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF\"]},\"../../node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol\":{\"keccak256\":\"0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995\",\"dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM\"]},\"../../node_modules/@solidstate/contracts/interfaces/IERC173.sol\":{\"keccak256\":\"0x9b18a5ad66323c65a81ecd62c3536db99115fe69a30b56a04409de941da7deb6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a93684363c5bfd4e31fa2cc2d3402e9451ba61c7dbb404e8e50658610fb2a555\",\"dweb:/ipfs/QmanFgF5v5GjBBrAEYCpaZyXRFRvzLGgB8SQcSEf9Dkj5Q\"]},\"../../node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol\":{\"keccak256\":\"0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75\",\"dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx\"]},\"../../node_modules/@solidstate/contracts/utils/AddressUtils.sol\":{\"keccak256\":\"0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929\",\"dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm\"]},\"../../node_modules/@solidstate/contracts/utils/UintUtils.sol\":{\"keccak256\":\"0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2\",\"dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza\"]},\"../../node_modules/memmove/src/Array.sol\":{\"keccak256\":\"0x0d7681d3392c34f811cebc9598c5e8f4eef6aba431dca9e1fa87267ba51a4515\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ffb5179dd40ccacadc2cb26ac99e9ea5148796f6d21413d7e0f37913831bea1\",\"dweb:/ipfs/QmfJogaoqook5JgnUZKib6w6khzViUag3EQb1EZ8aUEasQ\"]},\"../../node_modules/memmove/src/LinkedList.sol\":{\"keccak256\":\"0x2374863d39689178dda92b841e77b835ba8fa550561be23b7861d2e52c0fe8c1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8538ec6ca6be4e1b25b74dfd2139586fa2b9dab8d49d91428ed64dc683884598\",\"dweb:/ipfs/Qma7Z6urenqG5Dzqwe8ouGiFH37mbsJEX83tqjSq1PTnRc\"]},\"src/expension/TriggerSystem.sol\":{\"keccak256\":\"0x40ae556857f00cc43c1b6024d7b4fa361a66feca0d27f580ae78d1620350809f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5bea6608747245e14694fad6c6ba3a696b7039465aaf65a811c06a256e2d7cf7\",\"dweb:/ipfs/QmbZBroqkKLF5je2KRewPpbEDXozLuPsuiSokyGY9TXzuv\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.13+commit.abaa5c0e"
@@ -249,6 +296,52 @@
               "internalType": "address",
               "name": "",
               "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct TriggerInfo",
+              "name": "triggerInfo",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "component",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "entity",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "lastValue",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "newValue",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isSet",
+                  "type": "bool"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "solveLogic",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
             }
           ]
         },
@@ -521,10 +614,10 @@
         "license": "MIT"
       },
       "src/expension/TriggerSystem.sol": {
-        "keccak256": "0x13a8b081e991f0b8e04392b4719800a0359b62095b0a8684f9b8dc058c051d40",
+        "keccak256": "0x40ae556857f00cc43c1b6024d7b4fa361a66feca0d27f580ae78d1620350809f",
         "urls": [
-          "bzz-raw://ec2d22014c9269ac58a84495da60d574661a916d0e21094a51afbf68563bf620",
-          "dweb:/ipfs/QmPQddhAhjQQrgyf7XBDF11ugaGRdkUrSrrsTveFoL81TY"
+          "bzz-raw://5bea6608747245e14694fad6c6ba3a696b7039465aaf65a811c06a256e2d7cf7",
+          "dweb:/ipfs/QmbZBroqkKLF5je2KRewPpbEDXozLuPsuiSokyGY9TXzuv"
         ],
         "license": "MIT"
       }
@@ -533,7 +626,7 @@
   },
   "ast": {
     "absolutePath": "src/expension/TriggerSystem.sol",
-    "id": 18328,
+    "id": 18335,
     "exportedSymbols": {
       "IWorld": [
         1460
@@ -542,17 +635,17 @@
         587
       ],
       "TriggerInfo": [
-        18280
+        18250
       ],
       "TriggerSystem": [
-        18327
+        18334
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:652:166",
+    "src": "32:1180:166",
     "nodes": [
       {
-        "id": 18266,
+        "id": 18236,
         "nodeType": "PragmaDirective",
         "src": "32:24:166",
         "nodes": [],
@@ -564,19 +657,19 @@
         ]
       },
       {
-        "id": 18269,
+        "id": 18239,
         "nodeType": "ImportDirective",
         "src": "57:49:166",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/System.sol",
         "file": "solecs/System.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 18328,
+        "scope": 18335,
         "sourceUnit": 588,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 18267,
+              "id": 18237,
               "name": "System",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -588,7 +681,7 @@
           },
           {
             "foreign": {
-              "id": 18268,
+              "id": 18238,
               "name": "IWorld",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -602,7 +695,7 @@
         "unitAlias": ""
       },
       {
-        "id": 18280,
+        "id": 18250,
         "nodeType": "StructDefinition",
         "src": "108:122:166",
         "nodes": [],
@@ -610,12 +703,12 @@
         "members": [
           {
             "constant": false,
-            "id": 18271,
+            "id": 18241,
             "mutability": "mutable",
             "name": "component",
             "nameLocation": "141:9:166",
             "nodeType": "VariableDeclaration",
-            "scope": 18280,
+            "scope": 18250,
             "src": "133:17:166",
             "stateVariable": false,
             "storageLocation": "default",
@@ -624,7 +717,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 18270,
+              "id": 18240,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "133:7:166",
@@ -637,12 +730,12 @@
           },
           {
             "constant": false,
-            "id": 18273,
+            "id": 18243,
             "mutability": "mutable",
             "name": "entity",
             "nameLocation": "164:6:166",
             "nodeType": "VariableDeclaration",
-            "scope": 18280,
+            "scope": 18250,
             "src": "156:14:166",
             "stateVariable": false,
             "storageLocation": "default",
@@ -651,7 +744,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 18272,
+              "id": 18242,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "156:7:166",
@@ -664,12 +757,12 @@
           },
           {
             "constant": false,
-            "id": 18275,
+            "id": 18245,
             "mutability": "mutable",
             "name": "lastValue",
             "nameLocation": "182:9:166",
             "nodeType": "VariableDeclaration",
-            "scope": 18280,
+            "scope": 18250,
             "src": "176:15:166",
             "stateVariable": false,
             "storageLocation": "default",
@@ -678,7 +771,7 @@
               "typeString": "bytes"
             },
             "typeName": {
-              "id": 18274,
+              "id": 18244,
               "name": "bytes",
               "nodeType": "ElementaryTypeName",
               "src": "176:5:166",
@@ -691,12 +784,12 @@
           },
           {
             "constant": false,
-            "id": 18277,
+            "id": 18247,
             "mutability": "mutable",
             "name": "newValue",
             "nameLocation": "203:8:166",
             "nodeType": "VariableDeclaration",
-            "scope": 18280,
+            "scope": 18250,
             "src": "197:14:166",
             "stateVariable": false,
             "storageLocation": "default",
@@ -705,7 +798,7 @@
               "typeString": "bytes"
             },
             "typeName": {
-              "id": 18276,
+              "id": 18246,
               "name": "bytes",
               "nodeType": "ElementaryTypeName",
               "src": "197:5:166",
@@ -718,12 +811,12 @@
           },
           {
             "constant": false,
-            "id": 18279,
+            "id": 18249,
             "mutability": "mutable",
             "name": "isSet",
             "nameLocation": "222:5:166",
             "nodeType": "VariableDeclaration",
-            "scope": 18280,
+            "scope": 18250,
             "src": "217:10:166",
             "stateVariable": false,
             "storageLocation": "default",
@@ -732,7 +825,7 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 18278,
+              "id": 18248,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
               "src": "217:4:166",
@@ -746,23 +839,395 @@
         ],
         "name": "TriggerInfo",
         "nameLocation": "115:11:166",
-        "scope": 18328,
+        "scope": 18335,
         "visibility": "public"
       },
       {
-        "id": 18327,
+        "id": 18334,
         "nodeType": "ContractDefinition",
-        "src": "232:451:166",
+        "src": "232:979:166",
         "nodes": [
           {
-            "id": 18295,
+            "id": 18260,
+            "nodeType": "VariableDeclaration",
+            "src": "280:103:166",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "TriggerSetComponentsComponentID",
+            "nameLocation": "297:31:166",
+            "scope": 18334,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 18253,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "280:7:166",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "hexValue": "636f6d706f6e656e742e54726967676572536574436f6d706f6e656e7473",
+                      "id": 18257,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "349:32:166",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_54e4d31292449df290631e4ce87ae6e29ece4bb163d149ec4e89970c1a5ac1b7",
+                        "typeString": "literal_string \"component.TriggerSetComponents\""
+                      },
+                      "value": "component.TriggerSetComponents"
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_stringliteral_54e4d31292449df290631e4ce87ae6e29ece4bb163d149ec4e89970c1a5ac1b7",
+                        "typeString": "literal_string \"component.TriggerSetComponents\""
+                      }
+                    ],
+                    "id": 18256,
+                    "name": "keccak256",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": -8,
+                    "src": "339:9:166",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                      "typeString": "function (bytes memory) pure returns (bytes32)"
+                    }
+                  },
+                  "id": 18258,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "339:43:166",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                ],
+                "id": 18255,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "nodeType": "ElementaryTypeNameExpression",
+                "src": "331:7:166",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_uint256_$",
+                  "typeString": "type(uint256)"
+                },
+                "typeName": {
+                  "id": 18254,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "331:7:166",
+                  "typeDescriptions": {}
+                }
+              },
+              "id": 18259,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "331:52:166",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 18268,
+            "nodeType": "VariableDeclaration",
+            "src": "389:109:166",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "TriggerRemoveComponentsComponentID",
+            "nameLocation": "406:34:166",
+            "scope": 18334,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 18261,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "389:7:166",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "hexValue": "636f6d706f6e656e742e5472696767657252656d6f7665436f6d706f6e656e7473",
+                      "id": 18265,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "461:35:166",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_367b3301503c3fe945066e45bc2d0dcf586a200ccb37a3a92ccd805a626014d6",
+                        "typeString": "literal_string \"component.TriggerRemoveComponents\""
+                      },
+                      "value": "component.TriggerRemoveComponents"
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_stringliteral_367b3301503c3fe945066e45bc2d0dcf586a200ccb37a3a92ccd805a626014d6",
+                        "typeString": "literal_string \"component.TriggerRemoveComponents\""
+                      }
+                    ],
+                    "id": 18264,
+                    "name": "keccak256",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": -8,
+                    "src": "451:9:166",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                      "typeString": "function (bytes memory) pure returns (bytes32)"
+                    }
+                  },
+                  "id": 18266,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "451:46:166",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                ],
+                "id": 18263,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "nodeType": "ElementaryTypeNameExpression",
+                "src": "443:7:166",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_uint256_$",
+                  "typeString": "type(uint256)"
+                },
+                "typeName": {
+                  "id": 18262,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "443:7:166",
+                  "typeDescriptions": {}
+                }
+              },
+              "id": 18267,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "443:55:166",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 18276,
+            "nodeType": "VariableDeclaration",
+            "src": "504:91:166",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "TriggerSystemsComponentID",
+            "nameLocation": "521:25:166",
+            "scope": 18334,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 18269,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "504:7:166",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "hexValue": "636f6d706f6e656e742e5472696767657253797374656d73",
+                      "id": 18273,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "567:26:166",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_b3d6f71af9897ae85a103dc3494a09a671fbcda494734bde8d2773c84d8e7841",
+                        "typeString": "literal_string \"component.TriggerSystems\""
+                      },
+                      "value": "component.TriggerSystems"
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_stringliteral_b3d6f71af9897ae85a103dc3494a09a671fbcda494734bde8d2773c84d8e7841",
+                        "typeString": "literal_string \"component.TriggerSystems\""
+                      }
+                    ],
+                    "id": 18272,
+                    "name": "keccak256",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": -8,
+                    "src": "557:9:166",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                      "typeString": "function (bytes memory) pure returns (bytes32)"
+                    }
+                  },
+                  "id": 18274,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "557:37:166",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                ],
+                "id": 18271,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "nodeType": "ElementaryTypeNameExpression",
+                "src": "549:7:166",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_uint256_$",
+                  "typeString": "type(uint256)"
+                },
+                "typeName": {
+                  "id": 18270,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "549:7:166",
+                  "typeDescriptions": {}
+                }
+              },
+              "id": 18275,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "549:46:166",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 18289,
             "nodeType": "FunctionDefinition",
-            "src": "280:100:166",
+            "src": "602:100:166",
             "nodes": [],
             "body": {
-              "id": 18294,
+              "id": 18288,
               "nodeType": "Block",
-              "src": "378:2:166",
+              "src": "700:2:166",
               "nodes": [],
               "statements": []
             },
@@ -772,58 +1237,58 @@
               {
                 "arguments": [
                   {
-                    "id": 18290,
+                    "id": 18284,
                     "name": "_world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 18285,
-                    "src": "357:6:166",
+                    "referencedDeclaration": 18279,
+                    "src": "679:6:166",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IWorld_$1460",
                       "typeString": "contract IWorld"
                     }
                   },
                   {
-                    "id": 18291,
+                    "id": 18285,
                     "name": "_components",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 18287,
-                    "src": "365:11:166",
+                    "referencedDeclaration": 18281,
+                    "src": "687:11:166",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   }
                 ],
-                "id": 18292,
+                "id": 18286,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 18289,
+                  "id": 18283,
                   "name": "System",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 587,
-                  "src": "350:6:166"
+                  "src": "672:6:166"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "350:27:166"
+                "src": "672:27:166"
               }
             ],
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 18288,
+              "id": 18282,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18285,
+                  "id": 18279,
                   "mutability": "mutable",
                   "name": "_world",
-                  "nameLocation": "308:6:166",
+                  "nameLocation": "630:6:166",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18295,
-                  "src": "301:13:166",
+                  "scope": 18289,
+                  "src": "623:13:166",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -831,17 +1296,17 @@
                     "typeString": "contract IWorld"
                   },
                   "typeName": {
-                    "id": 18284,
+                    "id": 18278,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 18283,
+                      "id": 18277,
                       "name": "IWorld",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 1460,
-                      "src": "301:6:166"
+                      "src": "623:6:166"
                     },
                     "referencedDeclaration": 1460,
-                    "src": "301:6:166",
+                    "src": "623:6:166",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IWorld_$1460",
                       "typeString": "contract IWorld"
@@ -851,13 +1316,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 18287,
+                  "id": 18281,
                   "mutability": "mutable",
                   "name": "_components",
-                  "nameLocation": "332:11:166",
+                  "nameLocation": "654:11:166",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18295,
-                  "src": "324:19:166",
+                  "scope": 18289,
+                  "src": "646:19:166",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -865,10 +1330,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 18286,
+                    "id": 18280,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "324:7:166",
+                    "src": "646:7:166",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -878,80 +1343,80 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "291:58:166"
+              "src": "613:58:166"
             },
             "returnParameters": {
-              "id": 18293,
+              "id": 18287,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "378:0:166"
+              "src": "700:0:166"
             },
-            "scope": 18327,
+            "scope": 18334,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 18317,
+            "id": 18311,
             "nodeType": "FunctionDefinition",
-            "src": "386:189:166",
+            "src": "708:189:166",
             "nodes": [],
             "body": {
-              "id": 18316,
+              "id": 18310,
               "nodeType": "Block",
-              "src": "452:123:166",
+              "src": "774:123:166",
               "nodes": [],
               "statements": [
                 {
                   "assignments": [
-                    18304
+                    18298
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 18304,
+                      "id": 18298,
                       "mutability": "mutable",
                       "name": "triggerInfo",
-                      "nameLocation": "481:11:166",
+                      "nameLocation": "803:11:166",
                       "nodeType": "VariableDeclaration",
-                      "scope": 18316,
-                      "src": "462:30:166",
+                      "scope": 18310,
+                      "src": "784:30:166",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TriggerInfo_$18280_memory_ptr",
+                        "typeIdentifier": "t_struct$_TriggerInfo_$18250_memory_ptr",
                         "typeString": "struct TriggerInfo"
                       },
                       "typeName": {
-                        "id": 18303,
+                        "id": 18297,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 18302,
+                          "id": 18296,
                           "name": "TriggerInfo",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 18280,
-                          "src": "462:11:166"
+                          "referencedDeclaration": 18250,
+                          "src": "784:11:166"
                         },
-                        "referencedDeclaration": 18280,
-                        "src": "462:11:166",
+                        "referencedDeclaration": 18250,
+                        "src": "784:11:166",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_TriggerInfo_$18280_storage_ptr",
+                          "typeIdentifier": "t_struct$_TriggerInfo_$18250_storage_ptr",
                           "typeString": "struct TriggerInfo"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 18311,
+                  "id": 18305,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 18307,
+                        "id": 18301,
                         "name": "args",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18297,
-                        "src": "506:4:166",
+                        "referencedDeclaration": 18291,
+                        "src": "828:4:166",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
                           "typeString": "bytes memory"
@@ -960,28 +1425,28 @@
                       {
                         "components": [
                           {
-                            "id": 18308,
+                            "id": 18302,
                             "name": "TriggerInfo",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18280,
-                            "src": "513:11:166",
+                            "referencedDeclaration": 18250,
+                            "src": "835:11:166",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_TriggerInfo_$18280_storage_ptr_$",
+                              "typeIdentifier": "t_type$_t_struct$_TriggerInfo_$18250_storage_ptr_$",
                               "typeString": "type(struct TriggerInfo storage pointer)"
                             }
                           }
                         ],
-                        "id": 18309,
+                        "id": 18303,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
                         "nodeType": "TupleExpression",
-                        "src": "512:13:166",
+                        "src": "834:13:166",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_TriggerInfo_$18280_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_TriggerInfo_$18250_storage_ptr_$",
                           "typeString": "type(struct TriggerInfo storage pointer)"
                         }
                       }
@@ -993,36 +1458,36 @@
                           "typeString": "bytes memory"
                         },
                         {
-                          "typeIdentifier": "t_type$_t_struct$_TriggerInfo_$18280_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_TriggerInfo_$18250_storage_ptr_$",
                           "typeString": "type(struct TriggerInfo storage pointer)"
                         }
                       ],
                       "expression": {
-                        "id": 18305,
+                        "id": 18299,
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": -1,
-                        "src": "495:3:166",
+                        "src": "817:3:166",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
                           "typeString": "abi"
                         }
                       },
-                      "id": 18306,
+                      "id": 18300,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "memberName": "decode",
                       "nodeType": "MemberAccess",
-                      "src": "495:10:166",
+                      "src": "817:10:166",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
                         "typeString": "function () pure"
                       }
                     },
-                    "id": 18310,
+                    "id": 18304,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1030,28 +1495,28 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "495:31:166",
+                    "src": "817:31:166",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TriggerInfo_$18280_memory_ptr",
+                      "typeIdentifier": "t_struct$_TriggerInfo_$18250_memory_ptr",
                       "typeString": "struct TriggerInfo memory"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "462:64:166"
+                  "src": "784:64:166"
                 },
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 18313,
+                        "id": 18307,
                         "name": "triggerInfo",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18304,
-                        "src": "556:11:166",
+                        "referencedDeclaration": 18298,
+                        "src": "878:11:166",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_TriggerInfo_$18280_memory_ptr",
+                          "typeIdentifier": "t_struct$_TriggerInfo_$18250_memory_ptr",
                           "typeString": "struct TriggerInfo memory"
                         }
                       }
@@ -1059,22 +1524,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_TriggerInfo_$18280_memory_ptr",
+                          "typeIdentifier": "t_struct$_TriggerInfo_$18250_memory_ptr",
                           "typeString": "struct TriggerInfo memory"
                         }
                       ],
-                      "id": 18312,
+                      "id": 18306,
                       "name": "executeTyped",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 18326,
-                      "src": "543:12:166",
+                      "referencedDeclaration": 18324,
+                      "src": "865:12:166",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_TriggerInfo_$18280_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_TriggerInfo_$18250_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (struct TriggerInfo memory) returns (bytes memory)"
                       }
                     },
-                    "id": 18314,
+                    "id": 18308,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1082,42 +1547,42 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "543:25:166",
+                    "src": "865:25:166",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
                       "typeString": "bytes memory"
                     }
                   },
-                  "functionReturnParameters": 18301,
-                  "id": 18315,
+                  "functionReturnParameters": 18295,
+                  "id": 18309,
                   "nodeType": "Return",
-                  "src": "536:32:166"
+                  "src": "858:32:166"
                 }
               ]
             },
             "baseFunctions": [
-              42946
+              43662
             ],
             "functionSelector": "09c5eabe",
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "execute",
-            "nameLocation": "395:7:166",
+            "nameLocation": "717:7:166",
             "parameters": {
-              "id": 18298,
+              "id": 18292,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18297,
+                  "id": 18291,
                   "mutability": "mutable",
                   "name": "args",
-                  "nameLocation": "416:4:166",
+                  "nameLocation": "738:4:166",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18317,
-                  "src": "403:17:166",
+                  "scope": 18311,
+                  "src": "725:17:166",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1125,10 +1590,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 18296,
+                    "id": 18290,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "403:5:166",
+                    "src": "725:5:166",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1137,21 +1602,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "402:19:166"
+              "src": "724:19:166"
             },
             "returnParameters": {
-              "id": 18301,
+              "id": 18295,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18300,
+                  "id": 18294,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18317,
-                  "src": "438:12:166",
+                  "scope": 18311,
+                  "src": "760:12:166",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1159,10 +1624,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 18299,
+                    "id": 18293,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "438:5:166",
+                    "src": "760:5:166",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1171,85 +1636,140 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "437:14:166"
+              "src": "759:14:166"
             },
-            "scope": 18327,
+            "scope": 18334,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 18326,
+            "id": 18324,
             "nodeType": "FunctionDefinition",
-            "src": "581:100:166",
+            "src": "903:194:166",
             "nodes": [],
             "body": {
-              "id": 18325,
+              "id": 18323,
               "nodeType": "Block",
-              "src": "679:2:166",
+              "src": "1001:96:166",
               "nodes": [],
-              "statements": []
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 18320,
+                        "name": "triggerInfo",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18314,
+                        "src": "1078:11:166",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_TriggerInfo_$18250_memory_ptr",
+                          "typeString": "struct TriggerInfo memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_TriggerInfo_$18250_memory_ptr",
+                          "typeString": "struct TriggerInfo memory"
+                        }
+                      ],
+                      "id": 18319,
+                      "name": "solveLogic",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 18333,
+                      "src": "1067:10:166",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_TriggerInfo_$18250_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeString": "function (struct TriggerInfo memory) returns (bytes memory)"
+                      }
+                    },
+                    "id": 18321,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1067:23:166",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_memory_ptr",
+                      "typeString": "bytes memory"
+                    }
+                  },
+                  "functionReturnParameters": 18318,
+                  "id": 18322,
+                  "nodeType": "Return",
+                  "src": "1060:30:166"
+                }
+              ]
             },
             "functionSelector": "82781c51",
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "executeTyped",
-            "nameLocation": "590:12:166",
+            "nameLocation": "912:12:166",
             "parameters": {
-              "id": 18321,
+              "id": 18315,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18320,
+                  "id": 18314,
                   "mutability": "mutable",
                   "name": "triggerInfo",
-                  "nameLocation": "631:11:166",
+                  "nameLocation": "953:11:166",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18326,
-                  "src": "612:30:166",
+                  "scope": 18324,
+                  "src": "934:30:166",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TriggerInfo_$18280_memory_ptr",
+                    "typeIdentifier": "t_struct$_TriggerInfo_$18250_memory_ptr",
                     "typeString": "struct TriggerInfo"
                   },
                   "typeName": {
-                    "id": 18319,
+                    "id": 18313,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 18318,
+                      "id": 18312,
                       "name": "TriggerInfo",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 18280,
-                      "src": "612:11:166"
+                      "referencedDeclaration": 18250,
+                      "src": "934:11:166"
                     },
-                    "referencedDeclaration": 18280,
-                    "src": "612:11:166",
+                    "referencedDeclaration": 18250,
+                    "src": "934:11:166",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TriggerInfo_$18280_storage_ptr",
+                      "typeIdentifier": "t_struct$_TriggerInfo_$18250_storage_ptr",
                       "typeString": "struct TriggerInfo"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "602:46:166"
+              "src": "924:46:166"
             },
             "returnParameters": {
-              "id": 18324,
+              "id": 18318,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18323,
+                  "id": 18317,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18326,
-                  "src": "665:12:166",
+                  "scope": 18324,
+                  "src": "987:12:166",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1257,10 +1777,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 18322,
+                    "id": 18316,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "665:5:166",
+                    "src": "987:5:166",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1269,11 +1789,109 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "664:14:166"
+              "src": "986:14:166"
             },
-            "scope": 18327,
+            "scope": 18334,
             "stateMutability": "nonpayable",
             "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 18333,
+            "nodeType": "FunctionDefinition",
+            "src": "1103:106:166",
+            "nodes": [],
+            "body": {
+              "id": 18332,
+              "nodeType": "Block",
+              "src": "1207:2:166",
+              "nodes": [],
+              "statements": []
+            },
+            "functionSelector": "ffc56da8",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "solveLogic",
+            "nameLocation": "1112:10:166",
+            "parameters": {
+              "id": 18328,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 18327,
+                  "mutability": "mutable",
+                  "name": "triggerInfo",
+                  "nameLocation": "1151:11:166",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 18333,
+                  "src": "1132:30:166",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_TriggerInfo_$18250_memory_ptr",
+                    "typeString": "struct TriggerInfo"
+                  },
+                  "typeName": {
+                    "id": 18326,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 18325,
+                      "name": "TriggerInfo",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 18250,
+                      "src": "1132:11:166"
+                    },
+                    "referencedDeclaration": 18250,
+                    "src": "1132:11:166",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TriggerInfo_$18250_storage_ptr",
+                      "typeString": "struct TriggerInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1122:46:166"
+            },
+            "returnParameters": {
+              "id": 18331,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 18330,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 18333,
+                  "src": "1193:12:166",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 18329,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1193:5:166",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1192:14:166"
+            },
+            "scope": 18334,
+            "stateMutability": "nonpayable",
+            "virtual": true,
             "visibility": "public"
           }
         ],
@@ -1281,13 +1899,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 18281,
+              "id": 18251,
               "name": "System",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 587,
               "src": "267:6:166"
             },
-            "id": 18282,
+            "id": 18252,
             "nodeType": "InheritanceSpecifier",
             "src": "267:6:166"
           }
@@ -1297,23 +1915,23 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          18327,
+          18334,
           587,
-          42811,
+          43527,
           2161,
-          44638,
-          45057,
-          44514,
-          42947,
+          45354,
+          45773,
+          45230,
+          43663,
           2204,
-          44648
+          45364
         ],
         "name": "TriggerSystem",
         "nameLocation": "250:13:166",
-        "scope": 18328,
+        "scope": 18335,
         "usedErrors": [
-          45054,
-          45056
+          45770,
+          45772
         ]
       }
     ],

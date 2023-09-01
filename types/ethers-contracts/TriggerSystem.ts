@@ -54,6 +54,7 @@ export interface TriggerSystemInterface extends utils.Interface {
     "execute(bytes)": FunctionFragment;
     "executeTyped((uint256,uint256,bytes,bytes,bool))": FunctionFragment;
     "owner()": FunctionFragment;
+    "solveLogic((uint256,uint256,bytes,bytes,bool))": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
 
@@ -62,6 +63,7 @@ export interface TriggerSystemInterface extends utils.Interface {
       | "execute"
       | "executeTyped"
       | "owner"
+      | "solveLogic"
       | "transferOwnership"
   ): FunctionFragment;
 
@@ -75,6 +77,10 @@ export interface TriggerSystemInterface extends utils.Interface {
   ): string;
   encodeFunctionData(functionFragment: "owner", values?: undefined): string;
   encodeFunctionData(
+    functionFragment: "solveLogic",
+    values: [TriggerInfoStruct]
+  ): string;
+  encodeFunctionData(
     functionFragment: "transferOwnership",
     values: [PromiseOrValue<string>]
   ): string;
@@ -85,6 +91,7 @@ export interface TriggerSystemInterface extends utils.Interface {
     data: BytesLike
   ): Result;
   decodeFunctionResult(functionFragment: "owner", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "solveLogic", data: BytesLike): Result;
   decodeFunctionResult(
     functionFragment: "transferOwnership",
     data: BytesLike
@@ -148,6 +155,11 @@ export interface TriggerSystem extends BaseContract {
 
     owner(overrides?: CallOverrides): Promise<[string]>;
 
+    solveLogic(
+      triggerInfo: TriggerInfoStruct,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<ContractTransaction>;
+
     transferOwnership(
       account: PromiseOrValue<string>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -166,6 +178,11 @@ export interface TriggerSystem extends BaseContract {
 
   owner(overrides?: CallOverrides): Promise<string>;
 
+  solveLogic(
+    triggerInfo: TriggerInfoStruct,
+    overrides?: Overrides & { from?: PromiseOrValue<string> }
+  ): Promise<ContractTransaction>;
+
   transferOwnership(
     account: PromiseOrValue<string>,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -183,6 +200,11 @@ export interface TriggerSystem extends BaseContract {
     ): Promise<string>;
 
     owner(overrides?: CallOverrides): Promise<string>;
+
+    solveLogic(
+      triggerInfo: TriggerInfoStruct,
+      overrides?: CallOverrides
+    ): Promise<string>;
 
     transferOwnership(
       account: PromiseOrValue<string>,
@@ -214,6 +236,11 @@ export interface TriggerSystem extends BaseContract {
 
     owner(overrides?: CallOverrides): Promise<BigNumber>;
 
+    solveLogic(
+      triggerInfo: TriggerInfoStruct,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<BigNumber>;
+
     transferOwnership(
       account: PromiseOrValue<string>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -232,6 +259,11 @@ export interface TriggerSystem extends BaseContract {
     ): Promise<PopulatedTransaction>;
 
     owner(overrides?: CallOverrides): Promise<PopulatedTransaction>;
+
+    solveLogic(
+      triggerInfo: TriggerInfoStruct,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<PopulatedTransaction>;
 
     transferOwnership(
       account: PromiseOrValue<string>,
