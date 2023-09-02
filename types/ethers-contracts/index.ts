@@ -84,6 +84,7 @@ export type { PlayerBelongingComponent } from "./PlayerBelongingComponent";
 export type { PlayerComponent } from "./PlayerComponent";
 export type { PositionComponent } from "./PositionComponent";
 export type { RegisterSystem } from "./RegisterSystem";
+export type { RejectGuildSystem } from "./RejectGuildSystem";
 export type { ReleaseAirdropTreasureSystem } from "./ReleaseAirdropTreasureSystem";
 export type { ReleaseLinearTreasureSystem } from "./ReleaseLinearTreasureSystem";
 export type { ResourceBuildingAreaBuildingComponent } from "./ResourceBuildingAreaBuildingComponent";
@@ -240,6 +241,7 @@ export { PlayerBelongingComponent__factory } from "./factories/PlayerBelongingCo
 export { PlayerComponent__factory } from "./factories/PlayerComponent__factory";
 export { PositionComponent__factory } from "./factories/PositionComponent__factory";
 export { RegisterSystem__factory } from "./factories/RegisterSystem__factory";
+export { RejectGuildSystem__factory } from "./factories/RejectGuildSystem__factory";
 export { ReleaseAirdropTreasureSystem__factory } from "./factories/ReleaseAirdropTreasureSystem__factory";
 export { ReleaseLinearTreasureSystem__factory } from "./factories/ReleaseLinearTreasureSystem__factory";
 export { ResourceBuildingAreaBuildingComponent__factory } from "./factories/ResourceBuildingAreaBuildingComponent__factory";

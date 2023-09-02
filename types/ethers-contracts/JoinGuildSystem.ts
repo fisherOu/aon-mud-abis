@@ -27,10 +27,14 @@ import type {
   PromiseOrValue,
 } from "./common";
 
+export type JoinInfoStruct = { guildId: PromiseOrValue<BigNumberish> };
+
+export type JoinInfoStructOutput = [BigNumber] & { guildId: BigNumber };
+
 export interface JoinGuildSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped(uint256)": FunctionFragment;
+    "executeTyped((uint256))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
@@ -49,7 +53,7 @@ export interface JoinGuildSystemInterface extends utils.Interface {
   ): string;
   encodeFunctionData(
     functionFragment: "executeTyped",
-    values: [PromiseOrValue<BigNumberish>]
+    values: [JoinInfoStruct]
   ): string;
   encodeFunctionData(functionFragment: "owner", values?: undefined): string;
   encodeFunctionData(
@@ -120,7 +124,7 @@ export interface JoinGuildSystem extends BaseContract {
     ): Promise<ContractTransaction>;
 
     executeTyped(
-      guildId: PromiseOrValue<BigNumberish>,
+      info: JoinInfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -138,7 +142,7 @@ export interface JoinGuildSystem extends BaseContract {
   ): Promise<ContractTransaction>;
 
   executeTyped(
-    guildId: PromiseOrValue<BigNumberish>,
+    info: JoinInfoStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -156,7 +160,7 @@ export interface JoinGuildSystem extends BaseContract {
     ): Promise<string>;
 
     executeTyped(
-      guildId: PromiseOrValue<BigNumberish>,
+      info: JoinInfoStruct,
       overrides?: CallOverrides
     ): Promise<string>;
 
@@ -186,7 +190,7 @@ export interface JoinGuildSystem extends BaseContract {
     ): Promise<BigNumber>;
 
     executeTyped(
-      guildId: PromiseOrValue<BigNumberish>,
+      info: JoinInfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -205,7 +209,7 @@ export interface JoinGuildSystem extends BaseContract {
     ): Promise<PopulatedTransaction>;
 
     executeTyped(
-      guildId: PromiseOrValue<BigNumberish>,
+      info: JoinInfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 

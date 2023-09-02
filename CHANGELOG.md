@@ -1,7 +1,8 @@
-# v0.0.10_10_treasureEffects_9ddde8d
+# v0.0.11_treasureEffects_a62d12a
 
 ## 更新：
-1. 完成 新版攻击、两种主动型宝物 的单测
-   world address: 0xf89F13e190cFe9577b49aF7C89fe9d074fb6e88c
-   initialBlockNumber:  23892320
-   abi tag: v0.0.10_10_treasureEffects_9ddde8d
+1. 将 uint256 类型的输入改为struct 的输入
+2. 新增 RejectGuildSystem 用于拒绝申请
+   world address: 0x0b4e314fcE8DA329c387c94e01eF1dc8378cBaFB
+   initialBlockNumber: 23972404
+   abi tag: v0.0.11_treasureEffects_a62d12a

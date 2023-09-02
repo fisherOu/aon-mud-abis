@@ -27,10 +27,14 @@ import type {
   PromiseOrValue,
 } from "./common";
 
+export type InfoStruct = { guildCrestId: PromiseOrValue<BigNumberish> };
+
+export type InfoStructOutput = [BigNumber] & { guildCrestId: BigNumber };
+
 export interface TransferGuildLeaderSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped(uint256)": FunctionFragment;
+    "executeTyped((uint256))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
@@ -49,7 +53,7 @@ export interface TransferGuildLeaderSystemInterface extends utils.Interface {
   ): string;
   encodeFunctionData(
     functionFragment: "executeTyped",
-    values: [PromiseOrValue<BigNumberish>]
+    values: [InfoStruct]
   ): string;
   encodeFunctionData(functionFragment: "owner", values?: undefined): string;
   encodeFunctionData(
@@ -120,7 +124,7 @@ export interface TransferGuildLeaderSystem extends BaseContract {
     ): Promise<ContractTransaction>;
 
     executeTyped(
-      guildCrestId: PromiseOrValue<BigNumberish>,
+      info: InfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -138,7 +142,7 @@ export interface TransferGuildLeaderSystem extends BaseContract {
   ): Promise<ContractTransaction>;
 
   executeTyped(
-    guildCrestId: PromiseOrValue<BigNumberish>,
+    info: InfoStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -155,10 +159,7 @@ export interface TransferGuildLeaderSystem extends BaseContract {
       overrides?: CallOverrides
     ): Promise<string>;
 
-    executeTyped(
-      guildCrestId: PromiseOrValue<BigNumberish>,
-      overrides?: CallOverrides
-    ): Promise<string>;
+    executeTyped(info: InfoStruct, overrides?: CallOverrides): Promise<string>;
 
     owner(overrides?: CallOverrides): Promise<string>;
 
@@ -186,7 +187,7 @@ export interface TransferGuildLeaderSystem extends BaseContract {
     ): Promise<BigNumber>;
 
     executeTyped(
-      guildCrestId: PromiseOrValue<BigNumberish>,
+      info: InfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -205,7 +206,7 @@ export interface TransferGuildLeaderSystem extends BaseContract {
     ): Promise<PopulatedTransaction>;
 
     executeTyped(
-      guildCrestId: PromiseOrValue<BigNumberish>,
+      info: InfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 

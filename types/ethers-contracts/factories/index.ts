@@ -84,6 +84,7 @@ export { PlayerBelongingComponent__factory } from "./PlayerBelongingComponent__f
 export { PlayerComponent__factory } from "./PlayerComponent__factory";
 export { PositionComponent__factory } from "./PositionComponent__factory";
 export { RegisterSystem__factory } from "./RegisterSystem__factory";
+export { RejectGuildSystem__factory } from "./RejectGuildSystem__factory";
 export { ReleaseAirdropTreasureSystem__factory } from "./ReleaseAirdropTreasureSystem__factory";
 export { ReleaseLinearTreasureSystem__factory } from "./ReleaseLinearTreasureSystem__factory";
 export { ResourceBuildingAreaBuildingComponent__factory } from "./ResourceBuildingAreaBuildingComponent__factory";

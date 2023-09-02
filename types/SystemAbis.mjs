@@ -36,6 +36,7 @@ import MoveSystem from "../abi/MoveSystem.json";
 import Movev2System from "../abi/Movev2System.json";
 import PickUpTreasureSystem from "../abi/PickUpTreasureSystem.json";
 import PickUpTreasurev2System from "../abi/PickUpTreasurev2System.json";
+import RejectGuildSystem from "../abi/RejectGuildSystem.json";
 import ReleaseAirdropTreasureSystem from "../abi/ReleaseAirdropTreasureSystem.json";
 import ReleaseLinearTreasureSystem from "../abi/ReleaseLinearTreasureSystem.json";
 import TakeResourceSystem from "../abi/TakeResourceSystem.json";
@@ -90,6 +91,7 @@ export const SystemAbis = {
   "system.Movev2": Movev2System.abi,
   "system.PickUpTreasure": PickUpTreasureSystem.abi,
   "system.PickUpTreasurev2": PickUpTreasurev2System.abi,
+  "system.RejectGuild": RejectGuildSystem.abi,
   "system.ReleaseAirdropTreasure": ReleaseAirdropTreasureSystem.abi,
   "system.ReleaseLinearTreasure": ReleaseLinearTreasureSystem.abi,
   "system.TakeResource": TakeResourceSystem.abi,

@@ -36,6 +36,7 @@ import { MoveSystem } from "./ethers-contracts/MoveSystem";
 import { Movev2System } from "./ethers-contracts/Movev2System";
 import { PickUpTreasureSystem } from "./ethers-contracts/PickUpTreasureSystem";
 import { PickUpTreasurev2System } from "./ethers-contracts/PickUpTreasurev2System";
+import { RejectGuildSystem } from "./ethers-contracts/RejectGuildSystem";
 import { ReleaseAirdropTreasureSystem } from "./ethers-contracts/ReleaseAirdropTreasureSystem";
 import { ReleaseLinearTreasureSystem } from "./ethers-contracts/ReleaseLinearTreasureSystem";
 import { TakeResourceSystem } from "./ethers-contracts/TakeResourceSystem";
@@ -90,6 +91,7 @@ export type SystemTypes = {
   "system.Movev2": Movev2System;
   "system.PickUpTreasure": PickUpTreasureSystem;
   "system.PickUpTreasurev2": PickUpTreasurev2System;
+  "system.RejectGuild": RejectGuildSystem;
   "system.ReleaseAirdropTreasure": ReleaseAirdropTreasureSystem;
   "system.ReleaseLinearTreasure": ReleaseLinearTreasureSystem;
   "system.TakeResource": TakeResourceSystem;

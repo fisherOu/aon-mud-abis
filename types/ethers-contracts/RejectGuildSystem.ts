@@ -27,15 +27,11 @@ import type {
   PromiseOrValue,
 } from "./common";
 
-export type KickMemberInfoStruct = {
-  guildCrestId: PromiseOrValue<BigNumberish>;
-};
+export type InfoStruct = { guildCrestId: PromiseOrValue<BigNumberish> };
 
-export type KickMemberInfoStructOutput = [BigNumber] & {
-  guildCrestId: BigNumber;
-};
+export type InfoStructOutput = [BigNumber] & { guildCrestId: BigNumber };
 
-export interface KickGuildMemberSystemInterface extends utils.Interface {
+export interface RejectGuildSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
     "executeTyped((uint256))": FunctionFragment;
@@ -57,7 +53,7 @@ export interface KickGuildMemberSystemInterface extends utils.Interface {
   ): string;
   encodeFunctionData(
     functionFragment: "executeTyped",
-    values: [KickMemberInfoStruct]
+    values: [InfoStruct]
   ): string;
   encodeFunctionData(functionFragment: "owner", values?: undefined): string;
   encodeFunctionData(
@@ -95,12 +91,12 @@ export type OwnershipTransferredEvent = TypedEvent<
 export type OwnershipTransferredEventFilter =
   TypedEventFilter<OwnershipTransferredEvent>;
 
-export interface KickGuildMemberSystem extends BaseContract {
+export interface RejectGuildSystem extends BaseContract {
   connect(signerOrProvider: Signer | Provider | string): this;
   attach(addressOrName: string): this;
   deployed(): Promise<this>;
 
-  interface: KickGuildMemberSystemInterface;
+  interface: RejectGuildSystemInterface;
 
   queryFilter<TEvent extends TypedEvent>(
     event: TypedEventFilter<TEvent>,
@@ -128,7 +124,7 @@ export interface KickGuildMemberSystem extends BaseContract {
     ): Promise<ContractTransaction>;
 
     executeTyped(
-      info: KickMemberInfoStruct,
+      info: InfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -146,7 +142,7 @@ export interface KickGuildMemberSystem extends BaseContract {
   ): Promise<ContractTransaction>;
 
   executeTyped(
-    info: KickMemberInfoStruct,
+    info: InfoStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -163,10 +159,7 @@ export interface KickGuildMemberSystem extends BaseContract {
       overrides?: CallOverrides
     ): Promise<string>;
 
-    executeTyped(
-      info: KickMemberInfoStruct,
-      overrides?: CallOverrides
-    ): Promise<string>;
+    executeTyped(info: InfoStruct, overrides?: CallOverrides): Promise<string>;
 
     owner(overrides?: CallOverrides): Promise<string>;
 
@@ -194,7 +187,7 @@ export interface KickGuildMemberSystem extends BaseContract {
     ): Promise<BigNumber>;
 
     executeTyped(
-      info: KickMemberInfoStruct,
+      info: InfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -213,7 +206,7 @@ export interface KickGuildMemberSystem extends BaseContract {
     ): Promise<PopulatedTransaction>;
 
     executeTyped(
-      info: KickMemberInfoStruct,
+      info: InfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
