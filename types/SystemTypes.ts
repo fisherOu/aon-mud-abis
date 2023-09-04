@@ -12,6 +12,7 @@ import { BuffEffectKeepResourceOnDeathExecuteSystem } from "./ethers-contracts/B
 import { BuildTreasureSystem } from "./ethers-contracts/BuildTreasureSystem";
 import { BulkSetStateSystem } from "./ethers-contracts/BulkSetStateSystem";
 import { ChangeFogSeedSystem } from "./ethers-contracts/ChangeFogSeedSystem";
+import { ChangeGuildDisplaySystem } from "./ethers-contracts/ChangeGuildDisplaySystem";
 import { ChangeResourceSeedSystem } from "./ethers-contracts/ChangeResourceSeedSystem";
 import { ChangeSeedSystem } from "./ethers-contracts/ChangeSeedSystem";
 import { ChangeTreasureSeedSystem } from "./ethers-contracts/ChangeTreasureSeedSystem";
@@ -25,6 +26,7 @@ import { DigResourceSystem } from "./ethers-contracts/DigResourceSystem";
 import { DigResourcev2System } from "./ethers-contracts/DigResourcev2System";
 import { DonateResourceSystem } from "./ethers-contracts/DonateResourceSystem";
 import { DonateTreasureSystem } from "./ethers-contracts/DonateTreasureSystem";
+import { EditGuildSystem } from "./ethers-contracts/EditGuildSystem";
 import { EncounterFleeSystem } from "./ethers-contracts/EncounterFleeSystem";
 import { EncounterThrowSystem } from "./ethers-contracts/EncounterThrowSystem";
 import { JoinGameSystem } from "./ethers-contracts/JoinGameSystem";
@@ -67,6 +69,7 @@ export type SystemTypes = {
   "system.BuildTreasure": BuildTreasureSystem;
   "system.BulkSetState": BulkSetStateSystem;
   "system.ChangeFogSeed": ChangeFogSeedSystem;
+  "system.ChangeGuildDisplay": ChangeGuildDisplaySystem;
   "system.ChangeResourceSeed": ChangeResourceSeedSystem;
   "system.ChangeSeed": ChangeSeedSystem;
   "system.ChangeTreasureSeed": ChangeTreasureSeedSystem;
@@ -80,6 +83,7 @@ export type SystemTypes = {
   "system.DigResourcev2": DigResourcev2System;
   "system.DonateResource": DonateResourceSystem;
   "system.DonateTreasure": DonateTreasureSystem;
+  "system.EditGuild": EditGuildSystem;
   "system.EncounterFlee": EncounterFleeSystem;
   "system.EncounterThrow": EncounterThrowSystem;
   "system.JoinGame": JoinGameSystem;

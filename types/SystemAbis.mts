@@ -12,6 +12,7 @@ import BuffEffectKeepResourceOnDeathExecuteSystem from "../abi/BuffEffectKeepRes
 import BuildTreasureSystem from "../abi/BuildTreasureSystem.json";
 import BulkSetStateSystem from "../abi/BulkSetStateSystem.json";
 import ChangeFogSeedSystem from "../abi/ChangeFogSeedSystem.json";
+import ChangeGuildDisplaySystem from "../abi/ChangeGuildDisplaySystem.json";
 import ChangeResourceSeedSystem from "../abi/ChangeResourceSeedSystem.json";
 import ChangeSeedSystem from "../abi/ChangeSeedSystem.json";
 import ChangeTreasureSeedSystem from "../abi/ChangeTreasureSeedSystem.json";
@@ -25,6 +26,7 @@ import DigResourceSystem from "../abi/DigResourceSystem.json";
 import DigResourcev2System from "../abi/DigResourcev2System.json";
 import DonateResourceSystem from "../abi/DonateResourceSystem.json";
 import DonateTreasureSystem from "../abi/DonateTreasureSystem.json";
+import EditGuildSystem from "../abi/EditGuildSystem.json";
 import EncounterFleeSystem from "../abi/EncounterFleeSystem.json";
 import EncounterThrowSystem from "../abi/EncounterThrowSystem.json";
 import JoinGameSystem from "../abi/JoinGameSystem.json";
@@ -67,6 +69,7 @@ export const SystemAbis = {
   "system.BuildTreasure": BuildTreasureSystem.abi,
   "system.BulkSetState": BulkSetStateSystem.abi,
   "system.ChangeFogSeed": ChangeFogSeedSystem.abi,
+  "system.ChangeGuildDisplay": ChangeGuildDisplaySystem.abi,
   "system.ChangeResourceSeed": ChangeResourceSeedSystem.abi,
   "system.ChangeSeed": ChangeSeedSystem.abi,
   "system.ChangeTreasureSeed": ChangeTreasureSeedSystem.abi,
@@ -80,6 +83,7 @@ export const SystemAbis = {
   "system.DigResourcev2": DigResourcev2System.abi,
   "system.DonateResource": DonateResourceSystem.abi,
   "system.DonateTreasure": DonateTreasureSystem.abi,
+  "system.EditGuild": EditGuildSystem.abi,
   "system.EncounterFlee": EncounterFleeSystem.abi,
   "system.EncounterThrow": EncounterThrowSystem.abi,
   "system.JoinGame": JoinGameSystem.abi,

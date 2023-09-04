@@ -25,6 +25,7 @@ export { BuffEffectedInt32Component__factory } from "./BuffEffectedInt32Componen
 export { BuildTreasureSystem__factory } from "./BuildTreasureSystem__factory";
 export { BulkSetStateSystem__factory } from "./BulkSetStateSystem__factory";
 export { ChangeFogSeedSystem__factory } from "./ChangeFogSeedSystem__factory";
+export { ChangeGuildDisplaySystem__factory } from "./ChangeGuildDisplaySystem__factory";
 export { ChangeResourceSeedSystem__factory } from "./ChangeResourceSeedSystem__factory";
 export { ChangeSeedSystem__factory } from "./ChangeSeedSystem__factory";
 export { ChangeTreasureSeedSystem__factory } from "./ChangeTreasureSeedSystem__factory";
@@ -42,6 +43,7 @@ export { DigResourceSystem__factory } from "./DigResourceSystem__factory";
 export { DigResourcev2System__factory } from "./DigResourcev2System__factory";
 export { DonateResourceSystem__factory } from "./DonateResourceSystem__factory";
 export { DonateTreasureSystem__factory } from "./DonateTreasureSystem__factory";
+export { EditGuildSystem__factory } from "./EditGuildSystem__factory";
 export { EncounterComponent__factory } from "./EncounterComponent__factory";
 export { EncounterFleeSystem__factory } from "./EncounterFleeSystem__factory";
 export { EncounterThrowSystem__factory } from "./EncounterThrowSystem__factory";
