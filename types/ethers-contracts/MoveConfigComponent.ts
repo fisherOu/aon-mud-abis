@@ -32,9 +32,11 @@ export type MoveConfigStruct = {
   increaseCooldown: PromiseOrValue<BigNumberish>;
   maxPoints: PromiseOrValue<BigNumberish>;
   maxDistance: PromiseOrValue<BigNumberish>;
+  guildCost: PromiseOrValue<BigNumberish>;
 };
 
 export type MoveConfigStructOutput = [
+  BigNumber,
   BigNumber,
   BigNumber,
   BigNumber,
@@ -44,6 +46,7 @@ export type MoveConfigStructOutput = [
   increaseCooldown: BigNumber;
   maxPoints: BigNumber;
   maxDistance: BigNumber;
+  guildCost: BigNumber;
 };
 
 export interface MoveConfigComponentInterface extends utils.Interface {
@@ -60,7 +63,7 @@ export interface MoveConfigComponentInterface extends utils.Interface {
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set((uint64,uint64,uint64,uint64))": FunctionFragment;
+    "set((uint64,uint64,uint64,uint64,uint256))": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
@@ -82,7 +85,7 @@ export interface MoveConfigComponentInterface extends utils.Interface {
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set((uint64,uint64,uint64,uint64))"
+      | "set((uint64,uint64,uint64,uint64,uint256))"
       | "set(uint256,bytes)"
       | "transferOwnership"
       | "unauthorizeWriter"
@@ -127,7 +130,7 @@ export interface MoveConfigComponentInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set((uint64,uint64,uint64,uint64))",
+    functionFragment: "set((uint64,uint64,uint64,uint64,uint256))",
     values: [MoveConfigStruct]
   ): string;
   encodeFunctionData(
@@ -179,7 +182,7 @@ export interface MoveConfigComponentInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set((uint64,uint64,uint64,uint64))",
+    functionFragment: "set((uint64,uint64,uint64,uint64,uint256))",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -293,7 +296,7 @@ export interface MoveConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set((uint64,uint64,uint64,uint64))"(
+    "set((uint64,uint64,uint64,uint64,uint256))"(
       moveConfig: MoveConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
@@ -369,7 +372,7 @@ export interface MoveConfigComponent extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set((uint64,uint64,uint64,uint64))"(
+  "set((uint64,uint64,uint64,uint64,uint256))"(
     moveConfig: MoveConfigStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
@@ -445,7 +448,7 @@ export interface MoveConfigComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set((uint64,uint64,uint64,uint64))"(
+    "set((uint64,uint64,uint64,uint64,uint256))"(
       moveConfig: MoveConfigStruct,
       overrides?: CallOverrides
     ): Promise<void>;
@@ -531,7 +534,7 @@ export interface MoveConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set((uint64,uint64,uint64,uint64))"(
+    "set((uint64,uint64,uint64,uint64,uint256))"(
       moveConfig: MoveConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
@@ -606,7 +609,7 @@ export interface MoveConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set((uint64,uint64,uint64,uint64))"(
+    "set((uint64,uint64,uint64,uint64,uint256))"(
       moveConfig: MoveConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;

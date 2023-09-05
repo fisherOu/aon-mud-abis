@@ -36,6 +36,9 @@ export type GuildConfigStruct = {
   initNameForLevel2: PromiseOrValue<string>;
   initNameForLevel3: PromiseOrValue<string>;
   initNameForLevel4: PromiseOrValue<string>;
+  basicAreaFactor: PromiseOrValue<BigNumberish>;
+  basicValueFactor: PromiseOrValue<BigNumberish>;
+  basicRangeFactor: PromiseOrValue<BigNumberish>;
 };
 
 export type GuildConfigStructOutput = [
@@ -46,7 +49,10 @@ export type GuildConfigStructOutput = [
   string,
   string,
   string,
-  string
+  string,
+  number,
+  number,
+  BigNumber
 ] & {
   createCost: BigNumber;
   initTaxRate: number;
@@ -56,6 +62,9 @@ export type GuildConfigStructOutput = [
   initNameForLevel2: string;
   initNameForLevel3: string;
   initNameForLevel4: string;
+  basicAreaFactor: number;
+  basicValueFactor: number;
+  basicRangeFactor: BigNumber;
 };
 
 export interface GuildConfigComponentInterface extends utils.Interface {
@@ -72,7 +81,7 @@ export interface GuildConfigComponentInterface extends utils.Interface {
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set((uint256,uint32,uint32,string,string,string,string,string))": FunctionFragment;
+    "set((uint256,uint32,uint32,string,string,string,string,string,uint32,uint32,uint64))": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
@@ -94,7 +103,7 @@ export interface GuildConfigComponentInterface extends utils.Interface {
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set((uint256,uint32,uint32,string,string,string,string,string))"
+      | "set((uint256,uint32,uint32,string,string,string,string,string,uint32,uint32,uint64))"
       | "set(uint256,bytes)"
       | "transferOwnership"
       | "unauthorizeWriter"
@@ -139,7 +148,7 @@ export interface GuildConfigComponentInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set((uint256,uint32,uint32,string,string,string,string,string))",
+    functionFragment: "set((uint256,uint32,uint32,string,string,string,string,string,uint32,uint32,uint64))",
     values: [GuildConfigStruct]
   ): string;
   encodeFunctionData(
@@ -191,7 +200,7 @@ export interface GuildConfigComponentInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set((uint256,uint32,uint32,string,string,string,string,string))",
+    functionFragment: "set((uint256,uint32,uint32,string,string,string,string,string,uint32,uint32,uint64))",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -305,7 +314,7 @@ export interface GuildConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set((uint256,uint32,uint32,string,string,string,string,string))"(
+    "set((uint256,uint32,uint32,string,string,string,string,string,uint32,uint32,uint64))"(
       guildConfig: GuildConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
@@ -381,7 +390,7 @@ export interface GuildConfigComponent extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set((uint256,uint32,uint32,string,string,string,string,string))"(
+  "set((uint256,uint32,uint32,string,string,string,string,string,uint32,uint32,uint64))"(
     guildConfig: GuildConfigStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
@@ -457,7 +466,7 @@ export interface GuildConfigComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set((uint256,uint32,uint32,string,string,string,string,string))"(
+    "set((uint256,uint32,uint32,string,string,string,string,string,uint32,uint32,uint64))"(
       guildConfig: GuildConfigStruct,
       overrides?: CallOverrides
     ): Promise<void>;
@@ -543,7 +552,7 @@ export interface GuildConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set((uint256,uint32,uint32,string,string,string,string,string))"(
+    "set((uint256,uint32,uint32,string,string,string,string,string,uint32,uint32,uint64))"(
       guildConfig: GuildConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
@@ -618,7 +627,7 @@ export interface GuildConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set((uint256,uint32,uint32,string,string,string,string,string))"(
+    "set((uint256,uint32,uint32,string,string,string,string,string,uint32,uint32,uint64))"(
       guildConfig: GuildConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;

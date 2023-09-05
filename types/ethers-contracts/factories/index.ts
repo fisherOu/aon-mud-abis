@@ -51,6 +51,9 @@ export { EncounterTriggerComponent__factory } from "./EncounterTriggerComponent_
 export { EncounterableComponent__factory } from "./EncounterableComponent__factory";
 export { FogSeedComponent__factory } from "./FogSeedComponent__factory";
 export { GoldAmountComponent__factory } from "./GoldAmountComponent__factory";
+export { GuildBoundTreasureSystem__factory } from "./GuildBoundTreasureSystem__factory";
+export { GuildChargeAirdropTreasureSystem__factory } from "./GuildChargeAirdropTreasureSystem__factory";
+export { GuildChargeLinearTreasureSystem__factory } from "./GuildChargeLinearTreasureSystem__factory";
 export { GuildComponent__factory } from "./GuildComponent__factory";
 export { GuildConfigComponent__factory } from "./GuildConfigComponent__factory";
 export { GuildCrestComponent__factory } from "./GuildCrestComponent__factory";
@@ -58,6 +61,10 @@ export { GuildCrestGuildComponent__factory } from "./GuildCrestGuildComponent__f
 export { GuildCrestPendingComponent__factory } from "./GuildCrestPendingComponent__factory";
 export { GuildCrestPlayerComponent__factory } from "./GuildCrestPlayerComponent__factory";
 export { GuildDisplayComponent__factory } from "./GuildDisplayComponent__factory";
+export { GuildMoveSystem__factory } from "./GuildMoveSystem__factory";
+export { GuildReleaseAirdropTreasureSystem__factory } from "./GuildReleaseAirdropTreasureSystem__factory";
+export { GuildReleaseLinearTreasureSystem__factory } from "./GuildReleaseLinearTreasureSystem__factory";
+export { GuildUnboundTreasureSystem__factory } from "./GuildUnboundTreasureSystem__factory";
 export { HPComponent__factory } from "./HPComponent__factory";
 export { HPLimitComponent__factory } from "./HPLimitComponent__factory";
 export { HiddenPositionComponent__factory } from "./HiddenPositionComponent__factory";
@@ -97,6 +104,7 @@ export { ResourceBuildingPositionComponent__factory } from "./ResourceBuildingPo
 export { ResourceComponent__factory } from "./ResourceComponent__factory";
 export { ResourceConfigComponent__factory } from "./ResourceConfigComponent__factory";
 export { ResourceConfigv2Component__factory } from "./ResourceConfigv2Component__factory";
+export { ResourceDevSystem__factory } from "./ResourceDevSystem__factory";
 export { ResourceDistributionComponent__factory } from "./ResourceDistributionComponent__factory";
 export { ResourceMiningComponent__factory } from "./ResourceMiningComponent__factory";
 export { ResourceMiningv2Component__factory } from "./ResourceMiningv2Component__factory";
@@ -110,6 +118,7 @@ export { ShieldPlayerComponent__factory } from "./ShieldPlayerComponent__factory
 export { SpaceTimeMarkerComponent__factory } from "./SpaceTimeMarkerComponent__factory";
 export { System__factory } from "./System__factory";
 export { SystemStorage__factory } from "./SystemStorage__factory";
+export { TakeResourceBuildingSystem__factory } from "./TakeResourceBuildingSystem__factory";
 export { TakeResourceSystem__factory } from "./TakeResourceSystem__factory";
 export { TakeResourcev2System__factory } from "./TakeResourcev2System__factory";
 export { TechAccelerateSystem__factory } from "./TechAccelerateSystem__factory";
