@@ -11,6 +11,7 @@ import BuffEffectAddHPCalculateSystem from "../abi/BuffEffectAddHPCalculateSyste
 import BuffEffectKeepResourceOnDeathExecuteSystem from "../abi/BuffEffectKeepResourceOnDeathExecuteSystem.json";
 import BuildTreasureSystem from "../abi/BuildTreasureSystem.json";
 import BulkSetStateSystem from "../abi/BulkSetStateSystem.json";
+import BuyResourceBuildingSystem from "../abi/BuyResourceBuildingSystem.json";
 import ChangeFogSeedSystem from "../abi/ChangeFogSeedSystem.json";
 import ChangeGuildDisplaySystem from "../abi/ChangeGuildDisplaySystem.json";
 import ChangeResourceSeedSystem from "../abi/ChangeResourceSeedSystem.json";
@@ -49,6 +50,7 @@ import RejectGuildSystem from "../abi/RejectGuildSystem.json";
 import ReleaseAirdropTreasureSystem from "../abi/ReleaseAirdropTreasureSystem.json";
 import ReleaseLinearTreasureSystem from "../abi/ReleaseLinearTreasureSystem.json";
 import ResourceDevSystem from "../abi/ResourceDevSystem.json";
+import SettleResourceBuildingSystem from "../abi/SettleResourceBuildingSystem.json";
 import TakeResourceBuildingSystem from "../abi/TakeResourceBuildingSystem.json";
 import TakeResourceSystem from "../abi/TakeResourceSystem.json";
 import TakeResourcev2System from "../abi/TakeResourcev2System.json";
@@ -77,6 +79,7 @@ export const SystemAbis = {
   "system.BuffEffectKeepResourceOnDeathExecute": BuffEffectKeepResourceOnDeathExecuteSystem.abi,
   "system.BuildTreasure": BuildTreasureSystem.abi,
   "system.BulkSetState": BulkSetStateSystem.abi,
+  "system.BuyResourceBuilding": BuyResourceBuildingSystem.abi,
   "system.ChangeFogSeed": ChangeFogSeedSystem.abi,
   "system.ChangeGuildDisplay": ChangeGuildDisplaySystem.abi,
   "system.ChangeResourceSeed": ChangeResourceSeedSystem.abi,
@@ -115,6 +118,7 @@ export const SystemAbis = {
   "system.ReleaseAirdropTreasure": ReleaseAirdropTreasureSystem.abi,
   "system.ReleaseLinearTreasure": ReleaseLinearTreasureSystem.abi,
   "system.ResourceDev": ResourceDevSystem.abi,
+  "system.SettleResourceBuilding": SettleResourceBuildingSystem.abi,
   "system.TakeResourceBuilding": TakeResourceBuildingSystem.abi,
   "system.TakeResource": TakeResourceSystem.abi,
   "system.TakeResourcev2": TakeResourcev2System.abi,

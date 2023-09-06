@@ -11,6 +11,7 @@ import { BuffEffectAddHPCalculateSystem } from "./ethers-contracts/BuffEffectAdd
 import { BuffEffectKeepResourceOnDeathExecuteSystem } from "./ethers-contracts/BuffEffectKeepResourceOnDeathExecuteSystem";
 import { BuildTreasureSystem } from "./ethers-contracts/BuildTreasureSystem";
 import { BulkSetStateSystem } from "./ethers-contracts/BulkSetStateSystem";
+import { BuyResourceBuildingSystem } from "./ethers-contracts/BuyResourceBuildingSystem";
 import { ChangeFogSeedSystem } from "./ethers-contracts/ChangeFogSeedSystem";
 import { ChangeGuildDisplaySystem } from "./ethers-contracts/ChangeGuildDisplaySystem";
 import { ChangeResourceSeedSystem } from "./ethers-contracts/ChangeResourceSeedSystem";
@@ -49,6 +50,7 @@ import { RejectGuildSystem } from "./ethers-contracts/RejectGuildSystem";
 import { ReleaseAirdropTreasureSystem } from "./ethers-contracts/ReleaseAirdropTreasureSystem";
 import { ReleaseLinearTreasureSystem } from "./ethers-contracts/ReleaseLinearTreasureSystem";
 import { ResourceDevSystem } from "./ethers-contracts/ResourceDevSystem";
+import { SettleResourceBuildingSystem } from "./ethers-contracts/SettleResourceBuildingSystem";
 import { TakeResourceBuildingSystem } from "./ethers-contracts/TakeResourceBuildingSystem";
 import { TakeResourceSystem } from "./ethers-contracts/TakeResourceSystem";
 import { TakeResourcev2System } from "./ethers-contracts/TakeResourcev2System";
@@ -77,6 +79,7 @@ export type SystemTypes = {
   "system.BuffEffectKeepResourceOnDeathExecute": BuffEffectKeepResourceOnDeathExecuteSystem;
   "system.BuildTreasure": BuildTreasureSystem;
   "system.BulkSetState": BulkSetStateSystem;
+  "system.BuyResourceBuilding": BuyResourceBuildingSystem;
   "system.ChangeFogSeed": ChangeFogSeedSystem;
   "system.ChangeGuildDisplay": ChangeGuildDisplaySystem;
   "system.ChangeResourceSeed": ChangeResourceSeedSystem;
@@ -115,6 +118,7 @@ export type SystemTypes = {
   "system.ReleaseAirdropTreasure": ReleaseAirdropTreasureSystem;
   "system.ReleaseLinearTreasure": ReleaseLinearTreasureSystem;
   "system.ResourceDev": ResourceDevSystem;
+  "system.SettleResourceBuilding": SettleResourceBuildingSystem;
   "system.TakeResourceBuilding": TakeResourceBuildingSystem;
   "system.TakeResource": TakeResourceSystem;
   "system.TakeResourcev2": TakeResourcev2System;

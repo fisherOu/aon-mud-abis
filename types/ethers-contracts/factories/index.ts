@@ -24,6 +24,7 @@ export { BuffEffectSystem__factory } from "./BuffEffectSystem__factory";
 export { BuffEffectedInt32Component__factory } from "./BuffEffectedInt32Component__factory";
 export { BuildTreasureSystem__factory } from "./BuildTreasureSystem__factory";
 export { BulkSetStateSystem__factory } from "./BulkSetStateSystem__factory";
+export { BuyResourceBuildingSystem__factory } from "./BuyResourceBuildingSystem__factory";
 export { ChangeFogSeedSystem__factory } from "./ChangeFogSeedSystem__factory";
 export { ChangeGuildDisplaySystem__factory } from "./ChangeGuildDisplaySystem__factory";
 export { ChangeResourceSeedSystem__factory } from "./ChangeResourceSeedSystem__factory";
@@ -98,7 +99,9 @@ export { ReleaseAirdropTreasureSystem__factory } from "./ReleaseAirdropTreasureS
 export { ReleaseLinearTreasureSystem__factory } from "./ReleaseLinearTreasureSystem__factory";
 export { ResourceBuildingAreaBuildingComponent__factory } from "./ResourceBuildingAreaBuildingComponent__factory";
 export { ResourceBuildingAreaPositionComponent__factory } from "./ResourceBuildingAreaPositionComponent__factory";
+export { ResourceBuildingBoughtComponent__factory } from "./ResourceBuildingBoughtComponent__factory";
 export { ResourceBuildingComponent__factory } from "./ResourceBuildingComponent__factory";
+export { ResourceBuildingCountsComponent__factory } from "./ResourceBuildingCountsComponent__factory";
 export { ResourceBuildingPlayerComponent__factory } from "./ResourceBuildingPlayerComponent__factory";
 export { ResourceBuildingPositionComponent__factory } from "./ResourceBuildingPositionComponent__factory";
 export { ResourceComponent__factory } from "./ResourceComponent__factory";
@@ -111,6 +114,7 @@ export { ResourceMiningv2Component__factory } from "./ResourceMiningv2Component_
 export { ResourceNonceMarkComponent__factory } from "./ResourceNonceMarkComponent__factory";
 export { ResourcePositionComponent__factory } from "./ResourcePositionComponent__factory";
 export { Resourcev2Component__factory } from "./Resourcev2Component__factory";
+export { SettleResourceBuildingSystem__factory } from "./SettleResourceBuildingSystem__factory";
 export { ShieldAreaPositionComponent__factory } from "./ShieldAreaPositionComponent__factory";
 export { ShieldAreaShieldComponent__factory } from "./ShieldAreaShieldComponent__factory";
 export { ShieldComponent__factory } from "./ShieldComponent__factory";
