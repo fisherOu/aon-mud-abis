@@ -1,13 +1,10 @@
-# v0.0.13_treasureEffects_1c6f72b
+# v0.0.14_treasureEffects_758a5ee
 
-1. MoveConfigComponent: 添加 guildCost
-2. 添加 GuildMoveSystem
-3. 添加 GuildBoundTreasureSystem,GuildUnboundTreasure
-4. 添加 GuildChargeAirdropTreasureSystem, GuildChargeLinearTreasureSystem, GuildReleaseAirdropTreasureSystem, GuildReleaseLinearTreasureSystem
-5. GuildConfigComponent: 添加 basicAreaFactor, basicValueFactor, basicRangeFactor
-6. 添加 TakeResourceBuildingSystem
-7. 添加 ResourceDevSystem
+1. 添加 ResourceBuildingCountsComponent, ResourceBuildingBoughtComponent
+2. 添加 SettleResourceBuildingSystem
+3. 在 JoinGamev2System 中为玩家设置 ResourceBuildingCounts = 2
+4. 添加 BuyResourceBuildingSystem
 
-world address: 0xd6c9895db017c4ECA30BCC1f0C1A6456bA0fc5E3
-initialBlockNumber: 24214360
-abi tag: v0.0.13_treasureEffects_1c6f72b
+world address: 0xccEfe7dba984A03CA7e42333Df44Ff3db16D0851
+initialBlockNumber: 24289543
+abi tag: v0.0.14_treasureEffects_758a5ee
