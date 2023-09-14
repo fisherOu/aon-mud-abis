@@ -1,10 +1,11 @@
-# v0.0.14_treasureEffects_758a5ee
+# v0.0.15_0913_34ced9f
 
-1. 添加 ResourceBuildingCountsComponent, ResourceBuildingBoughtComponent
-2. 添加 SettleResourceBuildingSystem
-3. 在 JoinGamev2System 中为玩家设置 ResourceBuildingCounts = 2
-4. 添加 BuyResourceBuildingSystem
+1. 添加 DeathPackageBelongingComponent/DeathPackageComponent/GuildFrozenComponent
+2. 修正 DeathTriggerSystem
+3. 添加 TechEffectComponent/TechEffectConfigComponent/TechEffectConfigRegisterComponent
+4. 添加 SettleGuildSystem
+5. ShieldComponent: 添加 shieldArea
 
-world address: 0xccEfe7dba984A03CA7e42333Df44Ff3db16D0851
-initialBlockNumber: 24289543
-abi tag: v0.0.14_treasureEffects_758a5ee
+world address: 0xd6A841238Fd1172750e3F486a8697dAe787096eF
+initialBlockNumber: 25000931
+abi tag: v0.0.15_0913_34ced9f
