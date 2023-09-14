@@ -178,6 +178,11 @@ const _abi = [
           },
           {
             internalType: "uint32",
+            name: "areaAmount",
+            type: "uint32",
+          },
+          {
+            internalType: "uint32",
             name: "value",
             type: "uint32",
           },

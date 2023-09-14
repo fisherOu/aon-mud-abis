@@ -56,6 +56,8 @@ import TakeResourceSystem from "../abi/TakeResourceSystem.json";
 import TakeResourcev2System from "../abi/TakeResourcev2System.json";
 import TechAccelerateSystem from "../abi/TechAccelerateSystem.json";
 import TechCancelSystem from "../abi/TechCancelSystem.json";
+import TechEffectAddHPSystem from "../abi/TechEffectAddHPSystem.json";
+import TechEffectExtraResourceSystem from "../abi/TechEffectExtraResourceSystem.json";
 import TechFinishSystem from "../abi/TechFinishSystem.json";
 import TechUpdateSystem from "../abi/TechUpdateSystem.json";
 import TransferGuildLeaderSystem from "../abi/TransferGuildLeaderSystem.json";
@@ -124,6 +126,8 @@ export const SystemAbis = {
   "system.TakeResourcev2": TakeResourcev2System.abi,
   "system.TechAccelerate": TechAccelerateSystem.abi,
   "system.TechCancel": TechCancelSystem.abi,
+  "system.TechEffectAddHP": TechEffectAddHPSystem.abi,
+  "system.TechEffectExtraResource": TechEffectExtraResourceSystem.abi,
   "system.TechFinish": TechFinishSystem.abi,
   "system.TechUpdate": TechUpdateSystem.abi,
   "system.TransferGuildLeader": TransferGuildLeaderSystem.abi,

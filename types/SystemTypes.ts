@@ -56,6 +56,8 @@ import { TakeResourceSystem } from "./ethers-contracts/TakeResourceSystem";
 import { TakeResourcev2System } from "./ethers-contracts/TakeResourcev2System";
 import { TechAccelerateSystem } from "./ethers-contracts/TechAccelerateSystem";
 import { TechCancelSystem } from "./ethers-contracts/TechCancelSystem";
+import { TechEffectAddHPSystem } from "./ethers-contracts/TechEffectAddHPSystem";
+import { TechEffectExtraResourceSystem } from "./ethers-contracts/TechEffectExtraResourceSystem";
 import { TechFinishSystem } from "./ethers-contracts/TechFinishSystem";
 import { TechUpdateSystem } from "./ethers-contracts/TechUpdateSystem";
 import { TransferGuildLeaderSystem } from "./ethers-contracts/TransferGuildLeaderSystem";
@@ -124,6 +126,8 @@ export type SystemTypes = {
   "system.TakeResourcev2": TakeResourcev2System;
   "system.TechAccelerate": TechAccelerateSystem;
   "system.TechCancel": TechCancelSystem;
+  "system.TechEffectAddHP": TechEffectAddHPSystem;
+  "system.TechEffectExtraResource": TechEffectExtraResourceSystem;
   "system.TechFinish": TechFinishSystem;
   "system.TechUpdate": TechUpdateSystem;
   "system.TransferGuildLeader": TransferGuildLeaderSystem;

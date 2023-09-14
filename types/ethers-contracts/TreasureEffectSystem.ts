@@ -68,6 +68,7 @@ export type TreasureEffectInfoStruct = {
   treasureID: PromiseOrValue<BigNumberish>;
   path: CoordVerifyParamStruct[];
   area: CoordVerifyParamStruct[];
+  areaAmount: PromiseOrValue<BigNumberish>;
   value: PromiseOrValue<BigNumberish>;
 };
 
@@ -78,6 +79,7 @@ export type TreasureEffectInfoStructOutput = [
   BigNumber,
   CoordVerifyParamStructOutput[],
   CoordVerifyParamStructOutput[],
+  number,
   number
 ] & {
   sourceID: BigNumber;
@@ -86,13 +88,14 @@ export type TreasureEffectInfoStructOutput = [
   treasureID: BigNumber;
   path: CoordVerifyParamStructOutput[];
   area: CoordVerifyParamStructOutput[];
+  areaAmount: number;
   value: number;
 };
 
 export interface TreasureEffectSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,bool,uint256,uint256,(uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],(uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],uint32))": FunctionFragment;
+    "executeTyped((uint256,bool,uint256,uint256,(uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],(uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],uint32,uint32))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
