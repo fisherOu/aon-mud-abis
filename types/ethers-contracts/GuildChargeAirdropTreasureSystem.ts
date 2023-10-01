@@ -27,10 +27,16 @@ import type {
   PromiseOrValue,
 } from "./common";
 
-export type CoordVerifyParamStruct = {
+export type CoordVerifyParamv2Struct = {
   realHash: PromiseOrValue<BigNumberish>;
   fogHash: PromiseOrValue<BigNumberish>;
+  terrainSeed: PromiseOrValue<BigNumberish>;
   fogSeed: PromiseOrValue<BigNumberish>;
+  resourceSeed: PromiseOrValue<BigNumberish>;
+  treasureSeed: PromiseOrValue<BigNumberish>;
+  terrainPerlin: PromiseOrValue<BigNumberish>;
+  resourcePerlin: PromiseOrValue<BigNumberish>;
+  treasurePerlin: PromiseOrValue<BigNumberish>;
   width: PromiseOrValue<BigNumberish>;
   height: PromiseOrValue<BigNumberish>;
   a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
@@ -41,7 +47,13 @@ export type CoordVerifyParamStruct = {
   c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
 };
 
-export type CoordVerifyParamStructOutput = [
+export type CoordVerifyParamv2StructOutput = [
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
   BigNumber,
   BigNumber,
   BigNumber,
@@ -53,7 +65,13 @@ export type CoordVerifyParamStructOutput = [
 ] & {
   realHash: BigNumber;
   fogHash: BigNumber;
+  terrainSeed: BigNumber;
   fogSeed: BigNumber;
+  resourceSeed: BigNumber;
+  treasureSeed: BigNumber;
+  terrainPerlin: BigNumber;
+  resourcePerlin: BigNumber;
+  treasurePerlin: BigNumber;
   width: BigNumber;
   height: BigNumber;
   a: [BigNumber, BigNumber];
@@ -63,22 +81,22 @@ export type CoordVerifyParamStructOutput = [
 
 export type ChargeTreasureInfoStruct = {
   treasureId: PromiseOrValue<BigNumberish>;
-  position: CoordVerifyParamStruct;
-  target: CoordVerifyParamStruct;
+  position: CoordVerifyParamv2Struct;
+  target: CoordVerifyParamv2Struct;
   area: PromiseOrValue<BigNumberish>;
   guildCrestId: PromiseOrValue<BigNumberish>;
 };
 
 export type ChargeTreasureInfoStructOutput = [
   BigNumber,
-  CoordVerifyParamStructOutput,
-  CoordVerifyParamStructOutput,
+  CoordVerifyParamv2StructOutput,
+  CoordVerifyParamv2StructOutput,
   number,
   BigNumber
 ] & {
   treasureId: BigNumber;
-  position: CoordVerifyParamStructOutput;
-  target: CoordVerifyParamStructOutput;
+  position: CoordVerifyParamv2StructOutput;
+  target: CoordVerifyParamv2StructOutput;
   area: number;
   guildCrestId: BigNumber;
 };
@@ -87,7 +105,7 @@ export interface GuildChargeAirdropTreasureSystemInterface
   extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,(uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]),(uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]),uint32,uint256))": FunctionFragment;
+    "executeTyped((uint256,(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]),(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]),uint32,uint256))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

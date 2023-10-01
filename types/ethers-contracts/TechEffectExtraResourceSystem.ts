@@ -33,6 +33,7 @@ export type TechEffectInfoStruct = {
   entity: PromiseOrValue<BigNumberish>;
   techEffectId: PromiseOrValue<BigNumberish>;
   value: PromiseOrValue<BigNumberish>;
+  level: PromiseOrValue<BigNumberish>;
 };
 
 export type TechEffectInfoStructOutput = [
@@ -40,38 +41,34 @@ export type TechEffectInfoStructOutput = [
   boolean,
   BigNumber,
   BigNumber,
-  BigNumber
+  BigNumber,
+  number
 ] & {
   sourceId: BigNumber;
   isComponent: boolean;
   entity: BigNumber;
   techEffectId: BigNumber;
   value: BigNumber;
+  level: number;
 };
 
 export interface TechEffectExtraResourceSystemInterface
   extends utils.Interface {
   functions: {
-    "effectLogic((uint256,bool,uint256,uint256,uint64))": FunctionFragment;
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,bool,uint256,uint256,uint64))": FunctionFragment;
+    "executeTyped((uint256,bool,uint256,uint256,uint64,uint32))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
 
   getFunction(
     nameOrSignatureOrTopic:
-      | "effectLogic"
       | "execute"
       | "executeTyped"
       | "owner"
       | "transferOwnership"
   ): FunctionFragment;
 
-  encodeFunctionData(
-    functionFragment: "effectLogic",
-    values: [TechEffectInfoStruct]
-  ): string;
   encodeFunctionData(
     functionFragment: "execute",
     values: [PromiseOrValue<BytesLike>]
@@ -86,10 +83,6 @@ export interface TechEffectExtraResourceSystemInterface
     values: [PromiseOrValue<string>]
   ): string;
 
-  decodeFunctionResult(
-    functionFragment: "effectLogic",
-    data: BytesLike
-  ): Result;
   decodeFunctionResult(functionFragment: "execute", data: BytesLike): Result;
   decodeFunctionResult(
     functionFragment: "executeTyped",
@@ -147,11 +140,6 @@ export interface TechEffectExtraResourceSystem extends BaseContract {
   removeListener: OnEvent<this>;
 
   functions: {
-    effectLogic(
-      techEffectInfo: TechEffectInfoStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<ContractTransaction>;
-
     execute(
       args: PromiseOrValue<BytesLike>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -169,11 +157,6 @@ export interface TechEffectExtraResourceSystem extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
   };
-
-  effectLogic(
-    techEffectInfo: TechEffectInfoStruct,
-    overrides?: Overrides & { from?: PromiseOrValue<string> }
-  ): Promise<ContractTransaction>;
 
   execute(
     args: PromiseOrValue<BytesLike>,
@@ -193,11 +176,6 @@ export interface TechEffectExtraResourceSystem extends BaseContract {
   ): Promise<ContractTransaction>;
 
   callStatic: {
-    effectLogic(
-      techEffectInfo: TechEffectInfoStruct,
-      overrides?: CallOverrides
-    ): Promise<string>;
-
     execute(
       args: PromiseOrValue<BytesLike>,
       overrides?: CallOverrides
@@ -228,11 +206,6 @@ export interface TechEffectExtraResourceSystem extends BaseContract {
   };
 
   estimateGas: {
-    effectLogic(
-      techEffectInfo: TechEffectInfoStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<BigNumber>;
-
     execute(
       args: PromiseOrValue<BytesLike>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -252,11 +225,6 @@ export interface TechEffectExtraResourceSystem extends BaseContract {
   };
 
   populateTransaction: {
-    effectLogic(
-      techEffectInfo: TechEffectInfoStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<PopulatedTransaction>;
-
     execute(
       args: PromiseOrValue<BytesLike>,
       overrides?: Overrides & { from?: PromiseOrValue<string> }

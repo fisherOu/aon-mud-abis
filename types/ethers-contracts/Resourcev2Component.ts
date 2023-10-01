@@ -28,12 +28,19 @@ import type {
 } from "./common";
 
 export type ResourceStruct = {
+  resourceType: PromiseOrValue<BigNumberish>;
   value: PromiseOrValue<BigNumberish>;
   difficulty: PromiseOrValue<BigNumberish>;
   recuitSeconds: PromiseOrValue<BigNumberish>;
 };
 
-export type ResourceStructOutput = [BigNumber, BigNumber, BigNumber] & {
+export type ResourceStructOutput = [
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber
+] & {
+  resourceType: BigNumber;
   value: BigNumber;
   difficulty: BigNumber;
   recuitSeconds: BigNumber;
@@ -53,7 +60,7 @@ export interface Resourcev2ComponentInterface extends utils.Interface {
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set(uint256,(uint256,uint256,uint64))": FunctionFragment;
+    "set(uint256,(uint256,uint256,uint256,uint64))": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
@@ -75,7 +82,7 @@ export interface Resourcev2ComponentInterface extends utils.Interface {
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set(uint256,(uint256,uint256,uint64))"
+      | "set(uint256,(uint256,uint256,uint256,uint64))"
       | "set(uint256,bytes)"
       | "transferOwnership"
       | "unauthorizeWriter"
@@ -123,7 +130,7 @@ export interface Resourcev2ComponentInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set(uint256,(uint256,uint256,uint64))",
+    functionFragment: "set(uint256,(uint256,uint256,uint256,uint64))",
     values: [PromiseOrValue<BigNumberish>, ResourceStruct]
   ): string;
   encodeFunctionData(
@@ -175,7 +182,7 @@ export interface Resourcev2ComponentInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,(uint256,uint256,uint64))",
+    functionFragment: "set(uint256,(uint256,uint256,uint256,uint64))",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -292,7 +299,7 @@ export interface Resourcev2Component extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set(uint256,(uint256,uint256,uint64))"(
+    "set(uint256,(uint256,uint256,uint256,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       resource: ResourceStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -372,7 +379,7 @@ export interface Resourcev2Component extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set(uint256,(uint256,uint256,uint64))"(
+  "set(uint256,(uint256,uint256,uint256,uint64))"(
     entity: PromiseOrValue<BigNumberish>,
     resource: ResourceStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -452,7 +459,7 @@ export interface Resourcev2Component extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set(uint256,(uint256,uint256,uint64))"(
+    "set(uint256,(uint256,uint256,uint256,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       resource: ResourceStruct,
       overrides?: CallOverrides
@@ -542,7 +549,7 @@ export interface Resourcev2Component extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set(uint256,(uint256,uint256,uint64))"(
+    "set(uint256,(uint256,uint256,uint256,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       resource: ResourceStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -621,7 +628,7 @@ export interface Resourcev2Component extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set(uint256,(uint256,uint256,uint64))"(
+    "set(uint256,(uint256,uint256,uint256,uint64))"(
       entity: PromiseOrValue<BigNumberish>,
       resource: ResourceStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }

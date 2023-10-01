@@ -27,10 +27,16 @@ import type {
   PromiseOrValue,
 } from "./common";
 
-export type CoordVerifyParamStruct = {
+export type CoordVerifyParamv2Struct = {
   realHash: PromiseOrValue<BigNumberish>;
   fogHash: PromiseOrValue<BigNumberish>;
+  terrainSeed: PromiseOrValue<BigNumberish>;
   fogSeed: PromiseOrValue<BigNumberish>;
+  resourceSeed: PromiseOrValue<BigNumberish>;
+  treasureSeed: PromiseOrValue<BigNumberish>;
+  terrainPerlin: PromiseOrValue<BigNumberish>;
+  resourcePerlin: PromiseOrValue<BigNumberish>;
+  treasurePerlin: PromiseOrValue<BigNumberish>;
   width: PromiseOrValue<BigNumberish>;
   height: PromiseOrValue<BigNumberish>;
   a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
@@ -41,7 +47,13 @@ export type CoordVerifyParamStruct = {
   c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
 };
 
-export type CoordVerifyParamStructOutput = [
+export type CoordVerifyParamv2StructOutput = [
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
   BigNumber,
   BigNumber,
   BigNumber,
@@ -53,7 +65,13 @@ export type CoordVerifyParamStructOutput = [
 ] & {
   realHash: BigNumber;
   fogHash: BigNumber;
+  terrainSeed: BigNumber;
   fogSeed: BigNumber;
+  resourceSeed: BigNumber;
+  treasureSeed: BigNumber;
+  terrainPerlin: BigNumber;
+  resourcePerlin: BigNumber;
+  treasurePerlin: BigNumber;
   width: BigNumber;
   height: BigNumber;
   a: [BigNumber, BigNumber];
@@ -66,8 +84,8 @@ export type TreasureEffectInfoStruct = {
   isComponent: PromiseOrValue<boolean>;
   entity: PromiseOrValue<BigNumberish>;
   treasureID: PromiseOrValue<BigNumberish>;
-  path: CoordVerifyParamStruct[];
-  area: CoordVerifyParamStruct[];
+  path: CoordVerifyParamv2Struct[];
+  area: CoordVerifyParamv2Struct[];
   areaAmount: PromiseOrValue<BigNumberish>;
   value: PromiseOrValue<BigNumberish>;
 };
@@ -77,8 +95,8 @@ export type TreasureEffectInfoStructOutput = [
   boolean,
   BigNumber,
   BigNumber,
-  CoordVerifyParamStructOutput[],
-  CoordVerifyParamStructOutput[],
+  CoordVerifyParamv2StructOutput[],
+  CoordVerifyParamv2StructOutput[],
   number,
   number
 ] & {
@@ -86,8 +104,8 @@ export type TreasureEffectInfoStructOutput = [
   isComponent: boolean;
   entity: BigNumber;
   treasureID: BigNumber;
-  path: CoordVerifyParamStructOutput[];
-  area: CoordVerifyParamStructOutput[];
+  path: CoordVerifyParamv2StructOutput[];
+  area: CoordVerifyParamv2StructOutput[];
   areaAmount: number;
   value: number;
 };
@@ -96,7 +114,7 @@ export interface TreasureEffectNegativeAddHPSystemInterface
   extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,bool,uint256,uint256,(uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],(uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],uint32,uint32))": FunctionFragment;
+    "executeTyped((uint256,bool,uint256,uint256,(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],uint32,uint32))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

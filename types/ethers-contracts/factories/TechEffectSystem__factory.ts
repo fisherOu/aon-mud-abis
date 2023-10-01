@@ -42,52 +42,6 @@ const _abi = [
   {
     inputs: [
       {
-        components: [
-          {
-            internalType: "uint256",
-            name: "sourceId",
-            type: "uint256",
-          },
-          {
-            internalType: "bool",
-            name: "isComponent",
-            type: "bool",
-          },
-          {
-            internalType: "uint256",
-            name: "entity",
-            type: "uint256",
-          },
-          {
-            internalType: "uint256",
-            name: "techEffectId",
-            type: "uint256",
-          },
-          {
-            internalType: "uint64",
-            name: "value",
-            type: "uint64",
-          },
-        ],
-        internalType: "struct TechEffectInfo",
-        name: "techEffectInfo",
-        type: "tuple",
-      },
-    ],
-    name: "effectLogic",
-    outputs: [
-      {
-        internalType: "bytes",
-        name: "",
-        type: "bytes",
-      },
-    ],
-    stateMutability: "nonpayable",
-    type: "function",
-  },
-  {
-    inputs: [
-      {
         internalType: "bytes",
         name: "args",
         type: "bytes",
@@ -132,6 +86,11 @@ const _abi = [
             internalType: "uint64",
             name: "value",
             type: "uint64",
+          },
+          {
+            internalType: "uint32",
+            name: "level",
+            type: "uint32",
           },
         ],
         internalType: "struct TechEffectInfo",

@@ -96,7 +96,37 @@ const _abi = [
               },
               {
                 internalType: "uint256",
+                name: "terrainSeed",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
                 name: "fogSeed",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "resourceSeed",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "treasureSeed",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "terrainPerlin",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "resourcePerlin",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "treasurePerlin",
                 type: "uint256",
               },
               {
@@ -125,7 +155,7 @@ const _abi = [
                 type: "uint256[2]",
               },
             ],
-            internalType: "struct CoordVerifyParam[]",
+            internalType: "struct CoordVerifyParamv2[]",
             name: "path",
             type: "tuple[]",
           },
@@ -143,7 +173,37 @@ const _abi = [
               },
               {
                 internalType: "uint256",
+                name: "terrainSeed",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
                 name: "fogSeed",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "resourceSeed",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "treasureSeed",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "terrainPerlin",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "resourcePerlin",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "treasurePerlin",
                 type: "uint256",
               },
               {
@@ -172,7 +232,7 @@ const _abi = [
                 type: "uint256[2]",
               },
             ],
-            internalType: "struct CoordVerifyParam[]",
+            internalType: "struct CoordVerifyParamv2[]",
             name: "area",
             type: "tuple[]",
           },

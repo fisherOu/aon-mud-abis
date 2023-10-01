@@ -27,10 +27,16 @@ import type {
   PromiseOrValue,
 } from "./common";
 
-export type CoordVerifyParamStruct = {
+export type CoordVerifyParamv2Struct = {
   realHash: PromiseOrValue<BigNumberish>;
   fogHash: PromiseOrValue<BigNumberish>;
+  terrainSeed: PromiseOrValue<BigNumberish>;
   fogSeed: PromiseOrValue<BigNumberish>;
+  resourceSeed: PromiseOrValue<BigNumberish>;
+  treasureSeed: PromiseOrValue<BigNumberish>;
+  terrainPerlin: PromiseOrValue<BigNumberish>;
+  resourcePerlin: PromiseOrValue<BigNumberish>;
+  treasurePerlin: PromiseOrValue<BigNumberish>;
   width: PromiseOrValue<BigNumberish>;
   height: PromiseOrValue<BigNumberish>;
   a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
@@ -41,7 +47,13 @@ export type CoordVerifyParamStruct = {
   c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
 };
 
-export type CoordVerifyParamStructOutput = [
+export type CoordVerifyParamv2StructOutput = [
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
   BigNumber,
   BigNumber,
   BigNumber,
@@ -53,7 +65,13 @@ export type CoordVerifyParamStructOutput = [
 ] & {
   realHash: BigNumber;
   fogHash: BigNumber;
+  terrainSeed: BigNumber;
   fogSeed: BigNumber;
+  resourceSeed: BigNumber;
+  treasureSeed: BigNumber;
+  terrainPerlin: BigNumber;
+  resourcePerlin: BigNumber;
+  treasurePerlin: BigNumber;
   width: BigNumber;
   height: BigNumber;
   a: [BigNumber, BigNumber];
@@ -62,22 +80,22 @@ export type CoordVerifyParamStructOutput = [
 };
 
 export type SettleInfoStruct = {
-  path: CoordVerifyParamStruct[];
-  area: CoordVerifyParamStruct[];
+  path: CoordVerifyParamv2Struct[];
+  area: CoordVerifyParamv2Struct[];
 };
 
 export type SettleInfoStructOutput = [
-  CoordVerifyParamStructOutput[],
-  CoordVerifyParamStructOutput[]
+  CoordVerifyParamv2StructOutput[],
+  CoordVerifyParamv2StructOutput[]
 ] & {
-  path: CoordVerifyParamStructOutput[];
-  area: CoordVerifyParamStructOutput[];
+  path: CoordVerifyParamv2StructOutput[];
+  area: CoordVerifyParamv2StructOutput[];
 };
 
 export interface SettleResourceBuildingSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped(((uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],(uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[]))": FunctionFragment;
+    "executeTyped(((uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[]))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

@@ -36,6 +36,10 @@ import GuildChargeLinearTreasureSystem from "../abi/GuildChargeLinearTreasureSys
 import GuildMoveSystem from "../abi/GuildMoveSystem.json";
 import GuildReleaseAirdropTreasureSystem from "../abi/GuildReleaseAirdropTreasureSystem.json";
 import GuildReleaseLinearTreasureSystem from "../abi/GuildReleaseLinearTreasureSystem.json";
+import GuildTechAccelerateSystem from "../abi/GuildTechAccelerateSystem.json";
+import GuildTechCancelSystem from "../abi/GuildTechCancelSystem.json";
+import GuildTechFinishSystem from "../abi/GuildTechFinishSystem.json";
+import GuildTechUpdateSystem from "../abi/GuildTechUpdateSystem.json";
 import GuildUnboundTreasureSystem from "../abi/GuildUnboundTreasureSystem.json";
 import JoinGameSystem from "../abi/JoinGameSystem.json";
 import JoinGamev2System from "../abi/JoinGamev2System.json";
@@ -44,12 +48,14 @@ import KickGuildMemberSystem from "../abi/KickGuildMemberSystem.json";
 import MarkSystem from "../abi/MarkSystem.json";
 import MoveSystem from "../abi/MoveSystem.json";
 import Movev2System from "../abi/Movev2System.json";
+import PickUpRuinSystem from "../abi/PickUpRuinSystem.json";
 import PickUpTreasureSystem from "../abi/PickUpTreasureSystem.json";
 import PickUpTreasurev2System from "../abi/PickUpTreasurev2System.json";
 import RejectGuildSystem from "../abi/RejectGuildSystem.json";
 import ReleaseAirdropTreasureSystem from "../abi/ReleaseAirdropTreasureSystem.json";
 import ReleaseLinearTreasureSystem from "../abi/ReleaseLinearTreasureSystem.json";
 import ResourceDevSystem from "../abi/ResourceDevSystem.json";
+import SetStatusSystem from "../abi/SetStatusSystem.json";
 import SettleResourceBuildingSystem from "../abi/SettleResourceBuildingSystem.json";
 import TakeResourceBuildingSystem from "../abi/TakeResourceBuildingSystem.json";
 import TakeResourceSystem from "../abi/TakeResourceSystem.json";
@@ -106,6 +112,10 @@ export const SystemAbis = {
   "system.GuildMove": GuildMoveSystem.abi,
   "system.GuildReleaseAirdropTreasure": GuildReleaseAirdropTreasureSystem.abi,
   "system.GuildReleaseLinearTreasure": GuildReleaseLinearTreasureSystem.abi,
+  "system.GuildTechAccelerate": GuildTechAccelerateSystem.abi,
+  "system.GuildTechCancel": GuildTechCancelSystem.abi,
+  "system.GuildTechFinish": GuildTechFinishSystem.abi,
+  "system.GuildTechUpdate": GuildTechUpdateSystem.abi,
   "system.GuildUnboundTreasure": GuildUnboundTreasureSystem.abi,
   "system.JoinGame": JoinGameSystem.abi,
   "system.JoinGamev2": JoinGamev2System.abi,
@@ -114,12 +124,14 @@ export const SystemAbis = {
   "system.Mark": MarkSystem.abi,
   "system.Move": MoveSystem.abi,
   "system.Movev2": Movev2System.abi,
+  "system.PickUpRuin": PickUpRuinSystem.abi,
   "system.PickUpTreasure": PickUpTreasureSystem.abi,
   "system.PickUpTreasurev2": PickUpTreasurev2System.abi,
   "system.RejectGuild": RejectGuildSystem.abi,
   "system.ReleaseAirdropTreasure": ReleaseAirdropTreasureSystem.abi,
   "system.ReleaseLinearTreasure": ReleaseLinearTreasureSystem.abi,
   "system.ResourceDev": ResourceDevSystem.abi,
+  "system.SetStatus": SetStatusSystem.abi,
   "system.SettleResourceBuilding": SettleResourceBuildingSystem.abi,
   "system.TakeResourceBuilding": TakeResourceBuildingSystem.abi,
   "system.TakeResource": TakeResourceSystem.abi,

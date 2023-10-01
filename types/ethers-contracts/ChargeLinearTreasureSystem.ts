@@ -27,10 +27,16 @@ import type {
   PromiseOrValue,
 } from "./common";
 
-export type CoordVerifyParamStruct = {
+export type CoordVerifyParamv2Struct = {
   realHash: PromiseOrValue<BigNumberish>;
   fogHash: PromiseOrValue<BigNumberish>;
+  terrainSeed: PromiseOrValue<BigNumberish>;
   fogSeed: PromiseOrValue<BigNumberish>;
+  resourceSeed: PromiseOrValue<BigNumberish>;
+  treasureSeed: PromiseOrValue<BigNumberish>;
+  terrainPerlin: PromiseOrValue<BigNumberish>;
+  resourcePerlin: PromiseOrValue<BigNumberish>;
+  treasurePerlin: PromiseOrValue<BigNumberish>;
   width: PromiseOrValue<BigNumberish>;
   height: PromiseOrValue<BigNumberish>;
   a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
@@ -41,7 +47,13 @@ export type CoordVerifyParamStruct = {
   c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
 };
 
-export type CoordVerifyParamStructOutput = [
+export type CoordVerifyParamv2StructOutput = [
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber,
   BigNumber,
   BigNumber,
   BigNumber,
@@ -53,7 +65,13 @@ export type CoordVerifyParamStructOutput = [
 ] & {
   realHash: BigNumber;
   fogHash: BigNumber;
+  terrainSeed: BigNumber;
   fogSeed: BigNumber;
+  resourceSeed: BigNumber;
+  treasureSeed: BigNumber;
+  terrainPerlin: BigNumber;
+  resourcePerlin: BigNumber;
+  treasurePerlin: BigNumber;
   width: BigNumber;
   height: BigNumber;
   a: [BigNumber, BigNumber];
@@ -63,7 +81,7 @@ export type CoordVerifyParamStructOutput = [
 
 export type ChargeTreasureInfoStruct = {
   treasureId: PromiseOrValue<BigNumberish>;
-  position: CoordVerifyParamStruct;
+  position: CoordVerifyParamv2Struct;
   direction: PromiseOrValue<BigNumberish>;
   distance: PromiseOrValue<BigNumberish>;
   area: PromiseOrValue<BigNumberish>;
@@ -71,13 +89,13 @@ export type ChargeTreasureInfoStruct = {
 
 export type ChargeTreasureInfoStructOutput = [
   BigNumber,
-  CoordVerifyParamStructOutput,
+  CoordVerifyParamv2StructOutput,
   number,
   BigNumber,
   number
 ] & {
   treasureId: BigNumber;
-  position: CoordVerifyParamStructOutput;
+  position: CoordVerifyParamv2StructOutput;
   direction: number;
   distance: BigNumber;
   area: number;
@@ -86,7 +104,7 @@ export type ChargeTreasureInfoStructOutput = [
 export interface ChargeLinearTreasureSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,(uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]),uint32,uint64,uint32))": FunctionFragment;
+    "executeTyped((uint256,(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]),uint32,uint64,uint32))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

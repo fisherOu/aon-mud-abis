@@ -29,6 +29,8 @@ import type {
 
 export type TechConfigStruct = {
   techGroupId: PromiseOrValue<BigNumberish>;
+  buffTargetId: PromiseOrValue<BigNumberish>;
+  basicValue: PromiseOrValue<BigNumberish>;
   basicResourceCost: PromiseOrValue<BigNumberish>;
   basicLevelUpTime: PromiseOrValue<BigNumberish>;
   levelUpCoolDownTime: PromiseOrValue<BigNumberish>;
@@ -41,10 +43,14 @@ export type TechConfigStructOutput = [
   BigNumber,
   BigNumber,
   BigNumber,
+  BigNumber,
+  BigNumber,
   number,
   number
 ] & {
   techGroupId: BigNumber;
+  buffTargetId: BigNumber;
+  basicValue: BigNumber;
   basicResourceCost: BigNumber;
   basicLevelUpTime: BigNumber;
   levelUpCoolDownTime: BigNumber;
@@ -66,8 +72,8 @@ export interface TechConfigComponentInterface extends utils.Interface {
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set(uint256,(uint256,uint64,uint64,uint64,uint32,uint32))": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
+    "set(uint256,(uint256,uint256,uint64,uint64,uint64,uint64,uint32,uint32))": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
     "world()": FunctionFragment;
@@ -88,8 +94,8 @@ export interface TechConfigComponentInterface extends utils.Interface {
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set(uint256,(uint256,uint64,uint64,uint64,uint32,uint32))"
       | "set(uint256,bytes)"
+      | "set(uint256,(uint256,uint256,uint64,uint64,uint64,uint64,uint32,uint32))"
       | "transferOwnership"
       | "unauthorizeWriter"
       | "world"
@@ -136,12 +142,12 @@ export interface TechConfigComponentInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set(uint256,(uint256,uint64,uint64,uint64,uint32,uint32))",
-    values: [PromiseOrValue<BigNumberish>, TechConfigStruct]
-  ): string;
-  encodeFunctionData(
     functionFragment: "set(uint256,bytes)",
     values: [PromiseOrValue<BigNumberish>, PromiseOrValue<BytesLike>]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "set(uint256,(uint256,uint256,uint64,uint64,uint64,uint64,uint32,uint32))",
+    values: [PromiseOrValue<BigNumberish>, TechConfigStruct]
   ): string;
   encodeFunctionData(
     functionFragment: "transferOwnership",
@@ -188,11 +194,11 @@ export interface TechConfigComponentInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,(uint256,uint64,uint64,uint64,uint32,uint32))",
+    functionFragment: "set(uint256,bytes)",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,bytes)",
+    functionFragment: "set(uint256,(uint256,uint256,uint64,uint64,uint64,uint64,uint32,uint32))",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -305,15 +311,15 @@ export interface TechConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set(uint256,(uint256,uint64,uint64,uint64,uint32,uint32))"(
-      entity: PromiseOrValue<BigNumberish>,
-      techConfig: TechConfigStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<ContractTransaction>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<ContractTransaction>;
+
+    "set(uint256,(uint256,uint256,uint64,uint64,uint64,uint64,uint32,uint32))"(
+      entity: PromiseOrValue<BigNumberish>,
+      techConfig: TechConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -385,15 +391,15 @@ export interface TechConfigComponent extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set(uint256,(uint256,uint64,uint64,uint64,uint32,uint32))"(
-    entity: PromiseOrValue<BigNumberish>,
-    techConfig: TechConfigStruct,
-    overrides?: Overrides & { from?: PromiseOrValue<string> }
-  ): Promise<ContractTransaction>;
-
   "set(uint256,bytes)"(
     entity: PromiseOrValue<BigNumberish>,
     value: PromiseOrValue<BytesLike>,
+    overrides?: Overrides & { from?: PromiseOrValue<string> }
+  ): Promise<ContractTransaction>;
+
+  "set(uint256,(uint256,uint256,uint64,uint64,uint64,uint64,uint32,uint32))"(
+    entity: PromiseOrValue<BigNumberish>,
+    techConfig: TechConfigStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -465,15 +471,15 @@ export interface TechConfigComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set(uint256,(uint256,uint64,uint64,uint64,uint32,uint32))"(
-      entity: PromiseOrValue<BigNumberish>,
-      techConfig: TechConfigStruct,
-      overrides?: CallOverrides
-    ): Promise<void>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: CallOverrides
+    ): Promise<void>;
+
+    "set(uint256,(uint256,uint256,uint64,uint64,uint64,uint64,uint32,uint32))"(
+      entity: PromiseOrValue<BigNumberish>,
+      techConfig: TechConfigStruct,
       overrides?: CallOverrides
     ): Promise<void>;
 
@@ -555,15 +561,15 @@ export interface TechConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set(uint256,(uint256,uint64,uint64,uint64,uint32,uint32))"(
-      entity: PromiseOrValue<BigNumberish>,
-      techConfig: TechConfigStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<BigNumber>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<BigNumber>;
+
+    "set(uint256,(uint256,uint256,uint64,uint64,uint64,uint64,uint32,uint32))"(
+      entity: PromiseOrValue<BigNumberish>,
+      techConfig: TechConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -634,15 +640,15 @@ export interface TechConfigComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set(uint256,(uint256,uint64,uint64,uint64,uint32,uint32))"(
-      entity: PromiseOrValue<BigNumberish>,
-      techConfig: TechConfigStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<PopulatedTransaction>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<PopulatedTransaction>;
+
+    "set(uint256,(uint256,uint256,uint64,uint64,uint64,uint64,uint32,uint32))"(
+      entity: PromiseOrValue<BigNumberish>,
+      techConfig: TechConfigStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
