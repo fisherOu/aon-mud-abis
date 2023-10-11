@@ -31,6 +31,7 @@ import EditGuildSystem from "../abi/EditGuildSystem.json";
 import EncounterFleeSystem from "../abi/EncounterFleeSystem.json";
 import EncounterThrowSystem from "../abi/EncounterThrowSystem.json";
 import GuildBoundTreasureSystem from "../abi/GuildBoundTreasureSystem.json";
+import GuildBuildTreasureSystem from "../abi/GuildBuildTreasureSystem.json";
 import GuildChargeAirdropTreasureSystem from "../abi/GuildChargeAirdropTreasureSystem.json";
 import GuildChargeLinearTreasureSystem from "../abi/GuildChargeLinearTreasureSystem.json";
 import GuildMoveSystem from "../abi/GuildMoveSystem.json";
@@ -107,6 +108,7 @@ export const SystemAbis = {
   "system.EncounterFlee": EncounterFleeSystem.abi,
   "system.EncounterThrow": EncounterThrowSystem.abi,
   "system.GuildBoundTreasure": GuildBoundTreasureSystem.abi,
+  "system.GuildBuildTreasure": GuildBuildTreasureSystem.abi,
   "system.GuildChargeAirdropTreasure": GuildChargeAirdropTreasureSystem.abi,
   "system.GuildChargeLinearTreasure": GuildChargeLinearTreasureSystem.abi,
   "system.GuildMove": GuildMoveSystem.abi,

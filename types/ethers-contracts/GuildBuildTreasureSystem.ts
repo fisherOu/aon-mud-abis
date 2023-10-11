@@ -27,97 +27,22 @@ import type {
   PromiseOrValue,
 } from "./common";
 
-export type CoordVerifyParamv2Struct = {
-  realHash: PromiseOrValue<BigNumberish>;
-  fogHash: PromiseOrValue<BigNumberish>;
-  terrainSeed: PromiseOrValue<BigNumberish>;
-  fogSeed: PromiseOrValue<BigNumberish>;
-  resourceSeed: PromiseOrValue<BigNumberish>;
-  treasureSeed: PromiseOrValue<BigNumberish>;
-  terrainPerlin: PromiseOrValue<BigNumberish>;
-  resourcePerlin: PromiseOrValue<BigNumberish>;
-  treasurePerlin: PromiseOrValue<BigNumberish>;
-  width: PromiseOrValue<BigNumberish>;
-  height: PromiseOrValue<BigNumberish>;
-  a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
-  b: [
-    [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>],
-    [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>]
-  ];
-  c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
+export type BuildInfoStruct = {
+  amount: PromiseOrValue<BigNumberish>;
+  salt: PromiseOrValue<BigNumberish>;
+  guildCrestId: PromiseOrValue<BigNumberish>;
 };
 
-export type CoordVerifyParamv2StructOutput = [
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  [BigNumber, BigNumber],
-  [[BigNumber, BigNumber], [BigNumber, BigNumber]],
-  [BigNumber, BigNumber]
-] & {
-  realHash: BigNumber;
-  fogHash: BigNumber;
-  terrainSeed: BigNumber;
-  fogSeed: BigNumber;
-  resourceSeed: BigNumber;
-  treasureSeed: BigNumber;
-  terrainPerlin: BigNumber;
-  resourcePerlin: BigNumber;
-  treasurePerlin: BigNumber;
-  width: BigNumber;
-  height: BigNumber;
-  a: [BigNumber, BigNumber];
-  b: [[BigNumber, BigNumber], [BigNumber, BigNumber]];
-  c: [BigNumber, BigNumber];
+export type BuildInfoStructOutput = [BigNumber, BigNumber, BigNumber] & {
+  amount: BigNumber;
+  salt: BigNumber;
+  guildCrestId: BigNumber;
 };
 
-export type TreasureEffectInfoStruct = {
-  sourceID: PromiseOrValue<BigNumberish>;
-  isComponent: PromiseOrValue<boolean>;
-  entity: PromiseOrValue<BigNumberish>;
-  treasureID: PromiseOrValue<BigNumberish>;
-  path: CoordVerifyParamv2Struct[];
-  area: CoordVerifyParamv2Struct[];
-  areaAmount: PromiseOrValue<BigNumberish>;
-  value: PromiseOrValue<BigNumberish>;
-  fromGuild: PromiseOrValue<boolean>;
-};
-
-export type TreasureEffectInfoStructOutput = [
-  BigNumber,
-  boolean,
-  BigNumber,
-  BigNumber,
-  CoordVerifyParamv2StructOutput[],
-  CoordVerifyParamv2StructOutput[],
-  number,
-  number,
-  boolean
-] & {
-  sourceID: BigNumber;
-  isComponent: boolean;
-  entity: BigNumber;
-  treasureID: BigNumber;
-  path: CoordVerifyParamv2StructOutput[];
-  area: CoordVerifyParamv2StructOutput[];
-  areaAmount: number;
-  value: number;
-  fromGuild: boolean;
-};
-
-export interface TreasureEffectDeathKeepResourceSystemInterface
-  extends utils.Interface {
+export interface GuildBuildTreasureSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,bool,uint256,uint256,(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],uint32,uint32,bool))": FunctionFragment;
+    "executeTyped((uint256,uint256,uint256))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
@@ -136,7 +61,7 @@ export interface TreasureEffectDeathKeepResourceSystemInterface
   ): string;
   encodeFunctionData(
     functionFragment: "executeTyped",
-    values: [TreasureEffectInfoStruct]
+    values: [BuildInfoStruct]
   ): string;
   encodeFunctionData(functionFragment: "owner", values?: undefined): string;
   encodeFunctionData(
@@ -174,12 +99,12 @@ export type OwnershipTransferredEvent = TypedEvent<
 export type OwnershipTransferredEventFilter =
   TypedEventFilter<OwnershipTransferredEvent>;
 
-export interface TreasureEffectDeathKeepResourceSystem extends BaseContract {
+export interface GuildBuildTreasureSystem extends BaseContract {
   connect(signerOrProvider: Signer | Provider | string): this;
   attach(addressOrName: string): this;
   deployed(): Promise<this>;
 
-  interface: TreasureEffectDeathKeepResourceSystemInterface;
+  interface: GuildBuildTreasureSystemInterface;
 
   queryFilter<TEvent extends TypedEvent>(
     event: TypedEventFilter<TEvent>,
@@ -207,7 +132,7 @@ export interface TreasureEffectDeathKeepResourceSystem extends BaseContract {
     ): Promise<ContractTransaction>;
 
     executeTyped(
-      effectInfo: TreasureEffectInfoStruct,
+      buildInfo: BuildInfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -225,7 +150,7 @@ export interface TreasureEffectDeathKeepResourceSystem extends BaseContract {
   ): Promise<ContractTransaction>;
 
   executeTyped(
-    effectInfo: TreasureEffectInfoStruct,
+    buildInfo: BuildInfoStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -243,7 +168,7 @@ export interface TreasureEffectDeathKeepResourceSystem extends BaseContract {
     ): Promise<string>;
 
     executeTyped(
-      effectInfo: TreasureEffectInfoStruct,
+      buildInfo: BuildInfoStruct,
       overrides?: CallOverrides
     ): Promise<string>;
 
@@ -273,7 +198,7 @@ export interface TreasureEffectDeathKeepResourceSystem extends BaseContract {
     ): Promise<BigNumber>;
 
     executeTyped(
-      effectInfo: TreasureEffectInfoStruct,
+      buildInfo: BuildInfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -292,7 +217,7 @@ export interface TreasureEffectDeathKeepResourceSystem extends BaseContract {
     ): Promise<PopulatedTransaction>;
 
     executeTyped(
-      effectInfo: TreasureEffectInfoStruct,
+      buildInfo: BuildInfoStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 

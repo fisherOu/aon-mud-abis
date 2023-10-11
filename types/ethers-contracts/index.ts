@@ -55,6 +55,7 @@ export type { EnergyAmountComponent } from "./EnergyAmountComponent";
 export type { FogSeedComponent } from "./FogSeedComponent";
 export type { GoldAmountComponent } from "./GoldAmountComponent";
 export type { GuildBoundTreasureSystem } from "./GuildBoundTreasureSystem";
+export type { GuildBuildTreasureSystem } from "./GuildBuildTreasureSystem";
 export type { GuildChargeAirdropTreasureSystem } from "./GuildChargeAirdropTreasureSystem";
 export type { GuildChargeLinearTreasureSystem } from "./GuildChargeLinearTreasureSystem";
 export type { GuildComponent } from "./GuildComponent";
@@ -245,6 +246,7 @@ export { EnergyAmountComponent__factory } from "./factories/EnergyAmountComponen
 export { FogSeedComponent__factory } from "./factories/FogSeedComponent__factory";
 export { GoldAmountComponent__factory } from "./factories/GoldAmountComponent__factory";
 export { GuildBoundTreasureSystem__factory } from "./factories/GuildBoundTreasureSystem__factory";
+export { GuildBuildTreasureSystem__factory } from "./factories/GuildBuildTreasureSystem__factory";
 export { GuildChargeAirdropTreasureSystem__factory } from "./factories/GuildChargeAirdropTreasureSystem__factory";
 export { GuildChargeLinearTreasureSystem__factory } from "./factories/GuildChargeLinearTreasureSystem__factory";
 export { GuildComponent__factory } from "./factories/GuildComponent__factory";

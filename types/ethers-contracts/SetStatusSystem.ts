@@ -27,10 +27,14 @@ import type {
   PromiseOrValue,
 } from "./common";
 
+export type StatusStruct = { status: PromiseOrValue<BigNumberish> };
+
+export type StatusStructOutput = [number] & { status: number };
+
 export interface SetStatusSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped(uint32)": FunctionFragment;
+    "executeTyped((uint32))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };
@@ -49,7 +53,7 @@ export interface SetStatusSystemInterface extends utils.Interface {
   ): string;
   encodeFunctionData(
     functionFragment: "executeTyped",
-    values: [PromiseOrValue<BigNumberish>]
+    values: [StatusStruct]
   ): string;
   encodeFunctionData(functionFragment: "owner", values?: undefined): string;
   encodeFunctionData(
@@ -120,7 +124,7 @@ export interface SetStatusSystem extends BaseContract {
     ): Promise<ContractTransaction>;
 
     executeTyped(
-      status: PromiseOrValue<BigNumberish>,
+      statusInfo: StatusStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -138,7 +142,7 @@ export interface SetStatusSystem extends BaseContract {
   ): Promise<ContractTransaction>;
 
   executeTyped(
-    status: PromiseOrValue<BigNumberish>,
+    statusInfo: StatusStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -156,7 +160,7 @@ export interface SetStatusSystem extends BaseContract {
     ): Promise<string>;
 
     executeTyped(
-      status: PromiseOrValue<BigNumberish>,
+      statusInfo: StatusStruct,
       overrides?: CallOverrides
     ): Promise<string>;
 
@@ -186,7 +190,7 @@ export interface SetStatusSystem extends BaseContract {
     ): Promise<BigNumber>;
 
     executeTyped(
-      status: PromiseOrValue<BigNumberish>,
+      statusInfo: StatusStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -205,7 +209,7 @@ export interface SetStatusSystem extends BaseContract {
     ): Promise<PopulatedTransaction>;
 
     executeTyped(
-      status: PromiseOrValue<BigNumberish>,
+      statusInfo: StatusStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 

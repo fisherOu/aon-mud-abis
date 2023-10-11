@@ -88,6 +88,7 @@ export type TreasureEffectInfoStruct = {
   area: CoordVerifyParamv2Struct[];
   areaAmount: PromiseOrValue<BigNumberish>;
   value: PromiseOrValue<BigNumberish>;
+  fromGuild: PromiseOrValue<boolean>;
 };
 
 export type TreasureEffectInfoStructOutput = [
@@ -98,7 +99,8 @@ export type TreasureEffectInfoStructOutput = [
   CoordVerifyParamv2StructOutput[],
   CoordVerifyParamv2StructOutput[],
   number,
-  number
+  number,
+  boolean
 ] & {
   sourceID: BigNumber;
   isComponent: boolean;
@@ -108,13 +110,14 @@ export type TreasureEffectInfoStructOutput = [
   area: CoordVerifyParamv2StructOutput[];
   areaAmount: number;
   value: number;
+  fromGuild: boolean;
 };
 
 export interface TreasureEffectAirdropDefenseSystemInterface
   extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,bool,uint256,uint256,(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],uint32,uint32))": FunctionFragment;
+    "executeTyped((uint256,bool,uint256,uint256,(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2])[],uint32,uint32,bool))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

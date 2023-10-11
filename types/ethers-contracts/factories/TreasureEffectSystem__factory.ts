@@ -246,6 +246,11 @@ const _abi = [
             name: "value",
             type: "uint32",
           },
+          {
+            internalType: "bool",
+            name: "fromGuild",
+            type: "bool",
+          },
         ],
         internalType: "struct TreasureEffectInfo",
         name: "effectInfo",

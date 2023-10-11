@@ -31,6 +31,7 @@ import { EditGuildSystem } from "./ethers-contracts/EditGuildSystem";
 import { EncounterFleeSystem } from "./ethers-contracts/EncounterFleeSystem";
 import { EncounterThrowSystem } from "./ethers-contracts/EncounterThrowSystem";
 import { GuildBoundTreasureSystem } from "./ethers-contracts/GuildBoundTreasureSystem";
+import { GuildBuildTreasureSystem } from "./ethers-contracts/GuildBuildTreasureSystem";
 import { GuildChargeAirdropTreasureSystem } from "./ethers-contracts/GuildChargeAirdropTreasureSystem";
 import { GuildChargeLinearTreasureSystem } from "./ethers-contracts/GuildChargeLinearTreasureSystem";
 import { GuildMoveSystem } from "./ethers-contracts/GuildMoveSystem";
@@ -107,6 +108,7 @@ export type SystemTypes = {
   "system.EncounterFlee": EncounterFleeSystem;
   "system.EncounterThrow": EncounterThrowSystem;
   "system.GuildBoundTreasure": GuildBoundTreasureSystem;
+  "system.GuildBuildTreasure": GuildBuildTreasureSystem;
   "system.GuildChargeAirdropTreasure": GuildChargeAirdropTreasureSystem;
   "system.GuildChargeLinearTreasure": GuildChargeLinearTreasureSystem;
   "system.GuildMove": GuildMoveSystem;
