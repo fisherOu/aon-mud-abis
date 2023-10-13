@@ -34,6 +34,7 @@ export { ChangeTreasureSeedSystem__factory } from "./ChangeTreasureSeedSystem__f
 export { ChargeAirdropTreasureSystem__factory } from "./ChargeAirdropTreasureSystem__factory";
 export { ChargeLinearTreasureSystem__factory } from "./ChargeLinearTreasureSystem__factory";
 export { ChargingComponent__factory } from "./ChargingComponent__factory";
+export { CloseDevSystem__factory } from "./CloseDevSystem__factory";
 export { ComponentDevSystem__factory } from "./ComponentDevSystem__factory";
 export { CoordComponent__factory } from "./CoordComponent__factory";
 export { CounterComponent__factory } from "./CounterComponent__factory";
@@ -122,6 +123,7 @@ export { ResourceMiningv2Component__factory } from "./ResourceMiningv2Component_
 export { ResourceNonceMarkComponent__factory } from "./ResourceNonceMarkComponent__factory";
 export { ResourcePositionComponent__factory } from "./ResourcePositionComponent__factory";
 export { Resourcev2Component__factory } from "./Resourcev2Component__factory";
+export { SetResourceConfigSystem__factory } from "./SetResourceConfigSystem__factory";
 export { SetStatusSystem__factory } from "./SetStatusSystem__factory";
 export { SettleResourceBuildingSystem__factory } from "./SettleResourceBuildingSystem__factory";
 export { ShieldAreaPositionComponent__factory } from "./ShieldAreaPositionComponent__factory";

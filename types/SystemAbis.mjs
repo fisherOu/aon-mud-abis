@@ -19,6 +19,7 @@ import ChangeSeedSystem from "../abi/ChangeSeedSystem.json";
 import ChangeTreasureSeedSystem from "../abi/ChangeTreasureSeedSystem.json";
 import ChargeAirdropTreasureSystem from "../abi/ChargeAirdropTreasureSystem.json";
 import ChargeLinearTreasureSystem from "../abi/ChargeLinearTreasureSystem.json";
+import CloseDevSystem from "../abi/CloseDevSystem.json";
 import ComponentDevSystem from "../abi/ComponentDevSystem.json";
 import CreateGuildSystem from "../abi/CreateGuildSystem.json";
 import DeathTriggerSystem from "../abi/DeathTriggerSystem.json";
@@ -56,6 +57,7 @@ import RejectGuildSystem from "../abi/RejectGuildSystem.json";
 import ReleaseAirdropTreasureSystem from "../abi/ReleaseAirdropTreasureSystem.json";
 import ReleaseLinearTreasureSystem from "../abi/ReleaseLinearTreasureSystem.json";
 import ResourceDevSystem from "../abi/ResourceDevSystem.json";
+import SetResourceConfigSystem from "../abi/SetResourceConfigSystem.json";
 import SetStatusSystem from "../abi/SetStatusSystem.json";
 import SettleResourceBuildingSystem from "../abi/SettleResourceBuildingSystem.json";
 import TakeResourceBuildingSystem from "../abi/TakeResourceBuildingSystem.json";
@@ -96,6 +98,7 @@ export const SystemAbis = {
   "system.ChangeTreasureSeed": ChangeTreasureSeedSystem.abi,
   "system.ChargeAirdropTreasure": ChargeAirdropTreasureSystem.abi,
   "system.ChargeLinearTreasure": ChargeLinearTreasureSystem.abi,
+  "system.CloseDev": CloseDevSystem.abi,
   "system.ComponentDev": ComponentDevSystem.abi,
   "system.CreateGuild": CreateGuildSystem.abi,
   "system.DeathTrigger": DeathTriggerSystem.abi,
@@ -133,6 +136,7 @@ export const SystemAbis = {
   "system.ReleaseAirdropTreasure": ReleaseAirdropTreasureSystem.abi,
   "system.ReleaseLinearTreasure": ReleaseLinearTreasureSystem.abi,
   "system.ResourceDev": ResourceDevSystem.abi,
+  "system.SetResourceConfig": SetResourceConfigSystem.abi,
   "system.SetStatus": SetStatusSystem.abi,
   "system.SettleResourceBuilding": SettleResourceBuildingSystem.abi,
   "system.TakeResourceBuilding": TakeResourceBuildingSystem.abi,
