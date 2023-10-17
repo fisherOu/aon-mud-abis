@@ -1200,16 +1200,16 @@
   },
   "ast": {
     "absolutePath": "src/components/MonsterTypeComponent.sol",
-    "id": 22208,
+    "id": 22211,
     "exportedSymbols": {
       "ID": [
-        22159
+        22162
       ],
       "MonsterType": [
         18702
       ],
       "MonsterTypeComponent": [
-        22207
+        22210
       ],
       "Uint32Component": [
         2345
@@ -1219,7 +1219,7 @@
     "src": "32:577:111",
     "nodes": [
       {
-        "id": 22147,
+        "id": 22150,
         "nodeType": "PragmaDirective",
         "src": "32:24:111",
         "nodes": [],
@@ -1231,19 +1231,19 @@
         ]
       },
       {
-        "id": 22149,
+        "id": 22152,
         "nodeType": "ImportDirective",
         "src": "57:79:111",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/std-contracts/src/components/Uint32Component.sol",
         "file": "std-contracts/components/Uint32Component.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 22208,
+        "scope": 22211,
         "sourceUnit": 2346,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 22148,
+              "id": 22151,
               "name": "Uint32Component",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1257,19 +1257,19 @@
         "unitAlias": ""
       },
       {
-        "id": 22151,
+        "id": 22154,
         "nodeType": "ImportDirective",
         "src": "137:49:111",
         "nodes": [],
         "absolutePath": "src/MonsterType.sol",
         "file": "../MonsterType.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 22208,
+        "scope": 22211,
         "sourceUnit": 18703,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 22150,
+              "id": 22153,
               "name": "MonsterType",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1283,7 +1283,7 @@
         "unitAlias": ""
       },
       {
-        "id": 22159,
+        "id": 22162,
         "nodeType": "VariableDeclaration",
         "src": "188:65:111",
         "nodes": [],
@@ -1291,7 +1291,7 @@
         "mutability": "constant",
         "name": "ID",
         "nameLocation": "205:2:111",
-        "scope": 22208,
+        "scope": 22211,
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
@@ -1299,7 +1299,7 @@
           "typeString": "uint256"
         },
         "typeName": {
-          "id": 22152,
+          "id": 22155,
           "name": "uint256",
           "nodeType": "ElementaryTypeName",
           "src": "188:7:111",
@@ -1314,7 +1314,7 @@
               "arguments": [
                 {
                   "hexValue": "636f6d706f6e656e742e4d6f6e7374657254797065",
-                  "id": 22156,
+                  "id": 22159,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1336,7 +1336,7 @@
                     "typeString": "literal_string \"component.MonsterType\""
                   }
                 ],
-                "id": 22155,
+                "id": 22158,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -1347,7 +1347,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 22157,
+              "id": 22160,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1370,7 +1370,7 @@
                 "typeString": "bytes32"
               }
             ],
-            "id": 22154,
+            "id": 22157,
             "isConstant": false,
             "isLValue": false,
             "isPure": true,
@@ -1382,14 +1382,14 @@
               "typeString": "type(uint256)"
             },
             "typeName": {
-              "id": 22153,
+              "id": 22156,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "210:7:111",
               "typeDescriptions": {}
             }
           },
-          "id": 22158,
+          "id": 22161,
           "isConstant": false,
           "isLValue": false,
           "isPure": true,
@@ -1407,17 +1407,17 @@
         "visibility": "internal"
       },
       {
-        "id": 22207,
+        "id": 22210,
         "nodeType": "ContractDefinition",
         "src": "256:352:111",
         "nodes": [
           {
-            "id": 22171,
+            "id": 22174,
             "nodeType": "FunctionDefinition",
             "src": "309:56:111",
             "nodes": [],
             "body": {
-              "id": 22170,
+              "id": 22173,
               "nodeType": "Block",
               "src": "363:2:111",
               "nodes": [],
@@ -1429,11 +1429,11 @@
               {
                 "arguments": [
                   {
-                    "id": 22166,
+                    "id": 22169,
                     "name": "world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 22163,
+                    "referencedDeclaration": 22166,
                     "src": "352:5:111",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1441,11 +1441,11 @@
                     }
                   },
                   {
-                    "id": 22167,
+                    "id": 22170,
                     "name": "ID",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 22159,
+                    "referencedDeclaration": 22162,
                     "src": "359:2:111",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -1453,10 +1453,10 @@
                     }
                   }
                 ],
-                "id": 22168,
+                "id": 22171,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 22165,
+                  "id": 22168,
                   "name": "Uint32Component",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 2345,
@@ -1469,17 +1469,17 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 22164,
+              "id": 22167,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 22163,
+                  "id": 22166,
                   "mutability": "mutable",
                   "name": "world",
                   "nameLocation": "329:5:111",
                   "nodeType": "VariableDeclaration",
-                  "scope": 22171,
+                  "scope": 22174,
                   "src": "321:13:111",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1488,7 +1488,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 22162,
+                    "id": 22165,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "321:7:111",
@@ -1504,23 +1504,23 @@
               "src": "320:15:111"
             },
             "returnParameters": {
-              "id": 22169,
+              "id": 22172,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "363:0:111"
             },
-            "scope": 22207,
+            "scope": 22210,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 22188,
+            "id": 22191,
             "nodeType": "FunctionDefinition",
             "src": "369:96:111",
             "nodes": [],
             "body": {
-              "id": 22187,
+              "id": 22190,
               "nodeType": "Block",
               "src": "424:41:111",
               "nodes": [],
@@ -1529,11 +1529,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 22180,
+                        "id": 22183,
                         "name": "entity",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 22173,
+                        "referencedDeclaration": 22176,
                         "src": "434:6:111",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1543,11 +1543,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 22183,
+                            "id": 22186,
                             "name": "value",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 22176,
+                            "referencedDeclaration": 22179,
                             "src": "453:5:111",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_MonsterType_$18702",
@@ -1563,7 +1563,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 22181,
+                            "id": 22184,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -1574,7 +1574,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 22182,
+                          "id": 22185,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1587,7 +1587,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 22184,
+                        "id": 22187,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1614,11 +1614,11 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 22179,
+                      "id": 22182,
                       "name": "set",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        22188,
+                        22191,
                         2306,
                         95
                       ],
@@ -1629,7 +1629,7 @@
                         "typeString": "function (uint256,bytes memory)"
                       }
                     },
-                    "id": 22185,
+                    "id": 22188,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1644,7 +1644,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 22186,
+                  "id": 22189,
                   "nodeType": "ExpressionStatement",
                   "src": "430:30:111"
                 }
@@ -1657,17 +1657,17 @@
             "name": "set",
             "nameLocation": "378:3:111",
             "parameters": {
-              "id": 22177,
+              "id": 22180,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 22173,
+                  "id": 22176,
                   "mutability": "mutable",
                   "name": "entity",
                   "nameLocation": "390:6:111",
                   "nodeType": "VariableDeclaration",
-                  "scope": 22188,
+                  "scope": 22191,
                   "src": "382:14:111",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1676,7 +1676,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 22172,
+                    "id": 22175,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "382:7:111",
@@ -1689,12 +1689,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 22176,
+                  "id": 22179,
                   "mutability": "mutable",
                   "name": "value",
                   "nameLocation": "410:5:111",
                   "nodeType": "VariableDeclaration",
-                  "scope": 22188,
+                  "scope": 22191,
                   "src": "398:17:111",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1703,10 +1703,10 @@
                     "typeString": "enum MonsterType"
                   },
                   "typeName": {
-                    "id": 22175,
+                    "id": 22178,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 22174,
+                      "id": 22177,
                       "name": "MonsterType",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 18702,
@@ -1725,23 +1725,23 @@
               "src": "381:35:111"
             },
             "returnParameters": {
-              "id": 22178,
+              "id": 22181,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "424:0:111"
             },
-            "scope": 22207,
+            "scope": 22210,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 22206,
+            "id": 22209,
             "nodeType": "FunctionDefinition",
             "src": "469:137:111",
             "nodes": [],
             "body": {
-              "id": 22205,
+              "id": 22208,
               "nodeType": "Block",
               "src": "542:64:111",
               "nodes": [],
@@ -1752,11 +1752,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 22199,
+                            "id": 22202,
                             "name": "entity",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 22190,
+                            "referencedDeclaration": 22193,
                             "src": "578:6:111",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1771,7 +1771,7 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 22198,
+                          "id": 22201,
                           "name": "getRawValue",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -1782,7 +1782,7 @@
                             "typeString": "function (uint256) view returns (bytes memory)"
                           }
                         },
-                        "id": 22200,
+                        "id": 22203,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1800,7 +1800,7 @@
                       {
                         "components": [
                           {
-                            "id": 22201,
+                            "id": 22204,
                             "name": "MonsterType",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -1812,7 +1812,7 @@
                             }
                           }
                         ],
-                        "id": 22202,
+                        "id": 22205,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
@@ -1838,7 +1838,7 @@
                         }
                       ],
                       "expression": {
-                        "id": 22196,
+                        "id": 22199,
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -1849,7 +1849,7 @@
                           "typeString": "abi"
                         }
                       },
-                      "id": 22197,
+                      "id": 22200,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1862,7 +1862,7 @@
                         "typeString": "function () pure"
                       }
                     },
-                    "id": 22203,
+                    "id": 22206,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1877,8 +1877,8 @@
                       "typeString": "enum MonsterType"
                     }
                   },
-                  "functionReturnParameters": 22195,
-                  "id": 22204,
+                  "functionReturnParameters": 22198,
+                  "id": 22207,
                   "nodeType": "Return",
                   "src": "548:53:111"
                 }
@@ -1891,17 +1891,17 @@
             "name": "getValueTyped",
             "nameLocation": "478:13:111",
             "parameters": {
-              "id": 22191,
+              "id": 22194,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 22190,
+                  "id": 22193,
                   "mutability": "mutable",
                   "name": "entity",
                   "nameLocation": "500:6:111",
                   "nodeType": "VariableDeclaration",
-                  "scope": 22206,
+                  "scope": 22209,
                   "src": "492:14:111",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1910,7 +1910,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 22189,
+                    "id": 22192,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "492:7:111",
@@ -1925,17 +1925,17 @@
               "src": "491:16:111"
             },
             "returnParameters": {
-              "id": 22195,
+              "id": 22198,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 22194,
+                  "id": 22197,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 22206,
+                  "scope": 22209,
                   "src": "529:11:111",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1944,10 +1944,10 @@
                     "typeString": "enum MonsterType"
                   },
                   "typeName": {
-                    "id": 22193,
+                    "id": 22196,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 22192,
+                      "id": 22195,
                       "name": "MonsterType",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 18702,
@@ -1965,7 +1965,7 @@
               ],
               "src": "528:13:111"
             },
-            "scope": 22207,
+            "scope": 22210,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
@@ -1975,48 +1975,48 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 22160,
+              "id": 22163,
               "name": "Uint32Component",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 2345,
               "src": "289:15:111"
             },
-            "id": 22161,
+            "id": 22164,
             "nodeType": "InheritanceSpecifier",
             "src": "289:15:111"
           }
         ],
         "canonicalName": "MonsterTypeComponent",
         "contractDependencies": [
-          73704,
-          73960
+          73926,
+          74182
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          22207,
+          22210,
           2345,
           483,
           220,
-          73794,
-          73998,
+          74016,
+          74220,
           2536,
-          75829,
-          76248,
-          75705,
+          76051,
+          76470,
+          75927,
           1440,
-          75572,
+          75794,
           2579,
-          75839
+          76061
         ],
         "name": "MonsterTypeComponent",
         "nameLocation": "265:20:111",
-        "scope": 22208,
+        "scope": 22211,
         "usedErrors": [
           20,
-          73719,
-          76245,
-          76247
+          73941,
+          76467,
+          76469
         ]
       }
     ],

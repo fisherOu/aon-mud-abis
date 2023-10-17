@@ -649,7 +649,7 @@
   },
   "ast": {
     "absolutePath": "src/systems/SetResourceConfigSystem.sol",
-    "id": 62664,
+    "id": 62858,
     "exportedSymbols": {
       "DevConfig": [
         19851
@@ -661,22 +661,22 @@
         19848
       ],
       "ID": [
-        62582
+        62776
       ],
       "IWorld": [
         1582
       ],
       "ResourceConfig": [
-        23341
+        23344
       ],
       "ResourceConfigv2Component": [
-        23562
+        23565
       ],
       "ResourceConfigv2ComponentID": [
-        23326
+        23329
       ],
       "SetResourceConfigSystem": [
-        62663
+        62857
       ],
       "System": [
         587
@@ -692,7 +692,7 @@
     "src": "77:1685:256",
     "nodes": [
       {
-        "id": 62560,
+        "id": 62754,
         "nodeType": "PragmaDirective",
         "src": "77:24:256",
         "nodes": [],
@@ -704,19 +704,19 @@
         ]
       },
       {
-        "id": 62563,
+        "id": 62757,
         "nodeType": "ImportDirective",
         "src": "102:49:256",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/System.sol",
         "file": "solecs/System.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 62664,
+        "scope": 62858,
         "sourceUnit": 588,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 62561,
+              "id": 62755,
               "name": "System",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -728,7 +728,7 @@
           },
           {
             "foreign": {
-              "id": 62562,
+              "id": 62756,
               "name": "IWorld",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -742,19 +742,19 @@
         "unitAlias": ""
       },
       {
-        "id": 62566,
+        "id": 62760,
         "nodeType": "ImportDirective",
         "src": "152:65:256",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/utils.sol",
         "file": "solecs/utils.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 62664,
+        "scope": 62858,
         "sourceUnit": 1872,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 62564,
+              "id": 62758,
               "name": "getAddressById",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -766,7 +766,7 @@
           },
           {
             "foreign": {
-              "id": 62565,
+              "id": 62759,
               "name": "addressToEntity",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -780,19 +780,19 @@
         "unitAlias": ""
       },
       {
-        "id": 62570,
+        "id": 62764,
         "nodeType": "ImportDirective",
         "src": "581:108:256",
         "nodes": [],
         "absolutePath": "src/components/DevConfigComponent.sol",
         "file": "components/DevConfigComponent.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 62664,
+        "scope": 62858,
         "sourceUnit": 19947,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 62567,
+              "id": 62761,
               "name": "DevConfigComponent",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -804,7 +804,7 @@
           },
           {
             "foreign": {
-              "id": 62568,
+              "id": 62762,
               "name": "ID",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -817,7 +817,7 @@
           },
           {
             "foreign": {
-              "id": 62569,
+              "id": 62763,
               "name": "DevConfig",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -831,23 +831,23 @@
         "unitAlias": ""
       },
       {
-        "id": 62574,
+        "id": 62768,
         "nodeType": "ImportDirective",
         "src": "690:134:256",
         "nodes": [],
         "absolutePath": "src/components/ResourceConfigv2Component.sol",
         "file": "components/ResourceConfigv2Component.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 62664,
-        "sourceUnit": 23563,
+        "scope": 62858,
+        "sourceUnit": 23566,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 62571,
+              "id": 62765,
               "name": "ResourceConfigv2Component",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 23562,
+              "referencedDeclaration": 23565,
               "src": "698:25:256",
               "typeDescriptions": {}
             },
@@ -855,11 +855,11 @@
           },
           {
             "foreign": {
-              "id": 62572,
+              "id": 62766,
               "name": "ID",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 23326,
+              "referencedDeclaration": 23329,
               "src": "725:2:256",
               "typeDescriptions": {}
             },
@@ -868,11 +868,11 @@
           },
           {
             "foreign": {
-              "id": 62573,
+              "id": 62767,
               "name": "ResourceConfig",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 23341,
+              "referencedDeclaration": 23344,
               "src": "760:14:256",
               "typeDescriptions": {}
             },
@@ -882,7 +882,7 @@
         "unitAlias": ""
       },
       {
-        "id": 62582,
+        "id": 62776,
         "nodeType": "VariableDeclaration",
         "src": "826:68:256",
         "nodes": [],
@@ -890,7 +890,7 @@
         "mutability": "constant",
         "name": "ID",
         "nameLocation": "843:2:256",
-        "scope": 62664,
+        "scope": 62858,
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
@@ -898,7 +898,7 @@
           "typeString": "uint256"
         },
         "typeName": {
-          "id": 62575,
+          "id": 62769,
           "name": "uint256",
           "nodeType": "ElementaryTypeName",
           "src": "826:7:256",
@@ -913,7 +913,7 @@
               "arguments": [
                 {
                   "hexValue": "73797374656d2e5365745265736f75726365436f6e666967",
-                  "id": 62579,
+                  "id": 62773,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -935,7 +935,7 @@
                     "typeString": "literal_string \"system.SetResourceConfig\""
                   }
                 ],
-                "id": 62578,
+                "id": 62772,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -946,7 +946,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 62580,
+              "id": 62774,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -969,7 +969,7 @@
                 "typeString": "bytes32"
               }
             ],
-            "id": 62577,
+            "id": 62771,
             "isConstant": false,
             "isLValue": false,
             "isPure": true,
@@ -981,14 +981,14 @@
               "typeString": "type(uint256)"
             },
             "typeName": {
-              "id": 62576,
+              "id": 62770,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "848:7:256",
               "typeDescriptions": {}
             }
           },
-          "id": 62581,
+          "id": 62775,
           "isConstant": false,
           "isLValue": false,
           "isPure": true,
@@ -1006,17 +1006,17 @@
         "visibility": "internal"
       },
       {
-        "id": 62663,
+        "id": 62857,
         "nodeType": "ContractDefinition",
         "src": "952:809:256",
         "nodes": [
           {
-            "id": 62597,
+            "id": 62791,
             "nodeType": "FunctionDefinition",
             "src": "1001:100:256",
             "nodes": [],
             "body": {
-              "id": 62596,
+              "id": 62790,
               "nodeType": "Block",
               "src": "1099:2:256",
               "nodes": [],
@@ -1028,11 +1028,11 @@
               {
                 "arguments": [
                   {
-                    "id": 62592,
+                    "id": 62786,
                     "name": "_world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 62587,
+                    "referencedDeclaration": 62781,
                     "src": "1078:6:256",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IWorld_$1582",
@@ -1040,11 +1040,11 @@
                     }
                   },
                   {
-                    "id": 62593,
+                    "id": 62787,
                     "name": "_components",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 62589,
+                    "referencedDeclaration": 62783,
                     "src": "1086:11:256",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1052,10 +1052,10 @@
                     }
                   }
                 ],
-                "id": 62594,
+                "id": 62788,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 62591,
+                  "id": 62785,
                   "name": "System",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 587,
@@ -1068,17 +1068,17 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 62590,
+              "id": 62784,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 62587,
+                  "id": 62781,
                   "mutability": "mutable",
                   "name": "_world",
                   "nameLocation": "1029:6:256",
                   "nodeType": "VariableDeclaration",
-                  "scope": 62597,
+                  "scope": 62791,
                   "src": "1022:13:256",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1087,10 +1087,10 @@
                     "typeString": "contract IWorld"
                   },
                   "typeName": {
-                    "id": 62586,
+                    "id": 62780,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 62585,
+                      "id": 62779,
                       "name": "IWorld",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 1582,
@@ -1107,12 +1107,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 62589,
+                  "id": 62783,
                   "mutability": "mutable",
                   "name": "_components",
                   "nameLocation": "1053:11:256",
                   "nodeType": "VariableDeclaration",
-                  "scope": 62597,
+                  "scope": 62791,
                   "src": "1045:19:256",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1121,7 +1121,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 62588,
+                    "id": 62782,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1045:7:256",
@@ -1137,76 +1137,76 @@
               "src": "1012:58:256"
             },
             "returnParameters": {
-              "id": 62595,
+              "id": 62789,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1099:0:256"
             },
-            "scope": 62663,
+            "scope": 62857,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 62619,
+            "id": 62813,
             "nodeType": "FunctionDefinition",
             "src": "1107:185:256",
             "nodes": [],
             "body": {
-              "id": 62618,
+              "id": 62812,
               "nodeType": "Block",
               "src": "1173:119:256",
               "nodes": [],
               "statements": [
                 {
                   "assignments": [
-                    62606
+                    62800
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 62606,
+                      "id": 62800,
                       "mutability": "mutable",
                       "name": "config",
                       "nameLocation": "1205:6:256",
                       "nodeType": "VariableDeclaration",
-                      "scope": 62618,
+                      "scope": 62812,
                       "src": "1183:28:256",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ResourceConfig_$23341_memory_ptr",
+                        "typeIdentifier": "t_struct$_ResourceConfig_$23344_memory_ptr",
                         "typeString": "struct ResourceConfig"
                       },
                       "typeName": {
-                        "id": 62605,
+                        "id": 62799,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 62604,
+                          "id": 62798,
                           "name": "ResourceConfig",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 23341,
+                          "referencedDeclaration": 23344,
                           "src": "1183:14:256"
                         },
-                        "referencedDeclaration": 23341,
+                        "referencedDeclaration": 23344,
                         "src": "1183:14:256",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ResourceConfig_$23341_storage_ptr",
+                          "typeIdentifier": "t_struct$_ResourceConfig_$23344_storage_ptr",
                           "typeString": "struct ResourceConfig"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 62613,
+                  "id": 62807,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 62609,
+                        "id": 62803,
                         "name": "args",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 62599,
+                        "referencedDeclaration": 62793,
                         "src": "1225:4:256",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -1216,19 +1216,19 @@
                       {
                         "components": [
                           {
-                            "id": 62610,
+                            "id": 62804,
                             "name": "ResourceConfig",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 23341,
+                            "referencedDeclaration": 23344,
                             "src": "1232:14:256",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_ResourceConfig_$23341_storage_ptr_$",
+                              "typeIdentifier": "t_type$_t_struct$_ResourceConfig_$23344_storage_ptr_$",
                               "typeString": "type(struct ResourceConfig storage pointer)"
                             }
                           }
                         ],
-                        "id": 62611,
+                        "id": 62805,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
@@ -1237,7 +1237,7 @@
                         "nodeType": "TupleExpression",
                         "src": "1231:16:256",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_ResourceConfig_$23341_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_ResourceConfig_$23344_storage_ptr_$",
                           "typeString": "type(struct ResourceConfig storage pointer)"
                         }
                       }
@@ -1249,12 +1249,12 @@
                           "typeString": "bytes memory"
                         },
                         {
-                          "typeIdentifier": "t_type$_t_struct$_ResourceConfig_$23341_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_ResourceConfig_$23344_storage_ptr_$",
                           "typeString": "type(struct ResourceConfig storage pointer)"
                         }
                       ],
                       "expression": {
-                        "id": 62607,
+                        "id": 62801,
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -1265,7 +1265,7 @@
                           "typeString": "abi"
                         }
                       },
-                      "id": 62608,
+                      "id": 62802,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1278,7 +1278,7 @@
                         "typeString": "function () pure"
                       }
                     },
-                    "id": 62612,
+                    "id": 62806,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1289,7 +1289,7 @@
                     "src": "1214:34:256",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ResourceConfig_$23341_memory_ptr",
+                      "typeIdentifier": "t_struct$_ResourceConfig_$23344_memory_ptr",
                       "typeString": "struct ResourceConfig memory"
                     }
                   },
@@ -1300,14 +1300,14 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 62615,
+                        "id": 62809,
                         "name": "config",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 62606,
+                        "referencedDeclaration": 62800,
                         "src": "1278:6:256",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ResourceConfig_$23341_memory_ptr",
+                          "typeIdentifier": "t_struct$_ResourceConfig_$23344_memory_ptr",
                           "typeString": "struct ResourceConfig memory"
                         }
                       }
@@ -1315,22 +1315,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_ResourceConfig_$23341_memory_ptr",
+                          "typeIdentifier": "t_struct$_ResourceConfig_$23344_memory_ptr",
                           "typeString": "struct ResourceConfig memory"
                         }
                       ],
-                      "id": 62614,
+                      "id": 62808,
                       "name": "executeTyped",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 62662,
+                      "referencedDeclaration": 62856,
                       "src": "1265:12:256",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_ResourceConfig_$23341_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_ResourceConfig_$23344_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (struct ResourceConfig memory) returns (bytes memory)"
                       }
                     },
-                    "id": 62616,
+                    "id": 62810,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1345,15 +1345,15 @@
                       "typeString": "bytes memory"
                     }
                   },
-                  "functionReturnParameters": 62603,
-                  "id": 62617,
+                  "functionReturnParameters": 62797,
+                  "id": 62811,
                   "nodeType": "Return",
                   "src": "1258:27:256"
                 }
               ]
             },
             "baseFunctions": [
-              74011
+              74233
             ],
             "functionSelector": "09c5eabe",
             "implemented": true,
@@ -1362,17 +1362,17 @@
             "name": "execute",
             "nameLocation": "1116:7:256",
             "parameters": {
-              "id": 62600,
+              "id": 62794,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 62599,
+                  "id": 62793,
                   "mutability": "mutable",
                   "name": "args",
                   "nameLocation": "1137:4:256",
                   "nodeType": "VariableDeclaration",
-                  "scope": 62619,
+                  "scope": 62813,
                   "src": "1124:17:256",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1381,7 +1381,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 62598,
+                    "id": 62792,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1124:5:256",
@@ -1396,17 +1396,17 @@
               "src": "1123:19:256"
             },
             "returnParameters": {
-              "id": 62603,
+              "id": 62797,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 62602,
+                  "id": 62796,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 62619,
+                  "scope": 62813,
                   "src": "1159:12:256",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1415,7 +1415,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 62601,
+                    "id": 62795,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1159:5:256",
@@ -1429,35 +1429,35 @@
               ],
               "src": "1158:14:256"
             },
-            "scope": 62663,
+            "scope": 62857,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 62662,
+            "id": 62856,
             "nodeType": "FunctionDefinition",
             "src": "1298:461:256",
             "nodes": [],
             "body": {
-              "id": 62661,
+              "id": 62855,
               "nodeType": "Block",
               "src": "1380:379:256",
               "nodes": [],
               "statements": [
                 {
                   "assignments": [
-                    62629
+                    62823
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 62629,
+                      "id": 62823,
                       "mutability": "mutable",
                       "name": "devConfig",
                       "nameLocation": "1407:9:256",
                       "nodeType": "VariableDeclaration",
-                      "scope": 62661,
+                      "scope": 62855,
                       "src": "1390:26:256",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -1466,10 +1466,10 @@
                         "typeString": "struct DevConfig"
                       },
                       "typeName": {
-                        "id": 62628,
+                        "id": 62822,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 62627,
+                          "id": 62821,
                           "name": "DevConfig",
                           "nodeType": "IdentifierPath",
                           "referencedDeclaration": 19851,
@@ -1485,7 +1485,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 62638,
+                  "id": 62832,
                   "initialValue": {
                     "arguments": [],
                     "expression": {
@@ -1495,7 +1495,7 @@
                           {
                             "arguments": [
                               {
-                                "id": 62633,
+                                "id": 62827,
                                 "name": "DevConfigComponentID",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -1515,7 +1515,7 @@
                                 }
                               ],
                               "expression": {
-                                "id": 62631,
+                                "id": 62825,
                                 "name": "world",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -1526,7 +1526,7 @@
                                   "typeString": "contract IWorld"
                                 }
                               },
-                              "id": 62632,
+                              "id": 62826,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1540,7 +1540,7 @@
                                 "typeString": "function (uint256) view external returns (address)"
                               }
                             },
-                            "id": 62634,
+                            "id": 62828,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1563,7 +1563,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 62630,
+                          "id": 62824,
                           "name": "DevConfigComponent",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -1574,7 +1574,7 @@
                             "typeString": "type(contract DevConfigComponent)"
                           }
                         },
-                        "id": 62635,
+                        "id": 62829,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1589,7 +1589,7 @@
                           "typeString": "contract DevConfigComponent"
                         }
                       },
-                      "id": 62636,
+                      "id": 62830,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1603,7 +1603,7 @@
                         "typeString": "function () view external returns (struct DevConfig memory)"
                       }
                     },
-                    "id": 62637,
+                    "id": 62831,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1626,18 +1626,18 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 62640,
+                          "id": 62834,
                           "name": "devConfig",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 62629,
+                          "referencedDeclaration": 62823,
                           "src": "1530:9:256",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_DevConfig_$19851_memory_ptr",
                             "typeString": "struct DevConfig memory"
                           }
                         },
-                        "id": 62641,
+                        "id": 62835,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -1653,7 +1653,7 @@
                       },
                       {
                         "hexValue": "6e6f7420696e20646576206d6f6465",
-                        "id": 62642,
+                        "id": 62836,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1679,7 +1679,7 @@
                           "typeString": "literal_string \"not in dev mode\""
                         }
                       ],
-                      "id": 62639,
+                      "id": 62833,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1693,7 +1693,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 62643,
+                    "id": 62837,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1708,61 +1708,61 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 62644,
+                  "id": 62838,
                   "nodeType": "ExpressionStatement",
                   "src": "1522:45:256"
                 },
                 {
                   "assignments": [
-                    62647
+                    62841
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 62647,
+                      "id": 62841,
                       "mutability": "mutable",
                       "name": "resourceConfig",
                       "nameLocation": "1603:14:256",
                       "nodeType": "VariableDeclaration",
-                      "scope": 62661,
+                      "scope": 62855,
                       "src": "1577:40:256",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ResourceConfigv2Component_$23562",
+                        "typeIdentifier": "t_contract$_ResourceConfigv2Component_$23565",
                         "typeString": "contract ResourceConfigv2Component"
                       },
                       "typeName": {
-                        "id": 62646,
+                        "id": 62840,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 62645,
+                          "id": 62839,
                           "name": "ResourceConfigv2Component",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 23562,
+                          "referencedDeclaration": 23565,
                           "src": "1577:25:256"
                         },
-                        "referencedDeclaration": 23562,
+                        "referencedDeclaration": 23565,
                         "src": "1577:25:256",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ResourceConfigv2Component_$23562",
+                          "typeIdentifier": "t_contract$_ResourceConfigv2Component_$23565",
                           "typeString": "contract ResourceConfigv2Component"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 62654,
+                  "id": 62848,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
-                            "id": 62651,
+                            "id": 62845,
                             "name": "ResourceConfigv2ComponentID",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 23326,
+                            "referencedDeclaration": 23329,
                             "src": "1678:27:256",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1778,7 +1778,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 62649,
+                            "id": 62843,
                             "name": "world",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -1789,7 +1789,7 @@
                               "typeString": "contract IWorld"
                             }
                           },
-                          "id": 62650,
+                          "id": 62844,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1803,7 +1803,7 @@
                             "typeString": "function (uint256) view external returns (address)"
                           }
                         },
-                        "id": 62652,
+                        "id": 62846,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1826,18 +1826,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 62648,
+                      "id": 62842,
                       "name": "ResourceConfigv2Component",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 23562,
+                      "referencedDeclaration": 23565,
                       "src": "1620:25:256",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_ResourceConfigv2Component_$23562_$",
+                        "typeIdentifier": "t_type$_t_contract$_ResourceConfigv2Component_$23565_$",
                         "typeString": "type(contract ResourceConfigv2Component)"
                       }
                     },
-                    "id": 62653,
+                    "id": 62847,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1848,7 +1848,7 @@
                     "src": "1620:96:256",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ResourceConfigv2Component_$23562",
+                      "typeIdentifier": "t_contract$_ResourceConfigv2Component_$23565",
                       "typeString": "contract ResourceConfigv2Component"
                     }
                   },
@@ -1859,14 +1859,14 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 62658,
+                        "id": 62852,
                         "name": "config",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 62622,
+                        "referencedDeclaration": 62816,
                         "src": "1745:6:256",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ResourceConfig_$23341_memory_ptr",
+                          "typeIdentifier": "t_struct$_ResourceConfig_$23344_memory_ptr",
                           "typeString": "struct ResourceConfig memory"
                         }
                       }
@@ -1874,37 +1874,37 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_ResourceConfig_$23341_memory_ptr",
+                          "typeIdentifier": "t_struct$_ResourceConfig_$23344_memory_ptr",
                           "typeString": "struct ResourceConfig memory"
                         }
                       ],
                       "expression": {
-                        "id": 62655,
+                        "id": 62849,
                         "name": "resourceConfig",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 62647,
+                        "referencedDeclaration": 62841,
                         "src": "1726:14:256",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ResourceConfigv2Component_$23562",
+                          "typeIdentifier": "t_contract$_ResourceConfigv2Component_$23565",
                           "typeString": "contract ResourceConfigv2Component"
                         }
                       },
-                      "id": 62657,
+                      "id": 62851,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "set",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 23508,
+                      "referencedDeclaration": 23511,
                       "src": "1726:18:256",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_struct$_ResourceConfig_$23341_memory_ptr_$returns$__$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_struct$_ResourceConfig_$23344_memory_ptr_$returns$__$",
                         "typeString": "function (struct ResourceConfig memory) external"
                       }
                     },
-                    "id": 62659,
+                    "id": 62853,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1919,7 +1919,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 62660,
+                  "id": 62854,
                   "nodeType": "ExpressionStatement",
                   "src": "1726:26:256"
                 }
@@ -1932,38 +1932,38 @@
             "name": "executeTyped",
             "nameLocation": "1307:12:256",
             "parameters": {
-              "id": 62623,
+              "id": 62817,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 62622,
+                  "id": 62816,
                   "mutability": "mutable",
                   "name": "config",
                   "nameLocation": "1342:6:256",
                   "nodeType": "VariableDeclaration",
-                  "scope": 62662,
+                  "scope": 62856,
                   "src": "1320:28:256",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_ResourceConfig_$23341_memory_ptr",
+                    "typeIdentifier": "t_struct$_ResourceConfig_$23344_memory_ptr",
                     "typeString": "struct ResourceConfig"
                   },
                   "typeName": {
-                    "id": 62621,
+                    "id": 62815,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 62620,
+                      "id": 62814,
                       "name": "ResourceConfig",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 23341,
+                      "referencedDeclaration": 23344,
                       "src": "1320:14:256"
                     },
-                    "referencedDeclaration": 23341,
+                    "referencedDeclaration": 23344,
                     "src": "1320:14:256",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ResourceConfig_$23341_storage_ptr",
+                      "typeIdentifier": "t_struct$_ResourceConfig_$23344_storage_ptr",
                       "typeString": "struct ResourceConfig"
                     }
                   },
@@ -1973,17 +1973,17 @@
               "src": "1319:30:256"
             },
             "returnParameters": {
-              "id": 62626,
+              "id": 62820,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 62625,
+                  "id": 62819,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 62662,
+                  "scope": 62856,
                   "src": "1366:12:256",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1992,7 +1992,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 62624,
+                    "id": 62818,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1366:5:256",
@@ -2006,7 +2006,7 @@
               ],
               "src": "1365:14:256"
             },
-            "scope": 62663,
+            "scope": 62857,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -2016,13 +2016,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 62583,
+              "id": 62777,
               "name": "System",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 587,
               "src": "988:6:256"
             },
-            "id": 62584,
+            "id": 62778,
             "nodeType": "InheritanceSpecifier",
             "src": "988:6:256"
           }
@@ -2032,23 +2032,23 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          62663,
+          62857,
           587,
-          73998,
+          74220,
           2536,
-          75829,
-          76248,
-          75705,
-          74012,
+          76051,
+          76470,
+          75927,
+          74234,
           2579,
-          75839
+          76061
         ],
         "name": "SetResourceConfigSystem",
         "nameLocation": "961:23:256",
-        "scope": 62664,
+        "scope": 62858,
         "usedErrors": [
-          76245,
-          76247
+          76467,
+          76469
         ]
       }
     ],

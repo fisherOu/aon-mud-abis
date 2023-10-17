@@ -727,7 +727,7 @@
   },
   "ast": {
     "absolutePath": "src/systems/TechEffectExtraResourceSystem.sol",
-    "id": 67596,
+    "id": 67798,
     "exportedSymbols": {
       "Buff": [
         19189
@@ -745,55 +745,55 @@
         19172
       ],
       "ID": [
-        67496
+        67698
       ],
       "IWorld": [
         1582
       ],
       "MapConfig": [
-        21924
+        21927
       ],
       "MapConfigv2Component": [
-        22145
+        22148
       ],
       "MapConfigv2ComponentID": [
-        21909
+        21912
       ],
       "System": [
         587
       ],
       "TechEffect": [
-        25497
+        25500
       ],
       "TechEffectComponent": [
-        25680
+        25683
       ],
       "TechEffectComponentID": [
-        25486
+        25489
       ],
       "TechEffectConfig": [
-        25703
+        25706
       ],
       "TechEffectConfigComponent": [
-        25865
+        25868
       ],
       "TechEffectConfigComponentID": [
-        25694
+        25697
       ],
       "TechEffectConfigRegisterComponent": [
-        25892
+        25895
       ],
       "TechEffectConfigRegisterComponentID": [
-        25879
+        25882
       ],
       "TechEffectExtraResourceSystem": [
-        67595
+        67797
       ],
       "TechEffectInfo": [
-        30906
+        30989
       ],
       "TechEffectSystem": [
-        30982
+        31065
       ],
       "addressToEntity": [
         1648
@@ -802,14 +802,14 @@
         1684
       ],
       "techEffectId": [
-        67504
+        67706
       ]
     },
     "nodeType": "SourceUnit",
     "src": "108:2688:265",
     "nodes": [
       {
-        "id": 67456,
+        "id": 67658,
         "nodeType": "PragmaDirective",
         "src": "108:24:265",
         "nodes": [],
@@ -821,19 +821,19 @@
         ]
       },
       {
-        "id": 67458,
+        "id": 67660,
         "nodeType": "ImportDirective",
         "src": "133:49:265",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/utils.sol",
         "file": "solecs/utils.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 67596,
+        "scope": 67798,
         "sourceUnit": 1872,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 67457,
+              "id": 67659,
               "name": "addressToEntity",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -847,19 +847,19 @@
         "unitAlias": ""
       },
       {
-        "id": 67461,
+        "id": 67663,
         "nodeType": "ImportDirective",
         "src": "183:49:265",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/System.sol",
         "file": "solecs/System.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 67596,
+        "scope": 67798,
         "sourceUnit": 588,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 67459,
+              "id": 67661,
               "name": "System",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -871,7 +871,7 @@
           },
           {
             "foreign": {
-              "id": 67460,
+              "id": 67662,
               "name": "IWorld",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -885,19 +885,19 @@
         "unitAlias": ""
       },
       {
-        "id": 67463,
+        "id": 67665,
         "nodeType": "ImportDirective",
         "src": "233:48:265",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/utils.sol",
         "file": "solecs/utils.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 67596,
+        "scope": 67798,
         "sourceUnit": 1872,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 67462,
+              "id": 67664,
               "name": "getAddressById",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -911,23 +911,23 @@
         "unitAlias": ""
       },
       {
-        "id": 67467,
+        "id": 67669,
         "nodeType": "ImportDirective",
         "src": "282:114:265",
         "nodes": [],
         "absolutePath": "src/components/MapConfigv2Component.sol",
         "file": "components/MapConfigv2Component.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 67596,
-        "sourceUnit": 22146,
+        "scope": 67798,
+        "sourceUnit": 22149,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 67464,
+              "id": 67666,
               "name": "MapConfigv2Component",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 22145,
+              "referencedDeclaration": 22148,
               "src": "290:20:265",
               "typeDescriptions": {}
             },
@@ -935,11 +935,11 @@
           },
           {
             "foreign": {
-              "id": 67465,
+              "id": 67667,
               "name": "ID",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 21909,
+              "referencedDeclaration": 21912,
               "src": "312:2:265",
               "typeDescriptions": {}
             },
@@ -948,11 +948,11 @@
           },
           {
             "foreign": {
-              "id": 67466,
+              "id": 67668,
               "name": "MapConfig",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 21924,
+              "referencedDeclaration": 21927,
               "src": "342:9:265",
               "typeDescriptions": {}
             },
@@ -962,23 +962,23 @@
         "unitAlias": ""
       },
       {
-        "id": 67471,
+        "id": 67673,
         "nodeType": "ImportDirective",
         "src": "398:112:265",
         "nodes": [],
         "absolutePath": "src/components/TechEffectComponent.sol",
         "file": "components/TechEffectComponent.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 67596,
-        "sourceUnit": 25681,
+        "scope": 67798,
+        "sourceUnit": 25684,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 67468,
+              "id": 67670,
               "name": "TechEffectComponent",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 25680,
+              "referencedDeclaration": 25683,
               "src": "406:19:265",
               "typeDescriptions": {}
             },
@@ -986,11 +986,11 @@
           },
           {
             "foreign": {
-              "id": 67469,
+              "id": 67671,
               "name": "ID",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 25486,
+              "referencedDeclaration": 25489,
               "src": "427:2:265",
               "typeDescriptions": {}
             },
@@ -999,11 +999,11 @@
           },
           {
             "foreign": {
-              "id": 67470,
+              "id": 67672,
               "name": "TechEffect",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 25497,
+              "referencedDeclaration": 25500,
               "src": "456:10:265",
               "typeDescriptions": {}
             },
@@ -1013,23 +1013,23 @@
         "unitAlias": ""
       },
       {
-        "id": 67475,
+        "id": 67677,
         "nodeType": "ImportDirective",
         "src": "511:136:265",
         "nodes": [],
         "absolutePath": "src/components/TechEffectConfigComponent.sol",
         "file": "components/TechEffectConfigComponent.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 67596,
-        "sourceUnit": 25866,
+        "scope": 67798,
+        "sourceUnit": 25869,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 67472,
+              "id": 67674,
               "name": "TechEffectConfigComponent",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 25865,
+              "referencedDeclaration": 25868,
               "src": "519:25:265",
               "typeDescriptions": {}
             },
@@ -1037,11 +1037,11 @@
           },
           {
             "foreign": {
-              "id": 67473,
+              "id": 67675,
               "name": "ID",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 25694,
+              "referencedDeclaration": 25697,
               "src": "546:2:265",
               "typeDescriptions": {}
             },
@@ -1050,11 +1050,11 @@
           },
           {
             "foreign": {
-              "id": 67474,
+              "id": 67676,
               "name": "TechEffectConfig",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 25703,
+              "referencedDeclaration": 25706,
               "src": "581:16:265",
               "typeDescriptions": {}
             },
@@ -1064,23 +1064,23 @@
         "unitAlias": ""
       },
       {
-        "id": 67478,
+        "id": 67680,
         "nodeType": "ImportDirective",
         "src": "648:142:265",
         "nodes": [],
         "absolutePath": "src/components/TechEffectConfigRegisterComponent.sol",
         "file": "components/TechEffectConfigRegisterComponent.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 67596,
-        "sourceUnit": 25893,
+        "scope": 67798,
+        "sourceUnit": 25896,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 67476,
+              "id": 67678,
               "name": "TechEffectConfigRegisterComponent",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 25892,
+              "referencedDeclaration": 25895,
               "src": "656:33:265",
               "typeDescriptions": {}
             },
@@ -1088,11 +1088,11 @@
           },
           {
             "foreign": {
-              "id": 67477,
+              "id": 67679,
               "name": "ID",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 25879,
+              "referencedDeclaration": 25882,
               "src": "691:2:265",
               "typeDescriptions": {}
             },
@@ -1103,23 +1103,23 @@
         "unitAlias": ""
       },
       {
-        "id": 67481,
+        "id": 67683,
         "nodeType": "ImportDirective",
         "src": "791:80:265",
         "nodes": [],
         "absolutePath": "src/expension/TechEffectSystem.sol",
         "file": "expension/TechEffectSystem.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 67596,
-        "sourceUnit": 30983,
+        "scope": 67798,
+        "sourceUnit": 31066,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 67479,
+              "id": 67681,
               "name": "TechEffectSystem",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 30982,
+              "referencedDeclaration": 31065,
               "src": "799:16:265",
               "typeDescriptions": {}
             },
@@ -1127,11 +1127,11 @@
           },
           {
             "foreign": {
-              "id": 67480,
+              "id": 67682,
               "name": "TechEffectInfo",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 30906,
+              "referencedDeclaration": 30989,
               "src": "817:14:265",
               "typeDescriptions": {}
             },
@@ -1141,19 +1141,19 @@
         "unitAlias": ""
       },
       {
-        "id": 67484,
+        "id": 67686,
         "nodeType": "ImportDirective",
         "src": "873:109:265",
         "nodes": [],
         "absolutePath": "src/components/BuffBelongingComponent.sol",
         "file": "components/BuffBelongingComponent.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 67596,
+        "scope": 67798,
         "sourceUnit": 19159,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 67482,
+              "id": 67684,
               "name": "BuffBelongingComponent",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1165,7 +1165,7 @@
           },
           {
             "foreign": {
-              "id": 67483,
+              "id": 67685,
               "name": "ID",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1180,19 +1180,19 @@
         "unitAlias": ""
       },
       {
-        "id": 67488,
+        "id": 67690,
         "nodeType": "ImportDirective",
         "src": "983:88:265",
         "nodes": [],
         "absolutePath": "src/components/BuffComponent.sol",
         "file": "components/BuffComponent.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 67596,
+        "scope": 67798,
         "sourceUnit": 19436,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 67485,
+              "id": 67687,
               "name": "BuffComponent",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1204,7 +1204,7 @@
           },
           {
             "foreign": {
-              "id": 67486,
+              "id": 67688,
               "name": "ID",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1217,7 +1217,7 @@
           },
           {
             "foreign": {
-              "id": 67487,
+              "id": 67689,
               "name": "Buff",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1231,7 +1231,7 @@
         "unitAlias": ""
       },
       {
-        "id": 67496,
+        "id": 67698,
         "nodeType": "VariableDeclaration",
         "src": "1073:74:265",
         "nodes": [],
@@ -1239,7 +1239,7 @@
         "mutability": "constant",
         "name": "ID",
         "nameLocation": "1090:2:265",
-        "scope": 67596,
+        "scope": 67798,
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
@@ -1247,7 +1247,7 @@
           "typeString": "uint256"
         },
         "typeName": {
-          "id": 67489,
+          "id": 67691,
           "name": "uint256",
           "nodeType": "ElementaryTypeName",
           "src": "1073:7:265",
@@ -1262,7 +1262,7 @@
               "arguments": [
                 {
                   "hexValue": "73797374656d2e5465636845666665637445787472615265736f75726365",
-                  "id": 67493,
+                  "id": 67695,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1284,7 +1284,7 @@
                     "typeString": "literal_string \"system.TechEffectExtraResource\""
                   }
                 ],
-                "id": 67492,
+                "id": 67694,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -1295,7 +1295,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 67494,
+              "id": 67696,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1318,7 +1318,7 @@
                 "typeString": "bytes32"
               }
             ],
-            "id": 67491,
+            "id": 67693,
             "isConstant": false,
             "isLValue": false,
             "isPure": true,
@@ -1330,14 +1330,14 @@
               "typeString": "type(uint256)"
             },
             "typeName": {
-              "id": 67490,
+              "id": 67692,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1095:7:265",
               "typeDescriptions": {}
             }
           },
-          "id": 67495,
+          "id": 67697,
           "isConstant": false,
           "isLValue": false,
           "isPure": true,
@@ -1355,7 +1355,7 @@
         "visibility": "internal"
       },
       {
-        "id": 67504,
+        "id": 67706,
         "nodeType": "VariableDeclaration",
         "src": "1149:71:265",
         "nodes": [],
@@ -1363,7 +1363,7 @@
         "mutability": "constant",
         "name": "techEffectId",
         "nameLocation": "1166:12:265",
-        "scope": 67596,
+        "scope": 67798,
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
@@ -1371,7 +1371,7 @@
           "typeString": "uint256"
         },
         "typeName": {
-          "id": 67497,
+          "id": 67699,
           "name": "uint256",
           "nodeType": "ElementaryTypeName",
           "src": "1149:7:265",
@@ -1386,7 +1386,7 @@
               "arguments": [
                 {
                   "hexValue": "73797374656d2e54656368456666656374",
-                  "id": 67501,
+                  "id": 67703,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1408,7 +1408,7 @@
                     "typeString": "literal_string \"system.TechEffect\""
                   }
                 ],
-                "id": 67500,
+                "id": 67702,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -1419,7 +1419,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 67502,
+              "id": 67704,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1442,7 +1442,7 @@
                 "typeString": "bytes32"
               }
             ],
-            "id": 67499,
+            "id": 67701,
             "isConstant": false,
             "isLValue": false,
             "isPure": true,
@@ -1454,14 +1454,14 @@
               "typeString": "type(uint256)"
             },
             "typeName": {
-              "id": 67498,
+              "id": 67700,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1181:7:265",
               "typeDescriptions": {}
             }
           },
-          "id": 67503,
+          "id": 67705,
           "isConstant": false,
           "isLValue": false,
           "isPure": true,
@@ -1479,17 +1479,17 @@
         "visibility": "internal"
       },
       {
-        "id": 67595,
+        "id": 67797,
         "nodeType": "ContractDefinition",
         "src": "1223:1572:265",
         "nodes": [
           {
-            "id": 67519,
+            "id": 67721,
             "nodeType": "FunctionDefinition",
             "src": "1288:110:265",
             "nodes": [],
             "body": {
-              "id": 67518,
+              "id": 67720,
               "nodeType": "Block",
               "src": "1396:2:265",
               "nodes": [],
@@ -1501,11 +1501,11 @@
               {
                 "arguments": [
                   {
-                    "id": 67514,
+                    "id": 67716,
                     "name": "_world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 67509,
+                    "referencedDeclaration": 67711,
                     "src": "1375:6:265",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IWorld_$1582",
@@ -1513,11 +1513,11 @@
                     }
                   },
                   {
-                    "id": 67515,
+                    "id": 67717,
                     "name": "_components",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 67511,
+                    "referencedDeclaration": 67713,
                     "src": "1383:11:265",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1525,13 +1525,13 @@
                     }
                   }
                 ],
-                "id": 67516,
+                "id": 67718,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 67513,
+                  "id": 67715,
                   "name": "TechEffectSystem",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 30982,
+                  "referencedDeclaration": 31065,
                   "src": "1358:16:265"
                 },
                 "nodeType": "ModifierInvocation",
@@ -1541,17 +1541,17 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 67512,
+              "id": 67714,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 67509,
+                  "id": 67711,
                   "mutability": "mutable",
                   "name": "_world",
                   "nameLocation": "1316:6:265",
                   "nodeType": "VariableDeclaration",
-                  "scope": 67519,
+                  "scope": 67721,
                   "src": "1309:13:265",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1560,10 +1560,10 @@
                     "typeString": "contract IWorld"
                   },
                   "typeName": {
-                    "id": 67508,
+                    "id": 67710,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 67507,
+                      "id": 67709,
                       "name": "IWorld",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 1582,
@@ -1580,12 +1580,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 67511,
+                  "id": 67713,
                   "mutability": "mutable",
                   "name": "_components",
                   "nameLocation": "1340:11:265",
                   "nodeType": "VariableDeclaration",
-                  "scope": 67519,
+                  "scope": 67721,
                   "src": "1332:19:265",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1594,7 +1594,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 67510,
+                    "id": 67712,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1332:7:265",
@@ -1610,40 +1610,40 @@
               "src": "1299:58:265"
             },
             "returnParameters": {
-              "id": 67517,
+              "id": 67719,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1396:0:265"
             },
-            "scope": 67595,
+            "scope": 67797,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 67594,
+            "id": 67796,
             "nodeType": "FunctionDefinition",
             "src": "1404:1389:265",
             "nodes": [],
             "body": {
-              "id": 67593,
+              "id": 67795,
               "nodeType": "Block",
               "src": "1518:1275:265",
               "nodes": [],
               "statements": [
                 {
                   "assignments": [
-                    67529
+                    67731
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 67529,
+                      "id": 67731,
                       "mutability": "mutable",
                       "name": "entityId",
                       "nameLocation": "1536:8:265",
                       "nodeType": "VariableDeclaration",
-                      "scope": 67593,
+                      "scope": 67795,
                       "src": "1528:16:265",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1652,7 +1652,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 67528,
+                        "id": 67730,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1528:7:265",
@@ -1664,28 +1664,28 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 67532,
+                  "id": 67734,
                   "initialValue": {
                     "expression": {
-                      "id": 67530,
+                      "id": 67732,
                       "name": "techEffectInfo",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 67522,
+                      "referencedDeclaration": 67724,
                       "src": "1547:14:265",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TechEffectInfo_$30906_memory_ptr",
+                        "typeIdentifier": "t_struct$_TechEffectInfo_$30989_memory_ptr",
                         "typeString": "struct TechEffectInfo memory"
                       }
                     },
-                    "id": 67531,
+                    "id": 67733,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "entity",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 30899,
+                    "referencedDeclaration": 30982,
                     "src": "1547:21:265",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -1697,17 +1697,17 @@
                 },
                 {
                   "assignments": [
-                    67534
+                    67736
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 67534,
+                      "id": 67736,
                       "mutability": "mutable",
                       "name": "buffId",
                       "nameLocation": "1586:6:265",
                       "nodeType": "VariableDeclaration",
-                      "scope": 67593,
+                      "scope": 67795,
                       "src": "1578:14:265",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1716,7 +1716,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 67533,
+                        "id": 67735,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1578:7:265",
@@ -1728,13 +1728,13 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 67538,
+                  "id": 67740,
                   "initialValue": {
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 67535,
+                        "id": 67737,
                         "name": "world",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -1745,7 +1745,7 @@
                           "typeString": "contract IWorld"
                         }
                       },
-                      "id": 67536,
+                      "id": 67738,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1759,7 +1759,7 @@
                         "typeString": "function () view external returns (uint256)"
                       }
                     },
-                    "id": 67537,
+                    "id": 67739,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1781,11 +1781,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 67546,
+                        "id": 67748,
                         "name": "buffId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 67534,
+                        "referencedDeclaration": 67736,
                         "src": "1757:6:265",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1796,25 +1796,25 @@
                         "arguments": [
                           {
                             "expression": {
-                              "id": 67548,
+                              "id": 67750,
                               "name": "techEffectInfo",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 67522,
+                              "referencedDeclaration": 67724,
                               "src": "1804:14:265",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TechEffectInfo_$30906_memory_ptr",
+                                "typeIdentifier": "t_struct$_TechEffectInfo_$30989_memory_ptr",
                                 "typeString": "struct TechEffectInfo memory"
                               }
                             },
-                            "id": 67549,
+                            "id": 67751,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "techEffectId",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 30901,
+                            "referencedDeclaration": 30984,
                             "src": "1804:27:265",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1823,25 +1823,25 @@
                           },
                           {
                             "expression": {
-                              "id": 67550,
+                              "id": 67752,
                               "name": "techEffectInfo",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 67522,
+                              "referencedDeclaration": 67724,
                               "src": "1862:14:265",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TechEffectInfo_$30906_memory_ptr",
+                                "typeIdentifier": "t_struct$_TechEffectInfo_$30989_memory_ptr",
                                 "typeString": "struct TechEffectInfo memory"
                               }
                             },
-                            "id": 67551,
+                            "id": 67753,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "level",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 30905,
+                            "referencedDeclaration": 30988,
                             "src": "1862:20:265",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint32",
@@ -1850,7 +1850,7 @@
                           },
                           {
                             "hexValue": "32",
-                            "id": 67552,
+                            "id": 67754,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1866,25 +1866,25 @@
                           },
                           {
                             "expression": {
-                              "id": 67553,
+                              "id": 67755,
                               "name": "techEffectInfo",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 67522,
+                              "referencedDeclaration": 67724,
                               "src": "1938:14:265",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TechEffectInfo_$30906_memory_ptr",
+                                "typeIdentifier": "t_struct$_TechEffectInfo_$30989_memory_ptr",
                                 "typeString": "struct TechEffectInfo memory"
                               }
                             },
-                            "id": 67554,
+                            "id": 67756,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "value",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 30903,
+                            "referencedDeclaration": 30986,
                             "src": "1938:20:265",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint64",
@@ -1893,7 +1893,7 @@
                           },
                           {
                             "hexValue": "54656368",
-                            "id": 67555,
+                            "id": 67757,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1931,18 +1931,18 @@
                               "typeString": "literal_string \"Tech\""
                             }
                           ],
-                          "id": 67547,
+                          "id": 67749,
                           "name": "TechEffect",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 25497,
+                          "referencedDeclaration": 25500,
                           "src": "1765:10:265",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_TechEffect_$25497_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_TechEffect_$25500_storage_ptr_$",
                             "typeString": "type(struct TechEffect storage pointer)"
                           }
                         },
-                        "id": 67556,
+                        "id": 67758,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1959,7 +1959,7 @@
                         "src": "1765:232:265",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_TechEffect_$25497_memory_ptr",
+                          "typeIdentifier": "t_struct$_TechEffect_$25500_memory_ptr",
                           "typeString": "struct TechEffect memory"
                         }
                       }
@@ -1971,7 +1971,7 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_struct$_TechEffect_$25497_memory_ptr",
+                          "typeIdentifier": "t_struct$_TechEffect_$25500_memory_ptr",
                           "typeString": "struct TechEffect memory"
                         }
                       ],
@@ -1980,7 +1980,7 @@
                           {
                             "arguments": [
                               {
-                                "id": 67541,
+                                "id": 67743,
                                 "name": "components",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -1992,11 +1992,11 @@
                                 }
                               },
                               {
-                                "id": 67542,
+                                "id": 67744,
                                 "name": "TechEffectComponentID",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 25486,
+                                "referencedDeclaration": 25489,
                                 "src": "1720:21:265",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -2015,7 +2015,7 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "id": 67540,
+                              "id": 67742,
                               "name": "getAddressById",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -2026,7 +2026,7 @@
                                 "typeString": "function (contract IUint256Component,uint256) view returns (address)"
                               }
                             },
-                            "id": 67543,
+                            "id": 67745,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2049,18 +2049,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 67539,
+                          "id": 67741,
                           "name": "TechEffectComponent",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 25680,
+                          "referencedDeclaration": 25683,
                           "src": "1660:19:265",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_TechEffectComponent_$25680_$",
+                            "typeIdentifier": "t_type$_t_contract$_TechEffectComponent_$25683_$",
                             "typeString": "type(contract TechEffectComponent)"
                           }
                         },
-                        "id": 67544,
+                        "id": 67746,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2071,25 +2071,25 @@
                         "src": "1660:92:265",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TechEffectComponent_$25680",
+                          "typeIdentifier": "t_contract$_TechEffectComponent_$25683",
                           "typeString": "contract TechEffectComponent"
                         }
                       },
-                      "id": 67545,
+                      "id": 67747,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "set",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 25634,
+                      "referencedDeclaration": 25637,
                       "src": "1660:96:265",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_struct$_TechEffect_$25497_memory_ptr_$returns$__$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_struct$_TechEffect_$25500_memory_ptr_$returns$__$",
                         "typeString": "function (uint256,struct TechEffect memory) external"
                       }
                     },
-                    "id": 67557,
+                    "id": 67759,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2104,7 +2104,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 67558,
+                  "id": 67760,
                   "nodeType": "ExpressionStatement",
                   "src": "1660:338:265"
                 },
@@ -2112,11 +2112,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 67566,
+                        "id": 67768,
                         "name": "buffId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 67534,
+                        "referencedDeclaration": 67736,
                         "src": "2093:6:265",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2127,7 +2127,7 @@
                         "arguments": [
                           {
                             "hexValue": "32",
-                            "id": 67568,
+                            "id": 67770,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2143,25 +2143,25 @@
                           },
                           {
                             "expression": {
-                              "id": 67569,
+                              "id": 67771,
                               "name": "techEffectInfo",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 67522,
+                              "referencedDeclaration": 67724,
                               "src": "2156:14:265",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TechEffectInfo_$30906_memory_ptr",
+                                "typeIdentifier": "t_struct$_TechEffectInfo_$30989_memory_ptr",
                                 "typeString": "struct TechEffectInfo memory"
                               }
                             },
-                            "id": 67570,
+                            "id": 67772,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "level",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 30905,
+                            "referencedDeclaration": 30988,
                             "src": "2156:20:265",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint32",
@@ -2170,7 +2170,7 @@
                           },
                           {
                             "hexValue": "54656368",
-                            "id": 67571,
+                            "id": 67773,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2186,25 +2186,25 @@
                           },
                           {
                             "expression": {
-                              "id": 67572,
+                              "id": 67774,
                               "name": "techEffectInfo",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 67522,
+                              "referencedDeclaration": 67724,
                               "src": "2228:14:265",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TechEffectInfo_$30906_memory_ptr",
+                                "typeIdentifier": "t_struct$_TechEffectInfo_$30989_memory_ptr",
                                 "typeString": "struct TechEffectInfo memory"
                               }
                             },
-                            "id": 67573,
+                            "id": 67775,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "techEffectId",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 30901,
+                            "referencedDeclaration": 30984,
                             "src": "2228:27:265",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2213,7 +2213,7 @@
                           },
                           {
                             "hexValue": "30",
-                            "id": 67574,
+                            "id": 67776,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2229,7 +2229,7 @@
                           },
                           {
                             "hexValue": "74727565",
-                            "id": 67575,
+                            "id": 67777,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2245,25 +2245,25 @@
                           },
                           {
                             "expression": {
-                              "id": 67576,
+                              "id": 67778,
                               "name": "techEffectInfo",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 67522,
+                              "referencedDeclaration": 67724,
                               "src": "2330:14:265",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TechEffectInfo_$30906_memory_ptr",
+                                "typeIdentifier": "t_struct$_TechEffectInfo_$30989_memory_ptr",
                                 "typeString": "struct TechEffectInfo memory"
                               }
                             },
-                            "id": 67577,
+                            "id": 67779,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "value",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 30903,
+                            "referencedDeclaration": 30986,
                             "src": "2330:20:265",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint64",
@@ -2272,7 +2272,7 @@
                           },
                           {
                             "hexValue": "30",
-                            "id": 67578,
+                            "id": 67780,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2322,7 +2322,7 @@
                               "typeString": "int_const 0"
                             }
                           ],
-                          "id": 67567,
+                          "id": 67769,
                           "name": "Buff",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -2333,7 +2333,7 @@
                             "typeString": "type(struct Buff storage pointer)"
                           }
                         },
-                        "id": 67579,
+                        "id": 67781,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2374,7 +2374,7 @@
                           {
                             "arguments": [
                               {
-                                "id": 67561,
+                                "id": 67763,
                                 "name": "components",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -2386,7 +2386,7 @@
                                 }
                               },
                               {
-                                "id": 67562,
+                                "id": 67764,
                                 "name": "BuffComponentID",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -2409,7 +2409,7 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "id": 67560,
+                              "id": 67762,
                               "name": "getAddressById",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -2420,7 +2420,7 @@
                                 "typeString": "function (contract IUint256Component,uint256) view returns (address)"
                               }
                             },
-                            "id": 67563,
+                            "id": 67765,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2443,7 +2443,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 67559,
+                          "id": 67761,
                           "name": "BuffComponent",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -2454,7 +2454,7 @@
                             "typeString": "type(contract BuffComponent)"
                           }
                         },
-                        "id": 67564,
+                        "id": 67766,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2469,7 +2469,7 @@
                           "typeString": "contract BuffComponent"
                         }
                       },
-                      "id": 67565,
+                      "id": 67767,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2483,7 +2483,7 @@
                         "typeString": "function (uint256,struct Buff memory) external"
                       }
                     },
-                    "id": 67580,
+                    "id": 67782,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2498,7 +2498,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 67581,
+                  "id": 67783,
                   "nodeType": "ExpressionStatement",
                   "src": "2008:382:265"
                 },
@@ -2506,11 +2506,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 67589,
+                        "id": 67791,
                         "name": "buffId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 67534,
+                        "referencedDeclaration": 67736,
                         "src": "2503:6:265",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2518,11 +2518,11 @@
                         }
                       },
                       {
-                        "id": 67590,
+                        "id": 67792,
                         "name": "entityId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 67529,
+                        "referencedDeclaration": 67731,
                         "src": "2511:8:265",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2546,7 +2546,7 @@
                           {
                             "arguments": [
                               {
-                                "id": 67584,
+                                "id": 67786,
                                 "name": "components",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -2558,7 +2558,7 @@
                                 }
                               },
                               {
-                                "id": 67585,
+                                "id": 67787,
                                 "name": "BuffBelongingComponentID",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -2581,7 +2581,7 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "id": 67583,
+                              "id": 67785,
                               "name": "getAddressById",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -2592,7 +2592,7 @@
                                 "typeString": "function (contract IUint256Component,uint256) view returns (address)"
                               }
                             },
-                            "id": 67586,
+                            "id": 67788,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2615,7 +2615,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 67582,
+                          "id": 67784,
                           "name": "BuffBelongingComponent",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -2626,7 +2626,7 @@
                             "typeString": "type(contract BuffBelongingComponent)"
                           }
                         },
-                        "id": 67587,
+                        "id": 67789,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2641,7 +2641,7 @@
                           "typeString": "contract BuffBelongingComponent"
                         }
                       },
-                      "id": 67588,
+                      "id": 67790,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2655,7 +2655,7 @@
                         "typeString": "function (uint256,uint256) external"
                       }
                     },
-                    "id": 67591,
+                    "id": 67793,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2670,14 +2670,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 67592,
+                  "id": 67794,
                   "nodeType": "ExpressionStatement",
                   "src": "2400:120:265"
                 }
               ]
             },
             "baseFunctions": [
-              30981
+              31064
             ],
             "implemented": true,
             "kind": "function",
@@ -2685,44 +2685,44 @@
             "name": "effectLogic",
             "nameLocation": "1413:11:265",
             "overrides": {
-              "id": 67524,
+              "id": 67726,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
               "src": "1486:8:265"
             },
             "parameters": {
-              "id": 67523,
+              "id": 67725,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 67522,
+                  "id": 67724,
                   "mutability": "mutable",
                   "name": "techEffectInfo",
                   "nameLocation": "1456:14:265",
                   "nodeType": "VariableDeclaration",
-                  "scope": 67594,
+                  "scope": 67796,
                   "src": "1434:36:265",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TechEffectInfo_$30906_memory_ptr",
+                    "typeIdentifier": "t_struct$_TechEffectInfo_$30989_memory_ptr",
                     "typeString": "struct TechEffectInfo"
                   },
                   "typeName": {
-                    "id": 67521,
+                    "id": 67723,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 67520,
+                      "id": 67722,
                       "name": "TechEffectInfo",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 30906,
+                      "referencedDeclaration": 30989,
                       "src": "1434:14:265"
                     },
-                    "referencedDeclaration": 30906,
+                    "referencedDeclaration": 30989,
                     "src": "1434:14:265",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TechEffectInfo_$30906_storage_ptr",
+                      "typeIdentifier": "t_struct$_TechEffectInfo_$30989_storage_ptr",
                       "typeString": "struct TechEffectInfo"
                     }
                   },
@@ -2732,17 +2732,17 @@
               "src": "1424:52:265"
             },
             "returnParameters": {
-              "id": 67527,
+              "id": 67729,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 67526,
+                  "id": 67728,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 67594,
+                  "scope": 67796,
                   "src": "1504:12:265",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2751,7 +2751,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 67525,
+                    "id": 67727,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1504:5:265",
@@ -2765,7 +2765,7 @@
               ],
               "src": "1503:14:265"
             },
-            "scope": 67595,
+            "scope": 67797,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
@@ -2775,13 +2775,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 67505,
+              "id": 67707,
               "name": "TechEffectSystem",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 30982,
+              "referencedDeclaration": 31065,
               "src": "1265:16:265"
             },
-            "id": 67506,
+            "id": 67708,
             "nodeType": "InheritanceSpecifier",
             "src": "1265:16:265"
           }
@@ -2791,24 +2791,24 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          67595,
-          30982,
+          67797,
+          31065,
           587,
-          73998,
+          74220,
           2536,
-          75829,
-          76248,
-          75705,
-          74012,
+          76051,
+          76470,
+          75927,
+          74234,
           2579,
-          75839
+          76061
         ],
         "name": "TechEffectExtraResourceSystem",
         "nameLocation": "1232:29:265",
-        "scope": 67596,
+        "scope": 67798,
         "usedErrors": [
-          76245,
-          76247
+          76467,
+          76469
         ]
       }
     ],

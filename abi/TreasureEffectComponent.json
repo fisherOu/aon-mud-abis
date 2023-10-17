@@ -1836,32 +1836,32 @@
   },
   "ast": {
     "absolutePath": "src/components/TreasureEffectComponent.sol",
-    "id": 27599,
+    "id": 27602,
     "exportedSymbols": {
       "BareComponent": [
         220
       ],
       "Effect": [
-        27377
+        27380
       ],
       "ID": [
-        27360
+        27363
       ],
       "LibTypes": [
         522
       ],
       "TreasureEffect": [
-        27394
+        27397
       ],
       "TreasureEffectComponent": [
-        27598
+        27601
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:2341:162",
     "nodes": [
       {
-        "id": 27348,
+        "id": 27351,
         "nodeType": "PragmaDirective",
         "src": "32:24:162",
         "nodes": [],
@@ -1873,19 +1873,19 @@
         ]
       },
       {
-        "id": 27350,
+        "id": 27353,
         "nodeType": "ImportDirective",
         "src": "57:55:162",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/BareComponent.sol",
         "file": "solecs/BareComponent.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 27599,
+        "scope": 27602,
         "sourceUnit": 221,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 27349,
+              "id": 27352,
               "name": "BareComponent",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1899,19 +1899,19 @@
         "unitAlias": ""
       },
       {
-        "id": 27352,
+        "id": 27355,
         "nodeType": "ImportDirective",
         "src": "113:45:162",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/LibTypes.sol",
         "file": "solecs/LibTypes.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 27599,
+        "scope": 27602,
         "sourceUnit": 523,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 27351,
+              "id": 27354,
               "name": "LibTypes",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1925,7 +1925,7 @@
         "unitAlias": ""
       },
       {
-        "id": 27360,
+        "id": 27363,
         "nodeType": "VariableDeclaration",
         "src": "160:68:162",
         "nodes": [],
@@ -1933,7 +1933,7 @@
         "mutability": "constant",
         "name": "ID",
         "nameLocation": "177:2:162",
-        "scope": 27599,
+        "scope": 27602,
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
@@ -1941,7 +1941,7 @@
           "typeString": "uint256"
         },
         "typeName": {
-          "id": 27353,
+          "id": 27356,
           "name": "uint256",
           "nodeType": "ElementaryTypeName",
           "src": "160:7:162",
@@ -1956,7 +1956,7 @@
               "arguments": [
                 {
                   "hexValue": "636f6d706f6e656e742e5472656173757265456666656374",
-                  "id": 27357,
+                  "id": 27360,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1978,7 +1978,7 @@
                     "typeString": "literal_string \"component.TreasureEffect\""
                   }
                 ],
-                "id": 27356,
+                "id": 27359,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -1989,7 +1989,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 27358,
+              "id": 27361,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2012,7 +2012,7 @@
                 "typeString": "bytes32"
               }
             ],
-            "id": 27355,
+            "id": 27358,
             "isConstant": false,
             "isLValue": false,
             "isPure": true,
@@ -2024,14 +2024,14 @@
               "typeString": "type(uint256)"
             },
             "typeName": {
-              "id": 27354,
+              "id": 27357,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "182:7:162",
               "typeDescriptions": {}
             }
           },
-          "id": 27359,
+          "id": 27362,
           "isConstant": false,
           "isLValue": false,
           "isPure": true,
@@ -2049,7 +2049,7 @@
         "visibility": "internal"
       },
       {
-        "id": 27377,
+        "id": 27380,
         "nodeType": "StructDefinition",
         "src": "231:417:162",
         "nodes": [],
@@ -2057,12 +2057,12 @@
         "members": [
           {
             "constant": false,
-            "id": 27362,
+            "id": 27365,
             "mutability": "mutable",
             "name": "valid",
             "nameLocation": "258:5:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27377,
+            "scope": 27380,
             "src": "251:12:162",
             "stateVariable": false,
             "storageLocation": "default",
@@ -2071,7 +2071,7 @@
               "typeString": "uint32"
             },
             "typeName": {
-              "id": 27361,
+              "id": 27364,
               "name": "uint32",
               "nodeType": "ElementaryTypeName",
               "src": "251:6:162",
@@ -2084,12 +2084,12 @@
           },
           {
             "constant": false,
-            "id": 27364,
+            "id": 27367,
             "mutability": "mutable",
             "name": "triggerType",
             "nameLocation": "276:11:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27377,
+            "scope": 27380,
             "src": "269:18:162",
             "stateVariable": false,
             "storageLocation": "default",
@@ -2098,7 +2098,7 @@
               "typeString": "uint32"
             },
             "typeName": {
-              "id": 27363,
+              "id": 27366,
               "name": "uint32",
               "nodeType": "ElementaryTypeName",
               "src": "269:6:162",
@@ -2111,12 +2111,12 @@
           },
           {
             "constant": false,
-            "id": 27366,
+            "id": 27369,
             "mutability": "mutable",
             "name": "effectType",
             "nameLocation": "543:10:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27377,
+            "scope": 27380,
             "src": "536:17:162",
             "stateVariable": false,
             "storageLocation": "default",
@@ -2125,7 +2125,7 @@
               "typeString": "uint32"
             },
             "typeName": {
-              "id": 27365,
+              "id": 27368,
               "name": "uint32",
               "nodeType": "ElementaryTypeName",
               "src": "536:6:162",
@@ -2138,12 +2138,12 @@
           },
           {
             "constant": false,
-            "id": 27368,
+            "id": 27371,
             "mutability": "mutable",
             "name": "energy",
             "nameLocation": "566:6:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27377,
+            "scope": 27380,
             "src": "559:13:162",
             "stateVariable": false,
             "storageLocation": "default",
@@ -2152,7 +2152,7 @@
               "typeString": "uint32"
             },
             "typeName": {
-              "id": 27367,
+              "id": 27370,
               "name": "uint32",
               "nodeType": "ElementaryTypeName",
               "src": "559:6:162",
@@ -2165,12 +2165,12 @@
           },
           {
             "constant": false,
-            "id": 27370,
+            "id": 27373,
             "mutability": "mutable",
             "name": "range",
             "nameLocation": "585:5:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27377,
+            "scope": 27380,
             "src": "578:12:162",
             "stateVariable": false,
             "storageLocation": "default",
@@ -2179,7 +2179,7 @@
               "typeString": "uint32"
             },
             "typeName": {
-              "id": 27369,
+              "id": 27372,
               "name": "uint32",
               "nodeType": "ElementaryTypeName",
               "src": "578:6:162",
@@ -2192,12 +2192,12 @@
           },
           {
             "constant": false,
-            "id": 27372,
+            "id": 27375,
             "mutability": "mutable",
             "name": "area",
             "nameLocation": "603:4:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27377,
+            "scope": 27380,
             "src": "596:11:162",
             "stateVariable": false,
             "storageLocation": "default",
@@ -2206,7 +2206,7 @@
               "typeString": "uint32"
             },
             "typeName": {
-              "id": 27371,
+              "id": 27374,
               "name": "uint32",
               "nodeType": "ElementaryTypeName",
               "src": "596:6:162",
@@ -2219,12 +2219,12 @@
           },
           {
             "constant": false,
-            "id": 27374,
+            "id": 27377,
             "mutability": "mutable",
             "name": "damage",
             "nameLocation": "620:6:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27377,
+            "scope": 27380,
             "src": "613:13:162",
             "stateVariable": false,
             "storageLocation": "default",
@@ -2233,7 +2233,7 @@
               "typeString": "uint32"
             },
             "typeName": {
-              "id": 27373,
+              "id": 27376,
               "name": "uint32",
               "nodeType": "ElementaryTypeName",
               "src": "613:6:162",
@@ -2246,12 +2246,12 @@
           },
           {
             "constant": false,
-            "id": 27376,
+            "id": 27379,
             "mutability": "mutable",
             "name": "shield",
             "nameLocation": "639:6:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27377,
+            "scope": 27380,
             "src": "632:13:162",
             "stateVariable": false,
             "storageLocation": "default",
@@ -2260,7 +2260,7 @@
               "typeString": "uint32"
             },
             "typeName": {
-              "id": 27375,
+              "id": 27378,
               "name": "uint32",
               "nodeType": "ElementaryTypeName",
               "src": "632:6:162",
@@ -2274,11 +2274,11 @@
         ],
         "name": "Effect",
         "nameLocation": "238:6:162",
-        "scope": 27599,
+        "scope": 27602,
         "visibility": "public"
       },
       {
-        "id": 27394,
+        "id": 27397,
         "nodeType": "StructDefinition",
         "src": "649:143:162",
         "nodes": [],
@@ -2286,12 +2286,12 @@
         "members": [
           {
             "constant": false,
-            "id": 27379,
+            "id": 27382,
             "mutability": "mutable",
             "name": "isActive",
             "nameLocation": "684:8:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27394,
+            "scope": 27397,
             "src": "677:15:162",
             "stateVariable": false,
             "storageLocation": "default",
@@ -2300,7 +2300,7 @@
               "typeString": "uint32"
             },
             "typeName": {
-              "id": 27378,
+              "id": 27381,
               "name": "uint32",
               "nodeType": "ElementaryTypeName",
               "src": "677:6:162",
@@ -2313,12 +2313,12 @@
           },
           {
             "constant": false,
-            "id": 27381,
+            "id": 27384,
             "mutability": "mutable",
             "name": "isFlight",
             "nameLocation": "705:8:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27394,
+            "scope": 27397,
             "src": "698:15:162",
             "stateVariable": false,
             "storageLocation": "default",
@@ -2327,7 +2327,7 @@
               "typeString": "uint32"
             },
             "typeName": {
-              "id": 27380,
+              "id": 27383,
               "name": "uint32",
               "nodeType": "ElementaryTypeName",
               "src": "698:6:162",
@@ -2340,51 +2340,17 @@
           },
           {
             "constant": false,
-            "id": 27384,
+            "id": 27387,
             "mutability": "mutable",
             "name": "flight",
             "nameLocation": "726:6:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27394,
+            "scope": 27397,
             "src": "719:13:162",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
-              "typeString": "struct Effect"
-            },
-            "typeName": {
-              "id": 27383,
-              "nodeType": "UserDefinedTypeName",
-              "pathNode": {
-                "id": 27382,
-                "name": "Effect",
-                "nodeType": "IdentifierPath",
-                "referencedDeclaration": 27377,
-                "src": "719:6:162"
-              },
-              "referencedDeclaration": 27377,
-              "src": "719:6:162",
-              "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
-                "typeString": "struct Effect"
-              }
-            },
-            "visibility": "internal"
-          },
-          {
-            "constant": false,
-            "id": 27387,
-            "mutability": "mutable",
-            "name": "arrival",
-            "nameLocation": "745:7:162",
-            "nodeType": "VariableDeclaration",
-            "scope": 27394,
-            "src": "738:14:162",
-            "stateVariable": false,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
+              "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
               "typeString": "struct Effect"
             },
             "typeName": {
@@ -2394,13 +2360,13 @@
                 "id": 27385,
                 "name": "Effect",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 27377,
-                "src": "738:6:162"
+                "referencedDeclaration": 27380,
+                "src": "719:6:162"
               },
-              "referencedDeclaration": 27377,
-              "src": "738:6:162",
+              "referencedDeclaration": 27380,
+              "src": "719:6:162",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
+                "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
                 "typeString": "struct Effect"
               }
             },
@@ -2410,15 +2376,15 @@
             "constant": false,
             "id": 27390,
             "mutability": "mutable",
-            "name": "destroy",
-            "nameLocation": "765:7:162",
+            "name": "arrival",
+            "nameLocation": "745:7:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27394,
-            "src": "758:14:162",
+            "scope": 27397,
+            "src": "738:14:162",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
+              "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
               "typeString": "struct Effect"
             },
             "typeName": {
@@ -2428,13 +2394,13 @@
                 "id": 27388,
                 "name": "Effect",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 27377,
-                "src": "758:6:162"
+                "referencedDeclaration": 27380,
+                "src": "738:6:162"
               },
-              "referencedDeclaration": 27377,
-              "src": "758:6:162",
+              "referencedDeclaration": 27380,
+              "src": "738:6:162",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
+                "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
                 "typeString": "struct Effect"
               }
             },
@@ -2444,15 +2410,15 @@
             "constant": false,
             "id": 27393,
             "mutability": "mutable",
-            "name": "buff",
-            "nameLocation": "785:4:162",
+            "name": "destroy",
+            "nameLocation": "765:7:162",
             "nodeType": "VariableDeclaration",
-            "scope": 27394,
-            "src": "778:11:162",
+            "scope": 27397,
+            "src": "758:14:162",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
+              "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
               "typeString": "struct Effect"
             },
             "typeName": {
@@ -2462,13 +2428,47 @@
                 "id": 27391,
                 "name": "Effect",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 27377,
+                "referencedDeclaration": 27380,
+                "src": "758:6:162"
+              },
+              "referencedDeclaration": 27380,
+              "src": "758:6:162",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
+                "typeString": "struct Effect"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 27396,
+            "mutability": "mutable",
+            "name": "buff",
+            "nameLocation": "785:4:162",
+            "nodeType": "VariableDeclaration",
+            "scope": 27397,
+            "src": "778:11:162",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
+              "typeString": "struct Effect"
+            },
+            "typeName": {
+              "id": 27395,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 27394,
+                "name": "Effect",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 27380,
                 "src": "778:6:162"
               },
-              "referencedDeclaration": 27377,
+              "referencedDeclaration": 27380,
               "src": "778:6:162",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
+                "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
                 "typeString": "struct Effect"
               }
             },
@@ -2477,21 +2477,21 @@
         ],
         "name": "TreasureEffect",
         "nameLocation": "656:14:162",
-        "scope": 27599,
+        "scope": 27602,
         "visibility": "public"
       },
       {
-        "id": 27598,
+        "id": 27601,
         "nodeType": "ContractDefinition",
         "src": "794:1578:162",
         "nodes": [
           {
-            "id": 27406,
+            "id": 27409,
             "nodeType": "FunctionDefinition",
             "src": "850:54:162",
             "nodes": [],
             "body": {
-              "id": 27405,
+              "id": 27408,
               "nodeType": "Block",
               "src": "902:2:162",
               "nodes": [],
@@ -2503,11 +2503,11 @@
               {
                 "arguments": [
                   {
-                    "id": 27401,
+                    "id": 27404,
                     "name": "world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 27398,
+                    "referencedDeclaration": 27401,
                     "src": "891:5:162",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2515,11 +2515,11 @@
                     }
                   },
                   {
-                    "id": 27402,
+                    "id": 27405,
                     "name": "ID",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 27360,
+                    "referencedDeclaration": 27363,
                     "src": "898:2:162",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -2527,10 +2527,10 @@
                     }
                   }
                 ],
-                "id": 27403,
+                "id": 27406,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 27400,
+                  "id": 27403,
                   "name": "BareComponent",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 220,
@@ -2543,17 +2543,17 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 27399,
+              "id": 27402,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27398,
+                  "id": 27401,
                   "mutability": "mutable",
                   "name": "world",
                   "nameLocation": "870:5:162",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27406,
+                  "scope": 27409,
                   "src": "862:13:162",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2562,7 +2562,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 27397,
+                    "id": 27400,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "862:7:162",
@@ -2578,40 +2578,40 @@
               "src": "861:15:162"
             },
             "returnParameters": {
-              "id": 27404,
+              "id": 27407,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "902:0:162"
             },
-            "scope": 27598,
+            "scope": 27601,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 27519,
+            "id": 27522,
             "nodeType": "FunctionDefinition",
             "src": "910:738:162",
             "nodes": [],
             "body": {
-              "id": 27518,
+              "id": 27521,
               "nodeType": "Block",
               "src": "1057:591:162",
               "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 27423,
+                    "id": 27426,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 27417,
+                      "id": 27420,
                       "name": "keys",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 27411,
+                      "referencedDeclaration": 27414,
                       "src": "1067:4:162",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
@@ -2624,7 +2624,7 @@
                       "arguments": [
                         {
                           "hexValue": "36",
-                          "id": 27421,
+                          "id": 27424,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2646,7 +2646,7 @@
                             "typeString": "int_const 6"
                           }
                         ],
-                        "id": 27420,
+                        "id": 27423,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2659,7 +2659,7 @@
                         },
                         "typeName": {
                           "baseType": {
-                            "id": 27418,
+                            "id": 27421,
                             "name": "string",
                             "nodeType": "ElementaryTypeName",
                             "src": "1078:6:162",
@@ -2668,7 +2668,7 @@
                               "typeString": "string"
                             }
                           },
-                          "id": 27419,
+                          "id": 27422,
                           "nodeType": "ArrayTypeName",
                           "src": "1078:8:162",
                           "typeDescriptions": {
@@ -2677,7 +2677,7 @@
                           }
                         }
                       },
-                      "id": 27422,
+                      "id": 27425,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2698,23 +2698,23 @@
                       "typeString": "string memory[] memory"
                     }
                   },
-                  "id": 27424,
+                  "id": 27427,
                   "nodeType": "ExpressionStatement",
                   "src": "1067:22:162"
                 },
                 {
                   "expression": {
-                    "id": 27432,
+                    "id": 27435,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 27425,
+                      "id": 27428,
                       "name": "values",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 27415,
+                      "referencedDeclaration": 27418,
                       "src": "1099:6:162",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_enum$_SchemaValue_$521_$dyn_memory_ptr",
@@ -2727,7 +2727,7 @@
                       "arguments": [
                         {
                           "hexValue": "36",
-                          "id": 27430,
+                          "id": 27433,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2749,7 +2749,7 @@
                             "typeString": "int_const 6"
                           }
                         ],
-                        "id": 27429,
+                        "id": 27432,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2762,10 +2762,10 @@
                         },
                         "typeName": {
                           "baseType": {
-                            "id": 27427,
+                            "id": 27430,
                             "nodeType": "UserDefinedTypeName",
                             "pathNode": {
-                              "id": 27426,
+                              "id": 27429,
                               "name": "LibTypes.SchemaValue",
                               "nodeType": "IdentifierPath",
                               "referencedDeclaration": 521,
@@ -2778,7 +2778,7 @@
                               "typeString": "enum LibTypes.SchemaValue"
                             }
                           },
-                          "id": 27428,
+                          "id": 27431,
                           "nodeType": "ArrayTypeName",
                           "src": "1112:22:162",
                           "typeDescriptions": {
@@ -2787,7 +2787,7 @@
                           }
                         }
                       },
-                      "id": 27431,
+                      "id": 27434,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2808,34 +2808,34 @@
                       "typeString": "enum LibTypes.SchemaValue[] memory"
                     }
                   },
-                  "id": 27433,
+                  "id": 27436,
                   "nodeType": "ExpressionStatement",
                   "src": "1099:38:162"
                 },
                 {
                   "expression": {
-                    "id": 27438,
+                    "id": 27441,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27434,
+                        "id": 27437,
                         "name": "keys",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27411,
+                        "referencedDeclaration": 27414,
                         "src": "1148:4:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                           "typeString": "string memory[] memory"
                         }
                       },
-                      "id": 27436,
+                      "id": 27439,
                       "indexExpression": {
                         "hexValue": "30",
-                        "id": 27435,
+                        "id": 27438,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2864,7 +2864,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "6973416374697665",
-                      "id": 27437,
+                      "id": 27440,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2884,34 +2884,34 @@
                       "typeString": "string memory"
                     }
                   },
-                  "id": 27439,
+                  "id": 27442,
                   "nodeType": "ExpressionStatement",
                   "src": "1148:20:162"
                 },
                 {
                   "expression": {
-                    "id": 27446,
+                    "id": 27449,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27440,
+                        "id": 27443,
                         "name": "values",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27415,
+                        "referencedDeclaration": 27418,
                         "src": "1178:6:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_enum$_SchemaValue_$521_$dyn_memory_ptr",
                           "typeString": "enum LibTypes.SchemaValue[] memory"
                         }
                       },
-                      "id": 27442,
+                      "id": 27445,
                       "indexExpression": {
                         "hexValue": "30",
-                        "id": 27441,
+                        "id": 27444,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2941,7 +2941,7 @@
                     "rightHandSide": {
                       "expression": {
                         "expression": {
-                          "id": 27443,
+                          "id": 27446,
                           "name": "LibTypes",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -2952,7 +2952,7 @@
                             "typeString": "type(library LibTypes)"
                           }
                         },
-                        "id": 27444,
+                        "id": 27447,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2966,7 +2966,7 @@
                           "typeString": "type(enum LibTypes.SchemaValue)"
                         }
                       },
-                      "id": 27445,
+                      "id": 27448,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2986,34 +2986,34 @@
                       "typeString": "enum LibTypes.SchemaValue"
                     }
                   },
-                  "id": 27447,
+                  "id": 27450,
                   "nodeType": "ExpressionStatement",
                   "src": "1178:39:162"
                 },
                 {
                   "expression": {
-                    "id": 27452,
+                    "id": 27455,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27448,
+                        "id": 27451,
                         "name": "keys",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27411,
+                        "referencedDeclaration": 27414,
                         "src": "1228:4:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                           "typeString": "string memory[] memory"
                         }
                       },
-                      "id": 27450,
+                      "id": 27453,
                       "indexExpression": {
                         "hexValue": "31",
-                        "id": 27449,
+                        "id": 27452,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3042,7 +3042,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "6973466c69676874",
-                      "id": 27451,
+                      "id": 27454,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3062,34 +3062,34 @@
                       "typeString": "string memory"
                     }
                   },
-                  "id": 27453,
+                  "id": 27456,
                   "nodeType": "ExpressionStatement",
                   "src": "1228:20:162"
                 },
                 {
                   "expression": {
-                    "id": 27460,
+                    "id": 27463,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27454,
+                        "id": 27457,
                         "name": "values",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27415,
+                        "referencedDeclaration": 27418,
                         "src": "1258:6:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_enum$_SchemaValue_$521_$dyn_memory_ptr",
                           "typeString": "enum LibTypes.SchemaValue[] memory"
                         }
                       },
-                      "id": 27456,
+                      "id": 27459,
                       "indexExpression": {
                         "hexValue": "31",
-                        "id": 27455,
+                        "id": 27458,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3119,7 +3119,7 @@
                     "rightHandSide": {
                       "expression": {
                         "expression": {
-                          "id": 27457,
+                          "id": 27460,
                           "name": "LibTypes",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -3130,7 +3130,7 @@
                             "typeString": "type(library LibTypes)"
                           }
                         },
-                        "id": 27458,
+                        "id": 27461,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3144,7 +3144,7 @@
                           "typeString": "type(enum LibTypes.SchemaValue)"
                         }
                       },
-                      "id": 27459,
+                      "id": 27462,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3164,34 +3164,34 @@
                       "typeString": "enum LibTypes.SchemaValue"
                     }
                   },
-                  "id": 27461,
+                  "id": 27464,
                   "nodeType": "ExpressionStatement",
                   "src": "1258:39:162"
                 },
                 {
                   "expression": {
-                    "id": 27466,
+                    "id": 27469,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27462,
+                        "id": 27465,
                         "name": "keys",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27411,
+                        "referencedDeclaration": 27414,
                         "src": "1316:4:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                           "typeString": "string memory[] memory"
                         }
                       },
-                      "id": 27464,
+                      "id": 27467,
                       "indexExpression": {
                         "hexValue": "32",
-                        "id": 27463,
+                        "id": 27466,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3220,7 +3220,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "666c69676874",
-                      "id": 27465,
+                      "id": 27468,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3240,34 +3240,34 @@
                       "typeString": "string memory"
                     }
                   },
-                  "id": 27467,
+                  "id": 27470,
                   "nodeType": "ExpressionStatement",
                   "src": "1316:18:162"
                 },
                 {
                   "expression": {
-                    "id": 27474,
+                    "id": 27477,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27468,
+                        "id": 27471,
                         "name": "values",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27415,
+                        "referencedDeclaration": 27418,
                         "src": "1344:6:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_enum$_SchemaValue_$521_$dyn_memory_ptr",
                           "typeString": "enum LibTypes.SchemaValue[] memory"
                         }
                       },
-                      "id": 27470,
+                      "id": 27473,
                       "indexExpression": {
                         "hexValue": "32",
-                        "id": 27469,
+                        "id": 27472,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3297,7 +3297,7 @@
                     "rightHandSide": {
                       "expression": {
                         "expression": {
-                          "id": 27471,
+                          "id": 27474,
                           "name": "LibTypes",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -3308,7 +3308,7 @@
                             "typeString": "type(library LibTypes)"
                           }
                         },
-                        "id": 27472,
+                        "id": 27475,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3322,7 +3322,7 @@
                           "typeString": "type(enum LibTypes.SchemaValue)"
                         }
                       },
-                      "id": 27473,
+                      "id": 27476,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3342,34 +3342,34 @@
                       "typeString": "enum LibTypes.SchemaValue"
                     }
                   },
-                  "id": 27475,
+                  "id": 27478,
                   "nodeType": "ExpressionStatement",
                   "src": "1344:45:162"
                 },
                 {
                   "expression": {
-                    "id": 27480,
+                    "id": 27483,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27476,
+                        "id": 27479,
                         "name": "keys",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27411,
+                        "referencedDeclaration": 27414,
                         "src": "1400:4:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                           "typeString": "string memory[] memory"
                         }
                       },
-                      "id": 27478,
+                      "id": 27481,
                       "indexExpression": {
                         "hexValue": "33",
-                        "id": 27477,
+                        "id": 27480,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3398,7 +3398,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "6172726976616c",
-                      "id": 27479,
+                      "id": 27482,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3418,34 +3418,34 @@
                       "typeString": "string memory"
                     }
                   },
-                  "id": 27481,
+                  "id": 27484,
                   "nodeType": "ExpressionStatement",
                   "src": "1400:19:162"
                 },
                 {
                   "expression": {
-                    "id": 27488,
+                    "id": 27491,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27482,
+                        "id": 27485,
                         "name": "values",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27415,
+                        "referencedDeclaration": 27418,
                         "src": "1429:6:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_enum$_SchemaValue_$521_$dyn_memory_ptr",
                           "typeString": "enum LibTypes.SchemaValue[] memory"
                         }
                       },
-                      "id": 27484,
+                      "id": 27487,
                       "indexExpression": {
                         "hexValue": "33",
-                        "id": 27483,
+                        "id": 27486,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3475,7 +3475,7 @@
                     "rightHandSide": {
                       "expression": {
                         "expression": {
-                          "id": 27485,
+                          "id": 27488,
                           "name": "LibTypes",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -3486,7 +3486,7 @@
                             "typeString": "type(library LibTypes)"
                           }
                         },
-                        "id": 27486,
+                        "id": 27489,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3500,7 +3500,7 @@
                           "typeString": "type(enum LibTypes.SchemaValue)"
                         }
                       },
-                      "id": 27487,
+                      "id": 27490,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3520,34 +3520,34 @@
                       "typeString": "enum LibTypes.SchemaValue"
                     }
                   },
-                  "id": 27489,
+                  "id": 27492,
                   "nodeType": "ExpressionStatement",
                   "src": "1429:45:162"
                 },
                 {
                   "expression": {
-                    "id": 27494,
+                    "id": 27497,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27490,
+                        "id": 27493,
                         "name": "keys",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27411,
+                        "referencedDeclaration": 27414,
                         "src": "1485:4:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                           "typeString": "string memory[] memory"
                         }
                       },
-                      "id": 27492,
+                      "id": 27495,
                       "indexExpression": {
                         "hexValue": "34",
-                        "id": 27491,
+                        "id": 27494,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3576,7 +3576,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "64657374726f79",
-                      "id": 27493,
+                      "id": 27496,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3596,34 +3596,34 @@
                       "typeString": "string memory"
                     }
                   },
-                  "id": 27495,
+                  "id": 27498,
                   "nodeType": "ExpressionStatement",
                   "src": "1485:19:162"
                 },
                 {
                   "expression": {
-                    "id": 27502,
+                    "id": 27505,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27496,
+                        "id": 27499,
                         "name": "values",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27415,
+                        "referencedDeclaration": 27418,
                         "src": "1514:6:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_enum$_SchemaValue_$521_$dyn_memory_ptr",
                           "typeString": "enum LibTypes.SchemaValue[] memory"
                         }
                       },
-                      "id": 27498,
+                      "id": 27501,
                       "indexExpression": {
                         "hexValue": "34",
-                        "id": 27497,
+                        "id": 27500,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3653,7 +3653,7 @@
                     "rightHandSide": {
                       "expression": {
                         "expression": {
-                          "id": 27499,
+                          "id": 27502,
                           "name": "LibTypes",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -3664,7 +3664,7 @@
                             "typeString": "type(library LibTypes)"
                           }
                         },
-                        "id": 27500,
+                        "id": 27503,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3678,7 +3678,7 @@
                           "typeString": "type(enum LibTypes.SchemaValue)"
                         }
                       },
-                      "id": 27501,
+                      "id": 27504,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3698,34 +3698,34 @@
                       "typeString": "enum LibTypes.SchemaValue"
                     }
                   },
-                  "id": 27503,
+                  "id": 27506,
                   "nodeType": "ExpressionStatement",
                   "src": "1514:45:162"
                 },
                 {
                   "expression": {
-                    "id": 27508,
+                    "id": 27511,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27504,
+                        "id": 27507,
                         "name": "keys",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27411,
+                        "referencedDeclaration": 27414,
                         "src": "1570:4:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                           "typeString": "string memory[] memory"
                         }
                       },
-                      "id": 27506,
+                      "id": 27509,
                       "indexExpression": {
                         "hexValue": "35",
-                        "id": 27505,
+                        "id": 27508,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3754,7 +3754,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "62756666",
-                      "id": 27507,
+                      "id": 27510,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3774,34 +3774,34 @@
                       "typeString": "string memory"
                     }
                   },
-                  "id": 27509,
+                  "id": 27512,
                   "nodeType": "ExpressionStatement",
                   "src": "1570:16:162"
                 },
                 {
                   "expression": {
-                    "id": 27516,
+                    "id": 27519,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 27510,
+                        "id": 27513,
                         "name": "values",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27415,
+                        "referencedDeclaration": 27418,
                         "src": "1596:6:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_enum$_SchemaValue_$521_$dyn_memory_ptr",
                           "typeString": "enum LibTypes.SchemaValue[] memory"
                         }
                       },
-                      "id": 27512,
+                      "id": 27515,
                       "indexExpression": {
                         "hexValue": "35",
-                        "id": 27511,
+                        "id": 27514,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3831,7 +3831,7 @@
                     "rightHandSide": {
                       "expression": {
                         "expression": {
-                          "id": 27513,
+                          "id": 27516,
                           "name": "LibTypes",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -3842,7 +3842,7 @@
                             "typeString": "type(library LibTypes)"
                           }
                         },
-                        "id": 27514,
+                        "id": 27517,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3856,7 +3856,7 @@
                           "typeString": "type(enum LibTypes.SchemaValue)"
                         }
                       },
-                      "id": 27515,
+                      "id": 27518,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3876,7 +3876,7 @@
                       "typeString": "enum LibTypes.SchemaValue"
                     }
                   },
-                  "id": 27517,
+                  "id": 27520,
                   "nodeType": "ExpressionStatement",
                   "src": "1596:45:162"
                 }
@@ -3892,29 +3892,29 @@
             "name": "getSchema",
             "nameLocation": "919:9:162",
             "overrides": {
-              "id": 27408,
+              "id": 27411,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
               "src": "967:8:162"
             },
             "parameters": {
-              "id": 27407,
+              "id": 27410,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "928:2:162"
             },
             "returnParameters": {
-              "id": 27416,
+              "id": 27419,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27411,
+                  "id": 27414,
                   "mutability": "mutable",
                   "name": "keys",
                   "nameLocation": "1009:4:162",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27519,
+                  "scope": 27522,
                   "src": "993:20:162",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -3924,7 +3924,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 27409,
+                      "id": 27412,
                       "name": "string",
                       "nodeType": "ElementaryTypeName",
                       "src": "993:6:162",
@@ -3933,7 +3933,7 @@
                         "typeString": "string"
                       }
                     },
-                    "id": 27410,
+                    "id": 27413,
                     "nodeType": "ArrayTypeName",
                     "src": "993:8:162",
                     "typeDescriptions": {
@@ -3945,12 +3945,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 27415,
+                  "id": 27418,
                   "mutability": "mutable",
                   "name": "values",
                   "nameLocation": "1045:6:162",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27519,
+                  "scope": 27522,
                   "src": "1015:36:162",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -3960,10 +3960,10 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 27413,
+                      "id": 27416,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 27412,
+                        "id": 27415,
                         "name": "LibTypes.SchemaValue",
                         "nodeType": "IdentifierPath",
                         "referencedDeclaration": 521,
@@ -3976,7 +3976,7 @@
                         "typeString": "enum LibTypes.SchemaValue"
                       }
                     },
-                    "id": 27414,
+                    "id": 27417,
                     "nodeType": "ArrayTypeName",
                     "src": "1015:22:162",
                     "typeDescriptions": {
@@ -3989,18 +3989,18 @@
               ],
               "src": "992:60:162"
             },
-            "scope": 27598,
+            "scope": 27601,
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 27547,
+            "id": 27550,
             "nodeType": "FunctionDefinition",
             "src": "1654:278:162",
             "nodes": [],
             "body": {
-              "id": 27546,
+              "id": 27549,
               "nodeType": "Block",
               "src": "1750:182:162",
               "nodes": [],
@@ -4009,11 +4009,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 27528,
+                        "id": 27531,
                         "name": "entity",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27521,
+                        "referencedDeclaration": 27524,
                         "src": "1764:6:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4024,25 +4024,25 @@
                         "arguments": [
                           {
                             "expression": {
-                              "id": 27531,
+                              "id": 27534,
                               "name": "treasureEffect",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 27524,
+                              "referencedDeclaration": 27527,
                               "src": "1783:14:162",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TreasureEffect_$27394_memory_ptr",
+                                "typeIdentifier": "t_struct$_TreasureEffect_$27397_memory_ptr",
                                 "typeString": "struct TreasureEffect memory"
                               }
                             },
-                            "id": 27532,
+                            "id": 27535,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "isActive",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 27379,
+                            "referencedDeclaration": 27382,
                             "src": "1783:23:162",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint32",
@@ -4051,25 +4051,25 @@
                           },
                           {
                             "expression": {
-                              "id": 27533,
+                              "id": 27536,
                               "name": "treasureEffect",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 27524,
+                              "referencedDeclaration": 27527,
                               "src": "1808:14:162",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TreasureEffect_$27394_memory_ptr",
+                                "typeIdentifier": "t_struct$_TreasureEffect_$27397_memory_ptr",
                                 "typeString": "struct TreasureEffect memory"
                               }
                             },
-                            "id": 27534,
+                            "id": 27537,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "isFlight",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 27381,
+                            "referencedDeclaration": 27384,
                             "src": "1808:23:162",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint32",
@@ -4078,109 +4078,109 @@
                           },
                           {
                             "expression": {
-                              "id": 27535,
+                              "id": 27538,
                               "name": "treasureEffect",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 27524,
+                              "referencedDeclaration": 27527,
                               "src": "1833:14:162",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TreasureEffect_$27394_memory_ptr",
+                                "typeIdentifier": "t_struct$_TreasureEffect_$27397_memory_ptr",
                                 "typeString": "struct TreasureEffect memory"
                               }
                             },
-                            "id": 27536,
+                            "id": 27539,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "flight",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 27384,
+                            "referencedDeclaration": 27387,
                             "src": "1833:21:162",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                              "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                               "typeString": "struct Effect memory"
                             }
                           },
                           {
                             "expression": {
-                              "id": 27537,
+                              "id": 27540,
                               "name": "treasureEffect",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 27524,
+                              "referencedDeclaration": 27527,
                               "src": "1856:14:162",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TreasureEffect_$27394_memory_ptr",
+                                "typeIdentifier": "t_struct$_TreasureEffect_$27397_memory_ptr",
                                 "typeString": "struct TreasureEffect memory"
                               }
                             },
-                            "id": 27538,
+                            "id": 27541,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "arrival",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 27387,
+                            "referencedDeclaration": 27390,
                             "src": "1856:22:162",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                              "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                               "typeString": "struct Effect memory"
                             }
                           },
                           {
                             "expression": {
-                              "id": 27539,
+                              "id": 27542,
                               "name": "treasureEffect",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 27524,
+                              "referencedDeclaration": 27527,
                               "src": "1880:14:162",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TreasureEffect_$27394_memory_ptr",
+                                "typeIdentifier": "t_struct$_TreasureEffect_$27397_memory_ptr",
                                 "typeString": "struct TreasureEffect memory"
                               }
                             },
-                            "id": 27540,
+                            "id": 27543,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "destroy",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 27390,
+                            "referencedDeclaration": 27393,
                             "src": "1880:22:162",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                              "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                               "typeString": "struct Effect memory"
                             }
                           },
                           {
                             "expression": {
-                              "id": 27541,
+                              "id": 27544,
                               "name": "treasureEffect",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 27524,
+                              "referencedDeclaration": 27527,
                               "src": "1904:14:162",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_TreasureEffect_$27394_memory_ptr",
+                                "typeIdentifier": "t_struct$_TreasureEffect_$27397_memory_ptr",
                                 "typeString": "struct TreasureEffect memory"
                               }
                             },
-                            "id": 27542,
+                            "id": 27545,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "buff",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 27393,
+                            "referencedDeclaration": 27396,
                             "src": "1904:19:162",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                              "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                               "typeString": "struct Effect memory"
                             }
                           }
@@ -4196,24 +4196,24 @@
                               "typeString": "uint32"
                             },
                             {
-                              "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                              "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                               "typeString": "struct Effect memory"
                             },
                             {
-                              "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                              "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                               "typeString": "struct Effect memory"
                             },
                             {
-                              "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                              "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                               "typeString": "struct Effect memory"
                             },
                             {
-                              "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                              "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                               "typeString": "struct Effect memory"
                             }
                           ],
                           "expression": {
-                            "id": 27529,
+                            "id": 27532,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -4224,7 +4224,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 27530,
+                          "id": 27533,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4237,7 +4237,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 27543,
+                        "id": 27546,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4264,11 +4264,11 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 27527,
+                      "id": 27530,
                       "name": "set",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        27547,
+                        27550,
                         95
                       ],
                       "referencedDeclaration": 95,
@@ -4278,7 +4278,7 @@
                         "typeString": "function (uint256,bytes memory)"
                       }
                     },
-                    "id": 27544,
+                    "id": 27547,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4293,7 +4293,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 27545,
+                  "id": 27548,
                   "nodeType": "ExpressionStatement",
                   "src": "1760:165:162"
                 }
@@ -4306,17 +4306,17 @@
             "name": "set",
             "nameLocation": "1663:3:162",
             "parameters": {
-              "id": 27525,
+              "id": 27528,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27521,
+                  "id": 27524,
                   "mutability": "mutable",
                   "name": "entity",
                   "nameLocation": "1684:6:162",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27547,
+                  "scope": 27550,
                   "src": "1676:14:162",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4325,7 +4325,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 27520,
+                    "id": 27523,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1676:7:162",
@@ -4338,33 +4338,33 @@
                 },
                 {
                   "constant": false,
-                  "id": 27524,
+                  "id": 27527,
                   "mutability": "mutable",
                   "name": "treasureEffect",
                   "nameLocation": "1722:14:162",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27547,
+                  "scope": 27550,
                   "src": "1700:36:162",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TreasureEffect_$27394_memory_ptr",
+                    "typeIdentifier": "t_struct$_TreasureEffect_$27397_memory_ptr",
                     "typeString": "struct TreasureEffect"
                   },
                   "typeName": {
-                    "id": 27523,
+                    "id": 27526,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 27522,
+                      "id": 27525,
                       "name": "TreasureEffect",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 27394,
+                      "referencedDeclaration": 27397,
                       "src": "1700:14:162"
                     },
-                    "referencedDeclaration": 27394,
+                    "referencedDeclaration": 27397,
                     "src": "1700:14:162",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TreasureEffect_$27394_storage_ptr",
+                      "typeIdentifier": "t_struct$_TreasureEffect_$27397_storage_ptr",
                       "typeString": "struct TreasureEffect"
                     }
                   },
@@ -4374,45 +4374,45 @@
               "src": "1666:76:162"
             },
             "returnParameters": {
-              "id": 27526,
+              "id": 27529,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1750:0:162"
             },
-            "scope": 27598,
+            "scope": 27601,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 27597,
+            "id": 27600,
             "nodeType": "FunctionDefinition",
             "src": "1938:432:162",
             "nodes": [],
             "body": {
-              "id": 27596,
+              "id": 27599,
               "nodeType": "Block",
               "src": "2030:340:162",
               "nodes": [],
               "statements": [
                 {
                   "assignments": [
-                    27556,
-                    27558,
+                    27559,
                     27561,
                     27564,
                     27567,
-                    27570
+                    27570,
+                    27573
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 27556,
+                      "id": 27559,
                       "mutability": "mutable",
                       "name": "isActive",
                       "nameLocation": "2048:8:162",
                       "nodeType": "VariableDeclaration",
-                      "scope": 27596,
+                      "scope": 27599,
                       "src": "2041:15:162",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -4421,7 +4421,7 @@
                         "typeString": "uint32"
                       },
                       "typeName": {
-                        "id": 27555,
+                        "id": 27558,
                         "name": "uint32",
                         "nodeType": "ElementaryTypeName",
                         "src": "2041:6:162",
@@ -4434,12 +4434,12 @@
                     },
                     {
                       "constant": false,
-                      "id": 27558,
+                      "id": 27561,
                       "mutability": "mutable",
                       "name": "isFlight",
                       "nameLocation": "2065:8:162",
                       "nodeType": "VariableDeclaration",
-                      "scope": 27596,
+                      "scope": 27599,
                       "src": "2058:15:162",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -4448,7 +4448,7 @@
                         "typeString": "uint32"
                       },
                       "typeName": {
-                        "id": 27557,
+                        "id": 27560,
                         "name": "uint32",
                         "nodeType": "ElementaryTypeName",
                         "src": "2058:6:162",
@@ -4461,51 +4461,17 @@
                     },
                     {
                       "constant": false,
-                      "id": 27561,
+                      "id": 27564,
                       "mutability": "mutable",
                       "name": "flight",
                       "nameLocation": "2089:6:162",
                       "nodeType": "VariableDeclaration",
-                      "scope": 27596,
+                      "scope": 27599,
                       "src": "2075:20:162",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
-                        "typeString": "struct Effect"
-                      },
-                      "typeName": {
-                        "id": 27560,
-                        "nodeType": "UserDefinedTypeName",
-                        "pathNode": {
-                          "id": 27559,
-                          "name": "Effect",
-                          "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 27377,
-                          "src": "2075:6:162"
-                        },
-                        "referencedDeclaration": 27377,
-                        "src": "2075:6:162",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
-                          "typeString": "struct Effect"
-                        }
-                      },
-                      "visibility": "internal"
-                    },
-                    {
-                      "constant": false,
-                      "id": 27564,
-                      "mutability": "mutable",
-                      "name": "arrival",
-                      "nameLocation": "2111:7:162",
-                      "nodeType": "VariableDeclaration",
-                      "scope": 27596,
-                      "src": "2097:21:162",
-                      "stateVariable": false,
-                      "storageLocation": "memory",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                        "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                         "typeString": "struct Effect"
                       },
                       "typeName": {
@@ -4515,13 +4481,13 @@
                           "id": 27562,
                           "name": "Effect",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 27377,
-                          "src": "2097:6:162"
+                          "referencedDeclaration": 27380,
+                          "src": "2075:6:162"
                         },
-                        "referencedDeclaration": 27377,
-                        "src": "2097:6:162",
+                        "referencedDeclaration": 27380,
+                        "src": "2075:6:162",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
+                          "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
                           "typeString": "struct Effect"
                         }
                       },
@@ -4531,15 +4497,15 @@
                       "constant": false,
                       "id": 27567,
                       "mutability": "mutable",
-                      "name": "destroy",
-                      "nameLocation": "2134:7:162",
+                      "name": "arrival",
+                      "nameLocation": "2111:7:162",
                       "nodeType": "VariableDeclaration",
-                      "scope": 27596,
-                      "src": "2120:21:162",
+                      "scope": 27599,
+                      "src": "2097:21:162",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                        "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                         "typeString": "struct Effect"
                       },
                       "typeName": {
@@ -4549,13 +4515,13 @@
                           "id": 27565,
                           "name": "Effect",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 27377,
-                          "src": "2120:6:162"
+                          "referencedDeclaration": 27380,
+                          "src": "2097:6:162"
                         },
-                        "referencedDeclaration": 27377,
-                        "src": "2120:6:162",
+                        "referencedDeclaration": 27380,
+                        "src": "2097:6:162",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
+                          "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
                           "typeString": "struct Effect"
                         }
                       },
@@ -4565,15 +4531,15 @@
                       "constant": false,
                       "id": 27570,
                       "mutability": "mutable",
-                      "name": "buff",
-                      "nameLocation": "2157:4:162",
+                      "name": "destroy",
+                      "nameLocation": "2134:7:162",
                       "nodeType": "VariableDeclaration",
-                      "scope": 27596,
-                      "src": "2143:18:162",
+                      "scope": 27599,
+                      "src": "2120:21:162",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                        "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                         "typeString": "struct Effect"
                       },
                       "typeName": {
@@ -4583,30 +4549,64 @@
                           "id": 27568,
                           "name": "Effect",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 27377,
+                          "referencedDeclaration": 27380,
+                          "src": "2120:6:162"
+                        },
+                        "referencedDeclaration": 27380,
+                        "src": "2120:6:162",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
+                          "typeString": "struct Effect"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 27573,
+                      "mutability": "mutable",
+                      "name": "buff",
+                      "nameLocation": "2157:4:162",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 27599,
+                      "src": "2143:18:162",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
+                        "typeString": "struct Effect"
+                      },
+                      "typeName": {
+                        "id": 27572,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 27571,
+                          "name": "Effect",
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 27380,
                           "src": "2143:6:162"
                         },
-                        "referencedDeclaration": 27377,
+                        "referencedDeclaration": 27380,
                         "src": "2143:6:162",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Effect_$27377_storage_ptr",
+                          "typeIdentifier": "t_struct$_Effect_$27380_storage_ptr",
                           "typeString": "struct Effect"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 27586,
+                  "id": 27589,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
-                            "id": 27574,
+                            "id": 27577,
                             "name": "entity",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 27549,
+                            "referencedDeclaration": 27552,
                             "src": "2201:6:162",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -4621,7 +4621,7 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 27573,
+                          "id": 27576,
                           "name": "getRawValue",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -4632,7 +4632,7 @@
                             "typeString": "function (uint256) view returns (bytes memory)"
                           }
                         },
-                        "id": 27575,
+                        "id": 27578,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4650,7 +4650,7 @@
                       {
                         "components": [
                           {
-                            "id": 27577,
+                            "id": 27580,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -4662,7 +4662,7 @@
                               "typeString": "type(uint32)"
                             },
                             "typeName": {
-                              "id": 27576,
+                              "id": 27579,
                               "name": "uint32",
                               "nodeType": "ElementaryTypeName",
                               "src": "2223:6:162",
@@ -4670,7 +4670,7 @@
                             }
                           },
                           {
-                            "id": 27579,
+                            "id": 27582,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -4682,7 +4682,7 @@
                               "typeString": "type(uint32)"
                             },
                             "typeName": {
-                              "id": 27578,
+                              "id": 27581,
                               "name": "uint32",
                               "nodeType": "ElementaryTypeName",
                               "src": "2231:6:162",
@@ -4690,55 +4690,55 @@
                             }
                           },
                           {
-                            "id": 27580,
-                            "name": "Effect",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 27377,
-                            "src": "2239:6:162",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_Effect_$27377_storage_ptr_$",
-                              "typeString": "type(struct Effect storage pointer)"
-                            }
-                          },
-                          {
-                            "id": 27581,
-                            "name": "Effect",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 27377,
-                            "src": "2247:6:162",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_Effect_$27377_storage_ptr_$",
-                              "typeString": "type(struct Effect storage pointer)"
-                            }
-                          },
-                          {
-                            "id": 27582,
-                            "name": "Effect",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 27377,
-                            "src": "2255:6:162",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_Effect_$27377_storage_ptr_$",
-                              "typeString": "type(struct Effect storage pointer)"
-                            }
-                          },
-                          {
                             "id": 27583,
                             "name": "Effect",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 27377,
+                            "referencedDeclaration": 27380,
+                            "src": "2239:6:162",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_struct$_Effect_$27380_storage_ptr_$",
+                              "typeString": "type(struct Effect storage pointer)"
+                            }
+                          },
+                          {
+                            "id": 27584,
+                            "name": "Effect",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 27380,
+                            "src": "2247:6:162",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_struct$_Effect_$27380_storage_ptr_$",
+                              "typeString": "type(struct Effect storage pointer)"
+                            }
+                          },
+                          {
+                            "id": 27585,
+                            "name": "Effect",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 27380,
+                            "src": "2255:6:162",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_struct$_Effect_$27380_storage_ptr_$",
+                              "typeString": "type(struct Effect storage pointer)"
+                            }
+                          },
+                          {
+                            "id": 27586,
+                            "name": "Effect",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 27380,
                             "src": "2263:6:162",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_Effect_$27377_storage_ptr_$",
+                              "typeIdentifier": "t_type$_t_struct$_Effect_$27380_storage_ptr_$",
                               "typeString": "type(struct Effect storage pointer)"
                             }
                           }
                         ],
-                        "id": 27584,
+                        "id": 27587,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
@@ -4747,7 +4747,7 @@
                         "nodeType": "TupleExpression",
                         "src": "2222:48:162",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_tuple$_t_type$_t_uint32_$_$_t_type$_t_uint32_$_$_t_type$_t_struct$_Effect_$27377_storage_ptr_$_$_t_type$_t_struct$_Effect_$27377_storage_ptr_$_$_t_type$_t_struct$_Effect_$27377_storage_ptr_$_$_t_type$_t_struct$_Effect_$27377_storage_ptr_$_$",
+                          "typeIdentifier": "t_tuple$_t_type$_t_uint32_$_$_t_type$_t_uint32_$_$_t_type$_t_struct$_Effect_$27380_storage_ptr_$_$_t_type$_t_struct$_Effect_$27380_storage_ptr_$_$_t_type$_t_struct$_Effect_$27380_storage_ptr_$_$_t_type$_t_struct$_Effect_$27380_storage_ptr_$_$",
                           "typeString": "tuple(type(uint32),type(uint32),type(struct Effect storage pointer),type(struct Effect storage pointer),type(struct Effect storage pointer),type(struct Effect storage pointer))"
                         }
                       }
@@ -4759,12 +4759,12 @@
                           "typeString": "bytes memory"
                         },
                         {
-                          "typeIdentifier": "t_tuple$_t_type$_t_uint32_$_$_t_type$_t_uint32_$_$_t_type$_t_struct$_Effect_$27377_storage_ptr_$_$_t_type$_t_struct$_Effect_$27377_storage_ptr_$_$_t_type$_t_struct$_Effect_$27377_storage_ptr_$_$_t_type$_t_struct$_Effect_$27377_storage_ptr_$_$",
+                          "typeIdentifier": "t_tuple$_t_type$_t_uint32_$_$_t_type$_t_uint32_$_$_t_type$_t_struct$_Effect_$27380_storage_ptr_$_$_t_type$_t_struct$_Effect_$27380_storage_ptr_$_$_t_type$_t_struct$_Effect_$27380_storage_ptr_$_$_t_type$_t_struct$_Effect_$27380_storage_ptr_$_$",
                           "typeString": "tuple(type(uint32),type(uint32),type(struct Effect storage pointer),type(struct Effect storage pointer),type(struct Effect storage pointer),type(struct Effect storage pointer))"
                         }
                       ],
                       "expression": {
-                        "id": 27571,
+                        "id": 27574,
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -4775,7 +4775,7 @@
                           "typeString": "abi"
                         }
                       },
-                      "id": 27572,
+                      "id": 27575,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -4788,7 +4788,7 @@
                         "typeString": "function () pure"
                       }
                     },
-                    "id": 27585,
+                    "id": 27588,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4799,7 +4799,7 @@
                     "src": "2165:115:162",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$_t_uint32_$_t_uint32_$_t_struct$_Effect_$27377_memory_ptr_$_t_struct$_Effect_$27377_memory_ptr_$_t_struct$_Effect_$27377_memory_ptr_$_t_struct$_Effect_$27377_memory_ptr_$",
+                      "typeIdentifier": "t_tuple$_t_uint32_$_t_uint32_$_t_struct$_Effect_$27380_memory_ptr_$_t_struct$_Effect_$27380_memory_ptr_$_t_struct$_Effect_$27380_memory_ptr_$_t_struct$_Effect_$27380_memory_ptr_$",
                       "typeString": "tuple(uint32,uint32,struct Effect memory,struct Effect memory,struct Effect memory,struct Effect memory)"
                     }
                   },
@@ -4810,11 +4810,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 27588,
+                        "id": 27591,
                         "name": "isActive",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27556,
+                        "referencedDeclaration": 27559,
                         "src": "2312:8:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint32",
@@ -4822,11 +4822,11 @@
                         }
                       },
                       {
-                        "id": 27589,
+                        "id": 27592,
                         "name": "isFlight",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27558,
+                        "referencedDeclaration": 27561,
                         "src": "2322:8:162",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint32",
@@ -4834,50 +4834,50 @@
                         }
                       },
                       {
-                        "id": 27590,
+                        "id": 27593,
                         "name": "flight",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27561,
+                        "referencedDeclaration": 27564,
                         "src": "2332:6:162",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                          "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                           "typeString": "struct Effect memory"
                         }
                       },
                       {
-                        "id": 27591,
+                        "id": 27594,
                         "name": "arrival",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27564,
+                        "referencedDeclaration": 27567,
                         "src": "2340:7:162",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                          "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                           "typeString": "struct Effect memory"
                         }
                       },
                       {
-                        "id": 27592,
+                        "id": 27595,
                         "name": "destroy",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27567,
+                        "referencedDeclaration": 27570,
                         "src": "2349:7:162",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                          "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                           "typeString": "struct Effect memory"
                         }
                       },
                       {
-                        "id": 27593,
+                        "id": 27596,
                         "name": "buff",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27570,
+                        "referencedDeclaration": 27573,
                         "src": "2358:4:162",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                          "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                           "typeString": "struct Effect memory"
                         }
                       }
@@ -4893,34 +4893,34 @@
                           "typeString": "uint32"
                         },
                         {
-                          "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                          "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                           "typeString": "struct Effect memory"
                         },
                         {
-                          "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                          "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                           "typeString": "struct Effect memory"
                         },
                         {
-                          "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                          "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                           "typeString": "struct Effect memory"
                         },
                         {
-                          "typeIdentifier": "t_struct$_Effect_$27377_memory_ptr",
+                          "typeIdentifier": "t_struct$_Effect_$27380_memory_ptr",
                           "typeString": "struct Effect memory"
                         }
                       ],
-                      "id": 27587,
+                      "id": 27590,
                       "name": "TreasureEffect",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 27394,
+                      "referencedDeclaration": 27397,
                       "src": "2297:14:162",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_TreasureEffect_$27394_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_TreasureEffect_$27397_storage_ptr_$",
                         "typeString": "type(struct TreasureEffect storage pointer)"
                       }
                     },
-                    "id": 27594,
+                    "id": 27597,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4931,12 +4931,12 @@
                     "src": "2297:66:162",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TreasureEffect_$27394_memory_ptr",
+                      "typeIdentifier": "t_struct$_TreasureEffect_$27397_memory_ptr",
                       "typeString": "struct TreasureEffect memory"
                     }
                   },
-                  "functionReturnParameters": 27554,
-                  "id": 27595,
+                  "functionReturnParameters": 27557,
+                  "id": 27598,
                   "nodeType": "Return",
                   "src": "2290:73:162"
                 }
@@ -4949,17 +4949,17 @@
             "name": "getValue",
             "nameLocation": "1947:8:162",
             "parameters": {
-              "id": 27550,
+              "id": 27553,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27549,
+                  "id": 27552,
                   "mutability": "mutable",
                   "name": "entity",
                   "nameLocation": "1973:6:162",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27597,
+                  "scope": 27600,
                   "src": "1965:14:162",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4968,7 +4968,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 27548,
+                    "id": 27551,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1965:7:162",
@@ -4983,38 +4983,38 @@
               "src": "1955:30:162"
             },
             "returnParameters": {
-              "id": 27554,
+              "id": 27557,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27553,
+                  "id": 27556,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27597,
+                  "scope": 27600,
                   "src": "2007:21:162",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TreasureEffect_$27394_memory_ptr",
+                    "typeIdentifier": "t_struct$_TreasureEffect_$27397_memory_ptr",
                     "typeString": "struct TreasureEffect"
                   },
                   "typeName": {
-                    "id": 27552,
+                    "id": 27555,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 27551,
+                      "id": 27554,
                       "name": "TreasureEffect",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 27394,
+                      "referencedDeclaration": 27397,
                       "src": "2007:14:162"
                     },
-                    "referencedDeclaration": 27394,
+                    "referencedDeclaration": 27397,
                     "src": "2007:14:162",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TreasureEffect_$27394_storage_ptr",
+                      "typeIdentifier": "t_struct$_TreasureEffect_$27397_storage_ptr",
                       "typeString": "struct TreasureEffect"
                     }
                   },
@@ -5023,7 +5023,7 @@
               ],
               "src": "2006:23:162"
             },
-            "scope": 27598,
+            "scope": 27601,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
@@ -5033,13 +5033,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 27395,
+              "id": 27398,
               "name": "BareComponent",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 220,
               "src": "830:13:162"
             },
-            "id": 27396,
+            "id": 27399,
             "nodeType": "InheritanceSpecifier",
             "src": "830:13:162"
           }
@@ -5049,27 +5049,27 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          27598,
+          27601,
           220,
-          73794,
-          73998,
+          74016,
+          74220,
           2536,
-          75829,
-          76248,
-          75705,
+          76051,
+          76470,
+          75927,
           1440,
-          75572,
+          75794,
           2579,
-          75839
+          76061
         ],
         "name": "TreasureEffectComponent",
         "nameLocation": "803:23:162",
-        "scope": 27599,
+        "scope": 27602,
         "usedErrors": [
           20,
-          73719,
-          76245,
-          76247
+          73941,
+          76467,
+          76469
         ]
       }
     ],

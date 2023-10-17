@@ -1125,13 +1125,13 @@
   },
   "ast": {
     "absolutePath": "src/components/ShieldAreaPositionComponent.sol",
-    "id": 24284,
+    "id": 24287,
     "exportedSymbols": {
       "ID": [
-        24270
+        24273
       ],
       "ShieldAreaPositionComponent": [
-        24283
+        24286
       ],
       "Uint256Component": [
         1370
@@ -1141,7 +1141,7 @@
     "src": "32:304:136",
     "nodes": [
       {
-        "id": 24260,
+        "id": 24263,
         "nodeType": "PragmaDirective",
         "src": "32:24:136",
         "nodes": [],
@@ -1153,19 +1153,19 @@
         ]
       },
       {
-        "id": 24262,
+        "id": 24265,
         "nodeType": "ImportDirective",
         "src": "57:79:136",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/std-contracts/src/components/Uint256Component.sol",
         "file": "std-contracts/components/Uint256Component.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 24284,
+        "scope": 24287,
         "sourceUnit": 2132,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 24261,
+              "id": 24264,
               "name": "Uint256Component",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1179,7 +1179,7 @@
         "unitAlias": ""
       },
       {
-        "id": 24270,
+        "id": 24273,
         "nodeType": "VariableDeclaration",
         "src": "138:72:136",
         "nodes": [],
@@ -1187,7 +1187,7 @@
         "mutability": "constant",
         "name": "ID",
         "nameLocation": "155:2:136",
-        "scope": 24284,
+        "scope": 24287,
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
@@ -1195,7 +1195,7 @@
           "typeString": "uint256"
         },
         "typeName": {
-          "id": 24263,
+          "id": 24266,
           "name": "uint256",
           "nodeType": "ElementaryTypeName",
           "src": "138:7:136",
@@ -1210,7 +1210,7 @@
               "arguments": [
                 {
                   "hexValue": "636f6d706f6e656e742e536869656c6441726561506f736974696f6e",
-                  "id": 24267,
+                  "id": 24270,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1232,7 +1232,7 @@
                     "typeString": "literal_string \"component.ShieldAreaPosition\""
                   }
                 ],
-                "id": 24266,
+                "id": 24269,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -1243,7 +1243,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 24268,
+              "id": 24271,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1266,7 +1266,7 @@
                 "typeString": "bytes32"
               }
             ],
-            "id": 24265,
+            "id": 24268,
             "isConstant": false,
             "isLValue": false,
             "isPure": true,
@@ -1278,14 +1278,14 @@
               "typeString": "type(uint256)"
             },
             "typeName": {
-              "id": 24264,
+              "id": 24267,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "160:7:136",
               "typeDescriptions": {}
             }
           },
-          "id": 24269,
+          "id": 24272,
           "isConstant": false,
           "isLValue": false,
           "isPure": true,
@@ -1303,17 +1303,17 @@
         "visibility": "internal"
       },
       {
-        "id": 24283,
+        "id": 24286,
         "nodeType": "ContractDefinition",
         "src": "213:122:136",
         "nodes": [
           {
-            "id": 24282,
+            "id": 24285,
             "nodeType": "FunctionDefinition",
             "src": "276:57:136",
             "nodes": [],
             "body": {
-              "id": 24281,
+              "id": 24284,
               "nodeType": "Block",
               "src": "331:2:136",
               "nodes": [],
@@ -1325,11 +1325,11 @@
               {
                 "arguments": [
                   {
-                    "id": 24277,
+                    "id": 24280,
                     "name": "world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 24274,
+                    "referencedDeclaration": 24277,
                     "src": "320:5:136",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1337,11 +1337,11 @@
                     }
                   },
                   {
-                    "id": 24278,
+                    "id": 24281,
                     "name": "ID",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 24270,
+                    "referencedDeclaration": 24273,
                     "src": "327:2:136",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -1349,10 +1349,10 @@
                     }
                   }
                 ],
-                "id": 24279,
+                "id": 24282,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 24276,
+                  "id": 24279,
                   "name": "Uint256Component",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 1370,
@@ -1365,17 +1365,17 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 24275,
+              "id": 24278,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 24274,
+                  "id": 24277,
                   "mutability": "mutable",
                   "name": "world",
                   "nameLocation": "296:5:136",
                   "nodeType": "VariableDeclaration",
-                  "scope": 24282,
+                  "scope": 24285,
                   "src": "288:13:136",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1384,7 +1384,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 24273,
+                    "id": 24276,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "288:7:136",
@@ -1400,12 +1400,12 @@
               "src": "287:15:136"
             },
             "returnParameters": {
-              "id": 24280,
+              "id": 24283,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "331:0:136"
             },
-            "scope": 24283,
+            "scope": 24286,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -1415,49 +1415,49 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 24271,
+              "id": 24274,
               "name": "Uint256Component",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 1370,
               "src": "253:16:136"
             },
-            "id": 24272,
+            "id": 24275,
             "nodeType": "InheritanceSpecifier",
             "src": "253:16:136"
           }
         ],
         "canonicalName": "ShieldAreaPositionComponent",
         "contractDependencies": [
-          73704,
-          73960
+          73926,
+          74182
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          24283,
+          24286,
           1370,
           1469,
           483,
           220,
-          73794,
-          73998,
+          74016,
+          74220,
           2536,
-          75829,
-          76248,
-          75705,
+          76051,
+          76470,
+          75927,
           1440,
-          75572,
+          75794,
           2579,
-          75839
+          76061
         ],
         "name": "ShieldAreaPositionComponent",
         "nameLocation": "222:27:136",
-        "scope": 24284,
+        "scope": 24287,
         "usedErrors": [
           20,
-          73719,
-          76245,
-          76247
+          73941,
+          76467,
+          76469
         ]
       }
     ],

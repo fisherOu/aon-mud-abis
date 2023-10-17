@@ -1125,13 +1125,13 @@
   },
   "ast": {
     "absolutePath": "src/components/TriggerRemoveComponentsComponent.sol",
-    "id": 29255,
+    "id": 29258,
     "exportedSymbols": {
       "ID": [
-        29241
+        29244
       ],
       "TriggerRemoveComponentsComponent": [
-        29254
+        29257
       ],
       "Uint256Component": [
         1370
@@ -1141,7 +1141,7 @@
     "src": "32:314:172",
     "nodes": [
       {
-        "id": 29231,
+        "id": 29234,
         "nodeType": "PragmaDirective",
         "src": "32:24:172",
         "nodes": [],
@@ -1153,19 +1153,19 @@
         ]
       },
       {
-        "id": 29233,
+        "id": 29236,
         "nodeType": "ImportDirective",
         "src": "57:79:172",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/std-contracts/src/components/Uint256Component.sol",
         "file": "std-contracts/components/Uint256Component.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29255,
+        "scope": 29258,
         "sourceUnit": 2132,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29232,
+              "id": 29235,
               "name": "Uint256Component",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1179,7 +1179,7 @@
         "unitAlias": ""
       },
       {
-        "id": 29241,
+        "id": 29244,
         "nodeType": "VariableDeclaration",
         "src": "138:77:172",
         "nodes": [],
@@ -1187,7 +1187,7 @@
         "mutability": "constant",
         "name": "ID",
         "nameLocation": "155:2:172",
-        "scope": 29255,
+        "scope": 29258,
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
@@ -1195,7 +1195,7 @@
           "typeString": "uint256"
         },
         "typeName": {
-          "id": 29234,
+          "id": 29237,
           "name": "uint256",
           "nodeType": "ElementaryTypeName",
           "src": "138:7:172",
@@ -1210,7 +1210,7 @@
               "arguments": [
                 {
                   "hexValue": "636f6d706f6e656e742e5472696767657252656d6f7665436f6d706f6e656e7473",
-                  "id": 29238,
+                  "id": 29241,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1232,7 +1232,7 @@
                     "typeString": "literal_string \"component.TriggerRemoveComponents\""
                   }
                 ],
-                "id": 29237,
+                "id": 29240,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -1243,7 +1243,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 29239,
+              "id": 29242,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1266,7 +1266,7 @@
                 "typeString": "bytes32"
               }
             ],
-            "id": 29236,
+            "id": 29239,
             "isConstant": false,
             "isLValue": false,
             "isPure": true,
@@ -1278,14 +1278,14 @@
               "typeString": "type(uint256)"
             },
             "typeName": {
-              "id": 29235,
+              "id": 29238,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "160:7:172",
               "typeDescriptions": {}
             }
           },
-          "id": 29240,
+          "id": 29243,
           "isConstant": false,
           "isLValue": false,
           "isPure": true,
@@ -1303,17 +1303,17 @@
         "visibility": "internal"
       },
       {
-        "id": 29254,
+        "id": 29257,
         "nodeType": "ContractDefinition",
         "src": "218:127:172",
         "nodes": [
           {
-            "id": 29253,
+            "id": 29256,
             "nodeType": "FunctionDefinition",
             "src": "286:57:172",
             "nodes": [],
             "body": {
-              "id": 29252,
+              "id": 29255,
               "nodeType": "Block",
               "src": "341:2:172",
               "nodes": [],
@@ -1325,11 +1325,11 @@
               {
                 "arguments": [
                   {
-                    "id": 29248,
+                    "id": 29251,
                     "name": "world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 29245,
+                    "referencedDeclaration": 29248,
                     "src": "330:5:172",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1337,11 +1337,11 @@
                     }
                   },
                   {
-                    "id": 29249,
+                    "id": 29252,
                     "name": "ID",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 29241,
+                    "referencedDeclaration": 29244,
                     "src": "337:2:172",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -1349,10 +1349,10 @@
                     }
                   }
                 ],
-                "id": 29250,
+                "id": 29253,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 29247,
+                  "id": 29250,
                   "name": "Uint256Component",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 1370,
@@ -1365,17 +1365,17 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 29246,
+              "id": 29249,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29245,
+                  "id": 29248,
                   "mutability": "mutable",
                   "name": "world",
                   "nameLocation": "306:5:172",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29253,
+                  "scope": 29256,
                   "src": "298:13:172",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1384,7 +1384,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 29244,
+                    "id": 29247,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "298:7:172",
@@ -1400,12 +1400,12 @@
               "src": "297:15:172"
             },
             "returnParameters": {
-              "id": 29251,
+              "id": 29254,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "341:0:172"
             },
-            "scope": 29254,
+            "scope": 29257,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -1415,49 +1415,49 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 29242,
+              "id": 29245,
               "name": "Uint256Component",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 1370,
               "src": "263:16:172"
             },
-            "id": 29243,
+            "id": 29246,
             "nodeType": "InheritanceSpecifier",
             "src": "263:16:172"
           }
         ],
         "canonicalName": "TriggerRemoveComponentsComponent",
         "contractDependencies": [
-          73704,
-          73960
+          73926,
+          74182
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          29254,
+          29257,
           1370,
           1469,
           483,
           220,
-          73794,
-          73998,
+          74016,
+          74220,
           2536,
-          75829,
-          76248,
-          75705,
+          76051,
+          76470,
+          75927,
           1440,
-          75572,
+          75794,
           2579,
-          75839
+          76061
         ],
         "name": "TriggerRemoveComponentsComponent",
         "nameLocation": "227:32:172",
-        "scope": 29255,
+        "scope": 29258,
         "usedErrors": [
           20,
-          73719,
-          76245,
-          76247
+          73941,
+          76467,
+          76469
         ]
       }
     ],

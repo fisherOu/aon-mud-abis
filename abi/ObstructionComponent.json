@@ -1107,23 +1107,23 @@
   },
   "ast": {
     "absolutePath": "src/components/ObstructionComponent.sol",
-    "id": 22602,
+    "id": 22605,
     "exportedSymbols": {
       "BoolComponent": [
         1984
       ],
       "ID": [
-        22588
+        22591
       ],
       "ObstructionComponent": [
-        22601
+        22604
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:278:115",
     "nodes": [
       {
-        "id": 22578,
+        "id": 22581,
         "nodeType": "PragmaDirective",
         "src": "32:24:115",
         "nodes": [],
@@ -1135,19 +1135,19 @@
         ]
       },
       {
-        "id": 22580,
+        "id": 22583,
         "nodeType": "ImportDirective",
         "src": "57:75:115",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/std-contracts/src/components/BoolComponent.sol",
         "file": "std-contracts/components/BoolComponent.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 22602,
+        "scope": 22605,
         "sourceUnit": 1985,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 22579,
+              "id": 22582,
               "name": "BoolComponent",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1161,7 +1161,7 @@
         "unitAlias": ""
       },
       {
-        "id": 22588,
+        "id": 22591,
         "nodeType": "VariableDeclaration",
         "src": "134:65:115",
         "nodes": [],
@@ -1169,7 +1169,7 @@
         "mutability": "constant",
         "name": "ID",
         "nameLocation": "151:2:115",
-        "scope": 22602,
+        "scope": 22605,
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
@@ -1177,7 +1177,7 @@
           "typeString": "uint256"
         },
         "typeName": {
-          "id": 22581,
+          "id": 22584,
           "name": "uint256",
           "nodeType": "ElementaryTypeName",
           "src": "134:7:115",
@@ -1192,7 +1192,7 @@
               "arguments": [
                 {
                   "hexValue": "636f6d706f6e656e742e4f62737472756374696f6e",
-                  "id": 22585,
+                  "id": 22588,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1214,7 +1214,7 @@
                     "typeString": "literal_string \"component.Obstruction\""
                   }
                 ],
-                "id": 22584,
+                "id": 22587,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -1225,7 +1225,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 22586,
+              "id": 22589,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1248,7 +1248,7 @@
                 "typeString": "bytes32"
               }
             ],
-            "id": 22583,
+            "id": 22586,
             "isConstant": false,
             "isLValue": false,
             "isPure": true,
@@ -1260,14 +1260,14 @@
               "typeString": "type(uint256)"
             },
             "typeName": {
-              "id": 22582,
+              "id": 22585,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "156:7:115",
               "typeDescriptions": {}
             }
           },
-          "id": 22587,
+          "id": 22590,
           "isConstant": false,
           "isLValue": false,
           "isPure": true,
@@ -1285,17 +1285,17 @@
         "visibility": "internal"
       },
       {
-        "id": 22601,
+        "id": 22604,
         "nodeType": "ContractDefinition",
         "src": "202:107:115",
         "nodes": [
           {
-            "id": 22600,
+            "id": 22603,
             "nodeType": "FunctionDefinition",
             "src": "253:54:115",
             "nodes": [],
             "body": {
-              "id": 22599,
+              "id": 22602,
               "nodeType": "Block",
               "src": "305:2:115",
               "nodes": [],
@@ -1307,11 +1307,11 @@
               {
                 "arguments": [
                   {
-                    "id": 22595,
+                    "id": 22598,
                     "name": "world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 22592,
+                    "referencedDeclaration": 22595,
                     "src": "294:5:115",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1319,11 +1319,11 @@
                     }
                   },
                   {
-                    "id": 22596,
+                    "id": 22599,
                     "name": "ID",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 22588,
+                    "referencedDeclaration": 22591,
                     "src": "301:2:115",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -1331,10 +1331,10 @@
                     }
                   }
                 ],
-                "id": 22597,
+                "id": 22600,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 22594,
+                  "id": 22597,
                   "name": "BoolComponent",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 1984,
@@ -1347,17 +1347,17 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 22593,
+              "id": 22596,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 22592,
+                  "id": 22595,
                   "mutability": "mutable",
                   "name": "world",
                   "nameLocation": "273:5:115",
                   "nodeType": "VariableDeclaration",
-                  "scope": 22600,
+                  "scope": 22603,
                   "src": "265:13:115",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1366,7 +1366,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 22591,
+                    "id": 22594,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "265:7:115",
@@ -1382,12 +1382,12 @@
               "src": "264:15:115"
             },
             "returnParameters": {
-              "id": 22598,
+              "id": 22601,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "305:0:115"
             },
-            "scope": 22601,
+            "scope": 22604,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -1397,48 +1397,48 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 22589,
+              "id": 22592,
               "name": "BoolComponent",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 1984,
               "src": "235:13:115"
             },
-            "id": 22590,
+            "id": 22593,
             "nodeType": "InheritanceSpecifier",
             "src": "235:13:115"
           }
         ],
         "canonicalName": "ObstructionComponent",
         "contractDependencies": [
-          73704,
-          73960
+          73926,
+          74182
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          22601,
+          22604,
           1984,
           483,
           220,
-          73794,
-          73998,
+          74016,
+          74220,
           2536,
-          75829,
-          76248,
-          75705,
+          76051,
+          76470,
+          75927,
           1440,
-          75572,
+          75794,
           2579,
-          75839
+          76061
         ],
         "name": "ObstructionComponent",
         "nameLocation": "211:20:115",
-        "scope": 22602,
+        "scope": 22605,
         "usedErrors": [
           20,
-          73719,
-          76245,
-          76247
+          73941,
+          76467,
+          76469
         ]
       }
     ],

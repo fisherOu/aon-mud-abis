@@ -1107,7 +1107,7 @@
   },
   "ast": {
     "absolutePath": "src/components/TreasurePickedComponent.sol",
-    "id": 28791,
+    "id": 28794,
     "exportedSymbols": {
       "BareComponent": [
         220
@@ -1119,10 +1119,10 @@
         483
       ],
       "ID": [
-        28777
+        28780
       ],
       "IEntityIndexer": [
-        73979
+        74201
       ],
       "IWorld": [
         1582
@@ -1131,20 +1131,20 @@
         522
       ],
       "MapSet": [
-        73704
+        73926
       ],
       "Set": [
-        73960
+        74182
       ],
       "TreasurePickedComponent": [
-        28790
+        28793
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:261:169",
     "nodes": [
       {
-        "id": 28768,
+        "id": 28771,
         "nodeType": "PragmaDirective",
         "src": "32:24:169",
         "nodes": [],
@@ -1156,20 +1156,20 @@
         ]
       },
       {
-        "id": 28769,
+        "id": 28772,
         "nodeType": "ImportDirective",
         "src": "57:52:169",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/std-contracts/src/components/BoolComponent.sol",
         "file": "std-contracts/components/BoolComponent.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 28791,
+        "scope": 28794,
         "sourceUnit": 1985,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 28777,
+        "id": 28780,
         "nodeType": "VariableDeclaration",
         "src": "111:68:169",
         "nodes": [],
@@ -1177,7 +1177,7 @@
         "mutability": "constant",
         "name": "ID",
         "nameLocation": "128:2:169",
-        "scope": 28791,
+        "scope": 28794,
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
@@ -1185,7 +1185,7 @@
           "typeString": "uint256"
         },
         "typeName": {
-          "id": 28770,
+          "id": 28773,
           "name": "uint256",
           "nodeType": "ElementaryTypeName",
           "src": "111:7:169",
@@ -1200,7 +1200,7 @@
               "arguments": [
                 {
                   "hexValue": "636f6d706f6e656e742e54726561737572655069636b6564",
-                  "id": 28774,
+                  "id": 28777,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1222,7 +1222,7 @@
                     "typeString": "literal_string \"component.TreasurePicked\""
                   }
                 ],
-                "id": 28773,
+                "id": 28776,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -1233,7 +1233,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 28775,
+              "id": 28778,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1256,7 +1256,7 @@
                 "typeString": "bytes32"
               }
             ],
-            "id": 28772,
+            "id": 28775,
             "isConstant": false,
             "isLValue": false,
             "isPure": true,
@@ -1268,14 +1268,14 @@
               "typeString": "type(uint256)"
             },
             "typeName": {
-              "id": 28771,
+              "id": 28774,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "133:7:169",
               "typeDescriptions": {}
             }
           },
-          "id": 28776,
+          "id": 28779,
           "isConstant": false,
           "isLValue": false,
           "isPure": true,
@@ -1293,17 +1293,17 @@
         "visibility": "internal"
       },
       {
-        "id": 28790,
+        "id": 28793,
         "nodeType": "ContractDefinition",
         "src": "182:110:169",
         "nodes": [
           {
-            "id": 28789,
+            "id": 28792,
             "nodeType": "FunctionDefinition",
             "src": "236:54:169",
             "nodes": [],
             "body": {
-              "id": 28788,
+              "id": 28791,
               "nodeType": "Block",
               "src": "288:2:169",
               "nodes": [],
@@ -1315,11 +1315,11 @@
               {
                 "arguments": [
                   {
-                    "id": 28784,
+                    "id": 28787,
                     "name": "world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 28781,
+                    "referencedDeclaration": 28784,
                     "src": "277:5:169",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1327,11 +1327,11 @@
                     }
                   },
                   {
-                    "id": 28785,
+                    "id": 28788,
                     "name": "ID",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 28777,
+                    "referencedDeclaration": 28780,
                     "src": "284:2:169",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -1339,10 +1339,10 @@
                     }
                   }
                 ],
-                "id": 28786,
+                "id": 28789,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 28783,
+                  "id": 28786,
                   "name": "BoolComponent",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 1984,
@@ -1355,17 +1355,17 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 28782,
+              "id": 28785,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 28781,
+                  "id": 28784,
                   "mutability": "mutable",
                   "name": "world",
                   "nameLocation": "256:5:169",
                   "nodeType": "VariableDeclaration",
-                  "scope": 28789,
+                  "scope": 28792,
                   "src": "248:13:169",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1374,7 +1374,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 28780,
+                    "id": 28783,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "248:7:169",
@@ -1390,12 +1390,12 @@
               "src": "247:15:169"
             },
             "returnParameters": {
-              "id": 28787,
+              "id": 28790,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "288:0:169"
             },
-            "scope": 28790,
+            "scope": 28793,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -1405,48 +1405,48 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 28778,
+              "id": 28781,
               "name": "BoolComponent",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 1984,
               "src": "218:13:169"
             },
-            "id": 28779,
+            "id": 28782,
             "nodeType": "InheritanceSpecifier",
             "src": "218:13:169"
           }
         ],
         "canonicalName": "TreasurePickedComponent",
         "contractDependencies": [
-          73704,
-          73960
+          73926,
+          74182
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          28790,
+          28793,
           1984,
           483,
           220,
-          73794,
-          73998,
+          74016,
+          74220,
           2536,
-          75829,
-          76248,
-          75705,
+          76051,
+          76470,
+          75927,
           1440,
-          75572,
+          75794,
           2579,
-          75839
+          76061
         ],
         "name": "TreasurePickedComponent",
         "nameLocation": "191:23:169",
-        "scope": 28791,
+        "scope": 28794,
         "usedErrors": [
           20,
-          73719,
-          76245,
-          76247
+          73941,
+          76467,
+          76469
         ]
       }
     ],

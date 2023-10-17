@@ -1125,13 +1125,13 @@
   },
   "ast": {
     "absolutePath": "src/components/SilverAmountComponent.sol",
-    "id": 24521,
+    "id": 24524,
     "exportedSymbols": {
       "ID": [
-        24507
+        24510
       ],
       "SilverAmountComponent": [
-        24520
+        24523
       ],
       "Uint256Component": [
         1370
@@ -1141,7 +1141,7 @@
     "src": "32:292:140",
     "nodes": [
       {
-        "id": 24497,
+        "id": 24500,
         "nodeType": "PragmaDirective",
         "src": "32:24:140",
         "nodes": [],
@@ -1153,19 +1153,19 @@
         ]
       },
       {
-        "id": 24499,
+        "id": 24502,
         "nodeType": "ImportDirective",
         "src": "57:81:140",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/std-contracts/src/components/Uint256Component.sol",
         "file": "std-contracts/components/Uint256Component.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 24521,
+        "scope": 24524,
         "sourceUnit": 2132,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 24498,
+              "id": 24501,
               "name": "Uint256Component",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -1179,7 +1179,7 @@
         "unitAlias": ""
       },
       {
-        "id": 24507,
+        "id": 24510,
         "nodeType": "VariableDeclaration",
         "src": "140:66:140",
         "nodes": [],
@@ -1187,7 +1187,7 @@
         "mutability": "constant",
         "name": "ID",
         "nameLocation": "157:2:140",
-        "scope": 24521,
+        "scope": 24524,
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
@@ -1195,7 +1195,7 @@
           "typeString": "uint256"
         },
         "typeName": {
-          "id": 24500,
+          "id": 24503,
           "name": "uint256",
           "nodeType": "ElementaryTypeName",
           "src": "140:7:140",
@@ -1210,7 +1210,7 @@
               "arguments": [
                 {
                   "hexValue": "636f6d706f6e656e742e53696c766572416d6f756e74",
-                  "id": 24504,
+                  "id": 24507,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1232,7 +1232,7 @@
                     "typeString": "literal_string \"component.SilverAmount\""
                   }
                 ],
-                "id": 24503,
+                "id": 24506,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -1243,7 +1243,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 24505,
+              "id": 24508,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1266,7 +1266,7 @@
                 "typeString": "bytes32"
               }
             ],
-            "id": 24502,
+            "id": 24505,
             "isConstant": false,
             "isLValue": false,
             "isPure": true,
@@ -1278,14 +1278,14 @@
               "typeString": "type(uint256)"
             },
             "typeName": {
-              "id": 24501,
+              "id": 24504,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "162:7:140",
               "typeDescriptions": {}
             }
           },
-          "id": 24506,
+          "id": 24509,
           "isConstant": false,
           "isLValue": false,
           "isPure": true,
@@ -1303,17 +1303,17 @@
         "visibility": "internal"
       },
       {
-        "id": 24520,
+        "id": 24523,
         "nodeType": "ContractDefinition",
         "src": "209:114:140",
         "nodes": [
           {
-            "id": 24519,
+            "id": 24522,
             "nodeType": "FunctionDefinition",
             "src": "264:57:140",
             "nodes": [],
             "body": {
-              "id": 24518,
+              "id": 24521,
               "nodeType": "Block",
               "src": "319:2:140",
               "nodes": [],
@@ -1325,11 +1325,11 @@
               {
                 "arguments": [
                   {
-                    "id": 24514,
+                    "id": 24517,
                     "name": "world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 24511,
+                    "referencedDeclaration": 24514,
                     "src": "308:5:140",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1337,11 +1337,11 @@
                     }
                   },
                   {
-                    "id": 24515,
+                    "id": 24518,
                     "name": "ID",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 24507,
+                    "referencedDeclaration": 24510,
                     "src": "315:2:140",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -1349,10 +1349,10 @@
                     }
                   }
                 ],
-                "id": 24516,
+                "id": 24519,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 24513,
+                  "id": 24516,
                   "name": "Uint256Component",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 1370,
@@ -1365,17 +1365,17 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 24512,
+              "id": 24515,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 24511,
+                  "id": 24514,
                   "mutability": "mutable",
                   "name": "world",
                   "nameLocation": "284:5:140",
                   "nodeType": "VariableDeclaration",
-                  "scope": 24519,
+                  "scope": 24522,
                   "src": "276:13:140",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1384,7 +1384,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 24510,
+                    "id": 24513,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "276:7:140",
@@ -1400,12 +1400,12 @@
               "src": "275:15:140"
             },
             "returnParameters": {
-              "id": 24517,
+              "id": 24520,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "319:0:140"
             },
-            "scope": 24520,
+            "scope": 24523,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -1415,49 +1415,49 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 24508,
+              "id": 24511,
               "name": "Uint256Component",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 1370,
               "src": "243:16:140"
             },
-            "id": 24509,
+            "id": 24512,
             "nodeType": "InheritanceSpecifier",
             "src": "243:16:140"
           }
         ],
         "canonicalName": "SilverAmountComponent",
         "contractDependencies": [
-          73704,
-          73960
+          73926,
+          74182
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          24520,
+          24523,
           1370,
           1469,
           483,
           220,
-          73794,
-          73998,
+          74016,
+          74220,
           2536,
-          75829,
-          76248,
-          75705,
+          76051,
+          76470,
+          75927,
           1440,
-          75572,
+          75794,
           2579,
-          75839
+          76061
         ],
         "name": "SilverAmountComponent",
         "nameLocation": "218:21:140",
-        "scope": 24521,
+        "scope": 24524,
         "usedErrors": [
           20,
-          73719,
-          76245,
-          76247
+          73941,
+          76467,
+          76469
         ]
       }
     ],
