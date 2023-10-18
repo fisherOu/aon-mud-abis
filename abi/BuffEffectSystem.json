@@ -513,13 +513,13 @@
   },
   "ast": {
     "absolutePath": "src/expension/BuffEffectSystem.sol",
-    "id": 30763,
+    "id": 30695,
     "exportedSymbols": {
       "BuffEffectInfo": [
-        30702
+        30634
       ],
       "BuffEffectSystem": [
-        30762
+        30694
       ],
       "IWorld": [
         1582
@@ -529,12 +529,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:778:179",
+    "src": "32:778:182",
     "nodes": [
       {
-        "id": 30692,
+        "id": 30624,
         "nodeType": "PragmaDirective",
-        "src": "32:24:179",
+        "src": "32:24:182",
         "nodes": [],
         "literals": [
           "solidity",
@@ -544,36 +544,36 @@
         ]
       },
       {
-        "id": 30695,
+        "id": 30627,
         "nodeType": "ImportDirective",
-        "src": "57:49:179",
+        "src": "57:49:182",
         "nodes": [],
         "absolutePath": "../../node_modules/@latticexyz/solecs/src/System.sol",
         "file": "solecs/System.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 30763,
+        "scope": 30695,
         "sourceUnit": 588,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 30693,
+              "id": 30625,
               "name": "System",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 587,
-              "src": "65:6:179",
+              "src": "65:6:182",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
           },
           {
             "foreign": {
-              "id": 30694,
+              "id": 30626,
               "name": "IWorld",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 1582,
-              "src": "73:6:179",
+              "src": "73:6:182",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -582,21 +582,21 @@
         "unitAlias": ""
       },
       {
-        "id": 30702,
+        "id": 30634,
         "nodeType": "StructDefinition",
-        "src": "108:91:179",
+        "src": "108:91:182",
         "nodes": [],
         "canonicalName": "BuffEffectInfo",
         "members": [
           {
             "constant": false,
-            "id": 30697,
+            "id": 30629,
             "mutability": "mutable",
             "name": "entity",
-            "nameLocation": "144:6:179",
+            "nameLocation": "144:6:182",
             "nodeType": "VariableDeclaration",
-            "scope": 30702,
-            "src": "136:14:179",
+            "scope": 30634,
+            "src": "136:14:182",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -604,10 +604,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 30696,
+              "id": 30628,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "136:7:179",
+              "src": "136:7:182",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -617,13 +617,13 @@
           },
           {
             "constant": false,
-            "id": 30699,
+            "id": 30631,
             "mutability": "mutable",
             "name": "isComponent",
-            "nameLocation": "161:11:179",
+            "nameLocation": "161:11:182",
             "nodeType": "VariableDeclaration",
-            "scope": 30702,
-            "src": "156:16:179",
+            "scope": 30634,
+            "src": "156:16:182",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -631,10 +631,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 30698,
+              "id": 30630,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "156:4:179",
+              "src": "156:4:182",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -644,13 +644,13 @@
           },
           {
             "constant": false,
-            "id": 30701,
+            "id": 30633,
             "mutability": "mutable",
             "name": "buffEntity",
-            "nameLocation": "186:10:179",
+            "nameLocation": "186:10:182",
             "nodeType": "VariableDeclaration",
-            "scope": 30702,
-            "src": "178:18:179",
+            "scope": 30634,
+            "src": "178:18:182",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -658,10 +658,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 30700,
+              "id": 30632,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "178:7:179",
+              "src": "178:7:182",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -671,24 +671,24 @@
           }
         ],
         "name": "BuffEffectInfo",
-        "nameLocation": "115:14:179",
-        "scope": 30763,
+        "nameLocation": "115:14:182",
+        "scope": 30695,
         "visibility": "public"
       },
       {
-        "id": 30762,
+        "id": 30694,
         "nodeType": "ContractDefinition",
-        "src": "201:608:179",
+        "src": "201:608:182",
         "nodes": [
           {
-            "id": 30717,
+            "id": 30649,
             "nodeType": "FunctionDefinition",
-            "src": "252:100:179",
+            "src": "252:100:182",
             "nodes": [],
             "body": {
-              "id": 30716,
+              "id": 30648,
               "nodeType": "Block",
-              "src": "350:2:179",
+              "src": "350:2:182",
               "nodes": [],
               "statements": []
             },
@@ -698,58 +698,58 @@
               {
                 "arguments": [
                   {
-                    "id": 30712,
+                    "id": 30644,
                     "name": "_world",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 30707,
-                    "src": "329:6:179",
+                    "referencedDeclaration": 30639,
+                    "src": "329:6:182",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IWorld_$1582",
                       "typeString": "contract IWorld"
                     }
                   },
                   {
-                    "id": 30713,
+                    "id": 30645,
                     "name": "_components",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 30709,
-                    "src": "337:11:179",
+                    "referencedDeclaration": 30641,
+                    "src": "337:11:182",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   }
                 ],
-                "id": 30714,
+                "id": 30646,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 30711,
+                  "id": 30643,
                   "name": "System",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 587,
-                  "src": "322:6:179"
+                  "src": "322:6:182"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "322:27:179"
+                "src": "322:27:182"
               }
             ],
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 30710,
+              "id": 30642,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 30707,
+                  "id": 30639,
                   "mutability": "mutable",
                   "name": "_world",
-                  "nameLocation": "280:6:179",
+                  "nameLocation": "280:6:182",
                   "nodeType": "VariableDeclaration",
-                  "scope": 30717,
-                  "src": "273:13:179",
+                  "scope": 30649,
+                  "src": "273:13:182",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -757,17 +757,17 @@
                     "typeString": "contract IWorld"
                   },
                   "typeName": {
-                    "id": 30706,
+                    "id": 30638,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 30705,
+                      "id": 30637,
                       "name": "IWorld",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 1582,
-                      "src": "273:6:179"
+                      "src": "273:6:182"
                     },
                     "referencedDeclaration": 1582,
-                    "src": "273:6:179",
+                    "src": "273:6:182",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IWorld_$1582",
                       "typeString": "contract IWorld"
@@ -777,13 +777,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 30709,
+                  "id": 30641,
                   "mutability": "mutable",
                   "name": "_components",
-                  "nameLocation": "304:11:179",
+                  "nameLocation": "304:11:182",
                   "nodeType": "VariableDeclaration",
-                  "scope": 30717,
-                  "src": "296:19:179",
+                  "scope": 30649,
+                  "src": "296:19:182",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -791,10 +791,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 30708,
+                    "id": 30640,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "296:7:179",
+                    "src": "296:7:182",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -804,80 +804,80 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "263:58:179"
+              "src": "263:58:182"
             },
             "returnParameters": {
-              "id": 30715,
+              "id": 30647,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "350:0:179"
+              "src": "350:0:182"
             },
-            "scope": 30762,
+            "scope": 30694,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 30739,
+            "id": 30671,
             "nodeType": "FunctionDefinition",
-            "src": "358:193:179",
+            "src": "358:193:182",
             "nodes": [],
             "body": {
-              "id": 30738,
+              "id": 30670,
               "nodeType": "Block",
-              "src": "424:127:179",
+              "src": "424:127:182",
               "nodes": [],
               "statements": [
                 {
                   "assignments": [
-                    30726
+                    30658
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 30726,
+                      "id": 30658,
                       "mutability": "mutable",
                       "name": "effectInfo",
-                      "nameLocation": "456:10:179",
+                      "nameLocation": "456:10:182",
                       "nodeType": "VariableDeclaration",
-                      "scope": 30738,
-                      "src": "434:32:179",
+                      "scope": 30670,
+                      "src": "434:32:182",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_BuffEffectInfo_$30702_memory_ptr",
+                        "typeIdentifier": "t_struct$_BuffEffectInfo_$30634_memory_ptr",
                         "typeString": "struct BuffEffectInfo"
                       },
                       "typeName": {
-                        "id": 30725,
+                        "id": 30657,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 30724,
+                          "id": 30656,
                           "name": "BuffEffectInfo",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 30702,
-                          "src": "434:14:179"
+                          "referencedDeclaration": 30634,
+                          "src": "434:14:182"
                         },
-                        "referencedDeclaration": 30702,
-                        "src": "434:14:179",
+                        "referencedDeclaration": 30634,
+                        "src": "434:14:182",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BuffEffectInfo_$30702_storage_ptr",
+                          "typeIdentifier": "t_struct$_BuffEffectInfo_$30634_storage_ptr",
                           "typeString": "struct BuffEffectInfo"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 30733,
+                  "id": 30665,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 30729,
+                        "id": 30661,
                         "name": "args",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 30719,
-                        "src": "480:4:179",
+                        "referencedDeclaration": 30651,
+                        "src": "480:4:182",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
                           "typeString": "bytes memory"
@@ -886,28 +886,28 @@
                       {
                         "components": [
                           {
-                            "id": 30730,
+                            "id": 30662,
                             "name": "BuffEffectInfo",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 30702,
-                            "src": "487:14:179",
+                            "referencedDeclaration": 30634,
+                            "src": "487:14:182",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_BuffEffectInfo_$30702_storage_ptr_$",
+                              "typeIdentifier": "t_type$_t_struct$_BuffEffectInfo_$30634_storage_ptr_$",
                               "typeString": "type(struct BuffEffectInfo storage pointer)"
                             }
                           }
                         ],
-                        "id": 30731,
+                        "id": 30663,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
                         "nodeType": "TupleExpression",
-                        "src": "486:16:179",
+                        "src": "486:16:182",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_BuffEffectInfo_$30702_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_BuffEffectInfo_$30634_storage_ptr_$",
                           "typeString": "type(struct BuffEffectInfo storage pointer)"
                         }
                       }
@@ -919,36 +919,36 @@
                           "typeString": "bytes memory"
                         },
                         {
-                          "typeIdentifier": "t_type$_t_struct$_BuffEffectInfo_$30702_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_BuffEffectInfo_$30634_storage_ptr_$",
                           "typeString": "type(struct BuffEffectInfo storage pointer)"
                         }
                       ],
                       "expression": {
-                        "id": 30727,
+                        "id": 30659,
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": -1,
-                        "src": "469:3:179",
+                        "src": "469:3:182",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
                           "typeString": "abi"
                         }
                       },
-                      "id": 30728,
+                      "id": 30660,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "memberName": "decode",
                       "nodeType": "MemberAccess",
-                      "src": "469:10:179",
+                      "src": "469:10:182",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
                         "typeString": "function () pure"
                       }
                     },
-                    "id": 30732,
+                    "id": 30664,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -956,28 +956,28 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "469:34:179",
+                    "src": "469:34:182",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BuffEffectInfo_$30702_memory_ptr",
+                      "typeIdentifier": "t_struct$_BuffEffectInfo_$30634_memory_ptr",
                       "typeString": "struct BuffEffectInfo memory"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "434:69:179"
+                  "src": "434:69:182"
                 },
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 30735,
+                        "id": 30667,
                         "name": "effectInfo",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 30726,
-                        "src": "533:10:179",
+                        "referencedDeclaration": 30658,
+                        "src": "533:10:182",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BuffEffectInfo_$30702_memory_ptr",
+                          "typeIdentifier": "t_struct$_BuffEffectInfo_$30634_memory_ptr",
                           "typeString": "struct BuffEffectInfo memory"
                         }
                       }
@@ -985,22 +985,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_BuffEffectInfo_$30702_memory_ptr",
+                          "typeIdentifier": "t_struct$_BuffEffectInfo_$30634_memory_ptr",
                           "typeString": "struct BuffEffectInfo memory"
                         }
                       ],
-                      "id": 30734,
+                      "id": 30666,
                       "name": "executeTyped",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 30752,
-                      "src": "520:12:179",
+                      "referencedDeclaration": 30684,
+                      "src": "520:12:182",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_BuffEffectInfo_$30702_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_BuffEffectInfo_$30634_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (struct BuffEffectInfo memory) returns (bytes memory)"
                       }
                     },
-                    "id": 30736,
+                    "id": 30668,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1008,42 +1008,42 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "520:24:179",
+                    "src": "520:24:182",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
                       "typeString": "bytes memory"
                     }
                   },
-                  "functionReturnParameters": 30723,
-                  "id": 30737,
+                  "functionReturnParameters": 30655,
+                  "id": 30669,
                   "nodeType": "Return",
-                  "src": "513:31:179"
+                  "src": "513:31:182"
                 }
               ]
             },
             "baseFunctions": [
-              74233
+              75669
             ],
             "functionSelector": "09c5eabe",
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "execute",
-            "nameLocation": "367:7:179",
+            "nameLocation": "367:7:182",
             "parameters": {
-              "id": 30720,
+              "id": 30652,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 30719,
+                  "id": 30651,
                   "mutability": "mutable",
                   "name": "args",
-                  "nameLocation": "388:4:179",
+                  "nameLocation": "388:4:182",
                   "nodeType": "VariableDeclaration",
-                  "scope": 30739,
-                  "src": "375:17:179",
+                  "scope": 30671,
+                  "src": "375:17:182",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1051,10 +1051,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 30718,
+                    "id": 30650,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "375:5:179",
+                    "src": "375:5:182",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1063,21 +1063,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "374:19:179"
+              "src": "374:19:182"
             },
             "returnParameters": {
-              "id": 30723,
+              "id": 30655,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 30722,
+                  "id": 30654,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 30739,
-                  "src": "410:12:179",
+                  "scope": 30671,
+                  "src": "410:12:182",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1085,10 +1085,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 30721,
+                    "id": 30653,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "410:5:179",
+                    "src": "410:5:182",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1097,36 +1097,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "409:14:179"
+              "src": "409:14:182"
             },
-            "scope": 30762,
+            "scope": 30694,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 30752,
+            "id": 30684,
             "nodeType": "FunctionDefinition",
-            "src": "557:147:179",
+            "src": "557:147:182",
             "nodes": [],
             "body": {
-              "id": 30751,
+              "id": 30683,
               "nodeType": "Block",
-              "src": "657:47:179",
+              "src": "657:47:182",
               "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 30748,
+                        "id": 30680,
                         "name": "effectInfo",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 30742,
-                        "src": "686:10:179",
+                        "referencedDeclaration": 30674,
+                        "src": "686:10:182",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BuffEffectInfo_$30702_memory_ptr",
+                          "typeIdentifier": "t_struct$_BuffEffectInfo_$30634_memory_ptr",
                           "typeString": "struct BuffEffectInfo memory"
                         }
                       }
@@ -1134,22 +1134,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_BuffEffectInfo_$30702_memory_ptr",
+                          "typeIdentifier": "t_struct$_BuffEffectInfo_$30634_memory_ptr",
                           "typeString": "struct BuffEffectInfo memory"
                         }
                       ],
-                      "id": 30747,
+                      "id": 30679,
                       "name": "effectLogic",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 30761,
-                      "src": "674:11:179",
+                      "referencedDeclaration": 30693,
+                      "src": "674:11:182",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_BuffEffectInfo_$30702_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_BuffEffectInfo_$30634_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (struct BuffEffectInfo memory) returns (bytes memory)"
                       }
                     },
-                    "id": 30749,
+                    "id": 30681,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1157,17 +1157,17 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "674:23:179",
+                    "src": "674:23:182",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
                       "typeString": "bytes memory"
                     }
                   },
-                  "functionReturnParameters": 30746,
-                  "id": 30750,
+                  "functionReturnParameters": 30678,
+                  "id": 30682,
                   "nodeType": "Return",
-                  "src": "667:30:179"
+                  "src": "667:30:182"
                 }
               ]
             },
@@ -1176,61 +1176,61 @@
             "kind": "function",
             "modifiers": [],
             "name": "executeTyped",
-            "nameLocation": "566:12:179",
+            "nameLocation": "566:12:182",
             "parameters": {
-              "id": 30743,
+              "id": 30675,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 30742,
+                  "id": 30674,
                   "mutability": "mutable",
                   "name": "effectInfo",
-                  "nameLocation": "610:10:179",
+                  "nameLocation": "610:10:182",
                   "nodeType": "VariableDeclaration",
-                  "scope": 30752,
-                  "src": "588:32:179",
+                  "scope": 30684,
+                  "src": "588:32:182",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BuffEffectInfo_$30702_memory_ptr",
+                    "typeIdentifier": "t_struct$_BuffEffectInfo_$30634_memory_ptr",
                     "typeString": "struct BuffEffectInfo"
                   },
                   "typeName": {
-                    "id": 30741,
+                    "id": 30673,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 30740,
+                      "id": 30672,
                       "name": "BuffEffectInfo",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 30702,
-                      "src": "588:14:179"
+                      "referencedDeclaration": 30634,
+                      "src": "588:14:182"
                     },
-                    "referencedDeclaration": 30702,
-                    "src": "588:14:179",
+                    "referencedDeclaration": 30634,
+                    "src": "588:14:182",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BuffEffectInfo_$30702_storage_ptr",
+                      "typeIdentifier": "t_struct$_BuffEffectInfo_$30634_storage_ptr",
                       "typeString": "struct BuffEffectInfo"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "578:48:179"
+              "src": "578:48:182"
             },
             "returnParameters": {
-              "id": 30746,
+              "id": 30678,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 30745,
+                  "id": 30677,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 30752,
-                  "src": "643:12:179",
+                  "scope": 30684,
+                  "src": "643:12:182",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1238,10 +1238,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 30744,
+                    "id": 30676,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "643:5:179",
+                    "src": "643:5:182",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1250,22 +1250,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "642:14:179"
+              "src": "642:14:182"
             },
-            "scope": 30762,
+            "scope": 30694,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 30761,
+            "id": 30693,
             "nodeType": "FunctionDefinition",
-            "src": "710:97:179",
+            "src": "710:97:182",
             "nodes": [],
             "body": {
-              "id": 30760,
+              "id": 30692,
               "nodeType": "Block",
-              "src": "805:2:179",
+              "src": "805:2:182",
               "nodes": [],
               "statements": []
             },
@@ -1273,61 +1273,61 @@
             "kind": "function",
             "modifiers": [],
             "name": "effectLogic",
-            "nameLocation": "719:11:179",
+            "nameLocation": "719:11:182",
             "parameters": {
-              "id": 30756,
+              "id": 30688,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 30755,
+                  "id": 30687,
                   "mutability": "mutable",
                   "name": "effectInfo",
-                  "nameLocation": "753:10:179",
+                  "nameLocation": "753:10:182",
                   "nodeType": "VariableDeclaration",
-                  "scope": 30761,
-                  "src": "731:32:179",
+                  "scope": 30693,
+                  "src": "731:32:182",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BuffEffectInfo_$30702_memory_ptr",
+                    "typeIdentifier": "t_struct$_BuffEffectInfo_$30634_memory_ptr",
                     "typeString": "struct BuffEffectInfo"
                   },
                   "typeName": {
-                    "id": 30754,
+                    "id": 30686,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 30753,
+                      "id": 30685,
                       "name": "BuffEffectInfo",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 30702,
-                      "src": "731:14:179"
+                      "referencedDeclaration": 30634,
+                      "src": "731:14:182"
                     },
-                    "referencedDeclaration": 30702,
-                    "src": "731:14:179",
+                    "referencedDeclaration": 30634,
+                    "src": "731:14:182",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BuffEffectInfo_$30702_storage_ptr",
+                      "typeIdentifier": "t_struct$_BuffEffectInfo_$30634_storage_ptr",
                       "typeString": "struct BuffEffectInfo"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "730:34:179"
+              "src": "730:34:182"
             },
             "returnParameters": {
-              "id": 30759,
+              "id": 30691,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 30758,
+                  "id": 30690,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 30761,
-                  "src": "791:12:179",
+                  "scope": 30693,
+                  "src": "791:12:182",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1335,10 +1335,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 30757,
+                    "id": 30689,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "791:5:179",
+                    "src": "791:5:182",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1347,9 +1347,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "790:14:179"
+              "src": "790:14:182"
             },
-            "scope": 30762,
+            "scope": 30694,
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "internal"
@@ -1359,15 +1359,15 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 30703,
+              "id": 30635,
               "name": "System",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 587,
-              "src": "239:6:179"
+              "src": "239:6:182"
             },
-            "id": 30704,
+            "id": 30636,
             "nodeType": "InheritanceSpecifier",
-            "src": "239:6:179"
+            "src": "239:6:182"
           }
         ],
         "canonicalName": "BuffEffectSystem",
@@ -1375,27 +1375,27 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          30762,
+          30694,
           587,
-          74220,
+          75656,
           2536,
-          76051,
-          76470,
-          75927,
-          74234,
+          77487,
+          77906,
+          77363,
+          75670,
           2579,
-          76061
+          77497
         ],
         "name": "BuffEffectSystem",
-        "nameLocation": "219:16:179",
-        "scope": 30763,
+        "nameLocation": "219:16:182",
+        "scope": 30695,
         "usedErrors": [
-          76467,
-          76469
+          77903,
+          77905
         ]
       }
     ],
     "license": "MIT"
   },
-  "id": 179
+  "id": 182
 }

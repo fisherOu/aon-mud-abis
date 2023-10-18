@@ -28,55 +28,19 @@ import type {
 } from "./common";
 
 export type PickUpInfoStruct = {
-  realHash: PromiseOrValue<BigNumberish>;
   fogHash: PromiseOrValue<BigNumberish>;
-  width: PromiseOrValue<BigNumberish>;
-  height: PromiseOrValue<BigNumberish>;
-  terrainSeed: PromiseOrValue<BigNumberish>;
-  fogSeed: PromiseOrValue<BigNumberish>;
-  treasureSeed: PromiseOrValue<BigNumberish>;
-  terrainPerlin: PromiseOrValue<BigNumberish>;
-  treasurePerlin: PromiseOrValue<BigNumberish>;
-  a: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
-  b: [
-    [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>],
-    [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>]
-  ];
-  c: [PromiseOrValue<BigNumberish>, PromiseOrValue<BigNumberish>];
+  entityId: PromiseOrValue<BigNumberish>;
 };
 
-export type PickUpInfoStructOutput = [
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  BigNumber,
-  [BigNumber, BigNumber],
-  [[BigNumber, BigNumber], [BigNumber, BigNumber]],
-  [BigNumber, BigNumber]
-] & {
-  realHash: BigNumber;
+export type PickUpInfoStructOutput = [BigNumber, BigNumber] & {
   fogHash: BigNumber;
-  width: BigNumber;
-  height: BigNumber;
-  terrainSeed: BigNumber;
-  fogSeed: BigNumber;
-  treasureSeed: BigNumber;
-  terrainPerlin: BigNumber;
-  treasurePerlin: BigNumber;
-  a: [BigNumber, BigNumber];
-  b: [[BigNumber, BigNumber], [BigNumber, BigNumber]];
-  c: [BigNumber, BigNumber];
+  entityId: BigNumber;
 };
 
 export interface PickUpRuinSystemInterface extends utils.Interface {
   functions: {
     "execute(bytes)": FunctionFragment;
-    "executeTyped((uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[2],uint256[2][2],uint256[2]))": FunctionFragment;
+    "executeTyped((uint256,uint256))": FunctionFragment;
     "owner()": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
   };

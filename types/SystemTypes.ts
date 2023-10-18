@@ -43,6 +43,7 @@ import { GuildTechCancelSystem } from "./ethers-contracts/GuildTechCancelSystem"
 import { GuildTechFinishSystem } from "./ethers-contracts/GuildTechFinishSystem";
 import { GuildTechUpdateSystem } from "./ethers-contracts/GuildTechUpdateSystem";
 import { GuildUnboundTreasureSystem } from "./ethers-contracts/GuildUnboundTreasureSystem";
+import { GuildUnfrozenSystem } from "./ethers-contracts/GuildUnfrozenSystem";
 import { JoinGameSystem } from "./ethers-contracts/JoinGameSystem";
 import { JoinGamev2System } from "./ethers-contracts/JoinGamev2System";
 import { JoinGuildSystem } from "./ethers-contracts/JoinGuildSystem";
@@ -122,6 +123,7 @@ export type SystemTypes = {
   "system.GuildTechFinish": GuildTechFinishSystem;
   "system.GuildTechUpdate": GuildTechUpdateSystem;
   "system.GuildUnboundTreasure": GuildUnboundTreasureSystem;
+  "system.GuildUnfrozen": GuildUnfrozenSystem;
   "system.JoinGame": JoinGameSystem;
   "system.JoinGamev2": JoinGamev2System;
   "system.JoinGuild": JoinGuildSystem;

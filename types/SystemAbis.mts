@@ -43,6 +43,7 @@ import GuildTechCancelSystem from "../abi/GuildTechCancelSystem.json";
 import GuildTechFinishSystem from "../abi/GuildTechFinishSystem.json";
 import GuildTechUpdateSystem from "../abi/GuildTechUpdateSystem.json";
 import GuildUnboundTreasureSystem from "../abi/GuildUnboundTreasureSystem.json";
+import GuildUnfrozenSystem from "../abi/GuildUnfrozenSystem.json";
 import JoinGameSystem from "../abi/JoinGameSystem.json";
 import JoinGamev2System from "../abi/JoinGamev2System.json";
 import JoinGuildSystem from "../abi/JoinGuildSystem.json";
@@ -122,6 +123,7 @@ export const SystemAbis = {
   "system.GuildTechFinish": GuildTechFinishSystem.abi,
   "system.GuildTechUpdate": GuildTechUpdateSystem.abi,
   "system.GuildUnboundTreasure": GuildUnboundTreasureSystem.abi,
+  "system.GuildUnfrozen": GuildUnfrozenSystem.abi,
   "system.JoinGame": JoinGameSystem.abi,
   "system.JoinGamev2": JoinGamev2System.abi,
   "system.JoinGuild": JoinGuildSystem.abi,

@@ -39,6 +39,8 @@ export { ComponentDevSystem__factory } from "./ComponentDevSystem__factory";
 export { CoordComponent__factory } from "./CoordComponent__factory";
 export { CounterComponent__factory } from "./CounterComponent__factory";
 export { CreateGuildSystem__factory } from "./CreateGuildSystem__factory";
+export { DeathPackageBelongingComponent__factory } from "./DeathPackageBelongingComponent__factory";
+export { DeathPackagePositionComponent__factory } from "./DeathPackagePositionComponent__factory";
 export { DeathTriggerSystem__factory } from "./DeathTriggerSystem__factory";
 export { DevConfigComponent__factory } from "./DevConfigComponent__factory";
 export { DigResourceBuildingSystem__factory } from "./DigResourceBuildingSystem__factory";
@@ -66,6 +68,7 @@ export { GuildCrestGuildComponent__factory } from "./GuildCrestGuildComponent__f
 export { GuildCrestPendingComponent__factory } from "./GuildCrestPendingComponent__factory";
 export { GuildCrestPlayerComponent__factory } from "./GuildCrestPlayerComponent__factory";
 export { GuildDisplayComponent__factory } from "./GuildDisplayComponent__factory";
+export { GuildFrozenComponent__factory } from "./GuildFrozenComponent__factory";
 export { GuildMoveSystem__factory } from "./GuildMoveSystem__factory";
 export { GuildReleaseAirdropTreasureSystem__factory } from "./GuildReleaseAirdropTreasureSystem__factory";
 export { GuildReleaseLinearTreasureSystem__factory } from "./GuildReleaseLinearTreasureSystem__factory";
@@ -74,6 +77,7 @@ export { GuildTechCancelSystem__factory } from "./GuildTechCancelSystem__factory
 export { GuildTechFinishSystem__factory } from "./GuildTechFinishSystem__factory";
 export { GuildTechUpdateSystem__factory } from "./GuildTechUpdateSystem__factory";
 export { GuildUnboundTreasureSystem__factory } from "./GuildUnboundTreasureSystem__factory";
+export { GuildUnfrozenSystem__factory } from "./GuildUnfrozenSystem__factory";
 export { HPComponent__factory } from "./HPComponent__factory";
 export { HPLimitComponent__factory } from "./HPLimitComponent__factory";
 export { HiddenPositionComponent__factory } from "./HiddenPositionComponent__factory";

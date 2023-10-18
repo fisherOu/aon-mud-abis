@@ -1,4 +1,4 @@
-# v0.0.23_v0.3_details
+# v0.0.24_v0.3_details
 
 1. 修复DeathTriggerSystem:
     a. 添加玩家/公会死亡掉落(DeathPackagePositionComponent, DeathPackageBelongingComponent) 没有绑定到HiddenPosition
@@ -20,4 +20,4 @@
 
 world address: 0xB4b5ee7bd72057FaE6e277b80Cca80c430D0f5F9
 initialBlockNumber: 27940939
-abi tag: v0.0.23_v0.3_details
+abi tag: v0.0.24_v0.3_details
