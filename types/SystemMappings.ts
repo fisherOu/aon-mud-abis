@@ -43,6 +43,7 @@ export const systemToId = {
   GuildTechCancelSystem: "system.GuildTechCancel",
   GuildTechFinishSystem: "system.GuildTechFinish",
   GuildTechUpdateSystem: "system.GuildTechUpdate",
+  GuildTreasureUpgradeSystem: "system.GuildTreasureUpgrade",
   GuildUnboundTreasureSystem: "system.GuildUnboundTreasure",
   GuildUnfrozenSystem: "system.GuildUnfrozen",
   JoinGameSystem: "system.JoinGame",
@@ -77,6 +78,7 @@ export const systemToId = {
   TreasureEffectDeathKeepResourceSystem: "system.TreasureEffectDeathKeepResource",
   TreasureEffectLinearDamageSystem: "system.TreasureEffectLinearDamage",
   TreasureEffectNegativeAddHPSystem: "system.TreasureEffectNegativeAddHP",
+  TreasureUpgradeSystem: "system.TreasureUpgrade",
   UnboundTreasureSystem: "system.UnboundTreasure",
 };
 
@@ -124,6 +126,7 @@ export const idToSystem = {
   "system.GuildTechCancel": "GuildTechCancelSystem",
   "system.GuildTechFinish": "GuildTechFinishSystem",
   "system.GuildTechUpdate": "GuildTechUpdateSystem",
+  "system.GuildTreasureUpgrade": "GuildTreasureUpgradeSystem",
   "system.GuildUnboundTreasure": "GuildUnboundTreasureSystem",
   "system.GuildUnfrozen": "GuildUnfrozenSystem",
   "system.JoinGame": "JoinGameSystem",
@@ -158,6 +161,7 @@ export const idToSystem = {
   "system.TreasureEffectDeathKeepResource": "TreasureEffectDeathKeepResourceSystem",
   "system.TreasureEffectLinearDamage": "TreasureEffectLinearDamageSystem",
   "system.TreasureEffectNegativeAddHP": "TreasureEffectNegativeAddHPSystem",
+  "system.TreasureUpgrade": "TreasureUpgradeSystem",
   "system.UnboundTreasure": "UnboundTreasureSystem",
 };
   

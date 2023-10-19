@@ -42,6 +42,7 @@ import { GuildTechAccelerateSystem } from "./ethers-contracts/GuildTechAccelerat
 import { GuildTechCancelSystem } from "./ethers-contracts/GuildTechCancelSystem";
 import { GuildTechFinishSystem } from "./ethers-contracts/GuildTechFinishSystem";
 import { GuildTechUpdateSystem } from "./ethers-contracts/GuildTechUpdateSystem";
+import { GuildTreasureUpgradeSystem } from "./ethers-contracts/GuildTreasureUpgradeSystem";
 import { GuildUnboundTreasureSystem } from "./ethers-contracts/GuildUnboundTreasureSystem";
 import { GuildUnfrozenSystem } from "./ethers-contracts/GuildUnfrozenSystem";
 import { JoinGameSystem } from "./ethers-contracts/JoinGameSystem";
@@ -76,6 +77,7 @@ import { TreasureEffectAirdropResourceSystem } from "./ethers-contracts/Treasure
 import { TreasureEffectDeathKeepResourceSystem } from "./ethers-contracts/TreasureEffectDeathKeepResourceSystem";
 import { TreasureEffectLinearDamageSystem } from "./ethers-contracts/TreasureEffectLinearDamageSystem";
 import { TreasureEffectNegativeAddHPSystem } from "./ethers-contracts/TreasureEffectNegativeAddHPSystem";
+import { TreasureUpgradeSystem } from "./ethers-contracts/TreasureUpgradeSystem";
 import { UnboundTreasureSystem } from "./ethers-contracts/UnboundTreasureSystem";
  
 export type SystemTypes = {
@@ -122,6 +124,7 @@ export type SystemTypes = {
   "system.GuildTechCancel": GuildTechCancelSystem;
   "system.GuildTechFinish": GuildTechFinishSystem;
   "system.GuildTechUpdate": GuildTechUpdateSystem;
+  "system.GuildTreasureUpgrade": GuildTreasureUpgradeSystem;
   "system.GuildUnboundTreasure": GuildUnboundTreasureSystem;
   "system.GuildUnfrozen": GuildUnfrozenSystem;
   "system.JoinGame": JoinGameSystem;
@@ -156,5 +159,6 @@ export type SystemTypes = {
   "system.TreasureEffectDeathKeepResource": TreasureEffectDeathKeepResourceSystem;
   "system.TreasureEffectLinearDamage": TreasureEffectLinearDamageSystem;
   "system.TreasureEffectNegativeAddHP": TreasureEffectNegativeAddHPSystem;
+  "system.TreasureUpgrade": TreasureUpgradeSystem;
   "system.UnboundTreasure": UnboundTreasureSystem;
 };

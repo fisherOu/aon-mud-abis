@@ -42,6 +42,7 @@ import GuildTechAccelerateSystem from "../abi/GuildTechAccelerateSystem.json";
 import GuildTechCancelSystem from "../abi/GuildTechCancelSystem.json";
 import GuildTechFinishSystem from "../abi/GuildTechFinishSystem.json";
 import GuildTechUpdateSystem from "../abi/GuildTechUpdateSystem.json";
+import GuildTreasureUpgradeSystem from "../abi/GuildTreasureUpgradeSystem.json";
 import GuildUnboundTreasureSystem from "../abi/GuildUnboundTreasureSystem.json";
 import GuildUnfrozenSystem from "../abi/GuildUnfrozenSystem.json";
 import JoinGameSystem from "../abi/JoinGameSystem.json";
@@ -76,6 +77,7 @@ import TreasureEffectAirdropResourceSystem from "../abi/TreasureEffectAirdropRes
 import TreasureEffectDeathKeepResourceSystem from "../abi/TreasureEffectDeathKeepResourceSystem.json";
 import TreasureEffectLinearDamageSystem from "../abi/TreasureEffectLinearDamageSystem.json";
 import TreasureEffectNegativeAddHPSystem from "../abi/TreasureEffectNegativeAddHPSystem.json";
+import TreasureUpgradeSystem from "../abi/TreasureUpgradeSystem.json";
 import UnboundTreasureSystem from "../abi/UnboundTreasureSystem.json";
 
 export const SystemAbis = {
@@ -122,6 +124,7 @@ export const SystemAbis = {
   "system.GuildTechCancel": GuildTechCancelSystem.abi,
   "system.GuildTechFinish": GuildTechFinishSystem.abi,
   "system.GuildTechUpdate": GuildTechUpdateSystem.abi,
+  "system.GuildTreasureUpgrade": GuildTreasureUpgradeSystem.abi,
   "system.GuildUnboundTreasure": GuildUnboundTreasureSystem.abi,
   "system.GuildUnfrozen": GuildUnfrozenSystem.abi,
   "system.JoinGame": JoinGameSystem.abi,
@@ -156,5 +159,6 @@ export const SystemAbis = {
   "system.TreasureEffectDeathKeepResource": TreasureEffectDeathKeepResourceSystem.abi,
   "system.TreasureEffectLinearDamage": TreasureEffectLinearDamageSystem.abi,
   "system.TreasureEffectNegativeAddHP": TreasureEffectNegativeAddHPSystem.abi,
+  "system.TreasureUpgrade": TreasureUpgradeSystem.abi,
   "system.UnboundTreasure": UnboundTreasureSystem.abi,
 };
