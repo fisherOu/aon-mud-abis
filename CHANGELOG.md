@@ -1,10 +1,10 @@
-# v0.0.27_settings_adjust
+# v0.0.30_settings_adjust
 
-1. 修正地图尺寸为100*100
-2. 修复 DigResourcev2System, DigResourceBuildingSystem, TakeResourcev2System, TakeResourceBuildingSystem 的 资源点生成逻辑： 恢复 MapConfigv2.resourceDifficulty 的影响
-3. 调整 海平面为 2500, 每750一层资源带
-4. 修复 战斗击沉
+1. 添加 KillPlayerCounterComponent, KillGuildCounterComponent
+2. 允许 以我之矛,攻我之盾
+3. 角色阵亡后, 会把角色的道具和钱转入死亡掉落实体 DeathPackage
+4. 屏蔽 图钉矿机 的随机生成
 
-world address: 0x159602BC10CDB342cBc99F476d633e7d065E1407
-initialBlockNumber: 28144400
-abi tag: v0.0.27_settings_adjust
+world address: 0x9574eb9910C5dA0979F03BDB2960268E5CE6225e
+initial block number: 28807657
+abi tag: v0.0.30_settings_adjust

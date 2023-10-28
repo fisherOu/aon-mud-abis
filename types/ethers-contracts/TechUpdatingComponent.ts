@@ -30,12 +30,19 @@ import type {
 export type TechUpdatingStruct = {
   techGroupId: PromiseOrValue<BigNumberish>;
   nextLevel: PromiseOrValue<BigNumberish>;
+  startTime: PromiseOrValue<BigNumberish>;
   finishTime: PromiseOrValue<BigNumberish>;
 };
 
-export type TechUpdatingStructOutput = [BigNumber, BigNumber, BigNumber] & {
+export type TechUpdatingStructOutput = [
+  BigNumber,
+  BigNumber,
+  BigNumber,
+  BigNumber
+] & {
   techGroupId: BigNumber;
   nextLevel: BigNumber;
+  startTime: BigNumber;
   finishTime: BigNumber;
 };
 
@@ -53,8 +60,8 @@ export interface TechUpdatingComponentInterface extends utils.Interface {
     "registerIndexer(address)": FunctionFragment;
     "registerWorld(address)": FunctionFragment;
     "remove(uint256)": FunctionFragment;
-    "set(uint256,(uint256,uint64,uint64))": FunctionFragment;
     "set(uint256,bytes)": FunctionFragment;
+    "set(uint256,(uint256,uint64,uint64,uint64))": FunctionFragment;
     "transferOwnership(address)": FunctionFragment;
     "unauthorizeWriter(address)": FunctionFragment;
     "world()": FunctionFragment;
@@ -75,8 +82,8 @@ export interface TechUpdatingComponentInterface extends utils.Interface {
       | "registerIndexer"
       | "registerWorld"
       | "remove"
-      | "set(uint256,(uint256,uint64,uint64))"
       | "set(uint256,bytes)"
+      | "set(uint256,(uint256,uint64,uint64,uint64))"
       | "transferOwnership"
       | "unauthorizeWriter"
       | "world"
@@ -123,12 +130,12 @@ export interface TechUpdatingComponentInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "set(uint256,(uint256,uint64,uint64))",
-    values: [PromiseOrValue<BigNumberish>, TechUpdatingStruct]
-  ): string;
-  encodeFunctionData(
     functionFragment: "set(uint256,bytes)",
     values: [PromiseOrValue<BigNumberish>, PromiseOrValue<BytesLike>]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "set(uint256,(uint256,uint64,uint64,uint64))",
+    values: [PromiseOrValue<BigNumberish>, TechUpdatingStruct]
   ): string;
   encodeFunctionData(
     functionFragment: "transferOwnership",
@@ -175,11 +182,11 @@ export interface TechUpdatingComponentInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "remove", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,(uint256,uint64,uint64))",
+    functionFragment: "set(uint256,bytes)",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
-    functionFragment: "set(uint256,bytes)",
+    functionFragment: "set(uint256,(uint256,uint64,uint64,uint64))",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -292,15 +299,15 @@ export interface TechUpdatingComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
-    "set(uint256,(uint256,uint64,uint64))"(
-      entity: PromiseOrValue<BigNumberish>,
-      techUpdating: TechUpdatingStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<ContractTransaction>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<ContractTransaction>;
+
+    "set(uint256,(uint256,uint64,uint64,uint64))"(
+      entity: PromiseOrValue<BigNumberish>,
+      techUpdating: TechUpdatingStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<ContractTransaction>;
 
@@ -372,15 +379,15 @@ export interface TechUpdatingComponent extends BaseContract {
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
-  "set(uint256,(uint256,uint64,uint64))"(
-    entity: PromiseOrValue<BigNumberish>,
-    techUpdating: TechUpdatingStruct,
-    overrides?: Overrides & { from?: PromiseOrValue<string> }
-  ): Promise<ContractTransaction>;
-
   "set(uint256,bytes)"(
     entity: PromiseOrValue<BigNumberish>,
     value: PromiseOrValue<BytesLike>,
+    overrides?: Overrides & { from?: PromiseOrValue<string> }
+  ): Promise<ContractTransaction>;
+
+  "set(uint256,(uint256,uint64,uint64,uint64))"(
+    entity: PromiseOrValue<BigNumberish>,
+    techUpdating: TechUpdatingStruct,
     overrides?: Overrides & { from?: PromiseOrValue<string> }
   ): Promise<ContractTransaction>;
 
@@ -452,15 +459,15 @@ export interface TechUpdatingComponent extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    "set(uint256,(uint256,uint64,uint64))"(
-      entity: PromiseOrValue<BigNumberish>,
-      techUpdating: TechUpdatingStruct,
-      overrides?: CallOverrides
-    ): Promise<void>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: CallOverrides
+    ): Promise<void>;
+
+    "set(uint256,(uint256,uint64,uint64,uint64))"(
+      entity: PromiseOrValue<BigNumberish>,
+      techUpdating: TechUpdatingStruct,
       overrides?: CallOverrides
     ): Promise<void>;
 
@@ -542,15 +549,15 @@ export interface TechUpdatingComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
-    "set(uint256,(uint256,uint64,uint64))"(
-      entity: PromiseOrValue<BigNumberish>,
-      techUpdating: TechUpdatingStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<BigNumber>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<BigNumber>;
+
+    "set(uint256,(uint256,uint64,uint64,uint64))"(
+      entity: PromiseOrValue<BigNumberish>,
+      techUpdating: TechUpdatingStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<BigNumber>;
 
@@ -621,15 +628,15 @@ export interface TechUpdatingComponent extends BaseContract {
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 
-    "set(uint256,(uint256,uint64,uint64))"(
-      entity: PromiseOrValue<BigNumberish>,
-      techUpdating: TechUpdatingStruct,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<PopulatedTransaction>;
-
     "set(uint256,bytes)"(
       entity: PromiseOrValue<BigNumberish>,
       value: PromiseOrValue<BytesLike>,
+      overrides?: Overrides & { from?: PromiseOrValue<string> }
+    ): Promise<PopulatedTransaction>;
+
+    "set(uint256,(uint256,uint64,uint64,uint64))"(
+      entity: PromiseOrValue<BigNumberish>,
+      techUpdating: TechUpdatingStruct,
       overrides?: Overrides & { from?: PromiseOrValue<string> }
     ): Promise<PopulatedTransaction>;
 

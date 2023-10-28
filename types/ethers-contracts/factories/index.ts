@@ -89,6 +89,8 @@ export { JoinGameSystem__factory } from "./JoinGameSystem__factory";
 export { JoinGamev2System__factory } from "./JoinGamev2System__factory";
 export { JoinGuildSystem__factory } from "./JoinGuildSystem__factory";
 export { KickGuildMemberSystem__factory } from "./KickGuildMemberSystem__factory";
+export { KillGuildCounterComponent__factory } from "./KillGuildCounterComponent__factory";
+export { KillPlayerCounterComponent__factory } from "./KillPlayerCounterComponent__factory";
 export { LibQuery__factory } from "./LibQuery__factory";
 export { MapConfigComponent__factory } from "./MapConfigComponent__factory";
 export { MapConfigv2Component__factory } from "./MapConfigv2Component__factory";
